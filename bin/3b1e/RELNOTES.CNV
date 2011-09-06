@@ -1,0 +1,111 @@
+                             ACF2DOS & DOS2ACF
+                      S.T.I. AUTOCONF<=>DOS Multiconf
+                                   UNRF
+                                Converters.
+
+                               Release notes.
+
+I have finally finished both of the converters, AUTOCONF into DOS Multiconf
+and vice-versa. This has been tough, since structural conversion algorithms
+between DOS's circular multiconf construction and AUTOCONF's linear
+structure were pretty complicated. Anyway, these have been written in one
+week of hard work, so just enjoy.
+
+These converters apply on CONFIG.SYS file only! The difference with DOS's
+AUTOEXEC.BAT and AUTOCONF's is the CONF variable (CONFIG for DOS). Consequent
+chages should be made for AUTOEXEC manually, since a converter is far from
+being ready.
+
+If you need details for these converters or any help for multiconf structures,
+contact me at:
+                ÜÜÜÜÜÜÜÜÜÜÜ  
+                ÛÛÛÛ   ÛÛÛÛ  Doubrovkine Daniel
+                ÛÛ       ÛÛ  49, rte de Frontenex
+                ÛÛÛÛ   ÛÛÛÛ  1207 Geneva, Switzerland
+                ฿฿฿฿฿฿฿฿฿฿฿
+                email welcome: dblock@infomaniak.ch
+
+          [Linear & Circular MultiConf Construction Method]
+         [(c) Daniel Doubrovkine, 1995, All Rights Reserved]
+
+History:
+
+Version 1.0, 1.1a, 1.1b
+ออออออออออออออออออออออออ
+
+        First release of ACF2DOS & DOS2ACF, revisions (a) and (b).
+
+Version 1.10
+ออออออออออออ
+
+        Modifications after consequent problems in the DOS2ACF logic.
+        
+        Modifications to lower/uppercase construction of written lines.
+
+        SET xxx line correctly treated.
+        ;xxx lines correctly treated.
+        REM lines correctly treated (false suppression of spaces removed).
+
+Version 1.11
+ออออออออออออ
+
+        Colors in the configuration names are cleaned with ACF2DOS.
+
+Version 1.20
+ออออออออออออ
+
+        Major bugs corrected.
+        Default configuration is checked.
+        Bad CONFIG.SYS structure is shown.
+
+Version 1.30
+ออออออออออออ
+
+        Important bugs corrected in the structural construction in both
+        DOS2ACF and ACF2DOS.
+
+        In general: support for AUTOEXEC.BAT has been added:
+
+        ACF2DOS constructs configurations compatible AUTOCONF for
+        AUTOEXEC.BAT.
+        ACF2DOS modifies %CONF jumps into %CONFIG jumps, thus making 
+        AUTOEXEC fully compatible DOS. Designations are modifie in CONFIG.SYS
+        only to a full vector of the name, since AUTOEXEC's structure for
+        AUTOCONF contains unique designations only:
+                F1
+                F1_A (etc...)
+
+        DOS2ACF modifies jumps %CONFIG to %CONF making AUTOEXEC.BAT
+        100% compatible AUTOCONF. The designations are verified between
+        AUTOEXEC.BAT and CONFIG.SYS.
+
+UNRF 1.0
+ออออออออ
+
+        UNRF changes the references created by QEMM into their real values.
+        Works on DOS multiconf configurations only!
+
+        Explanation: QEMM's OPTIMIZE run with DOS multiconf creats a ref
+        file, called LOADHI.RF containing all real values of the references 
+        for memory managing.
+        This is done not to make your CONFIG.SYS too heavy.
+        Before, QEMM put these references directly into the CONFIG.SYS,
+        that is what UNRF does.
+        So you can reconvert your CONFIG.SYS into AUTOCONF format and enjoy
+        the full power of QEMM.
+
+UNRF 1.01
+อออออออออ
+
+        Checks that the CONFIG.SYS is really a DOS multiconf structure.
+
+Version 1.31
+ออออออออออออ
+
+        modifications for consequent compatibility with AUTOCONF 2.90
+
+Version 1.32, 1.40
+ออออออออออออออออออ
+
+        consequent bug corrections 
+

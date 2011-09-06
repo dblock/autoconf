@@ -1,0 +1,535 @@
+hlp_msg db 'ýษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป',10
+	db 'บ Chers utilisateurs, merci d''avoir choisi ýAUTOCONF:ý. Vous ne regretterez pas  บ',10
+	db 'บ ce bon choix!                                                         D.D.   บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+        db 'บ    ýCE QUE EST ýAUTOCONF:ý                                                      บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+	db 'บ ýAUTOCONFý est un programme, permettant de choisir au dmarrage de votre       บ',10
+	db 'บ ordinateur, diffrentes configurations des gestionnaires de mmoire, des     บ',10
+	db 'บ prifriques ou d''autres rsidents, en fonction des logiciels que l''utili-   บ',10
+	db 'บ sateur dsire employer par la suite dans son travail.                        บ',10
+	db 'บ ýAUTOCONFý est un programme trs souple, et possde de nombreux avantages au   บ',10    
+	db 'บ niveau de l''utilisation que de nombreux logiciels semblables n''ont pas.      บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+	db 'บ    ýPOURQUOI BESOIN DE CONFIGURATIONS MULTIPLES?         ý                     บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+	db 'บ Avez-vous dj… eu des erreurs de ''Mmoire Insuffisante''? Votre gestionnaire  บ',10
+	db 'บ souris prend 20k et il vous nerve lorsque vous n''en avez pas besoin et que  บ',10
+	db 'บ la mmoire manque pour un autre programme?                                   บ',10
+	db 'บ                                                                              บ',10
+	db 'บ Combien de fois ditez-vous le fichier CONFIG.SYS pour y rajouter des REMs?  บ',10
+	db 'บ Ou pire, combien de CONFIG.SYSs avez vous cr et que vous copiez au besoin? บ',10
+	db 'บ Ou encore, combien de disquettes boot trainent sur votre bureau? Quel temps  บ',10
+	db 'บ prcieux vous perdez! Si vous avouez tre victime d''une telle injustice...   บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+	db 'บ ý...dans ce cas ýAUTOCONFý est ce qu''il vous faut!!!ý                            บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+	db 'บ Vous avez dsormais LE PROGRAMME PARFAIT pour les configurations multiples   บ',10
+	db 'บ dans UN SEUL fichier CONFIG.SYS et UN SEUL fichier AUTOEXEC.BAT. Si vous     บ',10
+	db 'บ utilisez dj… un programme du genre ýAUTOCONFý, voici une courte explication   บ',10
+	db 'บ et comparaison entre ce qu''ýAUTOCONFý fait, et que des programmes connus comme บ',10
+	db 'บ Configurations Multiples du DOS 6.x, MBOOT 2.x et LACE 1.x ne font pas!      บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+	db 'บ ýAUTOCONFý permet de crer plus de 200 configurations diffrentes, accessibles บ',10
+	db 'บ par une touche du clavier, par les codes tendus (ALT + touche) ou encore    บ',10
+	db 'บ pas les touches de fonctions (F1...F10).                                     บ',10 
+	db 'บ                                                                              บ',10
+	db 'บ Ceci est le moins important,  car l''avantage le  plus grand d''ýAUTOCONFý est   บ',10
+	db 'บ certainement qu''il ne DOIT PAS ARRETER L''EXECUTION DU CONFIG.SYS EN AUCUN    บ',10
+	db 'บ CAS (… moins que vous ne le vouliez) : vous choisissez une configuration     บ',10
+	db 'บ avant le chargement d''ýAUTOCONFý en  simplement  appuyant  sur  une touche du  บ',10
+	db 'บ clavier qui dsigne une configuration prdfinie dans le CONFIG.SYS,  aprs  บ',10
+	db 'บ le test de la RAM et le laconique message WAIT... si vous avez l''AMI BIOS.   บ',10
+	db 'บ                                                                              บ',10
+	db 'บ Souvent, vous ne trouvez dans les logiciels semblables, qu''un menu, rarement บ',10
+	db 'บ trs riche en imagination ou en couleurs, dans lequel l''utilisateur est      บ',10
+	db 'บ forc de choisir une configuration. Dans le meilleur des cas, une config     บ',10
+	db 'บ par dfaut est charge. Pour choisir une configuration avec ýAUTOCONFý, il     บ',10
+	db 'บ suffit d''appuyer sur une seule touche, ce qui vous fait gagner du temps si   บ',10
+	db 'บ prcieux!                                                                    บ',10
+	db 'บ                                                                              บ',10
+        db 'บ Il est possible de crer des sous groupes de configurations, accsibles      บ',10
+        db 'บ depuis la liste. La configuration principale qui contient le groupe peut     บ',10
+        db 'บ aussi tre charge! Vous pouvez aller dans n''importe quel groupe et mme     บ',10
+        db 'บ en revenir (pas comme avec quelques logiciels de configurations multiples    บ',10
+        db 'บ que je ne citerais pas). Une fleche vous indique dans la liste des configs,  บ',10
+        db 'บ si cette configuration est aussi un groupe!                                  บ',10
+	db 'บ                                                                              บ',10
+        db 'บ ýAUTOCONFý possde une aide on-line, supporte des pages indfiniment multiples บ',10
+	db 'บ pour la liste des configurations, des modes couleur et n/b, 25 et 50 lignes, บ',10
+	db 'บ le chargement de seulement la partie commune, arrt immdiat en cas de       บ',10
+	db 'บ demande, etc...                                                              บ',10
+	db 'บ                                                                              บ',10
+	db 'บ ýAUTOCONFý possde une fonction UNIQUE que vous pouvez appeller depuis la listeบ',10
+	db 'บ des configurations: l''affichage de la configuration mme!                    บ',10
+	db 'บ                                                                              บ',10
+        db 'บ Encore plus patant! Vous pouvez activer ou desactiver temporairement une    บ',10
+        db 'บ ligne dans une configuration!                                                บ',10
+        db 'บ                                                                              บ',10
+	db 'บ ýAUTOCONFý est trs rapide, vous ne remarquez jamais le ralentissement qu''il   บ',10
+	db 'บ cause … votre ordinateur au dmarrage! Ces milliers de lignes de code en ASM บ',10
+	db 'บ ont t soigneusement travailles, afin de ne rien excuter d''inutile.       บ',10
+	db 'บ                                                                              บ',10
+	db 'บ Nombreuses options indispensables ou pratiques sont … votre disposition.     บ',10
+	db 'บ ýAUTOCONFý est 100% compatible QEMM 7.x, dont le DOSDATA crait des problmes  บ',10
+	db 'บ incroyables pour les logiciels de configurations multiples. Vous ne pouvez   บ',10
+	db 'บ malheureusement pas lancer OPTIMIZE de QEMM, car il ignorera ýAUTOCONFý et     บ',10
+	db 'บ entrainera toutes les configurations … tre charges une aprs l''autre.      บ',10
+	db 'บ                                                                              บ',10
+        db 'บ ýAUTOCONFý est compatible Windows 95!                                          บ',10
+	db 'บ                                                                              บ',10
+	db 'บ Un mode silencieux ou invisible rend le dmarrage de votre ordinateur        บ',10
+	db 'บ totalement ordinaire, mais tout en conservant la possibilit de choix de     บ',10
+	db 'บ configurations. ýAUTOCONFý supporte tous les claviers supports par KEYB.COM   บ',10
+	db 'บ du DOS!                                                                      บ',10
+	db 'บ                                                                              บ',10
+	db 'บ ýAUTOCONFý ne prend pas de mmoire!                                            บ',10
+	db 'บ                                                                              บ',10
+	db 'บ L''utilisation est tellement simple que le manuel n''est ncessaire qu''une     บ',10
+	db 'บ seule fois, si vous ne trouvez pas par intuition comment a marche.          บ',10
+	db 'บ                                                                              บ',10
+	db 'บ Je pourrais baratiner encore longtemps, mais je prfre passer … la suite.   บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+	db 'บ Enfin, ýAUTOCONFý est ýGRATUITý pour un usage personnel. (Si vous croyez que je  บ',10
+	db 'บ mrite une rcompense n''hsitez pas … me remercier financirement.) Une      บ',10
+	db 'บ socit … but financier, est certainement en mesure de payer le peu que je   บ',10
+	db 'บ demande, et ainsi reevoir aussi les upgrades rguliers.                     บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+	db 'บ Si vous voulez recevoir constamment des nouvelles versions d''ýAUTOCONFý:       บ',10
+	db 'บ $10 (Suisse), $20 (Europe), et $30 (Etats Unis, etc...) par anne.           บ',10
+	db 'บ Ou contactez moi par modem (appeler avant) ou envoyez encore le numro du    บ',10
+	db 'บ BBS ou je peux le laisser.                                                   บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+	db 'บ ýCOMME ýAUTOCONFý EST GRATUIT, LA VENTE DE LA VERSION QUELCONQUE EST INTERDITE! ýบ',10
+	db 'บ ýSI VOUS DESIREZ PERSONALISER VOTRE COPIE, ENREGISTREZ VOUS (POINT PRECEDENT)ý บ',10
+	db 'บ ýTOUT INDIVIDU ESSAYANT DE TIRER QUELCONQUE PROFIT DE CE LOGICIEL, SERA ý      บ',10
+	db 'บ ýPOURSUIVI D''APRES LA LOI SUISSE!                                            ý บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+	db 'บ Consultez WHATSNEW.FR  pour savoir ce qui a chang de la version prcdente. บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+	db 'บ ýAUTOCONFý existe en ANGLAIS et en FRANCAIS. Si vous voulez une version RUSSE  บ',10
+	db 'บ contactez moi!                                                               บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+	db 'บ ý                       LE MANUEL COMPLET DE ýAUTOCONF:ý                        บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+	db 'บ ýPARAMETRES DANS LE CONFIG.SYS ý                                               บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+	db 'บ  (vous pouvez commencer une option avec / ou -)                              บ',10
+	db 'บ                                                                              บ',10
+	db 'บ ý/Dxý : configuration par dfaut. Cette option change la configuration         บ',10
+	db 'บ       par dfaut charge si vous n''appuyez pas sur une touche qui dsigne    บ',10
+	db 'บ       une autre configuration. (sans cette option, la configuration par      บ',10
+	db 'บ       dfaut est la configuration A).                                        บ',10
+	db 'บ Note: pour les configurations tendues (F1...F10) mettez /DF1.../DF0.        บ',10
+	db 'บ Note: vous ne pouvez spcifier que des configurations du groupe principal.   บ',10
+	db 'บ                                                                              บ',10
+        db 'บ ý/Hxý : la configuration par dfaut pour Windows 95.                           บ',10
+        db 'บ       ýAUTOCONFý detecte la prsence de DOS 7.00, sous lequel tourne Win 95,   บ',10
+	db 'บ       et active ce switch dans ce cas. Consultez le chapitre ''Compatibilit  บ',10
+        db 'บ       avec Windows 95'', plus loin dans l''aide.                               บ',10
+	db 'บ                                                                              บ',10
+        db 'บ ý/Tý[ýDxý[ýuý]][ýCxý[ýuý]]ý : le temps qu''ýAUTOCONFý attendra une touche de la part de    บ',10
+        db 'บ       l''utilisateur. Normalement vous avez suffisamment de temps pour choisirบ',10
+        db 'บ       une configuration avant le lancement d''ýAUTOCONFý, aprs le laconique    บ',10
+        db 'บ       message du demarrage du dos.                                           บ',10
+        db 'บ                                                                              บ',10
+        db 'บ [ýDý]: spcifie le temps d''attente sous DOS infrieur … 7.00                   บ',10
+        db 'บ [ýCý]: spcifie le temps d''attente sous DOS 7.00 et suprieur (Windows 95).    บ',10
+        db 'บ [ýuý]: ne pas afficher la pulsation pendant l''attente, ex: ý/T5uý                บ',10
+	db 'บ                                                                              บ',10
+        db 'บ Exemple: /TD2uC3u forcera ýAUTOCONFý d''attendre 2 secondes sous DOS et 3 sous  บ',10
+        db 'บ          Windows 95; /T5 forcera ýAUTOCONFý d''attendre toujours 5 secondes.    บ',10
+        db 'บ                                                                              บ',10
+        db 'บ Note: l''ordre des options n''est pas important, ex: /TC2D4u = /TD4uC2         บ',10
+        db 'บ                                                                              บ',10
+	db 'บ ý/Pý :  mode silencieux: si les (magnifiques) messages de ýAUTOCONFý vous        บ',10
+	db 'บ       drangent vous pouvez les faire totalement disparatre.                บ',10
+	db 'บ Note: la liste de configurations et le manuel seront tout de mme affichs   บ',10
+	db 'บ       si vous les demandez. Les erreurs seront aussi signales.              บ',10
+	db 'บ                                                                              บ',10
+	db 'บ ý/Ný :  ne pas effacer l''cran au chargement d''ýAUTOCONFý.                       บ',10
+	db 'บ                                                                              บ',10
+	db 'บ ý/Eý :  messages en noir et blanc. Si les superbes messages en couleur  vous   บ',10
+	db 'บ       drangent, alors utilisez cette option. C''est aussi utile pour ceux    บ',10
+	db 'บ       qui ont un cran LCD avec un faible nombre de niveaux de gris, car     บ',10
+	db 'บ       les messages de couleurs sombres sont alors peu lisibles.              บ',10
+	db 'บ                                                                              บ',10
+	db 'บ ý/Kxxý :  clavier utilis, o— xx:                                              บ',10
+	db 'บ                                                                              บ',10
+	db 'บ   Belgique                     ýBEý  ณ Brsil                       ýBRý         บ',10
+	db 'บ   Canada fr.                   ýCFý  ณ Tchcoslovaquie (tchque)    ýCZý         บ',10
+	db 'บ   Tchcoslovaquie (slovaque)   ýSLý  ณ Danemark                     ýDKý         บ',10
+	db 'บ   Finlande                     ýSUý  ณ France                       ýFRý         บ',10
+	db 'บ   Allemagne                    ýGRý  ณ Hongrie                      ýHUý         บ',10
+	db 'บ   Italie                       ýITý  ณ Amrique latine              ýLAý         บ',10
+	db 'บ   Pays-Bas                     ýNLý  ณ Norvge                      ýNOý         บ',10
+	db 'บ   Pologne                      ýPLý  ณ Portugal                     ýPOý         บ',10
+	db 'บ   Espagne                      ýSPý  ณ Sude                        ýSVý         บ',10
+        db 'บ   Suisse (romande)             ýSFý  ณ Suisse (allmanique)         ýSGý         บ',10
+	db 'บ   Royaume-Uni                  ýUKý  ณ Croatie/Serbie/Slovnie      ýYUý         บ',10
+	db 'บ                                                                              บ',10
+	db 'บ Le clavier ýUSý (Etats Unis) est celui par dfaut.                             บ',10
+	db 'บ                                                                              บ',10
+	db 'บ ý/Jý[ýDý][ýCý] : toujours afficher une liste de configurations et demander …  en   บ',10
+        db 'บ      choisir une.                                                            บ',10
+	db 'บ [ýDý]: toujours afficher la liste sous DOS infrieur … 7.00                    บ',10
+        db 'บ [ýCý]: toujours afficher la liste sous DOS 7.00 et suprieur (Windows 95).     บ',10
+        db 'บ      Note: ý/Jý sans autres active les deux options.                           บ',10
+        db 'บ      Note: l''ordre des options n''est pas important, ex: /JCD, /JDC, ou /JD.  บ',10
+	db 'บ                                                                              บ',10
+        db 'บ En combinant les options ý/Jxxý et ý/Tý, vous obtenez au dmarrage la liste des  บ',10
+        db 'บ configurations qui disparaitra aprs le temps dfini par /Tx pour charger la บ',10
+        db 'บ configuration par dfaut. Si vous appuyez sur une touche pendant le temps    บ',10
+        db 'บ d''attente, la liste des configuration ragira normalement et annulera le     บ',10
+        db 'บ dcompte. L''option /TDx n''influencera que /JD et /TCx que /JC.               บ',10
+        db 'บ                                                                              บ',10
+	db 'บ ý/Sý : Au dmarrage ýAUTOCONFý cre un fichier ýAUTOCONF.DATý.                     บ',10
+	db 'บ      qui contien la configuration choisie lors du drnier dmarrage. Avec    บ',10
+	db 'บ      cette option, si aucune touche n''a t appuye ýAUTOCONFý charge la       บ',10
+	db 'บ      configuration choisie au drnier dmarrage de votre ordinateur.         บ',10
+	db 'บ                                                                              บ',10
+        db 'บ Note: ýAUTOCONF.DATý est toujours cre et modifi  chaque dmarrage.          บ',10
+        db 'บ      Ce fichier est modifi par iREAD (integrated READCONF) et utilis par   บ',10
+        db 'บ      BOOTIT pour les reboots preprogramms.                                  บ',10
+	db 'บ                                                                              บ',10
+	db 'บ NB:  Cette option n''a aucun sens  utilise avec ý/Jý.                          บ',10
+	db 'บ                                                                              บ',10
+	db 'บ ý/Mxý : Au dmarrage ýAUTOCONFý affiche des message de bienvenue qui dpendent   บ',10
+	db 'บ      de l''heure … laquelle vous allumez votre ordinateur. Cette option       บ',10
+	db 'บ      permet de chager les (fabuleux) messages d''initialisation:              บ',10
+	db 'บ                                                                              บ',10
+	db 'บ            ý/M1ý - message du matin                                            บ',10
+	db 'บ            ý/M2ý - message de la journe                                       บ',10        
+	db 'บ            ý/M3ý - message du soir                                             บ',10
+	db 'บ            ý/M4ý - message de la nuit                                          บ',10
+	db 'บ                                                                              บ',10
+	db 'บ  Le mme message peut tre assign aux quatres messages de la journe:       บ',10
+	db 'บ                                                                              บ',10
+	db 'บ ý/M[xxxx]ý : o— x est le numro du message                                     บ',10        
+	db 'บ                                                                              บ',10
+	db 'บ Ainsi si vous rajouter une option tel que:                                   บ',10
+	db 'บ                                                                              บ',10
+	db 'บ         ý  /M[13]I|l fait beau,#les oiseaux chantent... ý                      บ',10
+	db 'บ                                                                              บ',10
+	db 'บ ýAUTOCONFý affichera pour les messages du matin et du soir:                    บ',10
+	db 'บ                                                                              บ',10
+	db 'บ ýIl fait beau,ý                                                                บ',10
+	db 'บ ýles oiseaux chantent... ý                                                     บ',10
+	db 'บ                                                                              บ',10
+	db 'บ Note: chaque message peut avoir une infinit de caractres  tant que la      บ',10        
+	db 'บ       ligne du device=AUTOCONF tient sur une ligne. Le caractre ý|ý  sert     บ',10
+	db 'บ       … distinguer les majuscules des minuscules. Le caractre ý#ý sert …      บ',10
+	db 'บ       distinguer les lignes. (il fait le saut de lignes) Si le nombre de     บ',10
+	db 'บ       caractres dpasse 77 alors le messages est renvoy sur la ligne       บ',10
+	db 'บ       suivante de toute faon.                                               บ',10
+	db 'บ Par exemple: ýdevice=AUTOCONF.SYS /M3s|alut cher #|u|tilisateur d''|AUTOCONFý   บ',10
+	db 'บ donnera sur l''cran aprs le message d''initalisation:                        บ',10
+	db 'บ                                                                              บ',10
+	db 'บ ýSalut cherý                                                                   บ',10
+	db 'บ ýUtilisateur d''AUTOCONFý                                                       บ',10        
+	db 'บ                                                                              บ',10
+	db 'บ Note: si vous dsirez afficher des caractres tels que ý| / - ou #,ý qui       บ',10        
+	db 'บ       sont normalement considrs comme des caractres de contr“le, crivez  บ',10                
+	db 'บ       les simplement deux fois de suite: ý|| // -- ou ##ý.                     บ',10        
+	db 'บ                                                                              บ',10
+	db 'บ ý/Cxý : Si vous demandez la liste des configurations, celle-ci met en          บ',10        
+	db 'บ       vidence la lettre qui designe la configuration sur laquelle le        บ',10
+	db 'บ       curseur se trouve. Cette option dfinit la couleur du curseur et de    บ',10
+	db 'บ       la configuration mise en vidence.                                     บ',10
+	db 'บ       Dfaut est 127.                                                        บ',10
+	db 'บ ex:ý /C}ý (Alt 125) donnera des caractres bleus clairs sur un fond gris.      บ',10
+	db 'บ                                                                              บ',10
+        db 'บ ý/Fxý : Dfinit la couleur des dsignations des configurations dans la liste.  บ',10        
+        db 'บ       (mme syntaxe que pour ý/Cxý)                                            บ',10
+        db 'บ                                                                              บ',10
+	db 'บ ý/Gý  : L''option pour les plus capricieux: avant chaque liste de configs,      บ',10
+	db 'บ       un message qui indique quelles touches peuvent tre utilises afin de  บ',10
+	db 'บ       choisir une configuration, voir une configuration ou afficher l''aide   บ',10
+	db 'บ       est affich. Cette option permet de ne pas afficher ce message!        บ',10
+	db 'บ                                                                              บ',10
+        db 'บ ý/5ý  : Forcer un mode de 50 lignes sur l''ecran. Ceci signifie que ýAUTOCONFý    บ',10        
+	db 'บ       utilisera ce mode par dfaut pour tout affichage et retiendra cet      บ',10
+	db 'บ       tat aprs avoir termin son excution.                                บ',10
+	db 'บ                                                                              บ',10
+        db 'บ ý/Oý  : Mode de compatibilit de Windows 95, et MS-DOS infrieur … 7.00,       บ',10
+	db 'บ       utilisant DOSDATA de QEMM. Pour des informations dtailles consultez  บ',10
+        db 'บ       le chapitre ''Compatibilit avec Windows 95'', point 3.                  บ',10
+        db 'บ                                                                              บ',10
+        db 'บ ý/Iý  : Dsactiver le mode d''edition dans le visionneur des configurations.    บ',10
+        db 'บ                                                                              บ',10
+        db 'บ ý/Lý  : Toujours afficher le nom de la configuration au dmarrage.             บ',10
+        db 'บ                                                                              บ',10
+        db 'บ ý/Bý  : Ne pas crer le fichier cach AUTOCONF.DAT, effacer si''il existe.      บ',10
+        db 'บ       /S n''aura aucun effet, BOOTIT ne sera pourtant pas ignor!             บ',10
+        db 'บ                                                                              บ',10
+        db 'บ ý/Zý  : mode eLiTe! (pas pour les lamers!) ý/ZZý inverse le mode lite.          บ',10
+        db 'บ                                                                              บ',10
+        db 'บ ý/Vý  : utiliser READCONF au lieu de iREAD (rajoutez READCONF dans l''AUTOEXEC) บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+	db 'บ ýSTRUCTURE DU CONFIG.SYS       ý                                               บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+        db 'บýdevice=[lecteur][rep]<AUTOCONF.SYS> /[PARAM1] /[PARAM2] ý; appel d''ýAUTOCONFý.   บ',10
+	db 'บ                                                                              บ',10
+	db 'บýdevice=ý*ý<DESIGNATION> <NOM DE LA CONFIG DU ýGROUPE PRINCIPALý>ý                  บ',10
+	db 'บ                                                                              บ',10
+        db 'บ        <DESIGNATION> : ýAý pour la configuration A, ýF1ý pour la config F1, etc. บ',10
+	db 'บ        <NOM DE LA CONFIG> : le nom de la configuration, avec le caractre ý|ý  บ',10
+	db 'บ                             pour changer entre des lettres majuscules et     บ',10
+	db 'บ                             minuscules.                                      บ',10
+	db 'บ                                                                              บ',10
+	db 'บ ýdevice=ý**ý<DESIGNATION> <NOM DE LA ýSOUSý CONFIG> ý                              บ',10
+	db 'บ ý... configuration ...ý                                                        บ',10
+        db 'บ ýdevice=ý**ý<DESIGNATION> <NOM DE LA ýSOUSý CONFIG> ý                              บ',10
+	db 'บ ý... configuration ...ý                                                        บ',10
+	db 'บ ýdevice=ý***ý<DESIGNATION> <NOM DE LA ýSOUS SOUSý CONFIG> ý                        บ',10
+	db 'บ ý... configuration ...ý                                                        บ',10
+        db 'บ ýdevice=ý*ý<DESIGNATION> <NOM DE LA CONFIG DU ýGROUPE PRINCIPALý>ý                 บ',10
+	db 'บ ý... et ainsi de suite...ý                                                     บ',10
+	db 'บ                                                                              บ',10
+        db 'บ Note: Vous pouvez faire jusqu''… 20 niveaux de sous-configurations.           บ',10
+        db 'บ                                                                              บ',10
+        db 'บ Note: Pour crer une couleur dans le nom de la configuration, le procd est บ',10
+        db 'บ       identique … celui des messages personaliss au dmarrage d''ýAUTOCONFý.   บ',10
+        db 'บ                                                                              บ',10
+	db 'บ Note: Seules les configurations du groupe principal peuvent tre charges en บ',10
+	db 'บ       simplement appuiyant sur une touche au dmarrage aprs le message du   บ',10
+	db 'บ       dmarrage du DOS, les sous configurations doivent tre charges …      บ',10
+	db 'บ       partir de la liste des configurations, obtenue avec la BARRE D''ESPACE. บ',10
+	db 'บ                                                                              บ',10
+	db 'บ Note: Les configurations peuvent tre mises dans n''importe quel ordre. La    บ',10
+	db 'บ       liste des configurations sera affiche dans l''ordre alphabtique, les  บ',10
+	db 'บ       configurations tendues (F1...F10) d''abord.                            บ',10
+	db 'บ                                                                              บ',10
+	db 'บ Note: Si vous n''avez pas cr de configuration par dfaut, ýAUTOCONFý affiche  บ',10
+	db 'บ       une erreur de configuration non-trouve.                               บ',10
+	db 'บ                                                                              บ',10
+	db 'บ Note: Si vous avez cr deux configurations avec la mme lettre (ex: deux    บ',10
+	db 'บ       configurations G, alors si vous choisissez la configuration G, LES DEUXบ',10
+	db 'บ       seront charges, mais ceci est valable uniquement pour les configs du  บ',10
+	db 'บ       groupe principal.                                                      บ',10
+	db 'บ                                                                              บ',10
+        db 'บ ýdevice=ý$ý <------------------------>    ý ; rajoutez du texte quelconque, afin บ',10
+        db 'บ                                         ; de laisser … ýAUTOCONFý la place     บ',10
+        db 'บ                                         ; suffisante pour rajouter une       บ',10
+        db 'บ                                         ; ligne SET CONF=... lors du         บ',10
+        db 'บ                                         ; dmarrage.                         บ',10
+        db 'บ Note: ceci remplace le READCONF.EXE des versions prcdentes.                บ',10
+        db 'บ                                                                              บ',10
+        db 'บ ýAUTOCONFý cre une variable dans l''environnement principal du DOS contenant:  บ',10
+        db 'บ GROUPE_CONFIG ou simplement CONFIG, en fonction de la configuration choisie. บ',10
+        db 'บ Ainsi, pour la configuration F6, la variable ýCONFý sera gale … F6 et elle    บ',10
+        db 'บ aura la valeur F3_F0_J_L pour la configuration L dans le sous groupe J du    บ',10
+        db 'บ sous groupe F10 du groupe principal F3.                                      บ',10
+	db 'บ                                                                              บ',10
+	db 'บ ýImportant!ý Cette ligne doit figurer dans le CONFIG.SYS et signifie la fin    บ',10
+	db 'บ des configurations multiples. La suite est la partie commune, charge avec   บ',10
+	db 'บ toutes les configurations.                                                   บ',10
+	db 'บ                                                                              บ',10
+	db 'บ ýfiles=30                              ý ;est charge avec chaque config.      บ',10
+	db 'บ ýbuffers=30                            ý                                       บ',10
+	db 'บ ýlastdrive=E                           ý                                       บ',10
+	db 'บ ýstacks=9,128                          ý                                       บ',10
+	db 'บ ý... et ainsi de suite ...             ý                                       บ',10
+        db 'บ                                                                              บ',10
+        db 'บ (exemple complet)                                                            บ',10
+        db 'บ                                                                              บ',10        
+        db 'บ SWITCHES=/F                                                                  บ',10        
+        db 'บ                                                                              บ',10        
+        db 'บ DEVICE=C:\UTILS\AUTOCONF.SYS /KSF /DF1 /F /5                                บ',10        
+        db 'บ                                                                              บ',10        
+        db 'บ device=**F2 P|rogramming                                                     บ',10        
+        db 'บ  device=c:\dos\himem.sys /testmem:off                                        บ',10        
+        db 'บ  devicehigh=c:\dos\setver.exe                                                บ',10        
+        db 'บ  devicehigh=c:\dos\ansi.sys                                                  บ',10        
+        db 'บ                                                                              บ',10        
+        db 'บ device=*F1 DOS                                                               บ',10        
+        db 'บ  device=c:\dos\himem.sys /testmem:off                                        บ',10        
+        db 'บ  device=c:\dos\emm386.exe ram                                                บ',10        
+        db 'บ  devicehigh=c:\utils\mtm\mtmcdai.sys /d:MTMIDE01                             บ',10        
+        db 'บ  devicehigh=c:\dos\ansi.sys                                                  บ',10        
+        db 'บ  shell=c:\dos\command.com /p                                                 บ',10        
+        db 'บ                                                                              บ',10        
+        db 'บ    device=**F0 DOS                                                           บ',10        
+        db 'บ         device=c:\dos\himem.sys /testmem:off                                 บ',10        
+        db 'บ         device=c:\dos\emm386.exe RAM                                         บ',10        
+        db 'บ         devicehigh=c:\dos\ansi.sys                                           บ',10 
+        db 'บ                                                                              บ',10        
+        db 'บ    device=**F1 HIMEM/EMM386 (NOEMS)                                          บ',10        
+        db 'บ         device=c:\dos\himem.sys /testmem:off                                 บ',10        
+        db 'บ         device=c:\dos\emm386.exe NOEMS                                       บ',10        
+        db 'บ         devicehigh=c:\dos\ansi.sys                                           บ',10        
+        db 'บ         shell=c:\4dos\4dos.com /p                                            บ',10        
+        db 'บ                                                                              บ',10        
+        db 'บ device=*W W|indows| (N|o| NETWORK)                                           บ',10        
+        db 'บ         device=c:\dos\himem.sys /TESTMEM:OFF                                 บ',10        
+        db 'บ         devicehigh=c:\utils\mtm\MTMCDAI.SYS /D:MTMIDE01                      บ',10        
+        db 'บ         device=c:\dos\ansi.sys                                               บ',10        
+        db 'บ         SHELL=C:\4DOS\4DOS.COM /P                                            บ',10        
+        db 'บ                                                                              บ',10        
+        db 'บ device=$ <--------------------------->                                       บ',10        
+        db 'บ                                                                              บ',10        
+        db 'บ buffers=40                                                                   บ',10        
+        db 'บ files=40                                                                     บ',10        
+        db 'บ dos=high,umb                                                                 บ',10        
+        db 'บ devicehigh=c:\dos\setver.exe                                                 บ',10        
+        db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+	db 'บ ýSTRUCTURE DE L''AUTOEXEC.BATý (pour les confgis multiples)                     บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+	db 'บ ýgoto %conf%              ý  ;saut vers la configuration choisie               บ',10
+	db 'บ ýgoto def_conf            ý  ;au cas ou le nom est invalide, saut … la config  บ',10        
+	db 'บ                                ;par dfaut.                                  บ',10
+	db 'บ                                                                              บ',10
+	db 'บ ý:def_conf      ý            ;configuration A arbitrairement celle par dfaut  บ',10
+	db 'บ ý:A             ý            ;configuration A                                  บ',10
+	db 'บ ý...configuration...ý                                                          บ',10
+	db 'บ ýgoto end      ý             ;saut … la fin de l''AUTOEXEC.BAT                  บ',10
+        db 'บ                                                                              บ',10
+        db 'บ ý:<DESIGNATION>[[_<SOUS CONF>]_<SOUS CONF>]  ý                                 บ',10
+        db 'บ                                                                              บ',10
+        db 'บ                            ;est la syntaxe gnrale; pour la sous-configura- บ',10
+        db 'บ                            ;tion F8 sous la configuration F1, par exemple, ilบ',10
+        db 'บ                            ;faudra spcifier: F1_F8. Pour plus d''informationsบ',10
+        db 'บ                            ;consultez le point sur la variable CONF une page บ',10
+        db 'บ                            ;plus haut.                                       บ',10
+        db 'บ ýgoto end      ý             ;saut … la fin du AUTOEXEC.BAT                    บ',10
+	db 'บ                                                                              บ',10
+	db 'บ ý:end          ý             ;partie COMMUNE                                   บ',10
+	db 'บ ý...           ý             ;PROMPT=..., PATH=..., etc...                     บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+	db 'บ ýTOUCHES                     ý                                                 บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+	db 'บ ýL''AIDE ON-LINE, obtenue depuis partout sauf sous TAB avec BACKSPACE:ý         บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+	db 'บ ýFLECHES GAUCHE, HAUT ýune ligne plus haut                                     บ',10
+	db 'บ ý        DROITE, BAS  ýune ligne plus bas                                      บ',10
+	db 'บ ýPAGE DOWN            ýpage suivante                                           บ',10
+	db 'บ ýPAGE UP              ýpage prcdente                                         บ',10
+	db 'บ ýESC                  ýquitter l''aide                                          บ',10
+	db 'บ ýESPACE               ýcouleur - n/b                                           บ',10
+	db 'บ ýTABULATEUR           ýmode 25/50 lignes                                       บ',10
+        db 'บ ýINSERT               ýrechercher une chane de charactres                    บ',10
+        db 'บ ýDELETE               ýannuller le mode de recherche                           บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+	db 'บ ýLA LISTE DES CONFIGS, obtenue avec ESPACE … la place d''une config:ý           บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+	db 'บ ýBACKSPACE            ýafficher l''aide on-line                                 บ',10
+	db 'บ ýESPACE ou ENTREE     ýcharger la configuration mise en vidence               บ',10
+	db 'บ ýFLECHES HAUT         ýscrolling vers la configuration prcdente de la liste  บ',10
+	db 'บ ý        BAS          ýscrolling vers la configuration suivante de la liste    บ',10
+	db 'บ ý        DROITE       ýlister le sous-groupe s''il existe, sinon touche ignore บ',10
+	db 'บ ý        GAUCHE       ýlister le groupe au dessus de sous groupe actuel        บ',10
+	db 'บ ýHOME & PAGE UP       ýpremire configuration sur l''ecran                      บ',10
+	db 'บ ýEND & PAGE DOWN      ýdernire confiration sur l''ecran                        บ',10
+	db 'บ ýTABULATEUR           ýafficher la configuration mise en vidence              บ',10
+        db 'บ ýETOILE               ýterminer ýAUTOCONFý                                       บ',10
+	db 'บ ýPOINT                ýcharger que la partie commune                           บ',10
+	db 'บ Toute autre touche dsignant une configuration, la charge, si elle existe.   บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+	db 'บ ýAFFICHAGE DE LA CONFIG MEME, obtenu avec TAB sous la liste des configs:      ýบ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+	db 'บ ýFLECHES:             ý                                                        บ',10
+	db 'บ ýHAUT                 ýscrolling de la configuration vers le haut              บ',10
+	db 'บ ýBAS                  ýscrolling de la configuration vers le bas               บ',10
+	db 'บ ýDROITE               ýscrolling de la configuration … droite                  บ',10
+	db 'บ ýGAUCHE               ýscrolling de la configuration … gauche                  บ',10
+	db 'บ ýHOME                 ýsauter au dbut de la ligne                             บ',10
+	db 'บ                      si la configuration excde 25 lignes/80 colonnes        บ',10
+	db 'บ ýPAGE DOWN            ýconfiguration suivante                                  บ',10
+	db 'บ ýPAGE UP              ýconfiguration prcdente                                บ',10
+	db 'บ ýTAB, ESC             ýretourner dans la liste des configurations              บ',10
+	db 'บ ýESPACE               ýchanger entre le mode couleur - n/b                     บ',10
+	db 'บ ýENTREE               ýchoisir la configuration actuelle                       บ',10
+	db 'บ ýPOINT (.)            ýcharger que la partie commune aprs DEVICE=$            บ',10
+        db 'บ ýBACKSPACE            ýafficher l''aide on-line                                 บ',10
+        db 'บ ýE (Touche E)         ýmode activer/dsactiver des lignes                      บ',10
+        db 'บ ý  ESPACE en mode ''E'' ýactiver/dsactiver une ligne                            บ',10
+        db 'บ ý       ? en mode ''E'' ýactiver/dsactiver la demande d''excuter la ligne       บ',10
+        db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+        db 'บ ýCOMPATIBILITE AVEC WINDOWS 95:                      ý                         บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+        db 'บ Version 2.6+ supporte Windows 95!                                            บ',10
+	db 'บ                                                                              บ',10
+	db 'บ Cela implique:                                                               บ',10
+	db 'บ                                                                              บ',10
+        db 'บ 1. Lorsque vous initialisez l''ordinateur avec Windows 95 install, un choix  บ',10
+        db 'บ de charger Win 95 ou le DOS prcdent vous est offert. F4 charge le DOS et   บ',10
+        db 'บ une autre touche Win 95. Ceci vous permet de retrouver sans dgats votre     บ',10
+	db 'บ commutateur de commandes comme 4DOS, NDOS ou COMMAND.COM.                    บ',10
+	db 'บ                                                                              บ',10
+	db 'บ Les applications 16 bits et toutes celles qui tournent sous DOS infrieur …  บ',10
+	db 'บ 7.0 ncssitent toujours des configurations multiples. Ainsi, losque vous    บ',10
+        db 'บ faites le choix de charger Win 95, l''option /Dx sera ignore et /Hx pris en  บ',10
+        db 'บ compte. Ceci vous permet d''avoir une configuration par dfaut pour Win 95,   บ',10
+	db 'บ et une autre configuration par dfaut pour DOS, sans avoir … choisir encore  บ',10
+	db 'บ une configuration pour l''un des deux.                                        บ',10
+	db 'บ                                                                              บ',10
+        db 'บ 2. ýAUTOCONFý forcera l''ecran de passer en mode normal, au cas o— Windows 95   บ',10
+	db 'บ est en train d''initialiser l''ordinateur. Ceci permet de voir ce qui se passe บ',10
+        db 'บ derire le magnifique dessin de chargement de Win 95 et pleinement profiter  บ',10
+	db 'บ des possibilits d''ýAUTOCONF!ý                                                 บ',10
+	db 'บ                                                                              บ',10
+        db 'บ 3. Windows 95, DOS et QEMM 7.x DOSDATA:                                      บ',10
+	db 'บ                                                                              บ',10
+	db 'บ Si vous utilisez des configurations avec le DOSDATA de QEMM, vous tes forcsบ',10
+	db 'บ de fare la procdure suivante:                                               บ',10
+	db 'บ                                                                              บ',10
+	db 'บ      # appuyer sur F4 pour lancer MS-DOS                                     บ',10
+	db 'บ      # choisir une configuration avec AUTOCONF, contenant DOSDATA            บ',10
+	db 'บ      # appuyer de nouveau sur F4, puisque DOSDATA reinitialise le CONFIG.SYS บ',10
+	db 'บ                                                                              บ',10
+	db 'บ Avec l''option ý/Oý:                                                            บ',10
+	db 'บ                                                                              บ',10
+        db 'บ La dernire tape est supprime avec ýAUTOCONFý 2.61+. Appuyez simplement sur  บ',10
+	db 'บ F4, puis choisissez une configuration avec DOSDATA!                          บ',10
+	db 'บ                                                                              บ',10
+	db 'บ Note: certains anciens bios ne supportent pas cette fonction                 บ',10
+	db 'บ                                                                              บ',10
+	db 'บ Note: la touche F4 sera simule dans tous les cas, sauf si vous lancez       บ',10
+        db 'บ       Win 95. Si DOSDATA n''est pas prsent, un beep sera mis … la fin du    บ',10  
+	db 'บ       dmarrage, puisque l''ordinateur garde la touche jusqu''… la ligne des   บ',10
+	db 'บ       commandes. Un petit utilitaire a t rajout: CLRBUF.SYS et CLRBUF.COM,บ',10
+	db 'บ       permettant d''effacer le buffer clavier, ainsi supprimant ce beep.      บ',10
+	db 'บ       CLRBUF ne prend pas de mmoire et n''affiche rien … son excution.      บ',10
+	db 'บ       Utilisez CLRBUF.SYS dans la partie commune des configurations du       บ',10
+	db 'บ       fichier CONFIG.SYS ou CLRBUF.COM dans l''AUTOEXEC.BAT.                  บ',10
+        db 'บ                                                                              บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+        db 'บ ý NOTE IMPORTANTE POUR LE SUPPORT DE WINDOWS 95:ý                              บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+        db 'บ ýAUTOCONFý 2.90 a t test avec Windows 95, version finale du 24 ao–t 1995.   บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+	db 'บ ýNOTES IMPORTANTES:ý                                                           บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+	db 'บ La ligne: DOS=[HIGH],[UMB] est lue une seule fois dans tout le CONFIG.SYS:   บ',10
+	db 'บ seule la dernire occurence de cette ligne est prise en compte au dmarrage. บ',10        
+	db 'บ ýAUTOCONFý ne peut donc pas intervenir quand … la slection de ce paramtre.   บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+        db 'บ ýAUTOCONFý, version 1.1 … cette drnire, toutes les versions de ýREADCONFý, de  บ',10
+        db 'บ ýiýRýEýAýDý et de ýBOOTITý sont la proprit de (moi):                               บ',10
+        db 'บ ýÜÜÜÜÜÜÜÜÜÜÜ ýDoubrovkine Daniel      ý                                         บ',10
+        db 'บ ýÛÛÛÛüÛÛÛýÛÛÛÛ ý11, ch. de la Clairire ý                                         บ',10
+	db 'บ ýÛÛüÛÛÛÛÛÛÛýÛÛ ý1207 Genve,            ý                                         บ',10
+	db 'บ ýÛÛÛÛüÛÛÛýÛÛÛÛ ýSuisse                  ý                                         บ',10
+	db 'บ ý฿฿฿฿฿฿฿฿฿฿฿ ýtl & fax: 41 22 - 735 69 47       ý                              บ',10
+        db 'บ ýemail: dblock@infomaniak.ch                      ý                            บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+	db 'บ ýAUTOCONFý est une conception … l''origine d''un programmeur franais qui m''est  บ',10
+	db 'บ inconnu. Une version qui m''a servi de support est parue dans un SVM il y a   บ',10
+	db 'บ quelques annes. Les 90% du programme original ont ts modifis. Le nom n''a บ',10
+        db 'บ pas t chang.                                                              บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+        db 'บ Je remercie tous les bt… testeurs et tous ceux qui on pris part, quelle     บ',10
+	db 'บ qu''elle soit dans la cration de ce programme.                               บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+	db 'บ ýTous les noms de compagnies mentionns, ainsi que leurs produits, sont des  ý บ',10
+	db 'บ ýmarques dposes de leurs propritaires respectifs.ý                          บ',10
+	db 'ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ',10
+	db 'ý[                             fin de l''aide                                    '
+			     
+press_a_extended_key db 'ý?[ý  ý?ligneý HOME ý?dbutý END ý?finý PgUp ý?&ý PgDn ý?pageý ESPACE ý?couleurý TAB ý?50/25ý ýESC ý? ]' 
+search_stupid_msg    db 'ý Chercher: [ý'
+                     db 67 dup (' ')
+                     db 'ý]'
+press_search         db 'ý[ อ=อ= Recherche...อ=อ=อ==อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ= ]' 
+                                                                                                               

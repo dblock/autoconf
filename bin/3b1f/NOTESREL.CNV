@@ -1,0 +1,121 @@
+                             ACF2DOS & DOS2ACF
+                      S.T.I. AUTOCONF<=>DOS Multiconf
+                                    UNRF
+                              convertisseurs.
+
+                                    Notes.
+
+J'ai enfin termin‚ les deux convertisseurs, AUTOCONF vers DOS Multiconf
+et vice-versa. Ce n'‚tait pas facile, car les algorithmes de conversion
+entre la construction circulaire du DOS multiconf et la structure lin‚aire
+de AUTOCONF ‚taient relativement compliqu‚s. De tout maniŠre, c'est fait,
+alors profitez en simplement.
+
+Ces convertisseurs travaillent avec les fichiers CONFIG.SYS. L'AUTOEXEC.BAT
+devra encore ˆtre midifi‚ … la main, car un convertisseur n'est pas encore  
+prˆt. La diff‚rence majeure entre les deux systŠmes dans l'AUTOEXEC.BAT est
+dans la conception de la variable CONF (CONFIG pour DOS).
+
+Si vous avez besoin de d‚tails ou de l'aide sur les structures de configura-
+tions multiples, contactez moi:
+                ÜÜÜÜÜÜÜÜÜÜÜ  
+                ÛÛÛÛ   ÛÛÛÛ  Doubrovkine Daniel
+                ÛÛ       ÛÛ  49, rte de Frontenex
+                ÛÛÛÛ   ÛÛÛÛ  1207 GenŠve, Suisse
+                ßßßßßßßßßßß
+                email bienvenu: dblock@infomaniak.ch
+                
+          [Linear & Circular MultiConf Construction Method]
+         [(c) Daniel Doubrovkine, 1995, Tous Droits Reserv‚s]
+
+Historique:
+
+Version 1.0, 1.1a, 1.1b
+ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+
+        PremiŠre version de ACF2DOS et DOS2ACF, puis les r‚visions (a) et (b).
+
+Version 1.10
+ÍÍÍÍÍÍÍÍÍÍÍÍ
+
+        Modifications suite … des problŠmes de DOS2ACF dans la logique de
+        construction des configurations multiples.
+
+        Modifications au niveau des changements minuscules/majuscules sur
+        certaines lignes ‚crites dans le nouveau CONFIG.SYS.
+
+        Les lignes SET xxx du CONFIG.SYS sont ‚crites correctement.
+        Les lignes ;xxx du CONFIG.SYS sont ‚crites correctement.
+        Les lignes REM du CONFIG.SYS sont ‚crites correctement (suppression
+        d'espacements erronn‚e ‚tant corrig‚e).   
+
+Version 1.11
+ÍÍÍÍÍÍÍÍÍÍÍÍ
+
+        Les couleurs dans les noms de configurations sont nettoy‚s par
+        ACF2DOS.
+
+Version 1.20
+ÍÍÍÍÍÍÍÍÍÍÍÍ
+
+        Les bugs majeurs corrig‚s.
+        La configuration par d‚faut est v‚rifi‚e.
+        Une mauvaise structure d'un CONFIG.SYS signal‚e.
+
+Version 1.30
+ÍÍÍÍÍÍÍÍÍÍÍÍ
+
+        Bugs importants dans la construction des structures corrig‚ dans
+        DOS2ACF et ACF2DOS.
+
+        En g‚n‚ral: support AUTOEXEC.BAT rajout‚...ce qui implique:
+
+        ACF2DOS construit des configurations compatibles AUTOCONF pour
+        l'AUTOEXEC.BAT.
+        ACF2DOS modifie les sauts %CONF en %CONFIG rendant l'AUTOEXEC.BAT
+        100% compatible DOS. Les designations sont modifi‚es dans le
+        CONFIG.SYS vers un vecteur complet de designations, puisque les
+        structures AUTOCONF pr‚voient des configrations d‚signi‚s d'une
+        maniŠre unique dans l'AUTOEXEC.BAT:
+                F1
+                F1_A (etc...)
+
+        DOS2ACF construit des configurations compatibles AUTOCONF.
+        DOS2ACF modifie les sauts %CONFIG en %CONF rendant l'AUTOEXEC.BAT
+        100% compatible AUTOCONF. Les designations modifies pour passer
+        … la structure AUTOCONF dans le CONFIG.SYS le sont aussi dans
+        l'AUTOEXEC.BAT.
+
+UNRF 1.0
+ÍÍÍÍÍÍÍÍ
+
+        UNRF change les r‚f‚rences cr‚‚s par QEMM pour les configurations
+        multiples du DOS en leurs valeurs r‚elles.
+
+        Explication: l'optimize de QEMM ex‚cut‚ sur un CONFIG.SYS avec
+        les configs multiples du DOS un fichier LOADHI.RF contenant toutes
+        les valeurs de r‚f‚rences pour l'adressage m‚moire.
+        Ceci ‚tant fait pour ne pas encombrer le CONFIG.SYS.
+        Auparavant QEMM les mettait directement dans le CONFIG.SYS, c'est
+        exactement la tache du UNRF.
+      
+        Ainsi, vous pouvez reconvertir le CONFIG.SYS dans le format d'AUTOCONF
+        et utiliser pleinement QEMM.
+
+UNRF 1.01
+ÍÍÍÍÍÍÍÍÍ
+
+        V‚rifie que le fichier CONFIG.SYS est r‚ellement une structure DOS.
+
+
+Version 1.31
+ÍÍÍÍÍÍÍÍÍÍÍÍ
+
+        details de compatibilit‚ avec AUTOCONF 2.90
+
+Version 1.32, 1.40
+ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+
+        correction des bugs en cons‚quence
+
+

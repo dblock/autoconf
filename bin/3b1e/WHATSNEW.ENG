@@ -1,0 +1,905 @@
+ษอออออออออออออออออออออออออออออหอออออออออออออออออออออออออออออออออออออออออออป 
+บ 11, ch. de la Clairire  ฺฤฤะฤฤฤฟ AUTOCONF.SYS: multiple configurations ฬอป 
+บ 1207 Geneva Switzerlandฺฤมฤฤฤฤฟ ณ                                       บ บ 
+บ (022) 735 69 47        ณ D.D. รฟฦอออออออออออออออออออออออออออออออออออออออน บ 
+ฬออออออออออออออออออออออออต ฺÜฤฤฟรมู A full description of what is new in  บ บ 
+บ Doubrovkine Daniel     ภฤม฿ฤามู   AUTOCONF since the version 1.00       บ บ 
+ศอหอออออออออออออออออออออออออออสอออออออออออออออออออออออออออออออออออออออออออผ บ 
+  ศอออออ Stolen Technologies Inc. ออออออออออออออออออออออออออออออออออออออออออผ 
+  ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป 
+  บ    What is new:                                                        บ
+  บ            AUTOCONF.SYS 3.00                                           บ
+  บ            iLINE 1.1 (AUTOCONF.SYS)                                    บ
+  บ            READCONF.EXE (.COM) 4.0 (has been supressed since v. 2.90)  บ
+  บ            BOOTIT 1.5                                                  บ
+  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ  
+
+        Versions 1.0 -> 1.21
+        ออออออออออออออออออออ
+
+1. No more garbage on the screen on boot.      
+
+2. A name can be given to any configuration.        
+
+3. A list of configurations can be printed on the screen.               
+   
+4. The online user's guide was totally rewriten. The pages scroll one after
+   another, with a pause between each page. You don't need to use PAUSE to 
+   stop the scrolling of the text.                  
+
+        Version 1.22
+        ออออออออออออ
+5. You can press any button to get to the next page of the user's guide.  
+        
+        Version 1.23
+        ออออออออออออ
+
+6. You can choose any configuration after the user's guide.           
+   
+        Version 1.24
+        ออออออออออออ
+
+7. Choice of actions after an error of inexistant configuration and  invalid 
+options: choose a configuration, etc...
+
+        Version 1.3
+        อออออออออออ
+
+8. The boot message is in COLORS!!! or black and white if you like.  
+
+9. Five new options added:
+
+/P : do not show the boot message.
+/J : always prompt for the configuration you want to load.
+/F : for french keyboard users.
+/E : black/white screen mode.
+/N : Never erase the screen.
+
+        Version 1.4 
+        อออออออออออ
+
+10. If AUTOCONF does not find the DEVICE=$, line, the CONFIG.SYS is 
+    reinitialized so you can use F5 and F8 if you have DOS 6.0 not to load 
+    AUTOCONF. Otherwise you can use a boot disk.
+(Note: the error messages of AUTOCONF are different when you run on DOS 6.xx)
+
+11. A possibility of exiting from the user's guide at any place. (ESC)
+
+12. The limit of 33 configurations was removed.
+    
+Version 1.42 
+(Note: the version 1.41 had only internal modifications)
+ออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
+
+13. In version 1.4 problems have occured with swiss and french keyboards - 
+they have all been corrected in version 1.42. By the way, if you need to
+use another keyboard than US, Swiss and French, contact me.
+
+14. A new option has been added.
+/Dx : the default configuration. Without this option the default config is
+      still config A.
+
+15. A Welcome and Hello message has been added. It changes during different
+    hours of the day.
+
+Version 1.5
+ออออออออออออ
+
+There are lots of modifications in version 1.5. Lots of bugs have occured
+in the version 1.42.
+
+16. After an error of config not found, an error occured while loading
+another configuration. Also an error has occured a few times without any       
+external reason. All this has been corrected.
+
+17. The letter that shows which configuration is loading while it is the 
+default configuration has been added.
+
+18. This time really ALL messages have been removed while using AUTOCONF
+with /P option.
+
+19. The messages appear when you ask for a list of configurations or when  
+you are using /P and /J at the same time.
+
+20. The swiss and the french keyboards DO WORK this time.
+
+21. If you use /Q and /F at the same time an error occurs.
+
+22. You can REALLY choose a configuration after an error of invalid options
+in your CONFIG.SYS.
+
+Version 1.51
+ออออออออออออ
+
+23. new option: /B : do not create AUTOCONF.DAT, destroy if exists.
+
+Version 1.52:
+อออออออออออออ
+
+24. Problems occured with choosing a different configuration on boot - all    
+have been corrected.
+
+Version 1.53:
+อออออออออออออ
+25. The messages are different at different hours.(between 5-8,9-17,18-22,
+23-4).
+
+26. READCNF.BAT & READCONF.COM version 2.0 have been added.
+    
+Version 1.54 (beta)
+อออออออออออออออออออ
+27. A bug has reapired after an error of Invalid options.
+    
+28. You do not need to put a "$" after the name of the configuration any 
+    more. Note : the "$" is used like a normal caracter.
+
+Version 2.0 de AUTOCONF.SYS & version 3.0 de READCONF.EXE
+อออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
+
+29. You can have the name of the configuration in CAPS or not: by using a 
+    separator.
+    Ex: DEVICE=*A N|OM| D|E| L|A |C|ONFIGURATION
+        gives you as title:
+    Nom De La Configuration
+
+Note: if you write your letters in CAPS or not, that does not change anything.
+          
+          N|oM| D|E| L|A |C|onFiGurAtION = Nom De La Configuration
+
+Remarque: the separator is allways "|" and does not count for a place     
+          so N|om| D|e|L|a|C|onfiguration --->  Nom DeLaConfiguration
+                  ^   ^   ^                        ^  ^ ^
+30. After an error of DEVICE=$, problems have occured while reinitializing
+    the CONFIG.SYS with some computers --> Instead a RESET was forced.
+    
+32. A message is printed on the screen:
+        - the processor type   
+        - the coprocessor type   
+        - DOS version      
+    If a coprocessor has been detected, AUTOCONF uses some special routines
+    while running.
+
+33. The configuration list is no more printed twice as the SPACEBAR is pressed
+    again.
+
+34. READCONF.EXE, version 3.0
+    
+    READCONF.EXE is used instead of READCONF.COM (version 1.0 & 2.0)
+    for the multiple configurations in AUTOEXEC.BAT.
+
+    It reads a file: AUTOCONF.DAT is created by AUTOCONF.SYS on bootup
+    and contains the chosen configuration letter. READCONF defines   
+    a variable in the permanent master DOS environment:
+    CONF=x , ex: CONF=C for the configuration C.
+
+    Note: option /B of AUTOCONF.SYS was removed.
+
+    If the environment size is to large, a message occurs.
+    If READCONF does not find AUTOCONF.DAT an error occurs.
+    
+    Note: syntax  for READCONF: "READCONF X"
+    where X is your boot drive (C is default)
+    It is usefull for those who use SWAPING with STACKER of other programms.
+
+    You just have to take the variable  CONF further in AUTOEXEC.BAT:   
+    if %conf%=="A" goto ConfigA   ;see manual of DOS
+    ...
+
+    Note: it is no longer 1 for configuratio A, but A --> you can make
+    configurations easilly for any ASCII code.
+
+34. The functions that send messages to the screen have been multiplied 
+    by four in speed.
+
+35. Corrected the problem with the french and swiss-french error.
+    The message is shown and a list of configurations is printed on the  
+    screen, then  you can choose your configuration (using the US keyboard).
+
+36. Added a routine for quiting AUTOCONF at any place with the ESCAPE key.
+        - if you press ESC after any error
+        - if you press ESC instead of a configuration at any place
+    The CONFIG.SYS file will reload from the first line after 
+    DEVICE=AUTOCONF.SYS.
+
+37. Repaired a bug with the /S option.
+
+38. When an error of an inexistant configuration occurs, AUTOCONF tells you
+    which configuration you have chosen (that does not exist).
+
+39. AUTOCONF detects ALL the incorrect switches in CONFIG.SYS (the previous
+    versions detected the first incorrect switch), then ALL the switches 
+    after the wrong one are still taken in consideration. AUTOCONF tells you
+    which switch (es) was (were) incorrect.
+    
+40. You can start the switch in the CONFIG.SYS not only with "/" but "-" too.
+
+Version 2.1 of AUTOCONF.SYS
+อออออออออออออออออออออออออออ
+
+41.     If you press the ESCAPE key instead of choosing a configuration, 
+        AUTOCONF will terminate as soon as possible, without taking memory,
+        right after a initialisation of the driver. (No DEVICE=$ test).
+
+42.     It is now possible (thanks to the idea of Salvatore Nastasi (GE)),  
+        who suggested to do this since version 1.5 to change the init
+        messages, that depend from the hour of execution of AUTOCONF.
+                
+                /M1B|la|B|la#message of |M|orning
+                /M2B|la|B|la#message of |D|ay
+                /M3B|la|B|la#message of |E|vening
+                /M4B|la|B|la#message of |N|ight
+
+        The "#" puts an enter, jumping to the next line, messages of more 
+        than 77 caracters jump the line automatically.               
+
+44.     In the help of AUTOCONF, press:      
+                PageUp - one page up         
+                PageDn - one page down      
+                Home   - first page     
+                End    - last page       
+                     - one line up         
+                     - one line down       
+                ESC    - quit
+        If you press any other key, nothing happens.                         
+
+45.     The list of configuration supports whole line highlight, moving with
+        arrows, direct choosing with the ENTER or SPACE key, multiple and   
+        scrollable pages with infinite number of configurations.
+
+46.     The choice of a configuration in the list can be made with one single
+        key, that designates one, SPACE or ENTER.                            
+
+47.     You can change the color of highlight in the list of configurations
+        with a new option: /C, followed by an ASCII caracter. 127 is the
+        default value.                            
+        
+48.     The list of configurations is alphabetically sorted.        
+        If two configurations with the same letter exist, the order is the
+        the one in CONFIG.SYS.
+        
+47.     Repaired bug, when a configuration had no name at all.
+        
+Version 2.1 of AUTOCONF.SYS - last revision.
+อออออออออออออออออออออออออออออออออออออออออออออออ
+note: no major bugs were found, small ones do little affect the execution of  
+      AUTOCONF.
+
+48.     Corrected bug: the highlighted color spread while loading a config.
+
+49.     Corrected bug: no more major flicking in help, the pages scroll 
+        corectly.
+
+50.     Corrected bug: the first configuration is now highlighted in the
+        list, and not the second.
+
+51.     Less limit to the number of caracters that can me used with the /M
+        option. 1000 caracters can now be written.
+
+52.     AUTOCONF.DAT is now hidden, so those who like perfect look of their
+        hard drive, have it now.
+        
+Version 2.2 of AUTOCONF.SYS 
+อออออออออออออออออออออออออออ
+                                     
+53.     Ouf...this QEMM problem was not easy to correct!         
+        The second loading of AUTOCONF with DOSDATA is totally transparent.
+        AUTOCONF seems not to execute the second time.
+
+54.     An extention of the /Mx message:
+        /M[xxxx] where x is the number of a message: you can assign the same
+        message to multiple hours of a day.    
+        
+55.     If you with to use the control caracters as normal letters, write      
+        them twice.                                              
+          
+Version 2.3 of AUTOCONF.SYS and version 3.12 of READCONF
+ออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
+
+56.     Configurations with extended keys: F1, F2...F10          
+        Use 'DEVICE=*F1 Name...' for a config F1, etc... 
+        In AUTOEXEC.BAT, use READCONF 3.1 that puts a variable in the
+        environment: CONF=A,B,C...Z or CONF=F1,F2...F0 (F0 for F10).
+        /Dx supports the extended configurations too: /DF1 for example.
+        
+57.     Corrected bug: the list of configurations works 100% with multiple
+        pages and line breaking.
+        
+58.     Corrected bug: the /M[] option works correctly and the next option
+        after /M[] is taken in consideration.                 
+
+59.     The whole line in a list is highlighted.
+        
+60.     New options in READCONF:     
+
+        [-C] no colors
+        [-S] no message at all
+
+
+Version 2.31 of AUTOCONF.SYS
+ออออออออออออออออออออออออออออ
+
+61.     Corrected bug: /S is correctly working with the F1...F10 configura-
+        tions.
+
+Version 2.32 de AUTOCONF.SYS
+ออออออออออออออออออออออออออออ
+
+62.     Faster video routines. Thanks to Hitcher (CH) for direct video 
+        code.
+        
+63.     A less annoying beep has been added. (Don't complain that you can't
+        here it!)
+
+64.     Corrected bug: DOSDATA and DEVICE=$ error work correctly together.
+        
+Version 2.4 of AUTOCONF.SYS - v. 2.41 last modif on Thursday 16 June 94'
+อออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
+
+65.     By pressing TAB in the list of configurations, you get the        
+        CONFIGURATION ITSELF! 
+        
+        Note: <Bzzzzz...> means that DOS has not recognized the line.
+        
+66.     If no configurations have been made, an  error occurs.              
+        
+67.     AUTOCONF ignores as much as possible DOS multiconf options.
+        Unfortunately there is no way to completely forbid to DOS do it's
+        multiple configurations: it makes unexpected jumps which I 
+        certainely can't do anything about.
+       
+68.     Corrected minor bugs with configurations having a name longer than   
+        one line.
+
+68.     While watching the configuration itself, use keys:             
+                     - previsous configuration
+                     - next configuration
+        SPACE, ENTER   - load configuration
+                TAB    - return to list
+
+Version 2.42 of AUTOCONF.SYS
+ออออออออออออออออออออออออออออ
+
+69.     If you press ESC when watching the configuration itself, AUTOCONF
+        terminates.
+
+70.     Corrected bug: <Bzzzz...> recognition works correctly.
+        
+71.     The help of AUTOCONF and the MANUAL of AUTOCONF are perfectly
+        fluid on virtually any computer. No more flicking occurs.
+        
+72.     BOOTIT 1.0 reboots your PC after preparing the system to be boot up
+        with a certain configuration.
+        Launch BOOTIT [ENTER] for more explanations.
+
+73.     The message before the list of configurations can be hidden with a  
+        new option: /G.
+
+74.     The keys, PgDn, PgUp, Insert, Home, End, Delete, as well as all the
+        arrows will be ignored if pressed for a configuration choice. That
+        means, no more errors of 'Configuration not found' will occur while
+        accidentally pressing one of theses keys.
+
+Version 2.5 of AUTOCONF.SYS
+อออออออออออออออออออออออออออ
+
+This version corrected as usual minor bugs, actually it is the revised 2.42
+with some new features.
+
+75.     AUTOCONF fully supports both 25 and 50 lines per screen modes. You
+        can toggle these while reading help. Unfortunately this is not
+        available while watching configurations, but if you use the /5 switch
+        (76.) AUTOCONF will force this mode while watching a configuration.
+        
+76.     A new option for CONFIG.SYS: /5 forces the 50 lines mode, which 
+        means it will be kept as long as possible in AUTOCONF, the toggle
+        will function only under help. After terminating, AUTOCONF
+        will not remove the 50 lines mode!
+
+77.     If you have created more than one configuration with the same
+        designation (same letter), AUTOCONF will show all of them under
+        the configuration watch (TAB).
+
+78.     AUTOCONF fully supports CGA cards, no snow should occur while using
+        CGA. Some routines of direct video, like line highlighting were speed 
+        up a bit, less flicking occurs.
+
+79.     If an error while reading or writing AUTOCONF.DAT occurs, a message
+        is displayed, it does not stop the execution of AUTOCONF.
+        
+80.     The /Q and /F options have been replaces by a complete support
+        of all keyboard usable with DOS's KEYB.COM. A new option has been
+        added: /Kxx. Where xx corresponds to the keyboard you are using:
+        
+        Belgium                      BE  ณ Bresil                       BR
+        Canada (french)              CF  ณ Tcheckoslovakia (tcheck)     CZ
+        Tcheckoslovakia (slovak)     SL  ณ Danemark                     DK
+        Finland                      SU  ณ France                       FR
+        Germany                      GR  ณ Hungary                      HU
+        Italy                        IT  ณ Latin America                LA
+        Holland                      NL  ณ Norvege                      NO
+        Poland                       PL  ณ Portugal                     PO
+        Spain                        SP  ณ Sweeden                      SV
+        Switzerland (french)         SF  ณ Switzerland (german)         SG
+        Great Britain                UK  ณ Croatia/Serbia/Slovenia      YU
+                                                                                    
+        The US keyboard is the one by default.                              
+        
+        ex: /KUK for the british keyboard.
+
+81.     The arrows indicating, wheather the configurations list can be
+        scrolled up or down are shown on the highlight line while you watch
+        the configurations list.
+
+Version 2.51 of AUTOCONF.SYS
+ออออออออออออออออออออออออออออ
+
+82.     Corrected a bug of version 2.5: when the parameter /Cx had a value
+        lower than 32, AUTOCONF ignored the next options.
+        
+83.     A pulsation is shown, while AUTOCONF waits for a key with the /Tx   
+        parameter.
+        
+        A new option, which is the extention of /Tx allows to hide this.
+        /T[U]: if you specify for example /T5u, AUTOCONF will not do the 
+        pulse.
+
+Version 2.60 of AUTOCONF.SYS
+ออออออออออออออออออออออออออออ
+
+อ WINDOWS 4.0, code name CHICAGO! อออออออออออออออออออออออออออออออออออออออออออ
+84.     Support for Windows 4.0, code name Chicago, running on DOS 7.00 has  
+        been added. Consult the help file for detailed information on this  
+        point. If you are not using Chicago, nothing in the execution of 
+        AUTOCONF will be affected.                             
+อออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
+
+85.     Major bug corrected: the last line of a configuration as well as
+        the first line after DEVICE=$ were not executed or misunderstood.
+        Note: this bug appeared in version 2.4x.         
+
+Version 2.6x and 2.70 of AUTOCONF.SYS
+ออออออออออออออออออออออออออออออออออออออ
+
+86.     Concerning: Chicago, DOS and QEMM 7.X DOSDATA
+        During the bootup:
+
+        -> Chicago: Windows 4.0 does not need QEMM, it is totally absurd to
+                    use it with Chicago, since it can only cause problems.
+        -> DOS    : You have two types of configurations, one with and another
+                    without DOSDATA. When you bootup your computer, you have
+                    to press F4 key in order to boot with MS-DOS. Then you
+                    choose a configuration with AUTOCONF, which contains 
+                    DOSDATA. The message Loading Windows (or something like
+                    that) is shown. Since DOSDATA reruns the CONFIG.SYS you 
+                    are forced to press F4 again to run MS-DOS.
+
+                    With option /O:
+
+                    The last procedure is supressed with this version of
+                    AUTOCONF. The last press on the F4 key is done by AUTOCONF
+                    itself. You bootup with DOSDATA is as simple as before,
+                    like without Chicago: F4 + Configuration.
+
+        Note: some older bios will not support this function.            
+
+        Note: the F4 key is simulated in any case, except when you want to
+              run Chicago. If DOSDATA is not present, a beep will occur at 
+              the end of the bootup, since the computer keeps the "pressed"
+              key until the DOS prompt.
+
+              CLRBUF small utility will suppress this beep. See the help file
+              for details.
+
+87.     BOOTIT 1.1
+
+        Bootit has been considerably improved. The cache buffer should now   
+        be written without any problems, except for STACKER, which beeing
+        on the boot drive continues to update the allocation map. Bootit has
+        been accelerated by approximatively two times.
+
+88.     A new function has been added: in any case where you could use the 
+        ESC key to end AUTOCONF, the point key '.' can now be used to skip 
+        the multiple configurations part and load the common one only.
+
+89.     The configurations scroll while shown with TAB
+        Please consult the help file for modified keys under this option.
+
+90.    /J is no more valid:
+        /J[D][C] replaces it:
+        [D]     wait under DOS only 
+        [C]     wait under CHICAGO only
+        ex: /JDC or /JC
+       note: /JXX will be ignored if rebootet with BOOTIT!
+
+Version 2.80 of AUTOCONF.SYS, Bootit 1.2 and READCONF 4.0:
+ออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
+
+91.     You can now make sub groups in your configurations! These can be 
+        loaded only from the list of configurations. You can create identic  
+        configurations in different sub groups, AUTOCONF will of course make 
+        the difference!
+
+        To make a sub configuration, just add another start to the 
+        DEVICE=* line in CONFIG.SYS.
+
+        So,   DEVICE=*A Config A
+              DEVICE=**B Config B
+
+        means that in the main group, you will have a configuration A, in the
+        list, a small arrow will be printed, meaning you have a sub group   
+        under this configuration (that can still be loaded normally). By   
+        pressing the right arrow a list will be sown, that is the sub group, 
+        containing the B configuration. This is valid for any sub config
+        of any depth! You can of course go back to the previous list by
+        pressing the left arrow (not like in MS-DOS multiconf).
+
+        Choose the configuration as usual!             
+
+   Note: the parameter /D or /H will not (yet) accept sub configurations.
+   Note: the /S parameter will perfectly work.
+
+92.     READCONF will create a new variable CONF for sub configurations.
+
+        ex: for the configuration A, it will still be "A", but for the 
+        config B in the sub group of A, it will be "A_B".
+
+        so (for those who didn't get it yet):
+
+        config:                 variable CONF:
+        ---------------------------------------
+        F2-                     F2
+           F1                   F2_F1
+           F2-                  F2_F2
+              F                 F2_F2_F
+              G                 F2_F2_G
+              H                 F2_F2_H
+           F3-                  F2_F3
+              J-                F2_F3_J
+                O               F2_F3_J_O
+        C                       C
+        ---------------------------------------
+
+  Note: the structure of AUTOCONF.DAT has been modified! The file is now  
+  normally 43 bytes.
+
+revision (a) 2.8.01
+อออออออออออออออออออ
+
+93. corrected bug:      error of inexistant configuration is working after
+                        a key, that designates no configuration, is pressed.  
+
+94. corrected bug:      the choice of the configuration is again possible
+                        under the viewer and should work normally in any
+                        level or sublevel of configurations.
+
+revision (b) 2.80.02
+ออออออออออออออออออออ
+
+94. corrected bug:      the choice of configurations is really correct      
+                        this time in any case.         
+
+95. corrected bug:      a eventual rubbish on the screen due to a very rare  
+                        error with DOS has been removed.
+
+96. crrected bug:       the option /M[] works perfectly with # character, etc.
+
+97. documented:         I have documented a color system for init messages
+                        (/M[]) and added additional support for control
+                        characters.
+
+98. cache & Bootit:     problems with disk caches, STACKER's map reallocation,
+                        etc, seem to have been solved with a new, pretty
+                        complex reboot routine.
+
+rvision (b) 2.80.03
+ออออออออออออออออออออ
+
+99. corrected bug:      with the silent mode option, the name of the config
+                        being chosen with the list is no more printed.
+
+100. new:               when AUTOCONF waits for a key after an error, a new
+                        colored and changing message is shown!
+
+101. added:             the /J option, when used with an obsolete method 
+                        prints an error.      
+
+Version 2.81 of AUTOCONF.SYS
+ออออออออออออออออออออออออออออ
+
+102. new:               By combining the options /Jxx and /Tx, you will get
+                        the list of the configurations during the bootup,
+                        that will dissapear to load the default configuration
+                        after the time, specified by Tx has expired. If you
+                        press any key during the waiting time, the list of
+                        configurations will react as usual and void the
+                        countdown.                                                                   บ',10
+
+Note: the old syntax of /T has been preserved, though consequent changes   
+      have been made in this option:
+
+      you are now able to separate the length of the delay between DOS 
+      and Windows 95. /T[[Dx][u]][[Cx][u]] is the full syntax. ([] = optional)
+
+103. corrected bug:     The invalid parameter error with /Tx is now shown and
+                        does not hang AUTOCONF any more. 
+
+104. new:               Both timers (with /T only and combined with /J) are
+                        now shown as a countdown in seconds.
+
+Version 2.82 of AUTOCONF.SYS
+ออออออออออออออออออออออออออออ
+
+105. new:               Added the possibility to make colored configuration
+                        names (same way as personalized messages' color).
+
+106. new:               Bacause of the problem with AWARD bios, that does
+                        not erase the ESC key in the keyboard buffer used to
+                        skip memory tests, AUTOCONF's ESC function (terminate
+                        AUTOCONF) is now responding to the STAR key (*).
+
+
+Version 2.90 of AUTOCONF.SYS and 2.0 of BOOTIT
+ออออออออออออออออออออออออออออออออออออออออออออออ
+
+107. new:               NO MORE READCONF!
+                        please just add a few characters or spaces to the
+                        DEVICE=$ line, in order to reserve space for AUTOCONF
+                        for the SET CONF=... line. Consult the manual for
+                        more details.
+
+                        The integrated module is called iREAD. Version 1.0
+                        yields a new error message in case AUTOCONF is unable
+                        to get enough free space for the line.
+
+108: corrected bug:     Minor bug corrected, the configuration desig is
+                        shown for the F10 configurations.
+
+109: breakthrough:      THIS HAS NEVER BEEN DONE BEFORE!
+     (believe it        You can disable or enable a line while viewing a
+            or not!)    configuraiton!
+                        Under TAB, press the 'E' key, then use the SPACE BAR
+                        to toggle and the arrows to move through the lines.
+                        Everything scrolls of course if the configuration
+                        is longer than a page.
+
+                        Note: in case of a permanatly fixed REM, you will
+                              be prompted for a designation to chose to
+                              reenable the line. (This will not really work
+                              when a line has been disabled in the CONFIG.SYS
+                              permanatly, since REM does not replace the
+                              designation, but is added to.
+                              (like DEVICE=... becomes REM DEVICE=... and not
+                               REM=... like AUTOCONF makes it.)
+
+                        Note: all changes are only valid for the current boot.
+
+110: new:               The new /I option disables the editor.
+
+111: new:               The day of the week, the date, the month, the year
+                        and the hour are shown during the initialization of
+                        AUTOCONF.
+
+112: new:               With the new /L option, the name of a configuration
+                        loaded is always shown, with the /P option included.
+                        With the /P option, the header of the configurations'
+                        list is no more shown.
+
+113: corrected bug:     With a countdown timer, the first config of the
+                        configurations' list called at this moment is
+                        correctly shown.
+
+114: revision:          /B option has been reactivated, the AUTOCONF.DAT will
+                        not be written and BOOTIT thus ignored.
+
+Version 2.91 of AUTOCONF.SYS, iLINE 1.1
+อออออออออออออออออออออออออออออออออออออออ
+
+115: rvision:          The /B parameter has been extended to it's functions
+                        of version 1.51. READCONF.DAT is erased if found on
+                        the boot drive. An non critical error will be shown
+                        in case the /S (last config) is encounter with /B.
+
+116: DOS2ACF & ACF2DOS: An interrupt routine has been added in order to
+                        prevent inclusive cyclic loops. Both converters can be
+                        interrupted at any moment by pressing the ESCAPE
+                        button.
+                        Known errors, including the false translation of 
+                        jumps between the CONFIG.SYS and the AUTOEXEC.BAT, 
+                        have been corrected.
+
+117: new:               Changes in iLINE as viewing the configuration 
+                        (enable, disable a line) are now immediately
+                        shown.
+
+118: iLINE 1.1          By pressing '?' (note that all keyboards are
+                        correctly supported by AUTOCONF with /Kxx option)
+                        you can set a question mark on the line, thus
+                        you'll receive a prompt for continuing from DOS
+                        during the bootup.
+
+119: corrected bug:     Corrected the configuration viewer in 50 lines mode.
+                        Some vide cards refused to identify their chipset
+                        under the documented VGA, EGA and CGA standards, thus
+                        making impossible the correct viewing of the config.
+                        This time, the /5 option will not work in the one 
+                        and only case when more than 1 screen page is not
+                        supported.
+
+120: corrected bug:     The flicking is no more occured in the config viewer
+                        as the scrolling comes to the text borders.
+                        A simple beep occurs.
+
+130: corrected bug:     The configuration scrolling in the viewer is correct
+                        after an unknown command in the configuration.
+
+Version 2.92 de AUTOCONF.SYS, BOOTIT 1.5
+ออออออออออออออออออออออออออออออออออออออออ
+
+131: revision:          /B erases the AUTOCONF.DAT file, but BOOTIT is no
+                        more ignored.    
+
+132: new:               BOOTIT reboots sub configurations too. The syntax
+                        remains the same; to boot the P configuraiton under
+                        F1, just launch BOOTIT F1_P.
+
+133: corrected bug:     The default configuration under Windows 95 works 
+                        correctly with extended configurations.
+
+134: new:               new option: /Z goes AUTOCONF eLiTe! (don't abuse for
+                        your sake). /ZZ inverts the elite mode.
+
+135: new:               BOOTIT reboots for the list of configurations:
+                                BOOTIT LIST
+
+136: new:               AUTOCONF's help (as well as MANUAL.EXE) have an
+                        extensive search function included. Press INSERT
+                        to enter the string to search. Then AUTOCONF will
+                        scroll to the next occurence and highlight all of
+                        the occurences on the current page shown. In case
+                        the desired string is no more on the screen, AUTOCONF
+                        will automatically scroll to the last direction till
+                        the next occurence or till the end (beginning) of the
+                        help file.
+                        DELETE will cancel this mode.
+                        Once the beginning or the end have been reached by
+                        automatic scrolling, the search mode is automatically
+                        disabled.
+
+137: corrected bug:     AUTOCONF's MANUAL.EXE keeps the 25/50 lines mode
+                        depending on the present DOS state.
+
+138: revision:          DOS 5.0 does not accept the SET CONF line in the 
+                        CONFIG.SYS file. The new option /V disables iREAD.
+                        Please do use READCONF.EXE for multiple configurations
+                        in AUTOEXEC.BAT.
+
+Version 2.93 of AUTOCONF.SYS
+ออออออออออออออออออออออออออออ
+
+139: modifications:     You can write indifferently your configurations' 
+                        designations as for the spaces:                
+                                device        =       *   *    F4
+                        for example, will work as well as DEVICE=**F4.
+                        You must not separate F and 4 - in this case, the 
+                        configuration's name will be F, not F4.
+
+Version 3.00 de AUTOCONF.SYS - beta 2
+อออออออออออออออออออออออออออออออออออออ
+
+140: corrected bug:     iLINE did not perform correctly at the edges of the
+                        lists. The bug has been eliminated after ...well
+                        4 hours of research.
+
+141: corrected bug:     Empty lines are no more shown, the counter is correct
+                        and iLINE works properly with all possible ways of
+                        writing CONFIG.SYS file.
+
+142: modification:      For compatibility with iLINE only the first config
+                        in case of an existance of two configurations with
+                        the same designation will be loaded, seen or modified.
+
+143: new:               after the configuration viewer is run, the last viewed
+                        configuration is now the one highlighted in the list.
+
+144: new:               help can now be called from the configuration viewer.
+
+145: ACF2DOS & DOS2ACF: modifications have been made for split syntax lines.
+
+iLOOM 1.0 Development Comments:
+-------------------------------
+
+NEW! In the final version 3.00 you will be able to create totally as you wish
+menus. This will include:
+
+        # virtually unlimited page length and width
+        # totally parametrable displacement of any name of config
+        # totally parametrable choice zone defines
+        # totally parametrable external text, including ANSI support for
+          background, foreground, parts or choices.
+        # totally transparent switch between the new and the old lists mode.
+        # full functionality off all options of the old-style list of
+          configurations
+        # animations during moves or idle waits
+        # external program to create the new-style lists
+        # etc...
+
+If you didn't understand a word, this means that you will be able to make
+your list of confugrations as you like! Putting an ANSI in background,
+commenting the choices or whatever.
+
+The next generation will implement the graphics mode, probably JPEG and GIF
+support, maybe idle 3D animations.
+
+ iLOOM (c) is the property and has been created and written for AUTOCONF by
+                     Serge Huber epflCH - 1995
+              Implementation is now under construction.
+
+...ask yourself a question: Is there anything AUTOCONF can't do?
+
+actual code length: (texts and manuals not included)
+
+AUTOCONF.ASM : 7065 lines
+MANUE(A)L.ASM: 358  lines
+ILOOM 1.0    : 573  lines
+DOS2ACF, ACF2DOS are written in C++, about 800 condensed C lines each.
+
+อออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
+IMPORTANT NOTES:
+อออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
+Please remove all elements of multiple configurations of DOS in order to  
+avoid strange behaviour of AUTOCONF.
+
+The [Common] part will not affect any execution of AUTOCONF, still some
+of the options can cause trouble.
+
+It is possible to use both AUTOCONF and multiple configurations of DOS at
+the same time, though I don't see any point in doing that. Anyway I do not
+take any responsability on whatever trouble that may cause.
+
+อออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
+PRABABLY IN FUTURE VERSIONS:
+อออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
+        - Spelling in help corrected
+        - An install with a configurations editor
+อออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
+
+THANKS GO TO:
+        
+        - the french programmer, creator of AUTOCONF engine.  
+          (The source of the engine is destributable)
+        - Salvator Nastasi      (Geneva) - beta tester of ALL versions
+        - all other beta testers, less regular
+        - my favorite board: INFOMANIA BBS, Geneva Switzerland
+        - the authors of all books on ASM
+        - Trofimov Alexander    (UNI Geneva) - help in programming
+        - Balashov Dimitri      (UNI Geneva) - help in programming
+        - Hitcher               (Infomania) - direct video 
+        - LOOM                  (Infomania/Imphobia) - the forgotten
+                                Big thanks for the idea for disabling/
+                                enabling a line during the bootup...though
+                                it was a pain in the neck to code.
+        - DADA'S                (Infomania) - typematic rate
+        - Murphy                (Infomania) - bug & moral support
+        - James                 (Infomania) - pour n'avoir jamais dout
+        - Fred Ravioli          (Geneva) - some new ideas
+        - Quadrateck            (for problems with QEMM)
+        - DOS editor            (it's rubbish, but I love that blue color!)
+        - Pink Floyd            (for hours of concentration and inspiration)
+        - all the others I forgot...
+
+
+PS:
+
+If a company uses AUTOCONF, all money will be welcomed. You will get all
+upgrades as soon as the are made.
+
+อออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
+                   Daniel Doubrovkine, Sepeteber, 1995
+
+                        DESTRIBUTE FREELY!!!
+
+                       All comments welcomed:
+                        dblock@infomaniak.ch
+อออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
+
+

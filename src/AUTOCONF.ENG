@@ -1,0 +1,311 @@
+hlp_msg db 'ýษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป',10
+        db 'บ ý/Dxý : the default configuration.                                             บ',10
+        db 'บ ý/Hxý : the default configuration for Windows 95.                              บ',10
+        db 'บ ý/Tý[ýDxý[ýuý]][ýCxý[ýuý]]ý : the delay for ýAUTOCONFý to wait until a key is pressed.    บ',10
+        db 'บ [ýDý]: specifies the time to wait under DOS below 7.00.                        บ',10
+        db 'บ [ýCý]: specifies the time to wait under DOS 7.00 and above (Windows 95)        บ',10
+        db 'บ [ýuý]: do not show the pulse while waiting for a key, ex: ý/T5uý                 บ',10
+        db 'บ ý/Pý :  silent mode.                                                           บ',10
+        db 'บ ý/Ný :  never erase the screen while running ýAUTOCONF.ý                         บ',10
+        db 'บ ý/Eý :  messages in black and white.                                           บ',10
+        db 'บ ý/Kxxý :  used keyboard, where xx:                                             บ',10
+	db 'บ    Belgium                      ýBEý  ณ Bresil                       ýBRý        บ',10
+	db 'บ    Canada (french)              ýCFý  ณ Tcheckoslovakia (tcheck)     ýCZý        บ',10
+	db 'บ    Tcheckoslovakia (slovak)     ýSLý  ณ Danemark                     ýDKý        บ',10
+	db 'บ    Finland                      ýSUý  ณ France                       ýFRý        บ',10
+	db 'บ    Germany                      ýGRý  ณ Hungary                      ýHUý        บ',10
+	db 'บ    Italy                        ýITý  ณ Latin America                ýLAý        บ',10
+	db 'บ    Holland                      ýNLý  ณ Norvege                      ýNOý        บ',10
+	db 'บ    Poland                       ýPLý  ณ Portugal                     ýPOý        บ',10
+	db 'บ    Spain                        ýSPý  ณ Sweeden                      ýSVý        บ',10
+	db 'บ    Switzerland (french)         ýSFý  ณ Switzerland (german)         ýSGý        บ',10
+	db 'บ    Great Britain                ýUKý  ณ Croatia/Serbia/Slovenia      ýYUý        บ',10
+        db 'บ ý/Jý[ýDý][ýCý] : always show the list of configuraitons and prompt for a choice.   บ',10
+        db 'บ [ýDý]: always show the list while booting DOS below 7.00                       บ',10
+        db 'บ [ýCý]: always show the list while booting DOS 7.xx (Windows 95) or above.      บ',10
+        db 'บ ý/Sý : enable the last configuration loading.                                  บ',10
+        db 'บ ý/Mxý : customize welcome messages.                                            บ',10
+        db 'บ            ý/M1ý - morning message                                             บ',10
+        db 'บ            ý/M2ý - day message                                                 บ',10        
+        db 'บ            ý/M3ý - evening message                                             บ',10
+        db 'บ            ý/M4ý - night message                                               บ',10
+        db 'บ ý/M[xxxx]ý : where x is the number of the message.                             บ',10        
+        db 'บ ý/Cxý : hightlight color.                                                      บ',10        
+        db 'บ ý/Fxý : defines the color of the designations in the configurations list.      บ',10
+        db 'บ ý/Gý  : suppress header message in the configuration list.                     บ',10        
+        db 'บ ý/5ý  : Force a 50 line mode.                                                  บ',10        
+        db 'บ ý/Oý  : Compatibility mode with Windows 95 & QEMM.                             บ',10
+        db 'บ ý/Iý  : Disable the edit mode under the configuration viewer.                  บ',10
+        db 'บ ý/Lý  : Always show the configuration name during the bootup. (even with /P)   บ',10
+        db 'บ ý/Bý  : Do not create the hidden AUTOCONF.DAT file, erase if found.            บ',10
+        db 'บ ý/Zý  : eLiTe mode! (not for lamers!) ý/ZZý invert the elite mode.               บ',10
+        db 'บ ý/Vý  : use READCONF instead of iREAD (add READCONF in the AUTOEXEC.BAT file!) บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+        db 'บ ýKEYS                        ý                                                 บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+	db 'บ ýON-LINE HELP, obtained with BACKSPACE everywhere except under TAB:  ý         บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+	db 'บ ýARROWS UP AND LEFT   ýone line up                                             บ',10
+	db 'บ ý       RIGHT, DOWN   ýone line down                                           บ',10
+	db 'บ ýPAGE DOWN            ýnext page                                               บ',10
+	db 'บ ýPAGE UP              ýone page up                                             บ',10
+	db 'บ ýESCAPE               ýquit the help file                                      บ',10
+	db 'บ ýSPACE                ýtoggle color - b/w modes                                บ',10
+	db 'บ ýTAB                  ýtoggle 25/50 lines modes                                บ',10
+        db 'บ ýINSERT               ýsearch for a string                                     บ',10
+        db 'บ ýDELETE               ýcancel search mode                                      บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+	db 'บ ýTHE LIST OF CONFIGS, obtained with SPACE instead of choosing a configuration:ýบ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+	db 'บ ýBACKSPACE            ýshow the on-line help                                   บ',10
+	db 'บ ýSPACE of ENTER       ýload the highlighted configuration                      บ',10
+        db 'บ ýARROWS UP            ýscroll up in the list                                   บ',10
+        db 'บ ý       DOWN          ýscroll to the next configuration in the list            บ',10
+        db 'บ ý       LEFT          ýshow the subgroup of the configuration if exists        บ',10
+        db 'บ ý       RIGHT         ýshow the upper level of the group                       บ',10
+        db 'บ (If you are in the main group or there''s no sub level, the last two keys are บ',10
+        db 'บ  simply ignored and a short beep is emitted)                                 บ',10
+	db 'บ ýHOME & PAGE UP       ýthe first configuration on the screen                   บ',10
+	db 'บ ýEND & PAGE DOWN      ýlast configuration on screen                            บ',10
+	db 'บ ýTAB                  ýshow the highlighted configuration                      บ',10
+        db 'บ ýSTAR                 ýend ýAUTOCONFý                                            บ',10
+	db 'บ ýPOINT                ýload only the common part                               บ',10
+        db 'บ Any other key designating a configuration, loads it, if it exists.           บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+	db 'บ ýTHE CONFIGURATION ITSELF SHOWED with TAB from the list of configurations:    ýบ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+        db 'บ ýARROWS:              ý                                                        บ',10
+        db 'บ ýUP                   ýscroll the configuration up (if longer than 25 lines)   บ',10
+        db 'บ ýDOWN                 ýscroll the configuration down (if longer than 25 lines) บ',10
+        db 'บ ýRIGHT                ýscroll the configuration to the right                   บ',10
+        db 'บ ýLEFT                 ýscroll the configuration to the left                    บ',10
+        db 'บ ýHOME                 ýjump to the beginning of the line                       บ',10
+        db 'บ                      if any of the shown lines exceeds 80 characters         บ',10
+	db 'บ ýPAGE DOWN            ýnext configuration                                      บ',10
+	db 'บ ýPAGE UP              ýprevious configuration in list                          บ',10
+	db 'บ ýTAB, ESC             ýreturn to the list of configurations                    บ',10
+	db 'บ ýSPACE                ýtoggle color - b/w modes                                บ',10
+	db 'บ ýENTER                ýchoose the shown configuration                          บ',10
+        db 'บ ýPOINT (.)            ýload only the common part, after DEVICE=$               บ',10
+        db 'บ ýBACKSPACE            ýshow the on-line help                                   บ',10
+        db 'บ ýE (E key)            ýenable/disable line editing mode                        บ',10
+        db 'บ ý  SPACE in ''E'' mode  ýenable/disable a line                                   บ',10
+        db 'บ ý      ? in ''E'' mode  ýenable/disable execute the line prompt                  บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+        db 'บ ýAUTOCONFý, version 1.1 to this latter, all versions of ýREADCONFý, ýiýRýEýAýDý and    บ',10
+        db 'บ ýBOOTITý are the property of (me):                                             บ',10
+        db 'บ ýÜÜÜÜÜÜÜÜÜÜÜ ýDoubrovkine Daniel       ý                                        บ',10
+        db 'บ ýÛÛÛÛüÛÛÛýÛÛÛÛ ý11, ch. de la Clairire ý                                         บ',10
+	db 'บ ýÛÛüÛÛÛÛÛÛÛýÛÛ ý1207 Genve,            ý                                         บ',10
+	db 'บ ýÛÛÛÛüÛÛÛýÛÛÛÛ ýSuisse                  ý                                         บ',10
+        db 'บ ý฿฿฿฿฿฿฿฿฿฿฿ ýtel & fax: 41 22 - 735 69 47       ý                              บ',10
+        db 'บ ýemail: dblock@infomaniak.ch                      ý                            บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+	db 'บ ýAUTOCONFý was originally programmed by a french coder which is unknown to me. บ',10
+	db 'บ A version, that I used as the engine of ýAUTOCONFý was published in a SVM,     บ',10
+	db 'บ several years ago. 90% of the original program, have been modified. The name บ',10
+        db 'บ has not been changed.                                                        บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+        db 'บ I thank all the beta testers and all those who took any part in the develop- บ',10
+	db 'บ pement of this software.                                                     บ',10
+	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
+	db 'บ ýAll the names of companies, as well as their products are the trademarks of  ýบ',10
+        db 'บ ýtheir respectif owners.                            ý                          บ',10
+	db 'ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ',10
+	db 'ý[                              end of help                                     '
+			     
+ended                db 'üฑ AUTOCONF 3.0 beta 2 ฑฑฑฑฑฑฑฑฑฑUฑNฑDฑEฑRฑฑฑCฑOฑNฑSฑTฑRฑUฑCฑTฑIฑOฑNฑฑฑฑฑฑฑฑ',10,'ÿ'
+press_a_extended_key db 'ý?[ý  ý?lineý HOME ý?beginningý END ý? ý PgUp PgDn ý?pageý ESPACE ý?color/b&wý TAB ý?50/25ý ESC ý?]'
+search_stupid_msg    db 'ý  Search:  [ý'
+                     db 67 dup (' ')
+                     db 'ý]'
+press_search         db 'ý[ อ=อ= Searching...อ=อ=อ==อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ= ]' 
+
+linemsg         db      'ý[ ý scroll left ýý up ýý down ýý right ýHOME ýleftmost position ý. ýonly common part ý]',10
+                db      'ý[ PageUpý previous config ýPageDný next config ýTAB/ESCý return ýSPACE ýcolor - b/w  ý]',10,'ÿ'
+
+linemsg2        db      'ý[ ýiýLýIýNýEý - enable/disable one line version 1.1   (c) Daniel Doubrovkine - 1995 ý]',10
+                db      'ý[ ýdowný  ýupý E ýmodeý PgUp ýnext cnf ý PgDn ýprevious cnfý SPACE ýen/disable line ý ? ]',10,'ÿ'
+
+slam_key_msg    db      'ýSlam any key to continue... ýÿ'
+menucolormsg    db      'ýMENUCOLOR ý<DOS multiconf> ÿ'
+menudefaultmsg  db      'ýMENUDEFAULT ý<DOS multiconf> ÿ'
+menuitemmsg     db      'ýMENUITEM ý<DOS multiconf - crashed with DOSDATA 7.03!> ÿ'
+submenumsg      db      'ýSUBMENU ý<DOS multiconf> ÿ'
+illegalmsg      db      'ýBzzýzz...unrecognized command... ÿ'
+questionmsg     db      'ý?ÿ'
+devicemsg       db      'ýDEVICE   ','   ','ÿ'
+buffersmsg      db      'ýBUFFERS  ','   ','ÿ'
+countrymsg      db      'ýCOUNTRY  ','   ','ÿ'
+devicehighmsg   db      'ýDEVICEHIGH  ','ÿ'
+dosmsg          db      'ýDOS  ','   ','    ','ÿ'
+driveparmmsg    db      'ýDRIVPARM ','   ','ÿ'
+fcbsmsg         db      'ýFCBS ','    ','   ','ÿ'
+filesmsg        db      'ýFILES   ','    ','ÿ'
+installmsg      db      'ýINSTALL  ','   ','ÿ'
+installhighmsg  db      'ýINSTALLHIGH ','ÿ'
+lastdrivemsg    db      'ýLASTDRIVE   ','ÿ'
+numlockmsg      db      'ýNUMLOCK  ','   ','ÿ'
+shellmsg        db      'ýSHELL ','  ','    ','ÿ'
+stacksmsg       db      'ýSTACKS   ','   ','ÿ'
+switchesmsg     db      'ýSWITCHES ','   ','ÿ'
+remmsg          db      'ýREM  ','   ','    ','ÿ'
+breakmsg        db      'ýBREAK  ','  ','   ','ÿ'
+setmsg          db      'ýSET ','  ','  ','    ','ÿ'
+
+lsd_msg            db   'The /B option found - last configuration /S option has been ignored.',10,'ÿ'
+mois_text          db   'January,  February, March, -  April, -  May,-  -  June,  -  July,  -  August, - September,October,- November, December, ',0
+semaine_text       db   'Sunday, - Monday,-  Tuesday,  Wednesday,Thursday, Friday, - Saturday, ',0
+stack_error_msg    db 7,'ýCritical Error!ý: ýAUTOCONFý was unable to find enough space to add',10
+                   db   '                 a SET CONF=... line to the CONFIG.SYS now in memory.',10
+                   db   '                 (This is a new feature of ýAUTOCONFý.)',10
+                   db   '                 The actual space is of ÿ'
+stack_error_msg2   db   ' bytes; you need at least ÿ'
+stack_error_msg3   db   ' bytes.',10
+                   db   'Correct this error by adding any text or spaces to the DEVICE=$ line in your',10
+                   db   'CONFIG.SYS file. Ex: DEVICE=$ any text placed here!',10
+                   db   '                            <----  23 bytes!------>',10
+                   db   'Note: errors may occur during this boot.',10,'ÿ'
+
+timer_error_msg db      7,'ýErrorý: the parameter specified with the /T option is invalid: /Tÿ'
+custom_msg_error_a db 7,'ýErrorý: bad option in the CONFIG.SYS: /Mÿ'
+
+custom_msg_error_b db 10,'You have specified an incorrect value with the /M[x] option, the only',10
+		   db 'allowed ones are:            1 : morning message',10
+		   db '                             2 : day message',10
+		   db '                             3 : evening message',10
+		   db '                             4 : night message',10
+		   db 'For more information, consult the manual of ýAUTOCONF.ý',10,'ÿ'
+                                                                                                   
+msg_mon  db   'üýษ ýiýRýEýAýDý 1.00 ออออออออออออออออออหออออออออออออออออออออออออออออออออออออออออออออป',10 
+        db      'บý 11, ch. de la Clairire   ýฺฤฤะฤฤฤฟý AUTOCONF.SYS:ý multiple configurations  ýฬอป',10 
+        db      'บý 1207 Geneva Switzerland ýฺฤมฤฤฤฤฟ ณý v. -=-=-=-=-=-=-=-= -=-=- =-=-= -=-=- =- ýบ บ',10 
+	db      'บý (022) 735 69 47         ýณý D.D. ýรฟฦออออออออออออออออออออออออออออออออออออออออน บ',10 
+	db      'ฬอออออออออออออออออออออออออต ฺÜฤฤฟรมูý BACKSPACEý manual                      ý บ บ',10 
+        db      'บý Doubrovkine Daniel (c)  ýภฤม฿ฤามูý   SPACEý list of configurations          ý บ บ',10  
+	db      'ศอหออออออออออออออออออออออออออออสออออออออออออออออออออออออออออออออออออออออออออผ บ',10
+        db      '  ศอออออออออออออออออออออฤฤý S.T.I.ý ฤฤออออออออออออออออออออออออออออออออออออออออออผ',10,'ÿ'
+                                                                                                   
+reenable_msg1   db      'ýý   Device [ýDý] - Devicehigh [ýUý] - Install [ýIý] - InstallHigh [ýWý] - Shell [ýSý]   ýÿ'
+reenable_msg2   db      'ýý  Rem [ý0ý] - Set [ýVý] - Files [ýFý] - Lastdrive [ýLý] - Numlock [ýNý] - Country [ýQý]  ýÿ'
+reenable_msg3   db      'ýý        Buffers [ýBý] - Break [ýCý] - Drivparm [ýPý] - Stacks [ýKý] - Fcbs [ýXý]       ýÿ'
+
+sw_err_switch   db      'ýErrorý: bad option in CONFIG.SYS: /ÿ'
+passage_msg     db      10,'ÿ'                
+spassage_msg    db      '   ÿ'                
+sw_err_msg      db      7,10
+		db      'You have specified an invalid option (s) in the CONFIG.SYS file for ýAUTOCONF.ý',10
+                db      'The only valid ones are: /Dx /E,/J[D][C],/N,/P,/S,/Cx,/G,/Kxx,/M[] and /Tx.',10
+		db      'For a more detailed information consult the manual of ýAUTOCONF.ý',10,'ÿ'
+
+err_msg_new     db      7,'ýErrorý: configuration ÿ' 
+
+err_msg_old     db      ' does not exist...',10
+		db      10
+		db      'ýAUTOCONFý was not able to find the configuration you have just chosen!',10
+		db      'Either you have pressed the wrong key, or the configuration does not exist.',10
+		db      'Choose another configuration. Check that you have a default configuration',10
+                db      'in the CONFIG.SYS file!                                        ',10
+                db      'ýAttention!ý Remove any part of multiple configurations of DOS 6.x!ý',10,'ÿ'
+
+msg_err_dollar  db      7,'ýErrorý in the CONFIG.SYS!',10
+		db      10
+		db      'You forgot the DEVICE=$ line after the last configuration in the CONFIG.SYS!',10
+		db      'Press BACKSPACE to consult the manual of ýAUTOCONFý or any key to continue.',10
+                db      10
+                db      'ýAttention!ý If you are sure that the DEVICE=$ line is present in your CONFIG.SYS',10
+                db      'file, do check for any element of multiple configurations of DOS 6.x, if found,',10
+                db      'remove them. The [common] line is the most frequent cause of this error.ý',10
+		db      10,'ÿ'
+
+msg_reboot_6    db      'Press R to reboot your computer. Since you are using DOS 6.X version, use',10
+		db      'F5 and F8 keys to skip the loading of ýAUTOCONFý and correct the problem with',10
+		db      'a text editor later.',10
+                db      'For more information on F5 and F8 keys function, consult the manual of',10   
+		db      'Miscrosoft MS DOS (R).',10
+		db      10
+		db      'Press any key to continue the bootup of your computer and end AUTOCONF.SYS',10
+		db      'here. Correct the problem with a text editor later.',10,'ÿ'
+		
+msg_reboot_not6 db      'Press any key to continue the execution of the CONFIG.SYS file and end',10
+		db      'ýAUTOCONFý here. Correct the problem with a text editor later.',10,10
+		db      'Press R to reboot your computer. Use a boot disk to skip the execution of',10
+		db      'ýAUTOCONF.ý Then correct the problem with a text editor.',10,'ÿ'
+
+msg_choosec     db      'Choose a configuration you want to load just by pressing a key.',10
+		db      '    , PgUp, PgDn, Home ou End will move in the list...',10 
+                db      'STAR               end ýAUTOCONFý here;',10
+		db      'ENTER or SPACE     loads the configuration on which the cursor is now;',10
+		db      'TAB                see the configuration itself;',10
+		db      'BACKSPACE          shows the manual of ýAUTOCONF.ý',10,10,'ÿ'
+
+error_last_msg  db    7,'The configuration specified in the AUTOCONF.DAT file is not valid.',10
+                db      'You have probably specified an invalid configuration with BOOTIT.',10
+                db      'For more information on the AUTOCONF.DAT file, please consult the manual.',10,'ÿ'
+
+special_error_msg       db    7,10,'ýErrorý: CONFIG.SYS! you have no configurations specified!',10
+			db      '        Press any key to terminate AUTOCONF...',10,'ÿ'
+
+error_creating          db      7,10,'ýErrorý: creating AUTOCONF.DAT file!',10,'ÿ'
+error_opening           db      7,10,'ýErrorý: opening AUTOCONF.DAT file! (non critical error)',10,'ÿ'
+error_closing           db      7,10,'ýErrorý: closing AUTOCONF.DAT file!',10,'ÿ'
+error_readwrite         db      7,10,'ýErrorý: reading or writing AUTOCONF.DAT file!',10,'ÿ'
+j_error_msg             db      7,10,'ýErrorý: the /J option does not have the same parameters as the previous',10
+                        db      'version of AUTOCONF, new syntax:',10
+                        db      'ý/Jý[ýDý][ýCý], where',10
+                        db      'ýDý: always show the list under DOS below 7.00',10
+                        db      'ýCý: always show the list under DOS 7.00 and above (Windows 95).',10,'ÿ'
+kbd_extraparam          db      7,10,'ýErrorý: more than one keyboard has been specified using /Kxx!',10
+			db      'The first parameter only will be used, the rest will be ignored.',10,'ÿ'
+kbd_invalidparam        db      7,10,'ýErrorý: invalid parameter with /Kxx!',10
+			db      'The only valid options are:',10
+			db      'ฺฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤยฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฟ',10 
+			db      'ณ Belgium                      ýBEý  ณ Bresil                       ýBRý  ณ',10
+			db      'ณ Canada (french)              ýCFý  ณ Tchecoslovakia  (tcheque)    ýCZý  ณ',10
+			db      'ณ Tchecoslovakia  (slovak)     ýSLý  ณ Danemark                     ýDKý  ณ',10
+			db      'ณ Finland                      ýSUý  ณ France                       ýFRý  ณ',10
+			db      'ณ Germany                      ýGRý  ณ Hungary                      ýHUý  ณ',10
+			db      'ณ Italy                        ýITý  ณ Latin america                ýLAý  ณ',10
+			db      'ณ Holland                      ýNLý  ณ Norvege                      ýNOý  ณ',10
+			db      'ณ Poland                       ýPLý  ณ Portugal                     ýPOý  ณ',10
+			db      'ณ Spain                        ýSPý  ณ Sweeden                      ýSVý  ณ',10
+			db      'ณ Switzerland (french)         ýSFý  ณ Switzerland (german)         ýSGý  ณ',10
+			db      'ณ Great Britain                ýUKý  ณ Croatia/Serbia/Slovenia      ýYUý  ณ',10
+			db      'รฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤมฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤด',10 
+			db      'ณ                 The ýUSý keyboard is the default one.                 ณ',10
+			db      'ภฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤู',10,'ÿ'
+running_chicago_message db      'üฺ ýAUTOCONF for Windows 95!, final august 1995 ýฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฟ',10 
+			db      'ณ ý DOS 7.00 or above has been detected...  ý                           ณ',10
+                        db      'ณ  ýAUTOCONFý will use the default configuration of ýWin 95!ý (/Hxx)      ณ',10
+			db      'ภฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤู',10,'ÿ'
+warning_chicago         db      'ฺ ýAUTOCONF for Windows 95!, final august 1995 ýฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฟ',10 
+                        db      'ณ ý A version of DOS above 7.00 has been detected...          ý         ณ',10
+			db      'ณ  This version of ýAUTOCONFý has not been tested with this version of  ณ',10
+                        db      'ณ  DOS. That does not mean, that any problems WILL occur, since       ณ',10
+                        db      'ณ  ýAUTOCONFý supports Win 95, but you should get the latest version!   ณ',10
+			db      'ภฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤู',10,'ÿ'
+skiping_message         db      'ýAUTOCONFý skips normal configurations in CONFIG.SYS...',10,'ÿ' 
+dos_five_set            db      'DOS 5.0 or below detected! Please add /V (disable iREAD) - use READCONF.EXE!',10,'ÿ'
+msg_matin_bonheur       db      'üWoke up early this morning?',10,'ÿ'
+                        db      500 dup (?)
+msg_stop_working        db      'üStop terrorizing your computer at night!',10,'ÿ'
+                        db      500 dup (?)
+msg_soir                db      'üGood evening...',10,'ÿ' 
+                        db      500 dup (?)
+msg_matin               db      'üHi dude...',10,'ÿ'
+                        db      500 dup (?)
+DOSError1       db      'AUTOCONF::iLOOM::SHARE not installed !',10,'ÿ'
+DOSError2       db      'AUTOCONF::iLOOM::File not found !',10,'ÿ'
+DOSError3       db      'AUTOCONF::iLOOM::Path not found or file doesn''t exist!',10,'ÿ'
+DOSError4       db      'AUTOCONF::iLOOM::No more free handles!',10,'ÿ'
+DOSError5       db      'AUTOCONF::iLOOM::Access denied!',10,'ÿ'
+DOSError6       db      'AUTOCONF::iLOOM::Invalid file handle or file not open !',10,'ÿ'
+DOSError7       db      'AUTOCONF::iLOOM::Memory block was destroyed !',10,'ÿ'
+DOSError8       db      'AUTOCONF::iLOOM::Insufficient memory left !',10,'ÿ'
+DOSError9       db      'AUTOCONF::iLOOM::Memory block was NOT allocated!',10,'ÿ'
+DOSError12      db      'AUTOCONF::iLOOM::Can''t use this access mode !',10,'ÿ'
+DOSError14      db      'AUTOCONF::iLOOM::Invalid seek distance!',10,'ÿ'
+
+DataError       db      'AUTOCONF::iLOOM::Data in file is invalid !',10,'ÿ'
+DefaultError    db      'AUTOCONF::iLOOM::Undefined error error !',10,'ÿ'
+

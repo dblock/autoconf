@@ -1,0 +1,197 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <dos.h>
+#include <conio.h>
+
+int level=1;
+int last;
+int i;
+int numarg;
+char config[255];
+char config_to_write[255];
+char *datfile="C:\\AUTOCONF.DAT";
+char sublevel[]="\0";
+int drive='C';
+char zero_string[41];
+char temp[255];
+int in;
+unsigned count;
+
+void bootme(int want_warm)  /* arg 0 = cold boot, 1 = warm */ {
+	    union REGS reg;
+            void    (far* boot)(void) = (void (far*)(void))0xFFFF0000UL;
+            unsigned far* boottype    =     (unsigned far*)0x00400072UL;
+            char     far* shiftstate  =         (char far*)0x00400017UL;
+            unsigned      ticks;
+            int           time_to_waste;
+	    /* Simulate reception of Ctrl-Alt-Del: */
+	printf("\nSurcharge le cache...");
+	asm{
+	   mov ax,4A10h
+	   mov bx,0001h
+	   int 2Fh
+	   }
+	    printf("\nBlocage CTRL & ALT ... (CTRL-ALT-DEL si la machine se plante)");
+	    for (;;) {
+		*shiftstate |= 0x0C;    /* turn on Ctrl & Alt */
+		reg.x.ax = 0x4F53;      /* 0x53 = Del's scan code */
+		reg.x.cflag = 1;        /* sentinel for ignoring key */
+		int86(0x15, &reg, &reg);
+		/* If carry flag is still set, we've finished. */
+		if (reg.x.cflag)
+		    break;
+		/* Else waste some time before trying again: */
+		printf("\nAttendez...");
+		reg.h.ah = 0;
+		int86(0x1A, &reg, &reg);/* system time into CX:DX */
+		ticks = reg.x.dx;
+		for (time_to_waste = 3;  time_to_waste > 0;  ) {
+		    reg.h.ah = 0;
+		    int86(0x1A, &reg, &reg);
+		    if (ticks != reg.x.dx)
+			ticks = reg.x.dx , --time_to_waste;
+		}
+	    }
+
+	    printf("\nForce une reinitialisation du disque...");
+	    /* Issue a DOS disk reset request: */
+	    reg.h.ah = 0x0D;
+	    int86(0x21, &reg, &reg);
+	    /* Set boot type and boot: */
+	    printf("\nEn cas de plantage, reinitialisez manuellement...");
+	    *boottype = (want_warm ? 0x1234 : 0);
+	    (*boot)( );
+
+}
+
+
+void helpex(void)
+{
+   printf("\nBOOTIT 1.5 pour AUTOCONF (2.80 et +)");
+   printf("\nsyntaxe:\n\n");
+   printf("BOOTIT [-lecteur] config ");
+   printf("\n\no—:\n");
+   printf(  "\t[lecteur]: lecteur de d‚marrage de votre PC");
+   printf("\n\t config  : configuration … booter, ex: F1, A ou F0 (pour F10)\n\n");
+   printf("exemple: BOOTIT F2 -F\n\n");
+   printf("\nPour sp‚cifier une sous-configuration, pr‚cisez par exemple: A_F2_L.\n");
+   printf("Pour obtenir la liste de configurations: BOOTIT LIST(E).\n");
+   printf("Note: l'ordre des options, ainsi que les caractŠres en majuscules ou\n");
+   printf("      en minuscules n'ont aucune influence.\n");
+   exit(1);
+exit(1);
+}
+
+void main (int argc,char **argv)
+{
+if (argc>3) helpex();
+if (argc==1) helpex();
+printf("\nBOOTIT 1.5 - AUTOCONF (2.80 & +)");
+for (numarg=1;numarg<argc;numarg++)
+	{
+	if ((stricmp(argv[numarg],"LIST")==0)||(stricmp(argv[numarg],"LISTE")==0))
+		{
+		strcpy(config," ");
+		break;
+		}
+	strcpy(temp,strupr(argv[numarg]));
+	if (temp[0]=='-') drive=temp[1];
+	else strcpy(config,temp);}
+
+datfile[0]=drive;
+
+if (config[strlen(config)-1]>='0')
+   if (config[strlen(config)-1]<='9')
+	if (config[strlen(config)-2]=='F')
+		{
+		config_to_write[1]=config[strlen(config)-1];
+		config_to_write[0]='œ';
+		last=strlen(config)-4;
+		goto okay;
+		}
+last=strlen(config)-3;
+
+config_to_write[1]=config[strlen(config)-1];
+config_to_write[0]='$';
+config_to_write[2]='\0';
+okay:
+
+sublevel[0]=sublevel[0]+1;
+for(i=0;i<=last;i++)
+{
+   if (config[i]!='_')
+   {
+	sublevel[0]=sublevel[0]+1;
+	if (config[i]=='F')
+	  {
+	  if (config[i+1]<='9')
+	  {
+	  if (config[i+1]>='0')
+		{
+		zero_string[level+20]=1;
+		zero_string[level]=config[i+1];
+		i++;
+		}
+	  }
+	  else
+	  {
+	  zero_string[level+20]=0;
+	  zero_string[level]=config[i];
+	  }
+	  }
+	  else
+	  {
+	  zero_string[level+20]=0;
+	  zero_string[level]=config[i];
+	  }
+   level++;
+   }
+
+}
+
+if (_dos_creat(datfile, _A_HIDDEN, &in) != 0)
+{
+   printf("\nErreur lors de l'ouverture de %s.\n",datfile);
+   helpex();
+}
+_dos_write(in, zero_string, 40, &count);
+_dos_write(in, sublevel, 1, &count);
+_dos_write(in, config_to_write, strlen(config_to_write), &count);
+_dos_close(in);
+flushall();
+fcloseall();
+
+printf("...pr‚paration achev‚e.");
+
+asm{
+		push	es
+		push	di
+		mov	ax,1600h
+		int	2Fh			// Enhanced Windows install check
+		test	al,7Fh
+		jnz	yes_windows		//	; Jump if zero
+
+		mov	ax,4680h
+		int	2Fh			//; Windows 3.0 running status, ax
+		or	ax,ax			//; Zero ?
+		jz	yes_windows 		//; Jump if zero
+}
+goto no_windows;
+yes_windows:
+asm{
+	pop es
+	pop di
+   }
+
+printf("\nVotre ordinateur est prˆt … ˆtre relanc‚...");
+printf("\nVeuillez sortir de Windows, puis utilisez CTRL ALT DEL.");
+exit(1);
+no_windows:
+asm{
+	pop es
+	pop di
+   }
+bootme(1);
+}
+

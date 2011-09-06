@@ -1,0 +1,223 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <dos.h>
+#include <conio.h>
+#include <ctype.h>
+#include <fcntl.h>
+#include <sys\stat.h>
+#include <io.h>
+#pragma pack(1)
+#define ParmLen 255             /* maximum length of command-line parameter */
+#define MAXSTRS 100             /* increase this if you have more env strings */
+#define MAXPATH 500             /* max size of path string, since PATH is always my longest */
+
+int numarg,i;
+int no_color=0;
+int no_message=0;
+int drivec=0;
+
+char config[5];
+char *datfile="C:\\AUTOCONF.DAT";
+char *drive;
+char *temp;
+char inenv[10];
+char *pointer;
+int in;
+char configs_history[20];
+char configs_ext_history[20];
+char tobeset[100];
+char buf[2];
+
+int SetMasterEnv (char *EnvironmentVariable)
+{
+    ////////////////////////////////////////////////////////////////////
+    //
+    //  Construct the psp pointers
+    int Index, EnvironmentSize, Length, NumberOfStrings=0, PathIndex;
+    char       VariableStorage[MAXPATH],
+	       Before[MAXPATH],
+	     * After,
+	     * StringPointers[MAXSTRS],
+	 far * EnvironmentPtr,
+	 far * ParentEnvironmentPtr,
+	 far * FarPtr,
+	     * LocalPtr;
+    unsigned far *ParentPSP,
+	     far *ParentSegment;
+    struct
+    {
+	char Link;
+	unsigned int OwnerPSP;
+	unsigned int BlockLength;
+    } far *EnvironmentMCB;
+
+
+    ParentPSP            = MK_FP(_psp,0x16);                    // Parent Process' Segment address
+    ParentSegment        = MK_FP(*ParentPSP,0x2c);              // Segment of Parent's environment
+    ParentEnvironmentPtr = MK_FP(*ParentSegment,0x00);          // Pointer to Parent's environment
+    EnvironmentMCB       = MK_FP(*ParentSegment-1,0x00);        // Pointer to Parent env MCB
+    EnvironmentSize      = (*EnvironmentMCB).BlockLength << 4;  // Size in bytes of environment
+
+    ////////////////////////////////////////////////////////////////////
+    //
+    //  Copy strings from parent's environment (far) to local strings
+
+    EnvironmentPtr = ParentEnvironmentPtr;
+    while (*EnvironmentPtr)
+    {
+	////////////////////////////////////////////////////////////////
+	//  Environment strings are terminated by second null
+
+for (Length = 0, FarPtr = EnvironmentPtr; *FarPtr; FarPtr++) Length++;
+LocalPtr = StringPointers[NumberOfStrings++] = (char *) malloc(Length+1);
+for ( ; (*LocalPtr++ = *EnvironmentPtr++););}
+
+    ///////
+    //  Get the word before the = sign
+
+    strcpy(Before,EnvironmentVariable);
+    After=strstr(Before,"=");
+    if(After==NULL) exit(1);  // An = sign has not been encoutered
+    After++;
+    *After=0;
+
+
+    ////////////////////////////////////////////////////////////////////
+    //
+    //  Look for the word which Before points to in the environment strings
+
+    for (PathIndex=0; PathIndex < NumberOfStrings; PathIndex++)
+    {
+	if (strnicmp(StringPointers[PathIndex],Before,strlen(Before)) == 0 )
+	    break;
+    }
+
+    if (PathIndex >= NumberOfStrings)
+    {
+	////////////////////////////////////////////////////////////////
+	//  Since we did not the word which Before points to
+	//  in the environment strings, we
+	//  must create that entry into the environment
+
+	LocalPtr = StringPointers[NumberOfStrings++] = (char *) malloc(strlen(EnvironmentVariable)+1);
+    }
+
+    ////////////////////////////////////////////////////////////////////
+    //
+    //  Place Total expression into new string
+
+    strcpy(VariableStorage, EnvironmentVariable);
+
+    StringPointers[PathIndex] = (char *)&VariableStorage;
+
+    ////////////////////////////////////////////////////////////////////
+    //
+    //  Calculate memory requirements
+
+    for (Index=0, Length=0; Index < NumberOfStrings; Index++)
+	Length += strlen(StringPointers[Index]) + 1;
+
+    if ((Length + 1) > EnvironmentSize)
+    {
+	printf("\nReadConf 4.0: sorry, not enought environment!\n\n");
+	printf("Launch ReadConf from the very beginning of the AUTOEXEC.BAT.\n");
+        printf("That should correct the problem. Note: goto %conf% can be placed\n");
+        printf("anywhere after the ReadConf call.\n");
+        fprintf(stderr,"There's actually %d bytes in the environment,\n", EnvironmentSize);
+        fprintf(stderr,"you need %d bytes more.\n\n", (Length + 1) - EnvironmentSize);
+	printf("\nPress a key, please...\n");
+	getch();
+	exit(1);  // Not enough memory to store string
+    }
+    else
+    {
+	////////////////////////////////////////////////////////////////
+	//
+	//  Copy strings from local storage back to the parent's
+	//  environment
+
+	for (Index = 0; Index < NumberOfStrings; Index++)
+	{
+	    for ( ; (*ParentEnvironmentPtr++ = *StringPointers[Index]++) ; ) ;
+	    *ParentEnvironmentPtr = '\0';
+	}
+    }
+    return(0);  // Succes
+}
+
+/* ******************************************************************
+   *                           Main Code                            *
+   ****************************************************************** */
+
+int main(int argc, char ** argv)
+{
+//ARGUMENTSARGUMENTSARGUMENTSARGUMENTSARGUMENTSARGUMENTSARGUMENTSARGUMENTS
+	for (numarg=1;numarg<=argc;numarg++)
+	{temp=strupr(argv[numarg]);
+	if((strcmp(temp,"-C"))==0) no_color=1;
+	if((strcmp(temp,"/C"))==0) no_color=1;
+	if((strcmp(temp,"-S"))==0) no_message=1;
+	if((strcmp(temp,"/s"))==0) no_message=1;
+	if(strlen(temp)==1)
+		{drive=temp;
+		 drivec=1;}}
+//ARGUMENTSARGUMENTSARGUMENTSARGUMENTSARGUMENTSARGUMENTSARGUMENTSARGUMENTS
+strcpy(inenv, "CONF=");
+    if (drivec==1)
+	datfile[0]=*drive; //argv[1]
+  if ((in = open(datfile, O_RDONLY | O_BINARY, S_IWRITE | S_IREAD)) == -1)
+  {
+   printf("\nReadConf 4.0: error while opening %s.\n\n",datfile);
+   printf("syntax:\n\n");
+   printf("	READCONF [drive][-c][-s]\n\n");
+   printf("-c : don't show colors in the initialisation message;\n");
+   printf("-s : don't show the initialisation message at all;\n");
+   printf("Note: neither the options' order, nor the letters' size are important.\n");
+   printf("Note: use ReadConf 4.0 with AutoConf, version 2.8 or newer, only!");
+   printf("\nPress a key, please...\n");
+   getch();
+   exit(1);
+  }
+
+   read(in,configs_history,20);
+   read(in,configs_ext_history,20);
+   read(in,buf,1);
+   for (i=1;i<19;i++)
+	{
+	if (configs_history[i]!=0)
+		{
+		if (configs_ext_history[i]==1) strcat(inenv,"F");
+		strcat(inenv," ");
+		inenv[strlen(inenv)-1]=configs_history[i];
+		strcat(inenv,"_");
+		}
+	else break;
+	}
+
+   read(in,config, 2);
+   pointer = strchr(config, '*');
+   config[2]='\0';
+   if ((pointer-config)==0)
+   {config[0]=config[1];
+    config[1]='\0';}
+    strcat(inenv,config);
+
+if (no_message==0){
+     if (no_color==0) textcolor(YELLOW);
+     cprintf("\n\rReadConf");
+     if (no_color==0)textcolor(LIGHTMAGENTA);
+     cprintf(" - v. 4.0 -");
+     if (no_color==0)textcolor(LIGHTGREEN);
+     cprintf(" Doubrovkine Daniel ");
+     if (no_color==0)textcolor(RED);
+     cprintf("- 1994 - ");
+     if (no_color==0)textcolor(CYAN);
+     cprintf("Stolen Technologies Inc.");
+     if (no_color==0)textcolor(WHITE);
+     cprintf("\n\r");
+     textcolor(7); cprintf("\n\r");}
+
+SetMasterEnv(inenv);
+return(0);
+}
