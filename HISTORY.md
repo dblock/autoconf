@@ -40,6 +40,8 @@ I ([Daniel Doubrovkine](https://code.dblock.org/about/)) copied the printed asse
 
 The name Autoconf was retained while the small original program grew into a much larger bilingual boot-configuration system. The surviving release history records 145 changes from versions 1.0 through 3.00 beta 2.
 
+Autoconf was distributed mostly through bulletin board systems, beginning with Boris & Co. (`[Ne/V\eSiS]`). Successive English and French archives circulated through the BBS community rather than through a centralized software site.
+
 ## Versions 1.0–1.54: Expanding the Original Interface
 
 The early releases have no surviving dates, but `WHATSNEW.ENG` and `WHATSNEW.FR` establish their order.
@@ -50,14 +52,6 @@ The early releases have no surviving dates, but `WHATSNEW.ENG` and `WHATSNEW.FR`
 - **1.5–1.54 beta:** concentrated on error recovery and silent mode, restored or saved the previous configuration through `AUTOCONF.DAT`, varied messages by time of day, and introduced `READCONF.COM` 2.0. The French history says the final 1.54 was not distributed.
 
 Version 1.42 introduced `/D<configuration>` to replace A as the default choice. Version 1.51 added `/B`, which prevented creation of `AUTOCONF.DAT` and deleted an existing copy; it was temporarily removed and later restored. The inherited `/Q`, `/T`, and `/S` switches selected a QWERTY keyboard, set the selection timeout, and saved or restored the last configuration.
-
-## March 1993: MS-DOS Adds Native Multiple Configurations
-
-MS-DOS 6.0 introduced built-in multiple configurations in March 1993. Its `CONFIG.SYS` syntax used a `[MENU]` section with `MENUITEM` entries and named configuration blocks. DOS passed the selected block name to `AUTOEXEC.BAT` through the `%CONFIG%` environment variable.
-
-The [`msdos6.2/`](msdos6.2/) demo recreates the same Minimal DOS, DOOM, and Windows 95 choices used by the Autoconf demonstration with native MS-DOS 6.22 syntax. It includes reproducible instructions for extracting the bootable floppy image from a separately downloaded MS-DOS 6.22 ISO; the proprietary image itself is ignored by Git.
-
-![Selecting the DOOM configuration with native MS-DOS 6.22](media/msdos622-multiconfig.gif)
 
 ## By November 23, 1993: Version 2-era Development
 
@@ -159,6 +153,18 @@ assembl.: 11/01/96 (14:26)
 This dates the preserved 3.00 beta 2 driver build to **January 11, 1996 at 14:26**. The matching timestamp in both localized binaries indicates that they were produced from the same build cycle, with different generated message includes.
 
 The final DOS packaging script built both language editions, regenerated the compressed message includes with `CODE2.EXE`, compiled the C utilities, assembled the driver and manuals, created `ACNF3B1E.ZIP` and `ACNF3B1F.ZIP`, and tested both archives.
+
+## MS-DOS Adds Native Multiple Configurations
+
+MS-DOS 6.0 introduced built-in multiple configurations in March 1993. Its `CONFIG.SYS` syntax used a `[MENU]` section with `MENUITEM` entries and named configuration blocks. DOS passed the selected block name to `AUTOEXEC.BAT` through the `%CONFIG%` environment variable.
+
+Native DOS support did not end Autoconf. The surviving history records continued development through the 1993 version 2 work, the 1994 viewer and utility releases, Windows 95 and nested-configuration support in 1995, and the preserved January 1996 beta build. Autoconf continued to offer features beyond the DOS menu, including early queued-key selection, configuration inspection and editing, nested groups, separate DOS and Windows 95 behavior, custom messages, keyboard layouts, `BOOTIT`, and the integrated `AUTOEXEC.BAT` handoff.
+
+It faded later rather than ending with DOS 6. By the time Internet software distribution displaced the BBS networks through which Autoconf had circulated, a separate boot-configuration utility was less necessary, and DOS already included a native multiple-configuration system. Together, those changes brought Autoconf's active life to a close.
+
+The [`msdos6.2/`](msdos6.2/) demo recreates the same Minimal DOS, DOOM, and Windows 95 choices used by the Autoconf demonstration with native MS-DOS 6.22 syntax. It includes reproducible instructions for extracting the bootable floppy image from a separately downloaded MS-DOS 6.22 ISO; the proprietary image itself is ignored by Git.
+
+![Selecting the DOOM configuration with native MS-DOS 6.22](media/msdos622-multiconfig.gif)
 
 ## 1996: MegaBoot, a Spiritual Successor
 
