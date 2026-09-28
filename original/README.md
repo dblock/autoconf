@@ -2,7 +2,10 @@
 
 This directory preserves the original Autoconf program by Julien Pommier, published in *Science & Vie Micro* no. 88 (November 1991), pages 227-233.
 
+[![Cover of Science & Vie Micro no. 88, November 1991](SVM-88-cover.png)](SVM-88-Autoconf-pages-227-233.pdf)
+
 - `SVM-88-Autoconf-pages-227-233.pdf` is the canonical scanned article and complete printed listing.
+- `SVM-88-cover.png` is the cover extracted from page 1 of the complete issue scan.
 - `AUTOCONF.ASM` is a transcription of the printed `AUTOCONF.ASM` listing.
 - `READCONF.ASM` is a transcription of the printed `READCONF.ASM` listing.
 
