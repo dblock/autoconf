@@ -30,9 +30,7 @@ The recovered listings have been assembled successfully under DOS with JWasm in 
 
 ## After 1991: A Hand-Typed Fork
 
-Daniel Doubrovkine copied the printed assembly source by hand and used it as the engine for his own versions. The precise date this work began is not recorded. The later built-in English and French help still described the origin accurately, although Julien Pommier's name had been forgotten: a French programmer had written the original engine, a version had appeared in SVM, and roughly 90 percent of the program had since been modified.
-
-Daniel developed these later Autoconf versions while spending time with David Jilli in the basement of Infomaniak in Carouge, Switzerland.
+I ([Daniel Doubrovkine](https://code.dblock.org/about/)) copied the printed assembly source by hand as my first x86 assembly program and used it as the engine for my own versions. The precise date this work began is not recorded. The later built-in English and French help still described the origin accurately, although I had forgotten Julien Pommier's name: a French programmer had written the original engine, a version had appeared in SVM, and roughly 90 percent of the program had since been modified.
 
 The name Autoconf was retained while the small original program grew into a much larger bilingual boot-configuration system. The surviving release history records 145 changes from versions 1.0 through 3.00 beta 2.
 
@@ -105,13 +103,17 @@ The final DOS packaging script built both language editions, regenerated the com
 
 ## 1996: MegaBoot, a Spiritual Successor
 
-David Jilli (Titanik) of DSF Productions wrote [MegaBoot](https://github.com/dblock/megaboot) in 1996 as a spiritual successor to Autoconf. MegaBoot retained the idea of selecting among multiple configurations while DOS processed `CONFIG.SYS`, but presented the choices in a full-screen menu and rewrote the in-memory configuration so DOS continued with only the selected block.
+David Jilli of DSF Productions wrote [MegaBoot](https://github.com/dblock/megaboot) in 1996 as a spiritual successor to Autoconf. MegaBoot retained the idea of selecting among multiple configurations while DOS processed `CONFIG.SYS`, but presented the choices in a full-screen menu and rewrote the in-memory configuration so DOS continued with only the selected block.
 
-Like Daniel's later Autoconf work, MegaBoot was written while the two friends spent time in the basement of Infomaniak in Carouge, Switzerland.
+MegaBoot was written while David and I spent time in the basement of Infomaniak in Carouge, Switzerland.
 
 ## September 5, 2011: The Later Source Resurfaces
 
-Daniel found the later Autoconf source and release files and put them on GitHub. They included the evolved assembly source, English and French 3.00 beta 2 binaries, manuals, release histories, build tools, and companion utilities. The date records when the files resurfaced, not when they were developed; their contemporary strings and comments place them primarily in 1993–1996.
+I found the later Autoconf source and release files and put them on GitHub. They included the evolved assembly source, English and French 3.00 beta 2 binaries, manuals, release histories, build tools, and companion utilities. The date records when the files resurfaced, not when they were developed; their contemporary strings and comments place them primarily in 1993–1996.
+
+## 2015: The Original Download Is Retired
+
+In my 2009 retrospective, [“Autoconf, World's Best Multiple Configurations Software”](https://code.dblock.org/2009/09/22/autoconf-worlds-best-multiple-configurations-software.html), I described Autoconf as my first commercial product and linked to its full x86 assembly source. In a 2015 update, I retired the old software download, replaced the historical product-page link with an Internet Archive copy, and directed readers to the source on GitHub.
 
 ## September 27, 2026: The Original Source Is Identified
 
@@ -135,7 +137,9 @@ The original program was traced to Julien Pommier's article in SVM issue 88. Its
 | November 1995 | French 3.00 release-history banner revised | `WHATSNEW.FR` |
 | January 11, 1996, 14:26 | Preserved English and French 3.00 beta 2 drivers assembled | Embedded source and binary build timestamp |
 | 1996 | [MegaBoot](https://github.com/dblock/megaboot), a spiritual successor to Autoconf, written by David Jilli | Recovered MegaBoot source and embedded copyright |
+| September 22, 2009 | [A retrospective on Autoconf](https://code.dblock.org/2009/09/22/autoconf-worlds-best-multiple-configurations-software.html) is published | Contemporary blog post |
 | September 5, 2011 | Later source and binaries found and published on GitHub | GitHub publication date |
+| 2015 | The retrospective is updated to retire the old download and direct readers to GitHub | Update to the 2009 blog post |
 | September 27, 2026 | Original article identified and its source listings recovered | Article scan, transcriptions, and DOS build |
 
 ## Sources and Limitations
@@ -149,5 +153,6 @@ The principal sources are:
 - [`src/AUTOCONF.ENG`](src/AUTOCONF.ENG) and [`src/AUTOCONF.FR`](src/AUTOCONF.FR), readable message and help sources;
 - [`src/CODE2.CPP`](src/CODE2.CPP), [`src/HELP.INC`](src/HELP.INC), and the runtime decoder in `src/AUTOCONF.ASM`, which document the custom message codec;
 - [`src/DT.BAT`](src/DT.BAT) and [`src/DOIT.BAT`](src/DOIT.BAT), which preserve the DOS build and packaging process.
+- [“Autoconf, World's Best Multiple Configurations Software”](https://code.dblock.org/2009/09/22/autoconf-worlds-best-multiple-configurations-software.html), my 2009 retrospective and its 2015 update.
 
 The original article is authoritative for the 1991 program. The later `WHATSNEW` files are contemporary but informal: they contain spelling errors, repeated item numbers, slight differences between languages, and many releases without dates. File modification times from the recovered archive are not treated as historical evidence. Dates inferred from source comments are tied to the specific code they annotate and do not necessarily represent public release dates.
