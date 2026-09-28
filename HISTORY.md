@@ -38,6 +38,8 @@ The [`original/demo/`](original/demo/) boot image recreates the A/B/C demonstrat
 
 I ([Daniel Doubrovkine](https://code.dblock.org/about/)) copied the printed assembly source by hand as my first x86 assembly program and used it as the engine for my own versions. The precise date this work began is not recorded. The later built-in English and French help still described the origin accurately, although I had forgotten Julien Pommier's name: a French programmer had written the original engine, a version had appeared in SVM, and roughly 90 percent of the program had since been modified.
 
+![Selecting the DOOM configuration with the later Autoconf](media/autoconf-doom-boot.gif)
+
 The name Autoconf was retained while the small original program grew into a much larger bilingual boot-configuration system. The surviving release history records 145 changes from versions 1.0 through 3.00 beta 2.
 
 Autoconf was distributed mostly through bulletin board systems, beginning with Boris & Co. (`[Ne/V\eSiS]`). Successive English and French archives circulated through the BBS community rather than through a centralized software site.
