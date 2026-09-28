@@ -8,7 +8,7 @@ The surviving material provides only a handful of exact dates. Releases without 
 
 ## November 1991: The Original Program
 
-The original Autoconf was written by Julien Pommier and published as “La configuration idéale” in *Science & Vie Micro* no. 88, November 1991, pp. 227–233. The article won the magazine's monthly programming contest and received a 2,000-franc prize. It printed the complete source for `AUTOCONF.ASM` and the small companion program `READCONF.ASM`, together with installation instructions and sample `CONFIG.SYS` and `AUTOEXEC.BAT` files.
+The original Autoconf was written by [Julien Pommier](http://gruntthepeon.free.fr) and published as “La configuration idéale” in *Science & Vie Micro* no. 88, November 1991, pp. 227–233. The article won the magazine's monthly programming contest and received a 2,000-franc prize. It printed the complete source for `AUTOCONF.ASM` and the small companion program `READCONF.ASM`, together with installation instructions and sample `CONFIG.SYS` and `AUTOEXEC.BAT` files.
 
 The original source is preserved in [`original/`](original/). The scanned article is the canonical source; the assembly files are OCR-assisted transcriptions that were manually corrected against the printed listing.
 

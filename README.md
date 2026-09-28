@@ -4,7 +4,7 @@ Autoconf is a DOS device driver for selecting one of several configurations from
 
 ![Selecting the DOOM configuration](media/autoconf-doom-boot.gif)
 
-The original program was written by Julien Pommier and published in *Science & Vie Micro* no. 88 in November 1991. I ([Daniel Doubrovkine](https://code.dblock.org/about/)) typed the printed listing by hand as my first x86 assembly program, then expanded it into the much larger bilingual Autoconf 3.00 beta 2 preserved here.
+The original program was written by [Julien Pommier](http://gruntthepeon.free.fr) and published in *Science & Vie Micro* no. 88 in November 1991. I ([Daniel Doubrovkine](https://code.dblock.org/about/)) typed the printed listing by hand as my first x86 assembly program, then expanded it into the much larger bilingual Autoconf 3.00 beta 2 preserved here.
 
 - Read the reconstructed [project history](HISTORY.md).
 - Read my 2009 retrospective, [“Autoconf, World's Best Multiple Configurations Software”](https://code.dblock.org/2009/09/22/autoconf-worlds-best-multiple-configurations-software.html).
