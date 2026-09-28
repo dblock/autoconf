@@ -1,9 +1,9 @@
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 ; AUTOCONF.ASM - configurations multiples par Daniel Doubrovkine - Suisse
 ; AUTOCONF.SYS module...All rights reserved, etc...
 ; since you got this code, know that it is not destributable and I don't
 ; guarantee anything!
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 
 .model small                     ;very little model
 .code
@@ -89,7 +89,7 @@ init proc far
         cmp      al,'*'                         ;is it an escape
         je       no_recovery                    ;so start ending the prog
    not_second_escape:                           ;by far and quick jumps
-	cmp      al,'˝'
+	cmp      al,'¬≤'
 	jne      not_list_address
 	call     get_history
 	mov      cs:[to_be_made],1
@@ -266,7 +266,7 @@ init proc far
    putext:       
 	cmp     cs:[made_address],1
 	jne     putext_@
-	mov     al,'˝'
+	mov     al,'¬≤'
    putext_@:
 	mov     ds:[0EAh*4],al
 	mov     al,255                   ;successgull run
@@ -739,7 +739,7 @@ analyse_param proc
 	mov     cs:[last_conf],1
 	jmp     ap_switch
    ap_m:        
-	cmp     al,'G'                  ;messages gÇnants
+	cmp     al,'G'                  ;messages g√©nants
 	jne     ap_ng
 	mov     cs:[ap_gen],1
 	jmp     ap_switch
@@ -791,9 +791,9 @@ analyse_param proc
 	jmp     ap_switch
 analyse_param endp
 
-;±±±±±±± /J[][] ±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± version 2.62 ±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí /J[][] ‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí version 2.62 ‚ñí‚ñí‚ñí‚ñí
 ; check for always_wait options for Chicago and DOS
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 toujours_attendre proc
         pushx    si,cx
         mov      cx,2
@@ -1116,7 +1116,7 @@ lit_ecrit_cfg proc
 	
 	pushx   cx,ds,cs
         pop     ds
-	mov     ah,19h                  ;perifÇrique actuel
+	mov     ah,19h                  ;perif√©rique actuel
 	int     21h
 	add     al,'A'
 	mov     bx,offset cfg_file_name
@@ -1134,7 +1134,7 @@ lit_ecrit_cfg proc
 
         mov     ah,3Ch
 	xor     cx,cx
-	mov     cx,00000010b                    ;attribut cachÇ
+	mov     cx,00000010b                    ;attribut cach√©
 	int     21h
         jc      lec_fin
         jnc     lec_nerror
@@ -1350,7 +1350,7 @@ lit_configuration proc
         mov     cs:[fatal_error],1
 	ret
    not_escape:                             ;test if the configuration is a Fkey
-	cmp     cs:[ext],1                 ;c'est-Ö-dire dÇjÖ Fkey
+	cmp     cs:[ext],1                 ;c'est-√†-dire d√©j√† Fkey
 	je      not_extended_conf
 	call    treat_ext
    not_extended_conf:
@@ -1694,19 +1694,19 @@ bonjour_bonsoir proc
 bonjour_bonsoir endp
 
 type_matic proc
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
-;INTERRUPT 16h, Fonction 03h : DÇfinir le taux de rÇpÇtition...
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
+;INTERRUPT 16h, Fonction 03h : D√©finir le taux de r√©p√©tition...
 ;           ah= 03h
 ;           al= 05h
-;           bh= Ralentissement jusqu'Ö la mise en place de la rÇpÇtition
-;           bl= Taux de rÇpÇtition
-;        bh peut etre Çgal Ö :
+;           bh= Ralentissement jusqu'√† la mise en place de la r√©p√©tition
+;           bl= Taux de r√©p√©tition
+;        bh peut etre √©gal √† :
 ;         00b : 3/4 de sec
 ;         01b : 1/2 sec
 ;         10b : 3/4 de sec
 ;         11b: 1 sec
-;        bl: de 01h Ö 1Fh
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±        
+;        bl: de 01h √† 1Fh
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí        
 	pushx   ax,bx,bp,sp,es,ds
 	mov     ah,3h
 	mov     al,5h
@@ -1926,10 +1926,10 @@ newing proc
         push    cs                              ;es=cs
         pop     es
 	mov     cs:[liste.c_c],0
-	mov     dl,es:[bx]                      ;le premier caractäre -> dl
+	mov     dl,es:[bx]                      ;le premier caract√®re -> dl
         cmp     dl,252  ;''
 	jne     np_always                       ;erreurs, etc--> toujours aff.
-	inc     bx                              ;caractäre suivant
+	inc     bx                              ;caract√®re suivant
 	mov     dl,es:[bx]                      ;
 	cmp     cs:[message_ou_pas],1           ;afficher?
 	jne     np_always                       ;oui->np_always
@@ -1960,7 +1960,7 @@ newing proc
 	mov     dl,es:[bx]
 	jmp     np_always
    np_not_enter_count:
-	cmp     dl,'˝'                          ;code COULEUR?
+	cmp     dl,'¬≤'                          ;code COULEUR?
 	jne     np_no_color                     ; NON, ne pas changer l'attribut 
 
         mov     al,dl
@@ -1974,7 +1974,7 @@ newing proc
         dec     bx
    np_make_color:
 
-        inc     bx                              ;caractäre suivant
+        inc     bx                              ;caract√®re suivant
 	mov     dl,es:[bx]                      ;dans dl
 	cmp     cs:[message_mono],1             ;message monochrome?
 	jne     np_change_color                 ;non, alors garder la couleur
@@ -2003,7 +2003,7 @@ newing proc
 	xor     dl,cs:[xor_byte]
 	sub     dl,cs:[increment_byte]
    np_no_dec:
-	cmp     dl,254                          ;˛ compressed same char
+	cmp     dl,254                          ;‚ñ† compressed same char
 	jne     np_not_lines
 	call    char_redo
    cr_reroll:    
@@ -2092,12 +2092,12 @@ affiche_buffer proc
 affiche_buffer endp
 
 goto_special_config proc
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 ; GOes TO A SPECIal CONFIGURATION, INclUdiNG IT'S DEPTH
 ; needs:
 ; cs:[TOP_CONFIG]
 ; cs:[TOP_EXT]
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 	mov     al,cs:[top_config]
 	mov     bl,al                   ;bl<-al choosed conf in bl
    gsc_v_next:
@@ -2150,7 +2150,7 @@ goto_special_config proc
 goto_special_config endp
 
 moveto_needed_conf proc
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 ; uses goto_special_config to make the correct move towards the correct
 ; sub configuration in the right depth
 ;       needs:
@@ -2160,7 +2160,7 @@ moveto_needed_conf proc
 ; need_level
 ; configs_history
 ; top_config
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 	pushx   ax,bx,cx,dx
 	mov     cs:[need_level],1
 	cmp     cs:[sub_level],1
@@ -2301,11 +2301,11 @@ derived_liste_config proc
 	call    save_configs_string
    no_space:        
 	mov     cs:[ext_put],0
-	mov     al,''
+	mov     al,'¬≠'
 	call    save_configs_string
 	cmp     cs:[num_confs],1
 	jne     lc_nzero
-	mov     al,'˙'
+	mov     al,'¬∑'
 	call    save_configs_string
    lc_nzero:
 	call    ps_derived_liste_config
@@ -2426,12 +2426,12 @@ nconf proc
 	inc     cs:[num_confs]
 	cmp     cs:[num_confs],26
 	jne     lc_npage
-	mov     al,249  ;˘
+	mov     al,249  ;¬®
 	call    save_configs_string
    lc_npage:
 	cmp     cs:[num_confs],51
 	jne     lc_npage@
-	mov     al,248  ;¯
+	mov     al,248  ;¬∞
 	call    save_configs_string
    lc_npage@:
         pop     ax
@@ -2444,7 +2444,7 @@ liste_configuration proc
         cmp    cs:[iloom_enabled],1
         jne    lc_group_not_found
 
-;±U±N±D±E±R±±C±O±N±S±T±R±U±C±T±I±O±N±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñíU‚ñíN‚ñíD‚ñíE‚ñíR‚ñí‚ñíC‚ñíO‚ñíN‚ñíS‚ñíT‚ñíR‚ñíU‚ñíC‚ñíT‚ñíI‚ñíO‚ñíN‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 ;iLOOM 1.0
 ; now working: - main menu existance is checked and shown if exists.
 ;              - existant configurations can be correctly selected.
@@ -2453,9 +2453,9 @@ liste_configuration proc
 ;              #2 sub-groups & reality correspondance
 ;              #3 sub-groups' config chooser
 ;                 
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 
-;±iLOOM 1.0 integration - read and update ±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñíiLOOM 1.0 integration - read and update ‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
          pushx   ax,bx,cx,dx,es,si,di,ds
 
          push   cs
@@ -2471,7 +2471,7 @@ liste_configuration proc
         cmp    cs:[iloom_enabled],1
         jne    lc_group_not_found
 
-;± check for main group in the file ±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí check for main group in the file ‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
          mov     ax, NewGroup
          call    SearchGroup
          cmp     eax, 0FFFFFFFFh
@@ -2489,7 +2489,7 @@ liste_configuration proc
          call   verifie_config
          jc     restart_liste_now
          ret      
-;± normal procedure, now totally independent from iLOOM ±±±±±±±±±±±±±±±±±±±±±
+;‚ñí normal procedure, now totally independent from iLOOM ‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 
    lc_group_not_found:
         call    first_column
@@ -2671,15 +2671,15 @@ liste_configuration endp
 effectif_config proc
         cmp     cs:[@fifty],1
 	je      ec_five
-	cmp     al,'¯'  ;249
+	cmp     al,'¬∞'  ;249
 	je      ec_@end
-	cmp     al,'˘'  ;249
+	cmp     al,'¬®'  ;249
 	jne     ec_end
 	mov     cs:[lbeg],0
    ec_five:
-	cmp     al,'˘'
+	cmp     al,'¬®'
 	je      ec_@end
-	cmp     al,'¯'  ;249
+	cmp     al,'¬∞'  ;249
 	jne     ec_end
 	mov     cs:[lbeg],0
    ec_@end:        
@@ -3258,7 +3258,7 @@ light_selected_conf proc
 	jne     not_ext_nc
 	mov     cl,'F'
    not_ext_nc:
-        call    darkline     ;la couleur de la ligne Ö non_highlight
+        call    darkline     ;la couleur de la ligne √† non_highlight
         call    make_line_color
         pushx   ax,bx,cx,dx,es,ds,si
         cld
@@ -4041,9 +4041,9 @@ efface_ecran proc
 	ret
 efface_ecran endp 
 
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 ; Beep speaker; period given by beep_div, duration by beep_len.
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 beep    proc    
 	pushx   ax,bx,cx,dx,si,di,es,ds         ;preserve registers
 	mov     al,10110110b           ; select 8253
@@ -4059,9 +4059,9 @@ beep    proc
         push    ax
 	or      al,3
 	out     dx,al                  ; turn speaker on
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 ; Wait for desired duration by monitoring time-of-day 18 Hz clock
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±        
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí        
 	mov     bx,cs:[timer_low]
 	mov     cx,-1
 beeplp: mov     ax,cs:[timer_low]
@@ -4078,9 +4078,9 @@ beepover:
 	ret
 beep  endp
 
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 ;TOTalLY NEW ROUTINE FOR WRITING THE CONFIGURATION ON SCREEN
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 chrcnt proc
         pushx  bx,dx,cs
         pop    es                              ;es=cs
@@ -4094,14 +4094,14 @@ chrcnt proc
 chrcnt endp
 
 thisline_conf proc
-	call    first_column                    ;premiäre colonne
+	call    first_column                    ;premi√®re colonne
 	mov     ah,8                            ;dans le CONFIG.SYS
-	mov     bh,cs:[curpage]                 ;lire le caractäre dans la
-	int     10h                             ;liste Ö la page actuelle de
+	mov     bh,cs:[curpage]                 ;lire le caract√®re dans la
+	int     10h                             ;liste √† la page actuelle de
         call    conv_maj
-	cmp     al,'F'                          ;l'Çcran
-	jne     rscv_notext                      ;configuration Çtendue?
-	mov     ah,3                            ;si oui, alors vÇrifier si
+	cmp     al,'F'                          ;l'√©cran
+	jne     rscv_notext                      ;configuration √©tendue?
+	mov     ah,3                            ;si oui, alors v√©rifier si
 	int     10h                             ;c'est la bonne entre 1 et 10
 	inc     dl
 	mov     ah,2
@@ -4118,7 +4118,7 @@ thisline_conf proc
 	mov     al,'F'                  ;non, c'est une configuration F
    rscv_notext:
 	mov     cl,al                   ;cl<-al choosed conf in cl
-	;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+	;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 	;retURNS cl FOR chOSEN CONFIG AND EXTendED FLAG SET OR NOT 
 	ret
 thisline_conf endp
@@ -4135,7 +4135,7 @@ show_conf proc
         pop     es
 	mov     bx,offset cs:[cnf_contents]
 	mov     cs:[cnf_counter],bx
-	mov     si,cs:[prem_ligne]              ;dÇbut des configs multiples
+	mov     si,cs:[prem_ligne]              ;d√©but des configs multiples
 	call    thisline_conf
 	mov     cs:[config],cl
    rscv_nextt:
@@ -4195,7 +4195,7 @@ sc_movements proc
 	je      scm_next
 	jmp     scm_beg
    scm_previous:
-	;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+	;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 	; PREVIOUS CONFIGURATION IN LIST - prepare page
 
         mov     cs:[at_bottom],0
@@ -4209,7 +4209,7 @@ sc_movements proc
         jmp     scm_exit
 
 
-	;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+	;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 	; NEXT CONFIGURATION IN LIST - prepare page
     scm_next:
         mov     cs:[at_top],0
@@ -4229,7 +4229,7 @@ sc_movements proc
         pop     es
 	mov     bx,offset cs:[cnf_contents]
 	mov     cs:[cnf_counter],bx
-	mov     si,cs:[prem_ligne]              ;dÇbut des configs multiples
+	mov     si,cs:[prem_ligne]              ;d√©but des configs multiples
 	stc
 	ret
 sc_movements endp
@@ -4237,13 +4237,13 @@ sc_movements endp
 anyconf_before? proc
         pushx   ax,bx,cx,dx,si,di,es,ds
         mov     al,cs:[config]                  ;configuration sur place
-	cmp     cs:[ext],1                      ;Çtendue?
+	cmp     cs:[ext],1                      ;√©tendue?
         je      ab_scm_@deext                      ;oui->jump
    ab_scm_decay:        
 	dec     al
 	cmp     al,0
         je      ab_scm_nomoredec
-	mov     si,cs:[prem_ligne]              ;dÇbut des configs multiples
+	mov     si,cs:[prem_ligne]              ;d√©but des configs multiples
 	call    verify_sub
         jc      ab_scm_decay
         jmp     ab_scm_exit
@@ -4257,10 +4257,10 @@ anyconf_before? proc
 	mov     cl,cs:[ext]
         push    cx                              ;sauver cx
     ab_scm_deext:
-	dec     al                              ;configuration prÇcÇdente
+	dec     al                              ;configuration pr√©c√©dente
 	cmp     al,'/'                          ;one before 0 -> plus de 
-        je      ab_scm_noext                       ;configs comme áa
-	mov     si,cs:[prem_ligne]              ;dÇbut des configs multiples
+        je      ab_scm_noext                       ;configs comme √ßa
+	mov     si,cs:[prem_ligne]              ;d√©but des configs multiples
 	call    verify_sub
         jc      ab_scm_deext
         pop     cx
@@ -4289,7 +4289,7 @@ anyconf_after? proc
 	inc     al
 	cmp     al,':'  ;one before 0
         je      af_scm_noinc
-	mov     si,cs:[prem_ligne]              ;dÇbut des configs multiples
+	mov     si,cs:[prem_ligne]              ;d√©but des configs multiples
 	call    verify_sub
         jc      af_scm_enext
         jmp     af_scm_exit
@@ -4303,7 +4303,7 @@ anyconf_after? proc
 	inc     al
 	cmp     al,255
         je      af_scm_nomoreinc
-	mov     si,cs:[prem_ligne]              ;dÇbut des configs multiples
+	mov     si,cs:[prem_ligne]              ;d√©but des configs multiples
 	call    verify_sub
         jc      af_scm_encay
         pop     cx
@@ -4496,7 +4496,7 @@ reboot_it proc
 	mov     al,es:[bx]
 	cmp     al,'$'          ;not extended ctrl
 	je      rt_reboot_norm
-	cmp     al,'ú'          ;extended ctrl
+	cmp     al,'¬£'          ;extended ctrl
 	je      rt_reboot
 	popx    ds,es,di,si,dx,cx,bx,ax
 	ret
@@ -4560,10 +4560,10 @@ fifty proc                              ;sets a 50 line mode
 fifty endp
 
 show_conf_prog proc
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 ;Here I have the chosen configuration in cl and the ext correctly set        
 ;the config.sys position is at the very beginning
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
         mov     cs:[already_lined],0
 	mov     si,cs:[group_address]
         cmp     cs:[at_extremmum],1
@@ -4779,7 +4779,7 @@ page_one_address proc
         mov     ah,2
         int     10h
         mov     ah,2
-        mov     dl,'ˇ'
+        mov     dl,'¬†'
         int     21h
         mov     dl,'W'
         int     21h
@@ -4798,7 +4798,7 @@ page_one_address proc
    poa_notyet:
         add     di,2
         mov     al,es:[di]
-        cmp     al,'ˇ'
+        cmp     al,'¬†'
         jne     poa_notyet
 
         push    di
@@ -4828,9 +4828,9 @@ page_one_address proc
         ret
 page_one_address endp
 
-;±±±±±±± video_detect & EgaInstalled ±±±±±±±±±±±±±±±±±±±±±±±±±±± 3.07.94 ±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí video_detect & EgaInstalled ‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí 3.07.94 ‚ñí‚ñí‚ñí
 ; Video detect routines for CGA support
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 video_detect proc        
         pushx   ax,di,si,ds,es,bx          ; Store registers
         push    cs
@@ -4849,12 +4849,12 @@ video_detect proc
 	ret
 video_detect endp
 
-;±±±±±±± MoveXY_di ±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 5.07.94 ±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí MoveXY_di ‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí 5.07.94 ‚ñí‚ñí‚ñí
 ; This procedure moves to the offset indicated by an X & Y cusor location.
 ; In:  ah = Row
 ;      al = Column
 ; Out: di = Memory Offset
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 MoveXY_di proc
                 push    cx              ; Save cx
 		xor     cl, cl          ; Clear cl
@@ -4874,11 +4874,11 @@ MoveXY_di proc
 		ret
 MoveXY_di endp
 
-;±±±±±±± fill_atribute ±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 5.07.94 ±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí fill_atribute ‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí 5.07.94 ‚ñí‚ñí‚ñí‚ñí
 ; In:   ah = Row
 ;       al = Column
 ; Out:  di = Memory Offset, created by moveXY_di
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 fill_atribute proc        
         push    di
 	mov     al,1
@@ -4910,12 +4910,12 @@ read_key proc
         ret
 read_key endp
 
-;±±±±±±± convert_keyb ±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 6.07.94 ±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí convert_keyb ‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí 6.07.94 ‚ñí‚ñí
 ; universal key convert procedure
 ; In:   al = In Key
 ; Out:  al = Converted key                        
 ; Ignoring when chosen from a list or US keyboard
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 convert_keyb proc
 	cmp     cs:[chosenlist],1
 	je      cs_buy
@@ -4939,7 +4939,7 @@ convert_keyb proc
 	jne     cs_nextchar
 	mov     dx,offset US
 	sub     bx,dx
-	mov     dx,bx   ;dans dx<-position Ö rajouter
+	mov     dx,bx   ;dans dx<-position √† rajouter
 	call    mov@bx
 	add     bx,dx
 	dec     bx
@@ -4952,12 +4952,12 @@ convert_keyb proc
 convert_keyb endp
 
 
-;±±±±±±± mov@bx ±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 6.07.94 ±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí mov@bx ‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí 6.07.94 ‚ñí‚ñí
 ; universal key convert procedure, move into bx the destination string
 ; In:   cs:[keyb], the chosen keyboard: one word
 ; Out:  bx = pointer to string                    
 ; Error: bad keyboard value specified
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 mov@bx proc
 	cmp     cs:[@keyb],'BE'
 	jne     @BE
@@ -5078,11 +5078,11 @@ mov@bx proc
 	ret
 mov@bx endp
 
-; ±±±±±± @keyboards ±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 6.07.94 ±±
+; ‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí @keyboards ‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí 6.07.94 ‚ñí‚ñí
 ; universal key convert procedure, first called routine
 ; mode into cs:[@keyb] the chosen keyboard
 ; al is modified, si is maintained
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 @keyboards proc
         push    si
 	lodsb
@@ -5093,9 +5093,9 @@ mov@bx endp
 	ret
 @keyboards endp
 
-; ±±±±±± @ups      ±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 8.07.94 ±±
+; ‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí @ups      ‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí 8.07.94 ‚ñí‚ñí
 ; outputs on the same line at the end the up caracter
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 @ups proc
         push    cx
 	mov     bh,0
@@ -5112,9 +5112,9 @@ mov@bx endp
 	ret
 @ups endp
 
-; ±±±±±± @dns      ±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 8.07.94 ±±
+; ‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí @dns      ‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí 8.07.94 ‚ñí‚ñí
 ; outputs on the same line at the end the down caracter
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 @dns proc
         push    cx
 	mov     bh,0
@@ -5266,12 +5266,12 @@ params  struc
 	ab_escape            db      0
 params ends
 
-;±±±±±±± chICAGO ±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± version 2.61 ±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí chICAGO ‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí version 2.61 ‚ñí
 ; Is DOS 7.xx running?
 ;       check through standard DOS int 21h fnct 30h
 ;       set the in_chicago flag, redo the configuration if chICAGO default
 ;       and warn if newer version.
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 running_chicago proc
 	pushx   bx,cx,dx
 	mov     ah,30h
@@ -5317,10 +5317,10 @@ running_chicago_msg proc
 	ret
 running_chicago_msg endp
 
-;±±±±±±± TABULATOR ±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± version 2.62 ±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí TABULATOR ‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí version 2.62 ‚ñí
 ; caller: scp@termin
 ; Show the configuration contained in cnf_contents on screen page 1
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 show_scrolling proc
         pushx   bx,cx,dx,si,di,es,ds         ;preserve registers
 
@@ -5403,7 +5403,7 @@ hzs_dec:
 	dec     bx
 	ret
 hzs_filter:
-	cmp     dl,'˝'
+	cmp     dl,'¬≤'
 	jne     hzs_not_color
         push    cs
         pop     es
@@ -5415,11 +5415,11 @@ hzs_not_color:
 	jmp     hzs_next
 horizontal_scrolling endp
 
-;±±±±±±± TABULATOR ±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± version 2.62 ±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí TABULATOR ‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí version 2.62 ‚ñí
 ; caller: show_scrolling
 ; filter the caracters, going through show_scrolling to screen, in order to
 ; check for colors, ends and pages...
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 filter_chars proc
 fc_beginning:
         cmp     al,255
@@ -5432,7 +5432,7 @@ fc_n255:
         mov     al,0    ;' '
 	jmp     fc_aln13
 fc_n13:
-        cmp     al,'˝'
+        cmp     al,'¬≤'
 	jne     fc_not_color
         push    cs
         pop     es
@@ -5537,13 +5537,13 @@ scr_beg:
 	mov     ah,0
 	int     16h
         call    convert_keyb
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 ; breakthrough inLINE disabler v 001
         cmp     al,'E'
         je      scr_inLINE
         cmp     al,'e'
         je      scr_inLINE
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
         cmp     al,8
         je      scr_help
         cmp     al,0
@@ -5643,9 +5643,9 @@ scr_beg@@:
 scr_movements endp
 
 
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 ; breakthrough inline question enabler/disabler, 13.09.95
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 inline_question_mark proc
         pushx   cx,ax,bx,dx,es,ds,si,di
 
@@ -5792,9 +5792,9 @@ iqm_correct:
         ret
 iqm_define_line endp
 
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 ; breakthrough inline disabler, 13.09.95
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 inline_disable_line proc
         pushx   cx,ax,bx,dx,es,ds,si,di
         mov     si,cs:[inline_si_address]
@@ -5843,7 +5843,7 @@ inline_disable_line proc
         mov     al,'?'
         cmp     es:[bx+1],al
         jne     nquest_idl
-        mov     al,'Û'
+        mov     al,'¬æ'
         mov     es:[bx+1],al
         mov     al,7
         mov     es:[bx+2],al
@@ -6084,7 +6084,7 @@ scr_inLINE_statusline proc
 scr_inLINE_statusline endp
 
 
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 ; breakthrough inLINE disabler v 001
 scr_inLINE_process proc
         clc
@@ -6145,7 +6145,7 @@ inline_hide_cursor proc
         ret
 inline_hide_cursor endp
 
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 
 scroll_tohome_proc proc
         cmp     cs:[inline_enabled],1
@@ -6344,9 +6344,9 @@ nepe_50:
 	ret
 efface_page1_ecran endp
 
-;±±±±±±± WaitVSync ±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± ?.09.94 ±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí WaitVSync ‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí ?.09.94 ‚ñí‚ñí
 ; Wait for vertical retrace by LOOM
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 
 WaitVSync       proc
 		cmp     cs:[hlp_buffer],1
@@ -6415,9 +6415,9 @@ hlp_help proc
 hlp_help endp
 
 
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 ; pause...asking to press a key...stosb changes color
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 slam_enter proc
         call    push_cursor
         pushx   bx,cx,dx
@@ -6494,10 +6494,10 @@ slam_enter proc
         ret
 slam_enter endp
 
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 ; returns carry if a key was pressed, otherwise returns no carry after
 ; timed out.
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 attend_timer_routine proc
         pushx   bx,cx,dx
         clc
@@ -6528,9 +6528,9 @@ attend_timer_routine proc
         ret
 attend_timer_routine endp
 
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 ; set carry if this version of DOS should be timered, combination of /J & /T
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 define_attendre proc
         clc
         pushx   ax,bx,cx,dx
@@ -6562,9 +6562,9 @@ define_attendre proc
         ret
 define_attendre endp
 
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 ; TRANSFORMER LE KEY_DELAY EN KEY_TIMER?
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 analyse_wait proc
         cmp     cs:[attend_timer],1
         je      attend_void
@@ -6701,11 +6701,11 @@ inline_num2string proc
 		ret			; Return dx:ax = ASCII number
 inline_num2string endp
 
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 ; This procedure prints a character on the screen using the DOS         ;
 ; function call.                                                        ;
 ; On entry:     dl      Byte to print on screen.                        ;
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 write_char      proc
         pushx    ax,bx,cx,dx      
 
@@ -6731,10 +6731,10 @@ wc_nspace:
 	ret                             ;And return
 write_char      endp
 
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 ; This procedure writes a 16-bit, unsigned number in decimal notation.  ;
 ; On entry:     dx      N : 16-bit, unsigned number.                    ;
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí‚ñí
 write_decimal   proc
         push    ax                      ;Save registers used here
         push    cx
@@ -6901,7 +6901,7 @@ make_line_color proc
 make_line_color endp
 
 compiled_date           db      'assembl.: 11/01/96 (14:26)'
-                        db      '  ˝',0
+                        db      '  ¬≤',0
 inline_si_address       dw      ?
 line_color              db      200 dup (7)
 timer_position          db      1
@@ -6919,7 +6919,7 @@ scroll_numlines         dw      0
 waitu                   db      0
 chicago_waitu           db      0
 dos_waitu               db      0
-ch_string               db      '˙˘˛€˛˘ˇ'
+ch_string               db      '¬∑¬®‚ñ†‚ñà‚ñ†¬®¬†'
 ch_offset               dw      offset ch_string
 timer                   dw      ?
 hlp                     params  <7,0,?,0,?,0>
@@ -7071,29 +7071,29 @@ page1_beginning         dw      ?
 bootit_list             db      0
 rebooted                db      0
 elite_msg               db      0
-be                      db      '<>¸1234567890¯_AZERTYUIOP˘*QSDFGHJKLM%ú>WXCVBN?./+˝&Ç"''(ıä!áÖ)-^$MóÊ<;:=ˇ'
-cf                      db      'ÆØ|!"/$%?&*()_+QWERTYUIOP^§ASDFGHJKL:`>ØZXCVBNM''.ê#1234567890-=^•;`<Æ,.Çˇ'
-cz                      db      '&*¯1234567890%ÛQWERTZUIOP/(ASDFGHJKL" `*YXCVBNM?:_;+234567890=''[);''\&,.-ˇ'
-sl                      db      '&*¯1234567890%ÛQWERTZUIOP/(ASDFGHJKL" )*YXCVBNM?:_;+234567890=''[ ;''\&,.-ˇ'
-dk                      db      '<>ı!"#œ%&/()=?`QWERTYUIOPè^ASDFGHJKLíù*>ZXCVBNM;:_´1234567890+ÔÜ˘ëõ''<,.-ˇ'
-su                      db      '<>´!"#œ%&/()=?`QWERTYUIOPè^ASDFGHJKLôé*>ZXCVBNM;:_ı1234567890+ÔÜ˘îÑ''<,.-ˇ'
-fr                      db      '<>¯1234567890¯+AZERTYUIOP˘úQSDFGHJKLM%Ê>WXCVBN?./_˝&Ç"''(-ä_áÖ)=^$Mó*<;:!ˇ'
-gr                      db      '<>¯!" $%&/()=?`QWERTZUIOPö*ASDFGHJKLôé''>YXCVBNM;:_^1234567890·''Å+îÑ#<,.-ˇ'
-hu                      db      '\|¯''"+%/=()ôö+QWERTZUIOP{ ASDFGHJKL:"||YXCVBNM?:_0123456789îÅ=[ ;''\\,.-ˇ'
-it                      db      '<>|!"ú$%&/()=?^QWERTYUIOPÇ*ASDFGHJKLá¯ >ZXCVBNM;:_\1234567890''çä+ïÖó<,.-ˇ'
-la                      db      '<>¯!"#$%&/()=?≠QWERTYUIOP˘*ASDFGHJKL•[]>ZXCVBNM;:_|1234567890''®Ô+§{}<,.-ˇ'
-nl                      db      '][¯!"#$%&_()''?~QWERTYUIOP^≥ASDFGHJKLÒ`>[ZXCVBNM;:=@1234567890/¯˘*+''<],.-ˇ'
-no                      db      '<>ı!"#œ%&/()=?`QWERTYUIOPè^ASDFGHJKLùí*>ZXCVBNM;:_|1234567890+\Ü˘õë''<,.-ˇ'
-pl                      db      '<>˙!"# %&/()=?*QWERTZUIOP{ ASDFGHJKL:"|>YXCVBNM;:_˛1234567890+''[ ;''\<,.-ˇ'
-po                      db      '<>~!@#$%^&*()_+QWERTYUIOP{}ASDFGHJKL:"||ZXCVBNM<>?`1234567890-=[];''\\,./ˇ'
-sp@                     db      '<>¶!"˙$%&/()=?®QWERTYUIOP^*ASDFGHJKL•˘Ä>ZXCVBNM;:_ß1234567890''≠`+§Ôá<,.-ˇ'
-sv                      db      '<>´!"# %&/()=?`QWERTYUIOPè^ASDFGHJKLôé*>ZXCVBNM;:_¯1234567890+''Ü˛îÑ''<,.-ˇ'
-sf                      db      '<>¯+"*á%&/()=?`QWERTZUIOPÅ!ASDFGHJKLîÑú>YXCVBNM;:_ı1234567890''^ä˘ÇÖ$<,.-ˇ'
-sg                      db      '<>¯+"*á%&/()=?`QWERTZUIOPä!ASDFGHJKLÇÖú>YXCVBNM;:_ı1234567890''^Å˘îÑ$<,.-ˇ'
-uk                      db      '\|™!"ú$%^&*()_+QWERTYUIOP{}ASDFGHJKL:@~|ZXCVBNM<>?`1234567890-=[];''#\,./ˇ'
-us                      db      '\|~!@#$%^&*()_+QWERTYUIOP{}ASDFGHJKL:"||ZXCVBNM<>?`1234567890-=[];''\\,./ˇ'
-yu                      db      '<>˘!"#$%&/()=?*QWERTZUIOP  ASDFGHJKL   >YXCVBNM;:_˜1234567890''+     <,.-ˇ'
-version_info            db      '3.00.00 ˝',0
+be                      db      '<>¬≥1234567890¬∞_AZERTYUIOP¬®*QSDFGHJKLM%¬£>WXCVBN?./+¬≤&√©"''(¬ß√®!√ß√†)-^$M√π¬µ<;:=¬†'
+cf                      db      '¬´¬ª|!"/$%?&*()_+QWERTYUIOP^√±ASDFGHJKL:`>¬ªZXCVBNM''.√â#1234567890-=^√ë;`<¬´,.√©¬†'
+cz                      db      '&*¬∞1234567890%¬æQWERTZUIOP/(ASDFGHJKL" `*YXCVBNM?:_;+234567890=''[);''\&,.-¬†'
+sl                      db      '&*¬∞1234567890%¬æQWERTZUIOP/(ASDFGHJKL" )*YXCVBNM?:_;+234567890=''[ ;''\&,.-¬†'
+dk                      db      '<>¬ß!"#¬§%&/()=?`QWERTYUIOP√Ö^ASDFGHJKL√Ü√ò*>ZXCVBNM;:_¬Ω1234567890+¬¥√•¬®√¶√∏''<,.-¬†'
+su                      db      '<>¬Ω!"#¬§%&/()=?`QWERTYUIOP√Ö^ASDFGHJKL√ñ√Ñ*>ZXCVBNM;:_¬ß1234567890+¬¥√•¬®√∂√§''<,.-¬†'
+fr                      db      '<>¬∞1234567890¬∞+AZERTYUIOP¬®¬£QSDFGHJKLM%¬µ>WXCVBN?./_¬≤&√©"''(-√®_√ß√†)=^$M√π*<;:!¬†'
+gr                      db      '<>¬∞!" $%&/()=?`QWERTZUIOP√ú*ASDFGHJKL√ñ√Ñ''>YXCVBNM;:_^1234567890√ü''√º+√∂√§#<,.-¬†'
+hu                      db      '\|¬∞''"+%/=()√ñ√ú+QWERTZUIOP{ ASDFGHJKL:"||YXCVBNM?:_0123456789√∂√º=[ ;''\\,.-¬†'
+it                      db      '<>|!"¬£$%&/()=?^QWERTYUIOP√©*ASDFGHJKL√ß¬∞ >ZXCVBNM;:_\1234567890''√¨√®+√≤√†√π<,.-¬†'
+la                      db      '<>¬∞!"#$%&/()=?¬°QWERTYUIOP¬®*ASDFGHJKL√ë[]>ZXCVBNM;:_|1234567890''¬ø¬¥+√±{}<,.-¬†'
+nl                      db      '][¬∞!"#$%&_()''?~QWERTYUIOP^‚îÇASDFGHJKL¬±`>[ZXCVBNM;:=@1234567890/¬∞¬®*+''<],.-¬†'
+no                      db      '<>¬ß!"#¬§%&/()=?`QWERTYUIOP√Ö^ASDFGHJKL√ò√Ü*>ZXCVBNM;:_|1234567890+\√•¬®√∏√¶''<,.-¬†'
+pl                      db      '<>¬∑!"# %&/()=?*QWERTZUIOP{ ASDFGHJKL:"|>YXCVBNM;:_‚ñ†1234567890+''[ ;''\<,.-¬†'
+po                      db      '<>~!@#$%^&*()_+QWERTYUIOP{}ASDFGHJKL:"||ZXCVBNM<>?`1234567890-=[];''\\,./¬†'
+sp@                     db      '<>¬™!"¬∑$%&/()=?¬øQWERTYUIOP^*ASDFGHJKL√ë¬®√á>ZXCVBNM;:_¬∫1234567890''¬°`+√±¬¥√ß<,.-¬†'
+sv                      db      '<>¬Ω!"# %&/()=?`QWERTYUIOP√Ö^ASDFGHJKL√ñ√Ñ*>ZXCVBNM;:_¬∞1234567890+''√•‚ñ†√∂√§''<,.-¬†'
+sf                      db      '<>¬∞+"*√ß%&/()=?`QWERTZUIOP√º!ASDFGHJKL√∂√§¬£>YXCVBNM;:_¬ß1234567890''^√®¬®√©√†$<,.-¬†'
+sg                      db      '<>¬∞+"*√ß%&/()=?`QWERTZUIOP√®!ASDFGHJKL√©√†¬£>YXCVBNM;:_¬ß1234567890''^√º¬®√∂√§$<,.-¬†'
+uk                      db      '\|¬¨!"¬£$%^&*()_+QWERTYUIOP{}ASDFGHJKL:@~|ZXCVBNM<>?`1234567890-=[];''#\,./¬†'
+us                      db      '\|~!@#$%^&*()_+QWERTYUIOP{}ASDFGHJKL:"||ZXCVBNM<>?`1234567890-=[];''\\,./¬†'
+yu                      db      '<>¬®!"#$%&/()=?*QWERTZUIOP  ASDFGHJKL   >YXCVBNM;:_¬∏1234567890''+     <,.-¬†'
+version_info            db      '3.00.00 ¬≤',0
 critical_version        db      7
 no_envvar               db      0
 extatr                  db      7
@@ -7107,6 +7107,3 @@ help_call               db      0
 iloom_enabled           db      0
 
 end                                     ;oh finally the end...
-
-ˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇ§lêl  Q!          ! ˚ëãvÎää¡¿¯òãÿÄ·∞“‡FÄ< uÁ^_…¬  »
-  WVã~ãEâFˆãEâF¯äEàF˝äEàF¸h™j WËl%HuÈø@@uÈºWh∏KË˛¸ãÉ˛&uÈßtVËf\ˆuÕâv˙ˆ∏Kt3ˇÎmˇvˇvËe¸ˇ6JË•ãÿâF˛äG*‰ã¯*‚ˆÿã^,äOã^*ÌO;¡v†‚ãœ*¡˛»Îˇˇˇ

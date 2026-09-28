@@ -1,8 +1,8 @@
- อออออออ MULTIPLE CONFIGURATIONS!อออออออออออ
+ โ•โ•โ•โ•โ•โ•โ• MULTIPLE CONFIGURATIONS!โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
  -- A Stolen Technologies Inc. Software ----
  <=========================================>
  <------- AUTOCONF, version 3.00! (beta 2)->
- ออออออออออออ ENGLISH VERSION ออออออออออออออ 
+ โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ• ENGLISH VERSION โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ• 
  The ever best multiple configs software!
  # AUTOCONF 3.00.00 (beta 2)
         iLINE 1.10 corrected bugs!
@@ -12,4 +12,4 @@
  # UNRF QEMM un /RF 1.32
  # BOOTIT 1.5
  # READCONF 4.0 (iREAD for DOS 5 and below)
- ออออออออออ Made in Switzerland ! ออออออออออ
+ โ•โ•โ•โ•โ•โ•โ•โ•โ•โ• Made in Switzerland ! โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•

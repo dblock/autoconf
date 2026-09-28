@@ -1,535 +1,535 @@
-hlp_msg db 'ıÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»',10
-	db 'º Chers utilisateurs, merci d''avoir choisi ıAUTOCONF:ı. Vous ne regretterez pas  º',10
-	db 'º ce bon choix!                                                         D.D.   º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-        db 'º    ıCE QUE EST ıAUTOCONF:ı                                                      º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-	db 'º ıAUTOCONFı est un programme, permettant de choisir au d‚marrage de votre       º',10
-	db 'º ordinateur, diff‚rentes configurations des gestionnaires de m‚moire, des     º',10
-	db 'º p‚rif‚riques ou d''autres r‚sidents, en fonction des logiciels que l''utili-   º',10
-	db 'º sateur d‚sire employer par la suite dans son travail.                        º',10
-	db 'º ıAUTOCONFı est un programme trŠs souple, et possŠde de nombreux avantages au   º',10    
-	db 'º niveau de l''utilisation que de nombreux logiciels semblables n''ont pas.      º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-	db 'º    ıPOURQUOI BESOIN DE CONFIGURATIONS MULTIPLES?         ı                     º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-	db 'º Avez-vous d‚j… eu des erreurs de ''M‚moire Insuffisante''? Votre gestionnaire  º',10
-	db 'º souris prend 20k et il vous ‚nerve lorsque vous n''en avez pas besoin et que  º',10
-	db 'º la m‚moire manque pour un autre programme?                                   º',10
-	db 'º                                                                              º',10
-	db 'º Combien de fois ‚ditez-vous le fichier CONFIG.SYS pour y rajouter des REMs?  º',10
-	db 'º Ou pire, combien de CONFIG.SYSs avez vous cr‚‚ et que vous copiez au besoin? º',10
-	db 'º Ou encore, combien de disquettes boot trainent sur votre bureau? Quel temps  º',10
-	db 'º pr‚cieux vous perdez! Si vous avouez ˆtre victime d''une telle injustice...   º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-	db 'º ı...dans ce cas ıAUTOCONFı est ce qu''il vous faut!!!ı                            º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-	db 'º Vous avez d‚sormais LE PROGRAMME PARFAIT pour les configurations multiples   º',10
-	db 'º dans UN SEUL fichier CONFIG.SYS et UN SEUL fichier AUTOEXEC.BAT. Si vous     º',10
-	db 'º utilisez d‚j… un programme du genre ıAUTOCONFı, voici une courte explication   º',10
-	db 'º et comparaison entre ce qu''ıAUTOCONFı fait, et que des programmes connus comme º',10
-	db 'º Configurations Multiples du DOS 6.x, MBOOT 2.x et LACE 1.x ne font pas!      º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-	db 'º ıAUTOCONFı permet de cr‚er plus de 200 configurations diff‚rentes, accessibles º',10
-	db 'º par une touche du clavier, par les codes ‚tendus (ALT + touche) ou encore    º',10
-	db 'º pas les touches de fonctions (F1...F10).                                     º',10 
-	db 'º                                                                              º',10
-	db 'º Ceci est le moins important,  car l''avantage le  plus grand d''ıAUTOCONFı est   º',10
-	db 'º certainement qu''il ne DOIT PAS ARRETER L''EXECUTION DU CONFIG.SYS EN AUCUN    º',10
-	db 'º CAS (… moins que vous ne le vouliez) : vous choisissez une configuration     º',10
-	db 'º avant le chargement d''ıAUTOCONFı en  simplement  appuyant  sur  une touche du  º',10
-	db 'º clavier qui d‚signe une configuration pr‚d‚finie dans le CONFIG.SYS,  aprŠs  º',10
-	db 'º le test de la RAM et le laconique message WAIT... si vous avez l''AMI BIOS.   º',10
-	db 'º                                                                              º',10
-	db 'º Souvent, vous ne trouvez dans les logiciels semblables, qu''un menu, rarement º',10
-	db 'º trŠs riche en imagination ou en couleurs, dans lequel l''utilisateur est      º',10
-	db 'º forc‚ de choisir une configuration. Dans le meilleur des cas, une config     º',10
-	db 'º par d‚faut est charg‚e. Pour choisir une configuration avec ıAUTOCONFı, il     º',10
-	db 'º suffit d''appuyer sur une seule touche, ce qui vous fait gagner du temps si   º',10
-	db 'º pr‚cieux!                                                                    º',10
-	db 'º                                                                              º',10
-        db 'º Il est possible de cr‚er des sous groupes de configurations, acc‚sibles      º',10
-        db 'º depuis la liste. La configuration principale qui contient le groupe peut     º',10
-        db 'º aussi ˆtre charg‚e! Vous pouvez aller dans n''importe quel groupe et mˆme     º',10
-        db 'º en revenir (pas comme avec quelques logiciels de configurations multiples    º',10
-        db 'º que je ne citerais pas). Une fleche vous indique dans la liste des configs,  º',10
-        db 'º si cette configuration est aussi un groupe!                                  º',10
-	db 'º                                                                              º',10
-        db 'º ıAUTOCONFı possŠde une aide on-line, supporte des pages ind‚finiment multiples º',10
-	db 'º pour la liste des configurations, des modes couleur et n/b, 25 et 50 lignes, º',10
-	db 'º le chargement de seulement la partie commune, arrˆt imm‚diat en cas de       º',10
-	db 'º demande, etc...                                                              º',10
-	db 'º                                                                              º',10
-	db 'º ıAUTOCONFı possŠde une fonction UNIQUE que vous pouvez appeller depuis la listeº',10
-	db 'º des configurations: l''affichage de la configuration mˆme!                    º',10
-	db 'º                                                                              º',10
-        db 'º Encore plus ‚patant! Vous pouvez activer ou desactiver temporairement une    º',10
-        db 'º ligne dans une configuration!                                                º',10
-        db 'º                                                                              º',10
-	db 'º ıAUTOCONFı est trŠs rapide, vous ne remarquez jamais le ralentissement qu''il   º',10
-	db 'º cause … votre ordinateur au d‚marrage! Ces milliers de lignes de code en ASM º',10
-	db 'º ont ‚t‚ soigneusement travaill‚es, afin de ne rien ex‚cuter d''inutile.       º',10
-	db 'º                                                                              º',10
-	db 'º Nombreuses options indispensables ou pratiques sont … votre disposition.     º',10
-	db 'º ıAUTOCONFı est 100% compatible QEMM 7.x, dont le DOSDATA cr‚ait des problŠmes  º',10
-	db 'º incroyables pour les logiciels de configurations multiples. Vous ne pouvez   º',10
-	db 'º malheureusement pas lancer OPTIMIZE de QEMM, car il ignorera ıAUTOCONFı et     º',10
-	db 'º entrainera toutes les configurations … ˆtre charg‚es une aprŠs l''autre.      º',10
-	db 'º                                                                              º',10
-        db 'º ıAUTOCONFı est compatible Windows 95!                                          º',10
-	db 'º                                                                              º',10
-	db 'º Un mode silencieux ou invisible rend le d‚marrage de votre ordinateur        º',10
-	db 'º totalement ordinaire, mais tout en conservant la possibilit‚ de choix de     º',10
-	db 'º configurations. ıAUTOCONFı supporte tous les claviers support‚s par KEYB.COM   º',10
-	db 'º du DOS!                                                                      º',10
-	db 'º                                                                              º',10
-	db 'º ıAUTOCONFı ne prend pas de m‚moire!                                            º',10
-	db 'º                                                                              º',10
-	db 'º L''utilisation est tellement simple que le manuel n''est n‚cessaire qu''une     º',10
-	db 'º seule fois, si vous ne trouvez pas par intuition comment ‡a marche.          º',10
-	db 'º                                                                              º',10
-	db 'º Je pourrais baratiner encore longtemps, mais je pr‚fŠre passer … la suite.   º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-	db 'º Enfin, ıAUTOCONFı est ıŒGRATUITı pour un usage personnel. (Si vous croyez que je  º',10
-	db 'º m‚rite une r‚compense n''h‚sitez pas … me remercier financiŠrement.) Une      º',10
-	db 'º soci‚t‚ … but financier, est certainement en mesure de payer le peu que je   º',10
-	db 'º demande, et ainsi re‡evoir aussi les upgrades r‚guliers.                     º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-	db 'º Si vous voulez recevoir constamment des nouvelles versions d''ıAUTOCONFı:       º',10
-	db 'º $10 (Suisse), $20 (Europe), et $30 (Etats Unis, etc...) par ann‚e.           º',10
-	db 'º Ou contactez moi par modem (appeler avant) ou envoyez encore le num‚ro du    º',10
-	db 'º BBS ou je peux le laisser.                                                   º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-	db 'º ıCOMME ıAUTOCONFı EST GRATUIT, LA VENTE DE LA VERSION QUELCONQUE EST INTERDITE! ıº',10
-	db 'º ıSI VOUS DESIREZ PERSONALISER VOTRE COPIE, ENREGISTREZ VOUS (POINT PRECEDENT)ı º',10
-	db 'º ıTOUT INDIVIDU ESSAYANT DE TIRER QUELCONQUE PROFIT DE CE LOGICIEL, SERA ı      º',10
-	db 'º ıPOURSUIVI D''APRES LA LOI SUISSE!                                            ı º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-	db 'º Consultez WHATSNEW.FR  pour savoir ce qui a chang‚ de la version pr‚c‚dente. º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-	db 'º ıAUTOCONFı existe en ANGLAIS et en FRANCAIS. Si vous voulez une version RUSSE  º',10
-	db 'º contactez moi!                                                               º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-	db 'º ı                       LE MANUEL COMPLET DE ıAUTOCONF:ı                        º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-	db 'º ıPARAMETRES DANS LE CONFIG.SYS ı                                               º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-	db 'º  (vous pouvez commencer une option avec / ou -)                              º',10
-	db 'º                                                                              º',10
-	db 'º ı/Dxı : configuration par d‚faut. Cette option change la configuration         º',10
-	db 'º       par d‚faut charg‚e si vous n''appuyez pas sur une touche qui d‚signe    º',10
-	db 'º       une autre configuration. (sans cette option, la configuration par      º',10
-	db 'º       d‚faut est la configuration A).                                        º',10
-	db 'º Note: pour les configurations ‚tendues (F1...F10) mettez /DF1.../DF0.        º',10
-	db 'º Note: vous ne pouvez sp‚cifier que des configurations du groupe principal.   º',10
-	db 'º                                                                              º',10
-        db 'º ı/Hxı : la configuration par d‚faut pour Windows 95.                           º',10
-        db 'º       ıAUTOCONFı detecte la pr‚sence de DOS 7.00, sous lequel tourne Win 95,   º',10
-	db 'º       et active ce switch dans ce cas. Consultez le chapitre ''Compatibilit‚  º',10
-        db 'º       avec Windows 95'', plus loin dans l''aide.                               º',10
-	db 'º                                                                              º',10
-        db 'º ı/Tı[ıDxı[ıuı]][ıCxı[ıuı]]ı : le temps qu''ıAUTOCONFı attendra une touche de la part de    º',10
-        db 'º       l''utilisateur. Normalement vous avez suffisamment de temps pour choisirº',10
-        db 'º       une configuration avant le lancement d''ıAUTOCONFı, aprŠs le laconique    º',10
-        db 'º       message du demarrage du dos.                                           º',10
-        db 'º                                                                              º',10
-        db 'º [ıDı]: sp‚cifie le temps d''attente sous DOS inf‚rieur … 7.00                   º',10
-        db 'º [ıCı]: sp‚cifie le temps d''attente sous DOS 7.00 et sup‚rieur (Windows 95).    º',10
-        db 'º [ıuı]: ne pas afficher la pulsation pendant l''attente, ex: ı/T5uı                º',10
-	db 'º                                                                              º',10
-        db 'º Exemple: /TD2uC3u forcera ıAUTOCONFı d''attendre 2 secondes sous DOS et 3 sous  º',10
-        db 'º          Windows 95; /T5 forcera ıAUTOCONFı d''attendre toujours 5 secondes.    º',10
-        db 'º                                                                              º',10
-        db 'º Note: l''ordre des options n''est pas important, ex: /TC2D4u = /TD4uC2         º',10
-        db 'º                                                                              º',10
-	db 'º ı/Pı :  mode silencieux: si les (magnifiques) messages de ıAUTOCONFı vous        º',10
-	db 'º       d‚rangent vous pouvez les faire totalement disparaŒtre.                º',10
-	db 'º Note: la liste de configurations et le manuel seront tout de mˆme affich‚s   º',10
-	db 'º       si vous les demandez. Les erreurs seront aussi signal‚es.              º',10
-	db 'º                                                                              º',10
-	db 'º ı/Nı :  ne pas effacer l''‚cran au chargement d''ıAUTOCONFı.                       º',10
-	db 'º                                                                              º',10
-	db 'º ı/Eı :  messages en noir et blanc. Si les superbes messages en couleur  vous   º',10
-	db 'º       d‚rangent, alors utilisez cette option. C''est aussi utile pour ceux    º',10
-	db 'º       qui ont un ‚cran LCD avec un faible nombre de niveaux de gris, car     º',10
-	db 'º       les messages de couleurs sombres sont alors peu lisibles.              º',10
-	db 'º                                                                              º',10
-	db 'º ı/Kxxı :  clavier utilis‚, o— xx:                                              º',10
-	db 'º                                                                              º',10
-	db 'º   Belgique                     ıBEı  ³ Br‚sil                       ıBRı         º',10
-	db 'º   Canada fr.                   ıCFı  ³ Tch‚coslovaquie (tch‚que)    ıCZı         º',10
-	db 'º   Tch‚coslovaquie (slovaque)   ıSLı  ³ Danemark                     ıDKı         º',10
-	db 'º   Finlande                     ıSUı  ³ France                       ıFRı         º',10
-	db 'º   Allemagne                    ıGRı  ³ Hongrie                      ıHUı         º',10
-	db 'º   Italie                       ıITı  ³ Am‚rique latine              ıLAı         º',10
-	db 'º   Pays-Bas                     ıNLı  ³ NorvŠge                      ıNOı         º',10
-	db 'º   Pologne                      ıPLı  ³ Portugal                     ıPOı         º',10
-	db 'º   Espagne                      ıSPı  ³ SuŠde                        ıSVı         º',10
-        db 'º   Suisse (romande)             ıSFı  ³ Suisse (all‚manique)         ıSGı         º',10
-	db 'º   Royaume-Uni                  ıUKı  ³ Croatie/Serbie/Slov‚nie      ıYUı         º',10
-	db 'º                                                                              º',10
-	db 'º Le clavier ıUSı (Etats Unis) est celui par d‚faut.                             º',10
-	db 'º                                                                              º',10
-	db 'º ı/Jı[ıDı][ıCı] : toujours afficher une liste de configurations et demander …  en   º',10
-        db 'º      choisir une.                                                            º',10
-	db 'º [ıDı]: toujours afficher la liste sous DOS inf‚rieur … 7.00                    º',10
-        db 'º [ıCı]: toujours afficher la liste sous DOS 7.00 et sup‚rieur (Windows 95).     º',10
-        db 'º      Note: ı/Jı sans autres active les deux options.                           º',10
-        db 'º      Note: l''ordre des options n''est pas important, ex: /JCD, /JDC, ou /JD.  º',10
-	db 'º                                                                              º',10
-        db 'º En combinant les options ı/Jxxı et ı/Tı, vous obtenez au d‚marrage la liste des  º',10
-        db 'º configurations qui disparaitra aprŠs le temps d‚fini par /Tx pour charger la º',10
-        db 'º configuration par d‚faut. Si vous appuyez sur une touche pendant le temps    º',10
-        db 'º d''attente, la liste des configuration r‚agira normalement et annulera le     º',10
-        db 'º d‚compte. L''option /TDx n''influencera que /JD et /TCx que /JC.               º',10
-        db 'º                                                                              º',10
-	db 'º ı/Sı : Au d‚marrage ıAUTOCONFı cr‚e un fichier ıAUTOCONF.DATı.                     º',10
-	db 'º      qui contien la configuration choisie lors du d‚rnier d‚marrage. Avec    º',10
-	db 'º      cette option, si aucune touche n''a ‚t‚ appuy‚e ıAUTOCONFı charge la       º',10
-	db 'º      configuration choisie au d‚rnier d‚marrage de votre ordinateur.         º',10
-	db 'º                                                                              º',10
-        db 'º Note: ıAUTOCONF.DATı est toujours cr‚e et modifi‚ ‚ chaque d‚marrage.          º',10
-        db 'º      Ce fichier est modifi‚ par iREAD (integrated READCONF) et utilis‚ par   º',10
-        db 'º      BOOTIT pour les reboots preprogramm‚s.                                  º',10
-	db 'º                                                                              º',10
-	db 'º NB:  Cette option n''a aucun sens  utilis‚e avec ı/Jı.                          º',10
-	db 'º                                                                              º',10
-	db 'º ı/Mxı : Au d‚marrage ıAUTOCONFı affiche des message de bienvenue qui d‚pendent   º',10
-	db 'º      de l''heure … laquelle vous allumez votre ordinateur. Cette option       º',10
-	db 'º      permet de chager les (fabuleux) messages d''initialisation:              º',10
-	db 'º                                                                              º',10
-	db 'º            ı/M1ı - message du matin                                            º',10
-	db 'º            ı/M2ı - message de la journ‚e                                       º',10        
-	db 'º            ı/M3ı - message du soir                                             º',10
-	db 'º            ı/M4ı - message de la nuit                                          º',10
-	db 'º                                                                              º',10
-	db 'º  Le mˆme message peut ˆtre assign‚ aux quatres messages de la journ‚e:       º',10
-	db 'º                                                                              º',10
-	db 'º ı/M[xxxx]ı : o— x est le num‚ro du message                                     º',10        
-	db 'º                                                                              º',10
-	db 'º Ainsi si vous rajouter une option tel que:                                   º',10
-	db 'º                                                                              º',10
-	db 'º         ı  /M[13]I|l fait beau,#les oiseaux chantent... ı                      º',10
-	db 'º                                                                              º',10
-	db 'º ıAUTOCONFı affichera pour les messages du matin et du soir:                    º',10
-	db 'º                                                                              º',10
-	db 'º ıIl fait beau,ı                                                                º',10
-	db 'º ıles oiseaux chantent... ı                                                     º',10
-	db 'º                                                                              º',10
-	db 'º Note: chaque message peut avoir une infinit‚ de caractŠres  tant que la      º',10        
-	db 'º       ligne du device=AUTOCONF tient sur une ligne. Le caractŠre ı|ı  sert     º',10
-	db 'º       … distinguer les majuscules des minuscules. Le caractŠre ı#ı sert …      º',10
-	db 'º       distinguer les lignes. (il fait le saut de lignes) Si le nombre de     º',10
-	db 'º       caractŠres d‚passe 77 alors le messages est renvoy‚ sur la ligne       º',10
-	db 'º       suivante de toute fa‡on.                                               º',10
-	db 'º Par exemple: ıdevice=AUTOCONF.SYS /M3s|alut cher #|u|tilisateur d''|AUTOCONFı   º',10
-	db 'º donnera sur l''‚cran aprŠs le message d''initalisation:                        º',10
-	db 'º                                                                              º',10
-	db 'º ıSalut cherı                                                                   º',10
-	db 'º ıUtilisateur d''AUTOCONFı                                                       º',10        
-	db 'º                                                                              º',10
-	db 'º Note: si vous d‚sirez afficher des caractŠres tels que ı| / - ou #,ı qui       º',10        
-	db 'º       sont normalement consid‚r‚s comme des caractŠres de contr“le, ‚crivez  º',10                
-	db 'º       les simplement deux fois de suite: ı|| // -- ou ##ı.                     º',10        
-	db 'º                                                                              º',10
-	db 'º ı/Cxı : Si vous demandez la liste des configurations, celle-ci met en          º',10        
-	db 'º       ‚vidence la lettre qui designe la configuration sur laquelle le        º',10
-	db 'º       curseur se trouve. Cette option d‚finit la couleur du curseur et de    º',10
-	db 'º       la configuration mise en ‚vidence.                                     º',10
-	db 'º       D‚faut est 127.                                                        º',10
-	db 'º ex:ı /C}ı (Alt 125) donnera des caractŠres bleus clairs sur un fond gris.      º',10
-	db 'º                                                                              º',10
-        db 'º ı/Fxı : D‚finit la couleur des d‚signations des configurations dans la liste.  º',10        
-        db 'º       (mˆme syntaxe que pour ı/Cxı)                                            º',10
-        db 'º                                                                              º',10
-	db 'º ı/Gı  : L''option pour les plus capricieux: avant chaque liste de configs,      º',10
-	db 'º       un message qui indique quelles touches peuvent ˆtre utilis‚es afin de  º',10
-	db 'º       choisir une configuration, voir une configuration ou afficher l''aide   º',10
-	db 'º       est affich‚. Cette option permet de ne pas afficher ce message!        º',10
-	db 'º                                                                              º',10
-        db 'º ı/5ı  : Forcer un mode de 50 lignes sur l''ecran. Ceci signifie que ıAUTOCONFı    º',10        
-	db 'º       utilisera ce mode par d‚faut pour tout affichage et retiendra cet      º',10
-	db 'º       ‚tat aprŠs avoir termin‚ son ex‚cution.                                º',10
-	db 'º                                                                              º',10
-        db 'º ı/Oı  : Mode de compatibilit‚ de Windows 95, et MS-DOS inf‚rieur … 7.00,       º',10
-	db 'º       utilisant DOSDATA de QEMM. Pour des informations d‚taill‚es consultez  º',10
-        db 'º       le chapitre ''Compatibilit‚ avec Windows 95'', point 3.                  º',10
-        db 'º                                                                              º',10
-        db 'º ı/Iı  : D‚sactiver le mode d''edition dans le visionneur des configurations.    º',10
-        db 'º                                                                              º',10
-        db 'º ı/Lı  : Toujours afficher le nom de la configuration au d‚marrage.             º',10
-        db 'º                                                                              º',10
-        db 'º ı/Bı  : Ne pas cr‚er le fichier cach‚ AUTOCONF.DAT, effacer si''il existe.      º',10
-        db 'º       /S n''aura aucun effet, BOOTIT ne sera pourtant pas ignor‚!             º',10
-        db 'º                                                                              º',10
-        db 'º ı/Zı  : mode eLiTe! (pas pour les lamers!) ı/ZZı inverse le mode ‚lite.          º',10
-        db 'º                                                                              º',10
-        db 'º ı/Vı  : utiliser READCONF au lieu de iREAD (rajoutez READCONF dans l''AUTOEXEC) º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-	db 'º ıSTRUCTURE DU CONFIG.SYS       ı                                               º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-        db 'ºıdevice=[lecteur][rep]<AUTOCONF.SYS> /[PARAM1] /[PARAM2] ı; appel d''ıAUTOCONFı.   º',10
-	db 'º                                                                              º',10
-	db 'ºıdevice=ı*ı<DESIGNATION> <NOM DE LA CONFIG DU ıGROUPE PRINCIPALı>ı                  º',10
-	db 'º                                                                              º',10
-        db 'º        <DESIGNATION> : ıAı pour la configuration A, ıF1ı pour la config F1, etc. º',10
-	db 'º        <NOM DE LA CONFIG> : le nom de la configuration, avec le caractŠre ı|ı  º',10
-	db 'º                             pour changer entre des lettres majuscules et     º',10
-	db 'º                             minuscules.                                      º',10
-	db 'º                                                                              º',10
-	db 'º ıdevice=ı**ı<DESIGNATION> <NOM DE LA ıSOUSı CONFIG> ı                              º',10
-	db 'º ı... configuration ...ı                                                        º',10
-        db 'º ıdevice=ı**ı<DESIGNATION> <NOM DE LA ıSOUSı CONFIG> ı                              º',10
-	db 'º ı... configuration ...ı                                                        º',10
-	db 'º ıdevice=ı***ı<DESIGNATION> <NOM DE LA ıSOUS SOUSı CONFIG> ı                        º',10
-	db 'º ı... configuration ...ı                                                        º',10
-        db 'º ıdevice=ı*ı<DESIGNATION> <NOM DE LA CONFIG DU ıGROUPE PRINCIPALı>ı                 º',10
-	db 'º ı... et ainsi de suite...ı                                                     º',10
-	db 'º                                                                              º',10
-        db 'º Note: Vous pouvez faire jusqu''… 20 niveaux de sous-configurations.           º',10
-        db 'º                                                                              º',10
-        db 'º Note: Pour cr‚er une couleur dans le nom de la configuration, le proc‚d‚ est º',10
-        db 'º       identique … celui des messages personalis‚s au d‚marrage d''ıAUTOCONFı.   º',10
-        db 'º                                                                              º',10
-	db 'º Note: Seules les configurations du groupe principal peuvent ˆtre charg‚es en º',10
-	db 'º       simplement appuiyant sur une touche au d‚marrage aprŠs le message du   º',10
-	db 'º       d‚marrage du DOS, les sous configurations doivent ˆtre charg‚es …      º',10
-	db 'º       partir de la liste des configurations, obtenue avec la BARRE D''ESPACE. º',10
-	db 'º                                                                              º',10
-	db 'º Note: Les configurations peuvent ˆtre mises dans n''importe quel ordre. La    º',10
-	db 'º       liste des configurations sera affich‚e dans l''ordre alphab‚tique, les  º',10
-	db 'º       configurations ‚tendues (F1...F10) d''abord.                            º',10
-	db 'º                                                                              º',10
-	db 'º Note: Si vous n''avez pas cr‚‚ de configuration par d‚faut, ıAUTOCONFı affiche  º',10
-	db 'º       une erreur de configuration non-trouv‚e.                               º',10
-	db 'º                                                                              º',10
-	db 'º Note: Si vous avez cr‚‚ deux configurations avec la mˆme lettre (ex: deux    º',10
-	db 'º       configurations G, alors si vous choisissez la configuration G, LES DEUXº',10
-	db 'º       seront charg‚es, mais ceci est valable uniquement pour les configs du  º',10
-	db 'º       groupe principal.                                                      º',10
-	db 'º                                                                              º',10
-        db 'º ıdevice=ı$ı <------------------------>    ı ; rajoutez du texte quelconque, afin º',10
-        db 'º                                         ; de laisser … ıAUTOCONFı la place     º',10
-        db 'º                                         ; suffisante pour rajouter une       º',10
-        db 'º                                         ; ligne SET CONF=... lors du         º',10
-        db 'º                                         ; d‚marrage.                         º',10
-        db 'º Note: ceci remplace le READCONF.EXE des versions pr‚c‚dentes.                º',10
-        db 'º                                                                              º',10
-        db 'º ıAUTOCONFı cr‚e une variable dans l''environnement principal du DOS contenant:  º',10
-        db 'º GROUPE_CONFIG ou simplement CONFIG, en fonction de la configuration choisie. º',10
-        db 'º Ainsi, pour la configuration F6, la variable ıCONFı sera ‚gale … F6 et elle    º',10
-        db 'º aura la valeur F3_F0_J_L pour la configuration L dans le sous groupe J du    º',10
-        db 'º sous groupe F10 du groupe principal F3.                                      º',10
-	db 'º                                                                              º',10
-	db 'º ıŒImportant!ı Cette ligne doit figurer dans le CONFIG.SYS et signifie la fin    º',10
-	db 'º des configurations multiples. La suite est la partie commune, charg‚e avec   º',10
-	db 'º toutes les configurations.                                                   º',10
-	db 'º                                                                              º',10
-	db 'º ıfiles=30                              ı ;est charg‚e avec chaque config.      º',10
-	db 'º ıbuffers=30                            ı                                       º',10
-	db 'º ılastdrive=E                           ı                                       º',10
-	db 'º ıstacks=9,128                          ı                                       º',10
-	db 'º ı... et ainsi de suite ...             ı                                       º',10
-        db 'º                                                                              º',10
-        db 'º (exemple complet)                                                            º',10
-        db 'º                                                                              º',10        
-        db 'º SWITCHES=/F                                                                  º',10        
-        db 'º                                                                              º',10        
-        db 'º DEVICE=C:\UTILS\AUTOCONF.SYS /KSF /DF1 /F /5                                º',10        
-        db 'º                                                                              º',10        
-        db 'º device=**F2 P|rogramming                                                     º',10        
-        db 'º  device=c:\dos\himem.sys /testmem:off                                        º',10        
-        db 'º  devicehigh=c:\dos\setver.exe                                                º',10        
-        db 'º  devicehigh=c:\dos\ansi.sys                                                  º',10        
-        db 'º                                                                              º',10        
-        db 'º device=*F1 DOS                                                               º',10        
-        db 'º  device=c:\dos\himem.sys /testmem:off                                        º',10        
-        db 'º  device=c:\dos\emm386.exe ram                                                º',10        
-        db 'º  devicehigh=c:\utils\mtm\mtmcdai.sys /d:MTMIDE01                             º',10        
-        db 'º  devicehigh=c:\dos\ansi.sys                                                  º',10        
-        db 'º  shell=c:\dos\command.com /p                                                 º',10        
-        db 'º                                                                              º',10        
-        db 'º    device=**F0 DOS                                                           º',10        
-        db 'º         device=c:\dos\himem.sys /testmem:off                                 º',10        
-        db 'º         device=c:\dos\emm386.exe RAM                                         º',10        
-        db 'º         devicehigh=c:\dos\ansi.sys                                           º',10 
-        db 'º                                                                              º',10        
-        db 'º    device=**F1 HIMEM/EMM386 (NOEMS)                                          º',10        
-        db 'º         device=c:\dos\himem.sys /testmem:off                                 º',10        
-        db 'º         device=c:\dos\emm386.exe NOEMS                                       º',10        
-        db 'º         devicehigh=c:\dos\ansi.sys                                           º',10        
-        db 'º         shell=c:\4dos\4dos.com /p                                            º',10        
-        db 'º                                                                              º',10        
-        db 'º device=*W W|indows| (N|o| NETWORK)                                           º',10        
-        db 'º         device=c:\dos\himem.sys /TESTMEM:OFF                                 º',10        
-        db 'º         devicehigh=c:\utils\mtm\MTMCDAI.SYS /D:MTMIDE01                      º',10        
-        db 'º         device=c:\dos\ansi.sys                                               º',10        
-        db 'º         SHELL=C:\4DOS\4DOS.COM /P                                            º',10        
-        db 'º                                                                              º',10        
-        db 'º device=$ <--------------------------->                                       º',10        
-        db 'º                                                                              º',10        
-        db 'º buffers=40                                                                   º',10        
-        db 'º files=40                                                                     º',10        
-        db 'º dos=high,umb                                                                 º',10        
-        db 'º devicehigh=c:\dos\setver.exe                                                 º',10        
-        db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-	db 'º ıSTRUCTURE DE L''AUTOEXEC.BATı (pour les confgis multiples)                     º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-	db 'º ıgoto %conf%              ı  ;saut vers la configuration choisie               º',10
-	db 'º ıgoto def_conf            ı  ;au cas ou le nom est invalide, saut … la config  º',10        
-	db 'º                                ;par d‚faut.                                  º',10
-	db 'º                                                                              º',10
-	db 'º ı:def_conf      ı            ;configuration A arbitrairement celle par d‚faut  º',10
-	db 'º ı:A             ı            ;configuration A                                  º',10
-	db 'º ı...configuration...ı                                                          º',10
-	db 'º ıgoto end      ı             ;saut … la fin de l''AUTOEXEC.BAT                  º',10
-        db 'º                                                                              º',10
-        db 'º ı:<DESIGNATION>[[_<SOUS CONF>]_<SOUS CONF>]  ı                                 º',10
-        db 'º                                                                              º',10
-        db 'º                            ;est la syntaxe g‚n‚rale; pour la sous-configura- º',10
-        db 'º                            ;tion F8 sous la configuration F1, par exemple, ilº',10
-        db 'º                            ;faudra sp‚cifier: F1_F8. Pour plus d''informationsº',10
-        db 'º                            ;consultez le point sur la variable CONF une page º',10
-        db 'º                            ;plus haut.                                       º',10
-        db 'º ıgoto end      ı             ;saut … la fin du AUTOEXEC.BAT                    º',10
-	db 'º                                                                              º',10
-	db 'º ı:end          ı             ;partie COMMUNE                                   º',10
-	db 'º ı...           ı             ;PROMPT=..., PATH=..., etc...                     º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-	db 'º ıTOUCHES                     ı                                                 º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-	db 'º ıL''AIDE ON-LINE, obtenue depuis partout sauf sous TAB avec BACKSPACE:ı         º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-	db 'º ıFLECHES GAUCHE, HAUT ıune ligne plus haut                                     º',10
-	db 'º ı        DROITE, BAS  ıune ligne plus bas                                      º',10
-	db 'º ıPAGE DOWN            ıpage suivante                                           º',10
-	db 'º ıPAGE UP              ıpage pr‚c‚dente                                         º',10
-	db 'º ıESC                  ıquitter l''aide                                          º',10
-	db 'º ıESPACE               ıcouleur - n/b                                           º',10
-	db 'º ıTABULATEUR           ımode 25/50 lignes                                       º',10
-        db 'º ıINSERT               ırechercher une chaŒne de charactŠres                    º',10
-        db 'º ıDELETE               ıannuller le mode de recherche                           º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-	db 'º ıLA LISTE DES CONFIGS, obtenue avec ESPACE … la place d''une config:ı           º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-	db 'º ıBACKSPACE            ıafficher l''aide on-line                                 º',10
-	db 'º ıESPACE ou ENTREE     ıcharger la configuration mise en ‚vidence               º',10
-	db 'º ıFLECHES HAUT         ıscrolling vers la configuration pr‚c‚dente de la liste  º',10
-	db 'º ı        BAS          ıscrolling vers la configuration suivante de la liste    º',10
-	db 'º ı        DROITE       ılister le sous-groupe s''il existe, sinon touche ignor‚e º',10
-	db 'º ı        GAUCHE       ılister le groupe au dessus de sous groupe actuel        º',10
-	db 'º ıHOME & PAGE UP       ıpremiŠre configuration sur l''ecran                      º',10
-	db 'º ıEND & PAGE DOWN      ıderniŠre confiration sur l''ecran                        º',10
-	db 'º ıTABULATEUR           ıafficher la configuration mise en ‚vidence              º',10
-        db 'º ıETOILE               ıterminer ıAUTOCONFı                                       º',10
-	db 'º ıPOINT                ıcharger que la partie commune                           º',10
-	db 'º Toute autre touche d‚signant une configuration, la charge, si elle existe.   º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-	db 'º ıAFFICHAGE DE LA CONFIG MEME, obtenu avec TAB sous la liste des configs:      ıº',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-	db 'º ıFLECHES:             ı                                                        º',10
-	db 'º ıHAUT                 ıscrolling de la configuration vers le haut              º',10
-	db 'º ıBAS                  ıscrolling de la configuration vers le bas               º',10
-	db 'º ıDROITE               ıscrolling de la configuration … droite                  º',10
-	db 'º ıGAUCHE               ıscrolling de la configuration … gauche                  º',10
-	db 'º ıHOME                 ısauter au d‚but de la ligne                             º',10
-	db 'º                      si la configuration excŠde 25 lignes/80 colonnes        º',10
-	db 'º ıPAGE DOWN            ıconfiguration suivante                                  º',10
-	db 'º ıPAGE UP              ıconfiguration pr‚c‚dente                                º',10
-	db 'º ıTAB, ESC             ıretourner dans la liste des configurations              º',10
-	db 'º ıESPACE               ıchanger entre le mode couleur - n/b                     º',10
-	db 'º ıENTREE               ıchoisir la configuration actuelle                       º',10
-	db 'º ıPOINT (.)            ıcharger que la partie commune aprŠs DEVICE=$            º',10
-        db 'º ıBACKSPACE            ıafficher l''aide on-line                                 º',10
-        db 'º ıE (Touche E)         ımode activer/d‚sactiver des lignes                      º',10
-        db 'º ı  ESPACE en mode ''E'' ıactiver/d‚sactiver une ligne                            º',10
-        db 'º ı       ? en mode ''E'' ıactiver/d‚sactiver la demande d''ex‚cuter la ligne       º',10
-        db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-        db 'º ıCOMPATIBILITE AVEC WINDOWS 95:                      ı                         º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-        db 'º Version 2.6+ supporte Windows 95!                                            º',10
-	db 'º                                                                              º',10
-	db 'º Cela implique:                                                               º',10
-	db 'º                                                                              º',10
-        db 'º 1. Lorsque vous initialisez l''ordinateur avec Windows 95 install‚, un choix  º',10
-        db 'º de charger Win 95 ou le DOS pr‚c‚dent vous est offert. F4 charge le DOS et   º',10
-        db 'º une autre touche Win 95. Ceci vous permet de retrouver sans d‚gats votre     º',10
-	db 'º commutateur de commandes comme 4DOS, NDOS ou COMMAND.COM.                    º',10
-	db 'º                                                                              º',10
-	db 'º Les applications 16 bits et toutes celles qui tournent sous DOS inf‚rieur …  º',10
-	db 'º 7.0 n‚c‚ssitent toujours des configurations multiples. Ainsi, losque vous    º',10
-        db 'º faites le choix de charger Win 95, l''option /Dx sera ignor‚e et /Hx pris en  º',10
-        db 'º compte. Ceci vous permet d''avoir une configuration par d‚faut pour Win 95,   º',10
-	db 'º et une autre configuration par d‚faut pour DOS, sans avoir … choisir encore  º',10
-	db 'º une configuration pour l''un des deux.                                        º',10
-	db 'º                                                                              º',10
-        db 'º 2. ıAUTOCONFı forcera l''ecran de passer en mode normal, au cas o— Windows 95   º',10
-	db 'º est en train d''initialiser l''ordinateur. Ceci permet de voir ce qui se passe º',10
-        db 'º deriŠre le magnifique dessin de chargement de Win 95 et pleinement profiter  º',10
-	db 'º des possibilit‚s d''ıAUTOCONF!ı                                                 º',10
-	db 'º                                                                              º',10
-        db 'º 3. Windows 95, DOS et QEMM 7.x DOSDATA:                                      º',10
-	db 'º                                                                              º',10
-	db 'º Si vous utilisez des configurations avec le DOSDATA de QEMM, vous ˆtes forc‚sº',10
-	db 'º de fare la proc‚dure suivante:                                               º',10
-	db 'º                                                                              º',10
-	db 'º      # appuyer sur F4 pour lancer MS-DOS                                     º',10
-	db 'º      # choisir une configuration avec AUTOCONF, contenant DOSDATA            º',10
-	db 'º      # appuyer de nouveau sur F4, puisque DOSDATA reinitialise le CONFIG.SYS º',10
-	db 'º                                                                              º',10
-	db 'º Avec l''option ı/Oı:                                                            º',10
-	db 'º                                                                              º',10
-        db 'º La derniŠre ‚tape est supprim‚e avec ıAUTOCONFı 2.61+. Appuyez simplement sur  º',10
-	db 'º F4, puis choisissez une configuration avec DOSDATA!                          º',10
-	db 'º                                                                              º',10
-	db 'º Note: certains anciens bios ne supportent pas cette fonction                 º',10
-	db 'º                                                                              º',10
-	db 'º Note: la touche F4 sera simul‚e dans tous les cas, sauf si vous lancez       º',10
-        db 'º       Win 95. Si DOSDATA n''est pas pr‚sent, un beep sera ‚mis … la fin du    º',10  
-	db 'º       d‚marrage, puisque l''ordinateur garde la touche jusqu''… la ligne des   º',10
-	db 'º       commandes. Un petit utilitaire a ‚t‚ rajout‚: CLRBUF.SYS et CLRBUF.COM,º',10
-	db 'º       permettant d''effacer le buffer clavier, ainsi supprimant ce beep.      º',10
-	db 'º       CLRBUF ne prend pas de m‚moire et n''affiche rien … son ex‚cution.      º',10
-	db 'º       Utilisez CLRBUF.SYS dans la partie commune des configurations du       º',10
-	db 'º       fichier CONFIG.SYS ou CLRBUF.COM dans l''AUTOEXEC.BAT.                  º',10
-        db 'º                                                                              º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-        db 'º ı NOTE IMPORTANTE POUR LE SUPPORT DE WINDOWS 95:ı                              º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-        db 'º ıAUTOCONFı 2.90 a ‚t‚ test‚ avec Windows 95, version finale du 24 ao–t 1995.   º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-	db 'º ıNOTES IMPORTANTES:ı                                                           º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-	db 'º La ligne: DOS=[HIGH],[UMB] est lue une seule fois dans tout le CONFIG.SYS:   º',10
-	db 'º seule la derniŠre occurence de cette ligne est prise en compte au d‚marrage. º',10        
-	db 'º ıAUTOCONFı ne peut donc pas intervenir quand … la s‚lection de ce paramŠtre.   º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-        db 'º ıAUTOCONFı, version 1.1 … cette d‚rniŠre, toutes les versions de ıREADCONFı, de  º',10
-        db 'º ıiıRıEıAıDı et de ıBOOTITı sont la propri‚t‚ de (moi):                               º',10
-        db 'º ıÜÜÜÜÜÜÜÜÜÜÜ ıDoubrovkine Daniel      ı                                         º',10
-        db 'º ıÛÛÛÛüÛÛÛıÛÛÛÛ ı11, ch. de la ClairiŠre ı                                         º',10
-	db 'º ıÛÛüÛÛÛÛÛÛÛıÛÛ ı1207 GenŠve,            ı                                         º',10
-	db 'º ıÛÛÛÛüÛÛÛıÛÛÛÛ ıSuisse                  ı                                         º',10
-	db 'º ıßßßßßßßßßßß ıt‚l & fax: 41 22 - 735 69 47       ı                              º',10
-        db 'º ıemail: dblock@infomaniak.ch                      ı                            º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-	db 'º ıAUTOCONFı est une conception … l''origine d''un programmeur fran‡ais qui m''est  º',10
-	db 'º inconnu. Une version qui m''a servi de support est parue dans un SVM il y a   º',10
-	db 'º quelques ann‚es. Les 90% du programme original ont ‚t‚s modifi‚s. Le nom n''a º',10
-        db 'º pas ‚t‚ chang‚.                                                              º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-        db 'º Je remercie tous les b‚t… testeurs et tous ceux qui on pris part, quelle     º',10
-	db 'º qu''elle soit dans la cr‚ation de ce programme.                               º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-	db 'º ıTous les noms de compagnies mentionn‚s, ainsi que leurs produits, sont des  ı º',10
-	db 'º ımarques d‚pos‚es de leurs propri‚taires respectifs.ı                          º',10
-	db 'ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼',10
-	db 'ı[                             fin de l''aide                                    '
+hlp_msg db 'Â²â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—',10
+	db 'â•‘ Chers utilisateurs, merci d''avoir choisi Â²AUTOCONF:Â². Vous ne regretterez pas  â•‘',10
+	db 'â•‘ ce bon choix!                                                         D.D.   â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+        db 'â•‘    Â²CE QUE EST Â²AUTOCONF:Â²                                                      â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+	db 'â•‘ Â²AUTOCONFÂ² est un programme, permettant de choisir au dÃ©marrage de votre       â•‘',10
+	db 'â•‘ ordinateur, diffÃ©rentes configurations des gestionnaires de mÃ©moire, des     â•‘',10
+	db 'â•‘ pÃ©rifÃ©riques ou d''autres rÃ©sidents, en fonction des logiciels que l''utili-   â•‘',10
+	db 'â•‘ sateur dÃ©sire employer par la suite dans son travail.                        â•‘',10
+	db 'â•‘ Â²AUTOCONFÂ² est un programme trÃ¨s souple, et possÃ¨de de nombreux avantages au   â•‘',10    
+	db 'â•‘ niveau de l''utilisation que de nombreux logiciels semblables n''ont pas.      â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+	db 'â•‘    Â²POURQUOI BESOIN DE CONFIGURATIONS MULTIPLES?         Â²                     â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+	db 'â•‘ Avez-vous dÃ©jÃ  eu des erreurs de ''MÃ©moire Insuffisante''? Votre gestionnaire  â•‘',10
+	db 'â•‘ souris prend 20k et il vous Ã©nerve lorsque vous n''en avez pas besoin et que  â•‘',10
+	db 'â•‘ la mÃ©moire manque pour un autre programme?                                   â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Combien de fois Ã©ditez-vous le fichier CONFIG.SYS pour y rajouter des REMs?  â•‘',10
+	db 'â•‘ Ou pire, combien de CONFIG.SYSs avez vous crÃ©Ã© et que vous copiez au besoin? â•‘',10
+	db 'â•‘ Ou encore, combien de disquettes boot trainent sur votre bureau? Quel temps  â•‘',10
+	db 'â•‘ prÃ©cieux vous perdez! Si vous avouez Ãªtre victime d''une telle injustice...   â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+	db 'â•‘ Â²...dans ce cas Â²AUTOCONFÂ² est ce qu''il vous faut!!!Â²                            â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+	db 'â•‘ Vous avez dÃ©sormais LE PROGRAMME PARFAIT pour les configurations multiples   â•‘',10
+	db 'â•‘ dans UN SEUL fichier CONFIG.SYS et UN SEUL fichier AUTOEXEC.BAT. Si vous     â•‘',10
+	db 'â•‘ utilisez dÃ©jÃ  un programme du genre Â²AUTOCONFÂ², voici une courte explication   â•‘',10
+	db 'â•‘ et comparaison entre ce qu''Â²AUTOCONFÂ² fait, et que des programmes connus comme â•‘',10
+	db 'â•‘ Configurations Multiples du DOS 6.x, MBOOT 2.x et LACE 1.x ne font pas!      â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+	db 'â•‘ Â²AUTOCONFÂ² permet de crÃ©er plus de 200 configurations diffÃ©rentes, accessibles â•‘',10
+	db 'â•‘ par une touche du clavier, par les codes Ã©tendus (ALT + touche) ou encore    â•‘',10
+	db 'â•‘ pas les touches de fonctions (F1...F10).                                     â•‘',10 
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Ceci est le moins important,  car l''avantage le  plus grand d''Â²AUTOCONFÂ² est   â•‘',10
+	db 'â•‘ certainement qu''il ne DOIT PAS ARRETER L''EXECUTION DU CONFIG.SYS EN AUCUN    â•‘',10
+	db 'â•‘ CAS (Ã  moins que vous ne le vouliez) : vous choisissez une configuration     â•‘',10
+	db 'â•‘ avant le chargement d''Â²AUTOCONFÂ² en  simplement  appuyant  sur  une touche du  â•‘',10
+	db 'â•‘ clavier qui dÃ©signe une configuration prÃ©dÃ©finie dans le CONFIG.SYS,  aprÃ¨s  â•‘',10
+	db 'â•‘ le test de la RAM et le laconique message WAIT... si vous avez l''AMI BIOS.   â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Souvent, vous ne trouvez dans les logiciels semblables, qu''un menu, rarement â•‘',10
+	db 'â•‘ trÃ¨s riche en imagination ou en couleurs, dans lequel l''utilisateur est      â•‘',10
+	db 'â•‘ forcÃ© de choisir une configuration. Dans le meilleur des cas, une config     â•‘',10
+	db 'â•‘ par dÃ©faut est chargÃ©e. Pour choisir une configuration avec Â²AUTOCONFÂ², il     â•‘',10
+	db 'â•‘ suffit d''appuyer sur une seule touche, ce qui vous fait gagner du temps si   â•‘',10
+	db 'â•‘ prÃ©cieux!                                                                    â•‘',10
+	db 'â•‘                                                                              â•‘',10
+        db 'â•‘ Il est possible de crÃ©er des sous groupes de configurations, accÃ©sibles      â•‘',10
+        db 'â•‘ depuis la liste. La configuration principale qui contient le groupe peut     â•‘',10
+        db 'â•‘ aussi Ãªtre chargÃ©e! Vous pouvez aller dans n''importe quel groupe et mÃªme     â•‘',10
+        db 'â•‘ en revenir (pas comme avec quelques logiciels de configurations multiples    â•‘',10
+        db 'â•‘ que je ne citerais pas). Une fleche vous indique dans la liste des configs,  â•‘',10
+        db 'â•‘ si cette configuration est aussi un groupe!                                  â•‘',10
+	db 'â•‘                                                                              â•‘',10
+        db 'â•‘ Â²AUTOCONFÂ² possÃ¨de une aide on-line, supporte des pages indÃ©finiment multiples â•‘',10
+	db 'â•‘ pour la liste des configurations, des modes couleur et n/b, 25 et 50 lignes, â•‘',10
+	db 'â•‘ le chargement de seulement la partie commune, arrÃªt immÃ©diat en cas de       â•‘',10
+	db 'â•‘ demande, etc...                                                              â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Â²AUTOCONFÂ² possÃ¨de une fonction UNIQUE que vous pouvez appeller depuis la listeâ•‘',10
+	db 'â•‘ des configurations: l''affichage de la configuration mÃªme!                    â•‘',10
+	db 'â•‘                                                                              â•‘',10
+        db 'â•‘ Encore plus Ã©patant! Vous pouvez activer ou desactiver temporairement une    â•‘',10
+        db 'â•‘ ligne dans une configuration!                                                â•‘',10
+        db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Â²AUTOCONFÂ² est trÃ¨s rapide, vous ne remarquez jamais le ralentissement qu''il   â•‘',10
+	db 'â•‘ cause Ã  votre ordinateur au dÃ©marrage! Ces milliers de lignes de code en ASM â•‘',10
+	db 'â•‘ ont Ã©tÃ© soigneusement travaillÃ©es, afin de ne rien exÃ©cuter d''inutile.       â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Nombreuses options indispensables ou pratiques sont Ã  votre disposition.     â•‘',10
+	db 'â•‘ Â²AUTOCONFÂ² est 100% compatible QEMM 7.x, dont le DOSDATA crÃ©ait des problÃ¨mes  â•‘',10
+	db 'â•‘ incroyables pour les logiciels de configurations multiples. Vous ne pouvez   â•‘',10
+	db 'â•‘ malheureusement pas lancer OPTIMIZE de QEMM, car il ignorera Â²AUTOCONFÂ² et     â•‘',10
+	db 'â•‘ entrainera toutes les configurations Ã  Ãªtre chargÃ©es une aprÃ¨s l''autre.      â•‘',10
+	db 'â•‘                                                                              â•‘',10
+        db 'â•‘ Â²AUTOCONFÂ² est compatible Windows 95!                                          â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Un mode silencieux ou invisible rend le dÃ©marrage de votre ordinateur        â•‘',10
+	db 'â•‘ totalement ordinaire, mais tout en conservant la possibilitÃ© de choix de     â•‘',10
+	db 'â•‘ configurations. Â²AUTOCONFÂ² supporte tous les claviers supportÃ©s par KEYB.COM   â•‘',10
+	db 'â•‘ du DOS!                                                                      â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Â²AUTOCONFÂ² ne prend pas de mÃ©moire!                                            â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ L''utilisation est tellement simple que le manuel n''est nÃ©cessaire qu''une     â•‘',10
+	db 'â•‘ seule fois, si vous ne trouvez pas par intuition comment Ã§a marche.          â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Je pourrais baratiner encore longtemps, mais je prÃ©fÃ¨re passer Ã  la suite.   â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+	db 'â•‘ Enfin, Â²AUTOCONFÂ² est Â²Ã®GRATUITÂ² pour un usage personnel. (Si vous croyez que je  â•‘',10
+	db 'â•‘ mÃ©rite une rÃ©compense n''hÃ©sitez pas Ã  me remercier financiÃ¨rement.) Une      â•‘',10
+	db 'â•‘ sociÃ©tÃ© Ã  but financier, est certainement en mesure de payer le peu que je   â•‘',10
+	db 'â•‘ demande, et ainsi reÃ§evoir aussi les upgrades rÃ©guliers.                     â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+	db 'â•‘ Si vous voulez recevoir constamment des nouvelles versions d''Â²AUTOCONFÂ²:       â•‘',10
+	db 'â•‘ $10 (Suisse), $20 (Europe), et $30 (Etats Unis, etc...) par annÃ©e.           â•‘',10
+	db 'â•‘ Ou contactez moi par modem (appeler avant) ou envoyez encore le numÃ©ro du    â•‘',10
+	db 'â•‘ BBS ou je peux le laisser.                                                   â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+	db 'â•‘ Â²COMME Â²AUTOCONFÂ² EST GRATUIT, LA VENTE DE LA VERSION QUELCONQUE EST INTERDITE! Â²â•‘',10
+	db 'â•‘ Â²SI VOUS DESIREZ PERSONALISER VOTRE COPIE, ENREGISTREZ VOUS (POINT PRECEDENT)Â² â•‘',10
+	db 'â•‘ Â²TOUT INDIVIDU ESSAYANT DE TIRER QUELCONQUE PROFIT DE CE LOGICIEL, SERA Â²      â•‘',10
+	db 'â•‘ Â²POURSUIVI D''APRES LA LOI SUISSE!                                            Â² â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+	db 'â•‘ Consultez WHATSNEW.FR  pour savoir ce qui a changÃ© de la version prÃ©cÃ©dente. â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+	db 'â•‘ Â²AUTOCONFÂ² existe en ANGLAIS et en FRANCAIS. Si vous voulez une version RUSSE  â•‘',10
+	db 'â•‘ contactez moi!                                                               â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+	db 'â•‘ Â²                       LE MANUEL COMPLET DE Â²AUTOCONF:Â²                        â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+	db 'â•‘ Â²PARAMETRES DANS LE CONFIG.SYS Â²                                               â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+	db 'â•‘  (vous pouvez commencer une option avec / ou -)                              â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Â²/DxÂ² : configuration par dÃ©faut. Cette option change la configuration         â•‘',10
+	db 'â•‘       par dÃ©faut chargÃ©e si vous n''appuyez pas sur une touche qui dÃ©signe    â•‘',10
+	db 'â•‘       une autre configuration. (sans cette option, la configuration par      â•‘',10
+	db 'â•‘       dÃ©faut est la configuration A).                                        â•‘',10
+	db 'â•‘ Note: pour les configurations Ã©tendues (F1...F10) mettez /DF1.../DF0.        â•‘',10
+	db 'â•‘ Note: vous ne pouvez spÃ©cifier que des configurations du groupe principal.   â•‘',10
+	db 'â•‘                                                                              â•‘',10
+        db 'â•‘ Â²/HxÂ² : la configuration par dÃ©faut pour Windows 95.                           â•‘',10
+        db 'â•‘       Â²AUTOCONFÂ² detecte la prÃ©sence de DOS 7.00, sous lequel tourne Win 95,   â•‘',10
+	db 'â•‘       et active ce switch dans ce cas. Consultez le chapitre ''CompatibilitÃ©  â•‘',10
+        db 'â•‘       avec Windows 95'', plus loin dans l''aide.                               â•‘',10
+	db 'â•‘                                                                              â•‘',10
+        db 'â•‘ Â²/TÂ²[Â²DxÂ²[Â²uÂ²]][Â²CxÂ²[Â²uÂ²]]Â² : le temps qu''Â²AUTOCONFÂ² attendra une touche de la part de    â•‘',10
+        db 'â•‘       l''utilisateur. Normalement vous avez suffisamment de temps pour choisirâ•‘',10
+        db 'â•‘       une configuration avant le lancement d''Â²AUTOCONFÂ², aprÃ¨s le laconique    â•‘',10
+        db 'â•‘       message du demarrage du dos.                                           â•‘',10
+        db 'â•‘                                                                              â•‘',10
+        db 'â•‘ [Â²DÂ²]: spÃ©cifie le temps d''attente sous DOS infÃ©rieur Ã  7.00                   â•‘',10
+        db 'â•‘ [Â²CÂ²]: spÃ©cifie le temps d''attente sous DOS 7.00 et supÃ©rieur (Windows 95).    â•‘',10
+        db 'â•‘ [Â²uÂ²]: ne pas afficher la pulsation pendant l''attente, ex: Â²/T5uÂ²                â•‘',10
+	db 'â•‘                                                                              â•‘',10
+        db 'â•‘ Exemple: /TD2uC3u forcera Â²AUTOCONFÂ² d''attendre 2 secondes sous DOS et 3 sous  â•‘',10
+        db 'â•‘          Windows 95; /T5 forcera Â²AUTOCONFÂ² d''attendre toujours 5 secondes.    â•‘',10
+        db 'â•‘                                                                              â•‘',10
+        db 'â•‘ Note: l''ordre des options n''est pas important, ex: /TC2D4u = /TD4uC2         â•‘',10
+        db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Â²/PÂ² :  mode silencieux: si les (magnifiques) messages de Â²AUTOCONFÂ² vous        â•‘',10
+	db 'â•‘       dÃ©rangent vous pouvez les faire totalement disparaÃ®tre.                â•‘',10
+	db 'â•‘ Note: la liste de configurations et le manuel seront tout de mÃªme affichÃ©s   â•‘',10
+	db 'â•‘       si vous les demandez. Les erreurs seront aussi signalÃ©es.              â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Â²/NÂ² :  ne pas effacer l''Ã©cran au chargement d''Â²AUTOCONFÂ².                       â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Â²/EÂ² :  messages en noir et blanc. Si les superbes messages en couleur  vous   â•‘',10
+	db 'â•‘       dÃ©rangent, alors utilisez cette option. C''est aussi utile pour ceux    â•‘',10
+	db 'â•‘       qui ont un Ã©cran LCD avec un faible nombre de niveaux de gris, car     â•‘',10
+	db 'â•‘       les messages de couleurs sombres sont alors peu lisibles.              â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Â²/KxxÂ² :  clavier utilisÃ©, oÃ¹ xx:                                              â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘   Belgique                     Â²BEÂ²  â”‚ BrÃ©sil                       Â²BRÂ²         â•‘',10
+	db 'â•‘   Canada fr.                   Â²CFÂ²  â”‚ TchÃ©coslovaquie (tchÃ©que)    Â²CZÂ²         â•‘',10
+	db 'â•‘   TchÃ©coslovaquie (slovaque)   Â²SLÂ²  â”‚ Danemark                     Â²DKÂ²         â•‘',10
+	db 'â•‘   Finlande                     Â²SUÂ²  â”‚ France                       Â²FRÂ²         â•‘',10
+	db 'â•‘   Allemagne                    Â²GRÂ²  â”‚ Hongrie                      Â²HUÂ²         â•‘',10
+	db 'â•‘   Italie                       Â²ITÂ²  â”‚ AmÃ©rique latine              Â²LAÂ²         â•‘',10
+	db 'â•‘   Pays-Bas                     Â²NLÂ²  â”‚ NorvÃ¨ge                      Â²NOÂ²         â•‘',10
+	db 'â•‘   Pologne                      Â²PLÂ²  â”‚ Portugal                     Â²POÂ²         â•‘',10
+	db 'â•‘   Espagne                      Â²SPÂ²  â”‚ SuÃ¨de                        Â²SVÂ²         â•‘',10
+        db 'â•‘   Suisse (romande)             Â²SFÂ²  â”‚ Suisse (allÃ©manique)         Â²SGÂ²         â•‘',10
+	db 'â•‘   Royaume-Uni                  Â²UKÂ²  â”‚ Croatie/Serbie/SlovÃ©nie      Â²YUÂ²         â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Le clavier Â²USÂ² (Etats Unis) est celui par dÃ©faut.                             â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Â²/JÂ²[Â²DÂ²][Â²CÂ²] : toujours afficher une liste de configurations et demander Ã   en   â•‘',10
+        db 'â•‘      choisir une.                                                            â•‘',10
+	db 'â•‘ [Â²DÂ²]: toujours afficher la liste sous DOS infÃ©rieur Ã  7.00                    â•‘',10
+        db 'â•‘ [Â²CÂ²]: toujours afficher la liste sous DOS 7.00 et supÃ©rieur (Windows 95).     â•‘',10
+        db 'â•‘      Note: Â²/JÂ² sans autres active les deux options.                           â•‘',10
+        db 'â•‘      Note: l''ordre des options n''est pas important, ex: /JCD, /JDC, ou /JD.  â•‘',10
+	db 'â•‘                                                                              â•‘',10
+        db 'â•‘ En combinant les options Â²/JxxÂ² et Â²/TÂ², vous obtenez au dÃ©marrage la liste des  â•‘',10
+        db 'â•‘ configurations qui disparaitra aprÃ¨s le temps dÃ©fini par /Tx pour charger la â•‘',10
+        db 'â•‘ configuration par dÃ©faut. Si vous appuyez sur une touche pendant le temps    â•‘',10
+        db 'â•‘ d''attente, la liste des configuration rÃ©agira normalement et annulera le     â•‘',10
+        db 'â•‘ dÃ©compte. L''option /TDx n''influencera que /JD et /TCx que /JC.               â•‘',10
+        db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Â²/SÂ² : Au dÃ©marrage Â²AUTOCONFÂ² crÃ©e un fichier Â²AUTOCONF.DATÂ².                     â•‘',10
+	db 'â•‘      qui contien la configuration choisie lors du dÃ©rnier dÃ©marrage. Avec    â•‘',10
+	db 'â•‘      cette option, si aucune touche n''a Ã©tÃ© appuyÃ©e Â²AUTOCONFÂ² charge la       â•‘',10
+	db 'â•‘      configuration choisie au dÃ©rnier dÃ©marrage de votre ordinateur.         â•‘',10
+	db 'â•‘                                                                              â•‘',10
+        db 'â•‘ Note: Â²AUTOCONF.DATÂ² est toujours crÃ©e et modifiÃ© Ã© chaque dÃ©marrage.          â•‘',10
+        db 'â•‘      Ce fichier est modifiÃ© par iREAD (integrated READCONF) et utilisÃ© par   â•‘',10
+        db 'â•‘      BOOTIT pour les reboots preprogrammÃ©s.                                  â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ NB:  Cette option n''a aucun sens  utilisÃ©e avec Â²/JÂ².                          â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Â²/MxÂ² : Au dÃ©marrage Â²AUTOCONFÂ² affiche des message de bienvenue qui dÃ©pendent   â•‘',10
+	db 'â•‘      de l''heure Ã  laquelle vous allumez votre ordinateur. Cette option       â•‘',10
+	db 'â•‘      permet de chager les (fabuleux) messages d''initialisation:              â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘            Â²/M1Â² - message du matin                                            â•‘',10
+	db 'â•‘            Â²/M2Â² - message de la journÃ©e                                       â•‘',10        
+	db 'â•‘            Â²/M3Â² - message du soir                                             â•‘',10
+	db 'â•‘            Â²/M4Â² - message de la nuit                                          â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘  Le mÃªme message peut Ãªtre assignÃ© aux quatres messages de la journÃ©e:       â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Â²/M[xxxx]Â² : oÃ¹ x est le numÃ©ro du message                                     â•‘',10        
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Ainsi si vous rajouter une option tel que:                                   â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘         Â²  /M[13]I|l fait beau,#les oiseaux chantent... Â²                      â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Â²AUTOCONFÂ² affichera pour les messages du matin et du soir:                    â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Â²Il fait beau,Â²                                                                â•‘',10
+	db 'â•‘ Â²les oiseaux chantent... Â²                                                     â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Note: chaque message peut avoir une infinitÃ© de caractÃ¨res  tant que la      â•‘',10        
+	db 'â•‘       ligne du device=AUTOCONF tient sur une ligne. Le caractÃ¨re Â²|Â²  sert     â•‘',10
+	db 'â•‘       Ã  distinguer les majuscules des minuscules. Le caractÃ¨re Â²#Â² sert Ã       â•‘',10
+	db 'â•‘       distinguer les lignes. (il fait le saut de lignes) Si le nombre de     â•‘',10
+	db 'â•‘       caractÃ¨res dÃ©passe 77 alors le messages est renvoyÃ© sur la ligne       â•‘',10
+	db 'â•‘       suivante de toute faÃ§on.                                               â•‘',10
+	db 'â•‘ Par exemple: Â²device=AUTOCONF.SYS /M3s|alut cher #|u|tilisateur d''|AUTOCONFÂ²   â•‘',10
+	db 'â•‘ donnera sur l''Ã©cran aprÃ¨s le message d''initalisation:                        â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Â²Salut cherÂ²                                                                   â•‘',10
+	db 'â•‘ Â²Utilisateur d''AUTOCONFÂ²                                                       â•‘',10        
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Note: si vous dÃ©sirez afficher des caractÃ¨res tels que Â²| / - ou #,Â² qui       â•‘',10        
+	db 'â•‘       sont normalement considÃ©rÃ©s comme des caractÃ¨res de contrÃ´le, Ã©crivez  â•‘',10                
+	db 'â•‘       les simplement deux fois de suite: Â²|| // -- ou ##Â².                     â•‘',10        
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Â²/CxÂ² : Si vous demandez la liste des configurations, celle-ci met en          â•‘',10        
+	db 'â•‘       Ã©vidence la lettre qui designe la configuration sur laquelle le        â•‘',10
+	db 'â•‘       curseur se trouve. Cette option dÃ©finit la couleur du curseur et de    â•‘',10
+	db 'â•‘       la configuration mise en Ã©vidence.                                     â•‘',10
+	db 'â•‘       DÃ©faut est 127.                                                        â•‘',10
+	db 'â•‘ ex:Â² /C}Â² (Alt 125) donnera des caractÃ¨res bleus clairs sur un fond gris.      â•‘',10
+	db 'â•‘                                                                              â•‘',10
+        db 'â•‘ Â²/FxÂ² : DÃ©finit la couleur des dÃ©signations des configurations dans la liste.  â•‘',10        
+        db 'â•‘       (mÃªme syntaxe que pour Â²/CxÂ²)                                            â•‘',10
+        db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Â²/GÂ²  : L''option pour les plus capricieux: avant chaque liste de configs,      â•‘',10
+	db 'â•‘       un message qui indique quelles touches peuvent Ãªtre utilisÃ©es afin de  â•‘',10
+	db 'â•‘       choisir une configuration, voir une configuration ou afficher l''aide   â•‘',10
+	db 'â•‘       est affichÃ©. Cette option permet de ne pas afficher ce message!        â•‘',10
+	db 'â•‘                                                                              â•‘',10
+        db 'â•‘ Â²/5Â²  : Forcer un mode de 50 lignes sur l''ecran. Ceci signifie que Â²AUTOCONFÂ²    â•‘',10        
+	db 'â•‘       utilisera ce mode par dÃ©faut pour tout affichage et retiendra cet      â•‘',10
+	db 'â•‘       Ã©tat aprÃ¨s avoir terminÃ© son exÃ©cution.                                â•‘',10
+	db 'â•‘                                                                              â•‘',10
+        db 'â•‘ Â²/OÂ²  : Mode de compatibilitÃ© de Windows 95, et MS-DOS infÃ©rieur Ã  7.00,       â•‘',10
+	db 'â•‘       utilisant DOSDATA de QEMM. Pour des informations dÃ©taillÃ©es consultez  â•‘',10
+        db 'â•‘       le chapitre ''CompatibilitÃ© avec Windows 95'', point 3.                  â•‘',10
+        db 'â•‘                                                                              â•‘',10
+        db 'â•‘ Â²/IÂ²  : DÃ©sactiver le mode d''edition dans le visionneur des configurations.    â•‘',10
+        db 'â•‘                                                                              â•‘',10
+        db 'â•‘ Â²/LÂ²  : Toujours afficher le nom de la configuration au dÃ©marrage.             â•‘',10
+        db 'â•‘                                                                              â•‘',10
+        db 'â•‘ Â²/BÂ²  : Ne pas crÃ©er le fichier cachÃ© AUTOCONF.DAT, effacer si''il existe.      â•‘',10
+        db 'â•‘       /S n''aura aucun effet, BOOTIT ne sera pourtant pas ignorÃ©!             â•‘',10
+        db 'â•‘                                                                              â•‘',10
+        db 'â•‘ Â²/ZÂ²  : mode eLiTe! (pas pour les lamers!) Â²/ZZÂ² inverse le mode Ã©lite.          â•‘',10
+        db 'â•‘                                                                              â•‘',10
+        db 'â•‘ Â²/VÂ²  : utiliser READCONF au lieu de iREAD (rajoutez READCONF dans l''AUTOEXEC) â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+	db 'â•‘ Â²STRUCTURE DU CONFIG.SYS       Â²                                               â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+        db 'â•‘Â²device=[lecteur][rep]<AUTOCONF.SYS> /[PARAM1] /[PARAM2] Â²; appel d''Â²AUTOCONFÂ².   â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘Â²device=Â²*Â²<DESIGNATION> <NOM DE LA CONFIG DU Â²GROUPE PRINCIPALÂ²>Â²                  â•‘',10
+	db 'â•‘                                                                              â•‘',10
+        db 'â•‘        <DESIGNATION> : Â²AÂ² pour la configuration A, Â²F1Â² pour la config F1, etc. â•‘',10
+	db 'â•‘        <NOM DE LA CONFIG> : le nom de la configuration, avec le caractÃ¨re Â²|Â²  â•‘',10
+	db 'â•‘                             pour changer entre des lettres majuscules et     â•‘',10
+	db 'â•‘                             minuscules.                                      â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Â²device=Â²**Â²<DESIGNATION> <NOM DE LA Â²SOUSÂ² CONFIG> Â²                              â•‘',10
+	db 'â•‘ Â²... configuration ...Â²                                                        â•‘',10
+        db 'â•‘ Â²device=Â²**Â²<DESIGNATION> <NOM DE LA Â²SOUSÂ² CONFIG> Â²                              â•‘',10
+	db 'â•‘ Â²... configuration ...Â²                                                        â•‘',10
+	db 'â•‘ Â²device=Â²***Â²<DESIGNATION> <NOM DE LA Â²SOUS SOUSÂ² CONFIG> Â²                        â•‘',10
+	db 'â•‘ Â²... configuration ...Â²                                                        â•‘',10
+        db 'â•‘ Â²device=Â²*Â²<DESIGNATION> <NOM DE LA CONFIG DU Â²GROUPE PRINCIPALÂ²>Â²                 â•‘',10
+	db 'â•‘ Â²... et ainsi de suite...Â²                                                     â•‘',10
+	db 'â•‘                                                                              â•‘',10
+        db 'â•‘ Note: Vous pouvez faire jusqu''Ã  20 niveaux de sous-configurations.           â•‘',10
+        db 'â•‘                                                                              â•‘',10
+        db 'â•‘ Note: Pour crÃ©er une couleur dans le nom de la configuration, le procÃ©dÃ© est â•‘',10
+        db 'â•‘       identique Ã  celui des messages personalisÃ©s au dÃ©marrage d''Â²AUTOCONFÂ².   â•‘',10
+        db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Note: Seules les configurations du groupe principal peuvent Ãªtre chargÃ©es en â•‘',10
+	db 'â•‘       simplement appuiyant sur une touche au dÃ©marrage aprÃ¨s le message du   â•‘',10
+	db 'â•‘       dÃ©marrage du DOS, les sous configurations doivent Ãªtre chargÃ©es Ã       â•‘',10
+	db 'â•‘       partir de la liste des configurations, obtenue avec la BARRE D''ESPACE. â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Note: Les configurations peuvent Ãªtre mises dans n''importe quel ordre. La    â•‘',10
+	db 'â•‘       liste des configurations sera affichÃ©e dans l''ordre alphabÃ©tique, les  â•‘',10
+	db 'â•‘       configurations Ã©tendues (F1...F10) d''abord.                            â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Note: Si vous n''avez pas crÃ©Ã© de configuration par dÃ©faut, Â²AUTOCONFÂ² affiche  â•‘',10
+	db 'â•‘       une erreur de configuration non-trouvÃ©e.                               â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Note: Si vous avez crÃ©Ã© deux configurations avec la mÃªme lettre (ex: deux    â•‘',10
+	db 'â•‘       configurations G, alors si vous choisissez la configuration G, LES DEUXâ•‘',10
+	db 'â•‘       seront chargÃ©es, mais ceci est valable uniquement pour les configs du  â•‘',10
+	db 'â•‘       groupe principal.                                                      â•‘',10
+	db 'â•‘                                                                              â•‘',10
+        db 'â•‘ Â²device=Â²$Â² <------------------------>    Â² ; rajoutez du texte quelconque, afin â•‘',10
+        db 'â•‘                                         ; de laisser Ã  Â²AUTOCONFÂ² la place     â•‘',10
+        db 'â•‘                                         ; suffisante pour rajouter une       â•‘',10
+        db 'â•‘                                         ; ligne SET CONF=... lors du         â•‘',10
+        db 'â•‘                                         ; dÃ©marrage.                         â•‘',10
+        db 'â•‘ Note: ceci remplace le READCONF.EXE des versions prÃ©cÃ©dentes.                â•‘',10
+        db 'â•‘                                                                              â•‘',10
+        db 'â•‘ Â²AUTOCONFÂ² crÃ©e une variable dans l''environnement principal du DOS contenant:  â•‘',10
+        db 'â•‘ GROUPE_CONFIG ou simplement CONFIG, en fonction de la configuration choisie. â•‘',10
+        db 'â•‘ Ainsi, pour la configuration F6, la variable Â²CONFÂ² sera Ã©gale Ã  F6 et elle    â•‘',10
+        db 'â•‘ aura la valeur F3_F0_J_L pour la configuration L dans le sous groupe J du    â•‘',10
+        db 'â•‘ sous groupe F10 du groupe principal F3.                                      â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Â²Ã®Important!Â² Cette ligne doit figurer dans le CONFIG.SYS et signifie la fin    â•‘',10
+	db 'â•‘ des configurations multiples. La suite est la partie commune, chargÃ©e avec   â•‘',10
+	db 'â•‘ toutes les configurations.                                                   â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Â²files=30                              Â² ;est chargÃ©e avec chaque config.      â•‘',10
+	db 'â•‘ Â²buffers=30                            Â²                                       â•‘',10
+	db 'â•‘ Â²lastdrive=E                           Â²                                       â•‘',10
+	db 'â•‘ Â²stacks=9,128                          Â²                                       â•‘',10
+	db 'â•‘ Â²... et ainsi de suite ...             Â²                                       â•‘',10
+        db 'â•‘                                                                              â•‘',10
+        db 'â•‘ (exemple complet)                                                            â•‘',10
+        db 'â•‘                                                                              â•‘',10        
+        db 'â•‘ SWITCHES=/F                                                                  â•‘',10        
+        db 'â•‘                                                                              â•‘',10        
+        db 'â•‘ DEVICE=C:\UTILS\AUTOCONF.SYS /KSF /DF1 /F /5                                â•‘',10        
+        db 'â•‘                                                                              â•‘',10        
+        db 'â•‘ device=**F2 P|rogramming                                                     â•‘',10        
+        db 'â•‘  device=c:\dos\himem.sys /testmem:off                                        â•‘',10        
+        db 'â•‘  devicehigh=c:\dos\setver.exe                                                â•‘',10        
+        db 'â•‘  devicehigh=c:\dos\ansi.sys                                                  â•‘',10        
+        db 'â•‘                                                                              â•‘',10        
+        db 'â•‘ device=*F1 DOS                                                               â•‘',10        
+        db 'â•‘  device=c:\dos\himem.sys /testmem:off                                        â•‘',10        
+        db 'â•‘  device=c:\dos\emm386.exe ram                                                â•‘',10        
+        db 'â•‘  devicehigh=c:\utils\mtm\mtmcdai.sys /d:MTMIDE01                             â•‘',10        
+        db 'â•‘  devicehigh=c:\dos\ansi.sys                                                  â•‘',10        
+        db 'â•‘  shell=c:\dos\command.com /p                                                 â•‘',10        
+        db 'â•‘                                                                              â•‘',10        
+        db 'â•‘    device=**F0 DOS                                                           â•‘',10        
+        db 'â•‘         device=c:\dos\himem.sys /testmem:off                                 â•‘',10        
+        db 'â•‘         device=c:\dos\emm386.exe RAM                                         â•‘',10        
+        db 'â•‘         devicehigh=c:\dos\ansi.sys                                           â•‘',10 
+        db 'â•‘                                                                              â•‘',10        
+        db 'â•‘    device=**F1 HIMEM/EMM386 (NOEMS)                                          â•‘',10        
+        db 'â•‘         device=c:\dos\himem.sys /testmem:off                                 â•‘',10        
+        db 'â•‘         device=c:\dos\emm386.exe NOEMS                                       â•‘',10        
+        db 'â•‘         devicehigh=c:\dos\ansi.sys                                           â•‘',10        
+        db 'â•‘         shell=c:\4dos\4dos.com /p                                            â•‘',10        
+        db 'â•‘                                                                              â•‘',10        
+        db 'â•‘ device=*W W|indows| (N|o| NETWORK)                                           â•‘',10        
+        db 'â•‘         device=c:\dos\himem.sys /TESTMEM:OFF                                 â•‘',10        
+        db 'â•‘         devicehigh=c:\utils\mtm\MTMCDAI.SYS /D:MTMIDE01                      â•‘',10        
+        db 'â•‘         device=c:\dos\ansi.sys                                               â•‘',10        
+        db 'â•‘         SHELL=C:\4DOS\4DOS.COM /P                                            â•‘',10        
+        db 'â•‘                                                                              â•‘',10        
+        db 'â•‘ device=$ <--------------------------->                                       â•‘',10        
+        db 'â•‘                                                                              â•‘',10        
+        db 'â•‘ buffers=40                                                                   â•‘',10        
+        db 'â•‘ files=40                                                                     â•‘',10        
+        db 'â•‘ dos=high,umb                                                                 â•‘',10        
+        db 'â•‘ devicehigh=c:\dos\setver.exe                                                 â•‘',10        
+        db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+	db 'â•‘ Â²STRUCTURE DE L''AUTOEXEC.BATÂ² (pour les confgis multiples)                     â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+	db 'â•‘ Â²goto %conf%              Â²  ;saut vers la configuration choisie               â•‘',10
+	db 'â•‘ Â²goto def_conf            Â²  ;au cas ou le nom est invalide, saut Ã  la config  â•‘',10        
+	db 'â•‘                                ;par dÃ©faut.                                  â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Â²:def_conf      Â²            ;configuration A arbitrairement celle par dÃ©faut  â•‘',10
+	db 'â•‘ Â²:A             Â²            ;configuration A                                  â•‘',10
+	db 'â•‘ Â²...configuration...Â²                                                          â•‘',10
+	db 'â•‘ Â²goto end      Â²             ;saut Ã  la fin de l''AUTOEXEC.BAT                  â•‘',10
+        db 'â•‘                                                                              â•‘',10
+        db 'â•‘ Â²:<DESIGNATION>[[_<SOUS CONF>]_<SOUS CONF>]  Â²                                 â•‘',10
+        db 'â•‘                                                                              â•‘',10
+        db 'â•‘                            ;est la syntaxe gÃ©nÃ©rale; pour la sous-configura- â•‘',10
+        db 'â•‘                            ;tion F8 sous la configuration F1, par exemple, ilâ•‘',10
+        db 'â•‘                            ;faudra spÃ©cifier: F1_F8. Pour plus d''informationsâ•‘',10
+        db 'â•‘                            ;consultez le point sur la variable CONF une page â•‘',10
+        db 'â•‘                            ;plus haut.                                       â•‘',10
+        db 'â•‘ Â²goto end      Â²             ;saut Ã  la fin du AUTOEXEC.BAT                    â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Â²:end          Â²             ;partie COMMUNE                                   â•‘',10
+	db 'â•‘ Â²...           Â²             ;PROMPT=..., PATH=..., etc...                     â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+	db 'â•‘ Â²TOUCHES                     Â²                                                 â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+	db 'â•‘ Â²L''AIDE ON-LINE, obtenue depuis partout sauf sous TAB avec BACKSPACE:Â²         â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+	db 'â•‘ Â²FLECHES GAUCHE, HAUT Â²une ligne plus haut                                     â•‘',10
+	db 'â•‘ Â²        DROITE, BAS  Â²une ligne plus bas                                      â•‘',10
+	db 'â•‘ Â²PAGE DOWN            Â²page suivante                                           â•‘',10
+	db 'â•‘ Â²PAGE UP              Â²page prÃ©cÃ©dente                                         â•‘',10
+	db 'â•‘ Â²ESC                  Â²quitter l''aide                                          â•‘',10
+	db 'â•‘ Â²ESPACE               Â²couleur - n/b                                           â•‘',10
+	db 'â•‘ Â²TABULATEUR           Â²mode 25/50 lignes                                       â•‘',10
+        db 'â•‘ Â²INSERT               Â²rechercher une chaÃ®ne de charactÃ¨res                    â•‘',10
+        db 'â•‘ Â²DELETE               Â²annuller le mode de recherche                           â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+	db 'â•‘ Â²LA LISTE DES CONFIGS, obtenue avec ESPACE Ã  la place d''une config:Â²           â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+	db 'â•‘ Â²BACKSPACE            Â²afficher l''aide on-line                                 â•‘',10
+	db 'â•‘ Â²ESPACE ou ENTREE     Â²charger la configuration mise en Ã©vidence               â•‘',10
+	db 'â•‘ Â²FLECHES HAUT         Â²scrolling vers la configuration prÃ©cÃ©dente de la liste  â•‘',10
+	db 'â•‘ Â²        BAS          Â²scrolling vers la configuration suivante de la liste    â•‘',10
+	db 'â•‘ Â²        DROITE       Â²lister le sous-groupe s''il existe, sinon touche ignorÃ©e â•‘',10
+	db 'â•‘ Â²        GAUCHE       Â²lister le groupe au dessus de sous groupe actuel        â•‘',10
+	db 'â•‘ Â²HOME & PAGE UP       Â²premiÃ¨re configuration sur l''ecran                      â•‘',10
+	db 'â•‘ Â²END & PAGE DOWN      Â²derniÃ¨re confiration sur l''ecran                        â•‘',10
+	db 'â•‘ Â²TABULATEUR           Â²afficher la configuration mise en Ã©vidence              â•‘',10
+        db 'â•‘ Â²ETOILE               Â²terminer Â²AUTOCONFÂ²                                       â•‘',10
+	db 'â•‘ Â²POINT                Â²charger que la partie commune                           â•‘',10
+	db 'â•‘ Toute autre touche dÃ©signant une configuration, la charge, si elle existe.   â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+	db 'â•‘ Â²AFFICHAGE DE LA CONFIG MEME, obtenu avec TAB sous la liste des configs:      Â²â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+	db 'â•‘ Â²FLECHES:             Â²                                                        â•‘',10
+	db 'â•‘ Â²HAUT                 Â²scrolling de la configuration vers le haut              â•‘',10
+	db 'â•‘ Â²BAS                  Â²scrolling de la configuration vers le bas               â•‘',10
+	db 'â•‘ Â²DROITE               Â²scrolling de la configuration Ã  droite                  â•‘',10
+	db 'â•‘ Â²GAUCHE               Â²scrolling de la configuration Ã  gauche                  â•‘',10
+	db 'â•‘ Â²HOME                 Â²sauter au dÃ©but de la ligne                             â•‘',10
+	db 'â•‘                      si la configuration excÃ¨de 25 lignes/80 colonnes        â•‘',10
+	db 'â•‘ Â²PAGE DOWN            Â²configuration suivante                                  â•‘',10
+	db 'â•‘ Â²PAGE UP              Â²configuration prÃ©cÃ©dente                                â•‘',10
+	db 'â•‘ Â²TAB, ESC             Â²retourner dans la liste des configurations              â•‘',10
+	db 'â•‘ Â²ESPACE               Â²changer entre le mode couleur - n/b                     â•‘',10
+	db 'â•‘ Â²ENTREE               Â²choisir la configuration actuelle                       â•‘',10
+	db 'â•‘ Â²POINT (.)            Â²charger que la partie commune aprÃ¨s DEVICE=$            â•‘',10
+        db 'â•‘ Â²BACKSPACE            Â²afficher l''aide on-line                                 â•‘',10
+        db 'â•‘ Â²E (Touche E)         Â²mode activer/dÃ©sactiver des lignes                      â•‘',10
+        db 'â•‘ Â²  ESPACE en mode ''E'' Â²activer/dÃ©sactiver une ligne                            â•‘',10
+        db 'â•‘ Â²       ? en mode ''E'' Â²activer/dÃ©sactiver la demande d''exÃ©cuter la ligne       â•‘',10
+        db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+        db 'â•‘ Â²COMPATIBILITE AVEC WINDOWS 95:                      Â²                         â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+        db 'â•‘ Version 2.6+ supporte Windows 95!                                            â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Cela implique:                                                               â•‘',10
+	db 'â•‘                                                                              â•‘',10
+        db 'â•‘ 1. Lorsque vous initialisez l''ordinateur avec Windows 95 installÃ©, un choix  â•‘',10
+        db 'â•‘ de charger Win 95 ou le DOS prÃ©cÃ©dent vous est offert. F4 charge le DOS et   â•‘',10
+        db 'â•‘ une autre touche Win 95. Ceci vous permet de retrouver sans dÃ©gats votre     â•‘',10
+	db 'â•‘ commutateur de commandes comme 4DOS, NDOS ou COMMAND.COM.                    â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Les applications 16 bits et toutes celles qui tournent sous DOS infÃ©rieur Ã   â•‘',10
+	db 'â•‘ 7.0 nÃ©cÃ©ssitent toujours des configurations multiples. Ainsi, losque vous    â•‘',10
+        db 'â•‘ faites le choix de charger Win 95, l''option /Dx sera ignorÃ©e et /Hx pris en  â•‘',10
+        db 'â•‘ compte. Ceci vous permet d''avoir une configuration par dÃ©faut pour Win 95,   â•‘',10
+	db 'â•‘ et une autre configuration par dÃ©faut pour DOS, sans avoir Ã  choisir encore  â•‘',10
+	db 'â•‘ une configuration pour l''un des deux.                                        â•‘',10
+	db 'â•‘                                                                              â•‘',10
+        db 'â•‘ 2. Â²AUTOCONFÂ² forcera l''ecran de passer en mode normal, au cas oÃ¹ Windows 95   â•‘',10
+	db 'â•‘ est en train d''initialiser l''ordinateur. Ceci permet de voir ce qui se passe â•‘',10
+        db 'â•‘ deriÃ¨re le magnifique dessin de chargement de Win 95 et pleinement profiter  â•‘',10
+	db 'â•‘ des possibilitÃ©s d''Â²AUTOCONF!Â²                                                 â•‘',10
+	db 'â•‘                                                                              â•‘',10
+        db 'â•‘ 3. Windows 95, DOS et QEMM 7.x DOSDATA:                                      â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Si vous utilisez des configurations avec le DOSDATA de QEMM, vous Ãªtes forcÃ©sâ•‘',10
+	db 'â•‘ de fare la procÃ©dure suivante:                                               â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘      # appuyer sur F4 pour lancer MS-DOS                                     â•‘',10
+	db 'â•‘      # choisir une configuration avec AUTOCONF, contenant DOSDATA            â•‘',10
+	db 'â•‘      # appuyer de nouveau sur F4, puisque DOSDATA reinitialise le CONFIG.SYS â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Avec l''option Â²/OÂ²:                                                            â•‘',10
+	db 'â•‘                                                                              â•‘',10
+        db 'â•‘ La derniÃ¨re Ã©tape est supprimÃ©e avec Â²AUTOCONFÂ² 2.61+. Appuyez simplement sur  â•‘',10
+	db 'â•‘ F4, puis choisissez une configuration avec DOSDATA!                          â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Note: certains anciens bios ne supportent pas cette fonction                 â•‘',10
+	db 'â•‘                                                                              â•‘',10
+	db 'â•‘ Note: la touche F4 sera simulÃ©e dans tous les cas, sauf si vous lancez       â•‘',10
+        db 'â•‘       Win 95. Si DOSDATA n''est pas prÃ©sent, un beep sera Ã©mis Ã  la fin du    â•‘',10  
+	db 'â•‘       dÃ©marrage, puisque l''ordinateur garde la touche jusqu''Ã  la ligne des   â•‘',10
+	db 'â•‘       commandes. Un petit utilitaire a Ã©tÃ© rajoutÃ©: CLRBUF.SYS et CLRBUF.COM,â•‘',10
+	db 'â•‘       permettant d''effacer le buffer clavier, ainsi supprimant ce beep.      â•‘',10
+	db 'â•‘       CLRBUF ne prend pas de mÃ©moire et n''affiche rien Ã  son exÃ©cution.      â•‘',10
+	db 'â•‘       Utilisez CLRBUF.SYS dans la partie commune des configurations du       â•‘',10
+	db 'â•‘       fichier CONFIG.SYS ou CLRBUF.COM dans l''AUTOEXEC.BAT.                  â•‘',10
+        db 'â•‘                                                                              â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+        db 'â•‘ Â² NOTE IMPORTANTE POUR LE SUPPORT DE WINDOWS 95:Â²                              â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+        db 'â•‘ Â²AUTOCONFÂ² 2.90 a Ã©tÃ© testÃ© avec Windows 95, version finale du 24 aoÃ»t 1995.   â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+	db 'â•‘ Â²NOTES IMPORTANTES:Â²                                                           â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+	db 'â•‘ La ligne: DOS=[HIGH],[UMB] est lue une seule fois dans tout le CONFIG.SYS:   â•‘',10
+	db 'â•‘ seule la derniÃ¨re occurence de cette ligne est prise en compte au dÃ©marrage. â•‘',10        
+	db 'â•‘ Â²AUTOCONFÂ² ne peut donc pas intervenir quand Ã  la sÃ©lection de ce paramÃ¨tre.   â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+        db 'â•‘ Â²AUTOCONFÂ², version 1.1 Ã  cette dÃ©rniÃ¨re, toutes les versions de Â²READCONFÂ², de  â•‘',10
+        db 'â•‘ Â²iÂ²RÂ²EÂ²AÂ²DÂ² et de Â²BOOTITÂ² sont la propriÃ©tÃ© de (moi):                               â•‘',10
+        db 'â•‘ Â²â–„â–„â–„â–„â–„â–„â–„â–„â–„â–„â–„ Â²Doubrovkine Daniel      Â²                                         â•‘',10
+        db 'â•‘ Â²â–ˆâ–ˆâ–ˆâ–ˆÂ³â–ˆâ–ˆâ–ˆÂ²â–ˆâ–ˆâ–ˆâ–ˆ Â²11, ch. de la ClairiÃ¨re Â²                                         â•‘',10
+	db 'â•‘ Â²â–ˆâ–ˆÂ³â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆÂ²â–ˆâ–ˆ Â²1207 GenÃ¨ve,            Â²                                         â•‘',10
+	db 'â•‘ Â²â–ˆâ–ˆâ–ˆâ–ˆÂ³â–ˆâ–ˆâ–ˆÂ²â–ˆâ–ˆâ–ˆâ–ˆ Â²Suisse                  Â²                                         â•‘',10
+	db 'â•‘ Â²â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€ Â²tÃ©l & fax: 41 22 - 735 69 47       Â²                              â•‘',10
+        db 'â•‘ Â²email: dblock@infomaniak.ch                      Â²                            â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+	db 'â•‘ Â²AUTOCONFÂ² est une conception Ã  l''origine d''un programmeur franÃ§ais qui m''est  â•‘',10
+	db 'â•‘ inconnu. Une version qui m''a servi de support est parue dans un SVM il y a   â•‘',10
+	db 'â•‘ quelques annÃ©es. Les 90% du programme original ont Ã©tÃ©s modifiÃ©s. Le nom n''a â•‘',10
+        db 'â•‘ pas Ã©tÃ© changÃ©.                                                              â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+        db 'â•‘ Je remercie tous les bÃ©tÃ  testeurs et tous ceux qui on pris part, quelle     â•‘',10
+	db 'â•‘ qu''elle soit dans la crÃ©ation de ce programme.                               â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+	db 'â•‘ Â²Tous les noms de compagnies mentionnÃ©s, ainsi que leurs produits, sont des  Â² â•‘',10
+	db 'â•‘ Â²marques dÃ©posÃ©es de leurs propriÃ©taires respectifs.Â²                          â•‘',10
+	db 'â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•',10
+	db 'Â²[                             fin de l''aide                                    '
 			     
-press_a_extended_key db 'ı?[ı  ı?ligneı HOME ı?d‚butı END ı?finı PgUp ı?&ı PgDn ı?pageı ESPACE ı?couleurı TAB ı?50/25ı ıESC ı? ]' 
-search_stupid_msg    db 'ı Chercher: [ı'
+press_a_extended_key db 'Â²?[Â²  Â²?ligneÂ² HOME Â²?dÃ©butÂ² END Â²?finÂ² PgUp Â²?&Â² PgDn Â²?pageÂ² ESPACE Â²?couleurÂ² TAB Â²?50/25Â² Â²ESC Â²? ]' 
+search_stupid_msg    db 'Â² Chercher: [Â²'
                      db 67 dup (' ')
-                     db 'ı]'
-press_search         db 'ı[ Í=Í= Recherche...Í=Í=Í==Í=Í=Í=Í=Í=Í=Í=Í=Í=Í=Í=Í=Í=Í=Í=Í=Í=Í=Í=Í=Í=Í=Í=Í=Í=Í= ]' 
+                     db 'Â²]'
+press_search         db 'Â²[ â•=â•= Recherche...â•=â•=â•==â•=â•=â•=â•=â•=â•=â•=â•=â•=â•=â•=â•=â•=â•=â•=â•=â•=â•=â•=â•=â•=â•=â•=â•=â•=â•= ]' 
                                                                                                                

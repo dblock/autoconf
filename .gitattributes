@@ -1,0 +1,24 @@
+src/AUTOCON2.INC text working-tree-encoding=CP850 eol=crlf
+src/AUTOCONF.ASM -text working-tree-encoding=CP850 linguist-language=Assembly
+src/AUTOCONF.EN2 text working-tree-encoding=CP850 eol=crlf
+src/AUTOCONF.ENG text working-tree-encoding=CP850 eol=crlf
+src/AUTOCONF.FR text working-tree-encoding=CP850 eol=crlf
+src/AUTOCONF.FR2 text working-tree-encoding=CP850 eol=crlf
+src/AUTOCONF.INC text working-tree-encoding=CP850 eol=crlf
+src/BOOTIT.ENG text working-tree-encoding=CP850 eol=lf
+src/BOOTIT.FR text working-tree-encoding=CP850 eol=lf
+src/FILE_ID.E text working-tree-encoding=CP850 eol=lf
+src/FILE_ID.F text working-tree-encoding=CP850 eol=lf
+src/HELP.INC text working-tree-encoding=CP850 eol=lf
+src/ILOOM.INC text working-tree-encoding=CP850 eol=lf
+src/MANUEL.ASM text working-tree-encoding=CP850 eol=lf linguist-language=Assembly
+src/READCONF.FR text working-tree-encoding=CP850 eol=lf
+src/WHATSNEW.ENG text working-tree-encoding=CP850 eol=lf
+src/WHATSNEW.FR text working-tree-encoding=CP850 eol=lf
+
+bin/3b1e/FILE_ID.DIZ text working-tree-encoding=CP850 eol=lf
+bin/3b1e/RELNOTES.CNV text working-tree-encoding=CP850 eol=lf
+bin/3b1e/WHATSNEW.ENG text working-tree-encoding=CP850 eol=lf
+bin/3b1f/FILE_ID.DIZ text working-tree-encoding=CP850 eol=lf
+bin/3b1f/NOTESREL.CNV text working-tree-encoding=CP850 eol=lf
+bin/3b1f/WHATSNEW.FR text working-tree-encoding=CP850 eol=lf

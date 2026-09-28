@@ -35,11 +35,11 @@ mulpages_msg_affiche proc
 	mov     cs:[hlp.attrib],0
 	jmp     hlpnp_next_char
    hlpnp_nothing_special:
-	cmp     dl,'ý'                          ;is it a color code
+	cmp     dl,'Â²'                          ;is it a color code
 	jne     hlpnp_no_color                  ;no-> don't change color var
 	inc     bx                              ;next caracter 
 	mov     dl,es:[bx]                      ;in dl
-        cmp     dl,'ý'
+        cmp     dl,'Â²'
         jne     @hlpnp_no_dec
         jmp     hlpnp_no_dec
    @hlpnp_no_dec:
@@ -87,7 +87,7 @@ mulpages_msg_affiche proc
         sub     dl,cs:[increment_byte]
         call    elite_translate
    hlpnp_no_dec:
-        cmp     dl,254                          ;þ compressed same char
+        cmp     dl,254                          ;â–  compressed same char
 	jne     hlpnp_not_lines
 	call    char_redo
    hlpcr_reroll:    
@@ -384,7 +384,7 @@ hlpext_affiche proc
 	mov     cl,80
    hlpext_a:
 	mov     al,es:[bx]
-	cmp     al,'ý'
+	cmp     al,'Â²'
 	jne     hxt_ncol
 	inc     bx
 	mov     al,es:[bx]
@@ -488,7 +488,7 @@ search_stupid proc
 	mov     cl,80
    ss_hlpext_a:
 	mov     al,es:[bx]
-        cmp     al,'ý'
+        cmp     al,'Â²'
         jne     ss_hxt_ncol
 	inc     bx
 	mov     al,es:[bx]
@@ -667,7 +667,7 @@ sh_next:
         pushx   ax,si,ds,cx
         mov     cx,cs:[search_counter]
    sh_color:
-        mov     al,'Š'
+        mov     al,'Ã¨'
         mov     ds:[si-1],al
         add     si,2
         loop    sh_color

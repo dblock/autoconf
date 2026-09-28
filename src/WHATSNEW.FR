@@ -1,205 +1,205 @@
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ» 
-º 11, ch. de la ClairiŠre ÚÄÄĞÄÄÄ¿ AUTOCONF.SYS: configurations multiplesÌÍ» 
-º 1207 GenŠve, Suisse   ÚÄÁÄÄÄÄ¿ ³   version 3.00,  Novembre 1995        º º 
-º (022) 735 69 47       ³ D.D. Ã¿ÆÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹ º 
-ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍµ ÚÜÄÄ¿ÃÁÙ Une description des nouveaut‚s dans   º º 
-º Doubrovkine Daniel    ÀÄÁßÄÒÁÙ   AUTOCONF depuis la version 1.00       º º 
-ÈÍËÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼ º 
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ Stolen Technologies Incorporated ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼ 
-  ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ» 
-  º    Nouveau jusqu'… les versions:                                       º
-  º            AUTOCONF.SYS 3.00 beta 1                                    º
-  º            iLINE 1.1 (AUTOCONF.SYS)                                    º
-  º            READCONF.EXE (.COM) 4.0 (supprim‚ depuis la version 2.90)   º
-  º            BOOTIT 1.5                                                  º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼  
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•¦â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•— 
+â•‘ 11, ch. de la ClairiÃ¨re â”Œâ”€â”€Ã°â”€â”€â”€â” AUTOCONF.SYS: configurations multiplesâ• â•â•— 
+â•‘ 1207 GenÃ¨ve, Suisse   â”Œâ”€â”´â”€â”€â”€â”€â” â”‚   version 3.00,  Novembre 1995        â•‘ â•‘ 
+â•‘ (022) 735 69 47       â”‚ D.D. â”œâ”Ã£â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£ â•‘ 
+â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•Ã â”Œâ–„â”€â”€â”â”œâ”´â”˜ Une description des nouveautÃ©s dans   â•‘ â•‘ 
+â•‘ Doubrovkine Daniel    â””â”€â”´â–€â”€ÃŠâ”´â”˜   AUTOCONF depuis la version 1.00       â•‘ â•‘ 
+â•šâ•â•¦â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•©â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• â•‘ 
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â• Stolen Technologies Incorporated â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• 
+  â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•— 
+  â•‘    Nouveau jusqu'Ã  les versions:                                       â•‘
+  â•‘            AUTOCONF.SYS 3.00 beta 1                                    â•‘
+  â•‘            iLINE 1.1 (AUTOCONF.SYS)                                    â•‘
+  â•‘            READCONF.EXE (.COM) 4.0 (supprimÃ© depuis la version 2.90)   â•‘
+  â•‘            BOOTIT 1.5                                                  â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•  
 
 Versions 1.0 -> 1.21
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-1.      AUTOCONF n'affiche aucun d‚bris sur l'‚cran.
+1.      AUTOCONF n'affiche aucun dÃ©bris sur l'Ã©cran.
 
-2.      Un nom peut ˆtre rajout‚ … chaque configuration.
+2.      Un nom peut Ãªtre rajoutÃ© Ã  chaque configuration.
 
-3.      Une liste de configuration peut ˆtre obtenue en appuyant sur la BARRE
+3.      Une liste de configuration peut Ãªtre obtenue en appuyant sur la BARRE
         d'ESPACEMENT.
 
-4.      L'aide a ‚t‚ complŠtement reecrite (BACKSPACE pour afficher l'aide)
-        Les pages d‚filent une aprŠs l'autre, avec une pause entre chaque page.
-        Il ne faut plus arrˆter le d‚filement avec PAUSE.
+4.      L'aide a Ã©tÃ© complÃ¨tement reecrite (BACKSPACE pour afficher l'aide)
+        Les pages dÃ©filent une aprÃ¨s l'autre, avec une pause entre chaque page.
+        Il ne faut plus arrÃªter le dÃ©filement avec PAUSE.
 
 Version 1.22
-ÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•
 
 5.      Il est possible d'appuyer sur n'importe quelle touche pour passer 
-        … la page suivante de l'aide et non pas que sur la barre d'espacement.
+        Ã  la page suivante de l'aide et non pas que sur la barre d'espacement.
    
 Version 1.23
-ÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•
 
-6.      Vous pouvez choisir la configuration … charger aprŠs l'aide, avant
-        la configuration par d‚faut … ‚t‚ charg‚e.
+6.      Vous pouvez choisir la configuration Ã  charger aprÃ¨s l'aide, avant
+        la configuration par dÃ©faut Ã  Ã©tÃ© chargÃ©e.
 
 Version 1.24
-ÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•
 
-7.      Donne … l'utilisateur un choix d'actions aprŠs une erreur de 
+7.      Donne Ã  l'utilisateur un choix d'actions aprÃ¨s une erreur de 
         "configuration inexistante"  et "options invalides": choisir 
         une autre config, etc...
 
 Version 1.3
-ÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•
 
 8.      Le message d'initialisation dans la version 1.3 est en COULEURS! 
         (ou en noir/blanc selon votre choix, voir plus loin 
         (nouvelles options)).
 
-9.      Cinq nouvelles options pour le CONFIG.SYS ont ‚t‚ rajout‚s:
+9.      Cinq nouvelles options pour le CONFIG.SYS ont Ã©tÃ© rajoutÃ©s:
 
-        /P :    ne pas afficher le message d'initialisation au d‚marrage. 
-        /J :    toujours afficher une liste de configurations au d‚marrage et
+        /P :    ne pas afficher le message d'initialisation au dÃ©marrage. 
+        /J :    toujours afficher une liste de configurations au dÃ©marrage et
                 attendre que l'utilisateur appuie sur une touche.
-        /F :    pour les utilisateurs du clavier fran‡ais.
+        /F :    pour les utilisateurs du clavier franÃ§ais.
         /E :    force un mode monochrome pour l'affichage du message 
                 d'initialisation.
         
         Si vous avez une carte monochrome, les messages en couleur seront
-        de toute fa‡on affich‚s en noir et blanc, mais cette option acc‚lŠre
-        consid‚rablement l'affichage.
+        de toute faÃ§on affichÃ©s en noir et blanc, mais cette option accÃ©lÃ¨re
+        considÃ©rablement l'affichage.
 
-        /N : l'‚cran n'est jamais effac‚, sauf entre les pages d'aide.
+        /N : l'Ã©cran n'est jamais effacÃ©, sauf entre les pages d'aide.
 
 Version 1.4 
-ÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•
 
         Si AUTOCONF ne trouve pas la ligne DEVICE=$, alors le CONFIG.SYS est
-        r‚initialis‚, ainsi si vous avez DOS 6.0 (ce que AUTOCONF v‚rifie) 
+        rÃ©initialisÃ©, ainsi si vous avez DOS 6.0 (ce que AUTOCONF vÃ©rifie) 
         vous pouvez utilisez F8 ou F5 (voir nouvelles fonctions du DOS 6.0) 
         pour ne pas charger AUTOCONF. Dans le cas contraire vous pouvez 
-        utiliser une disquette boot. Ceci vous ‚vite de faire ce travail 
+        utiliser une disquette boot. Ceci vous Ã©vite de faire ce travail 
         fatiguant que d'appuyer sur CTRL ALT DEL. (Il se peut que pour 
-        les prochaines versions une v‚rification complŠte du CONFIG.SYS soit 
-        faite et l'erreur du DEVICE=$ automatiquement corrig‚e.
+        les prochaines versions une vÃ©rification complÃ¨te du CONFIG.SYS soit 
+        faite et l'erreur du DEVICE=$ automatiquement corrigÃ©e.
 
-        (Note: les messages d'erreur si vous avez DOS 6.0 ou ult‚rieur 
-        sont diff‚rents que si vous avez DOS 3.2 … 5.0. 
+        (Note: les messages d'erreur si vous avez DOS 6.0 ou ultÃ©rieur 
+        sont diffÃ©rents que si vous avez DOS 3.2 Ã  5.0. 
         (Si vous avez une version de DOS encore plus ancienne:
         - jetez la et rachetez une version ressente, en tout cas la 5.
-        - contactez moi si des problŠmes apparaissent avec AUTOCONF, 
+        - contactez moi si des problÃ¨mes apparaissent avec AUTOCONF, 
         j'aimerais les corriger.
 
-11.     Une possibilit‚ de quitter l'aide avec ESC a ‚t‚ rajout‚.
+11.     Une possibilitÃ© de quitter l'aide avec ESC a Ã©tÃ© rajoutÃ©.
 
 12.     La limite de 33 configuration dans le CONFIG.SYS et 
-        AUTOEXEC.BAT a ‚t‚ enlev‚e.
+        AUTOEXEC.BAT a Ã©tÃ© enlevÃ©e.
 
 Version 1.42 
 (Note: la version 1.41 a eu des modifications purement internes)
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-13.     Dans la version 1.4 des problŠmes ont apparu avec les options des
-        claviers fran‡ais et suisse-romands: la version 1.42 les corrige 
-        entiŠrement. (Si vous utilisez d'autres claviers, alors contactez-moi
+13.     Dans la version 1.4 des problÃ¨mes ont apparu avec les options des
+        claviers franÃ§ais et suisse-romands: la version 1.42 les corrige 
+        entiÃ¨rement. (Si vous utilisez d'autres claviers, alors contactez-moi
         et je ferais une modification dans ce sens).
 
-14.     Une nouvelle option a ‚t‚ rajout‚:
+14.     Une nouvelle option a Ã©tÃ© rajoutÃ©:
         
-        /Dx :   la configuration par d‚faut … charger. Sans cette option la 
-                config par d‚faut reste la configuration "A".
+        /Dx :   la configuration par dÃ©faut Ã  charger. Sans cette option la 
+                config par dÃ©faut reste la configuration "A".
 
-15.     Un message de bienvenue a ‚t‚ rajout‚ dans la version 1.42.
-        Jusqu'… 18.00 AUTOCONF vous affiche "Bonjour...", aprŠs 18.00 : 
+15.     Un message de bienvenue a Ã©tÃ© rajoutÃ© dans la version 1.42.
+        Jusqu'Ã  18.00 AUTOCONF vous affiche "Bonjour...", aprÃ¨s 18.00 : 
         Bonsoir... .
-        (R‚glez correctement l'horloge de votre PC! 
+        (RÃ©glez correctement l'horloge de votre PC! 
 
 Version 1.5
-ÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•
 
-        Les modifications de la version 1.5 sont trŠs nombreuses, car dans 
+        Les modifications de la version 1.5 sont trÃ¨s nombreuses, car dans 
         la version 1.42 je n'avais pas fait attention en rajoutant des choses
-        et j'avais d‚truit ou mis hors service certaines parties du programme.
-        Dans la version 1.5 de nouveaut‚s ont ‚t‚ rajout‚es et des bugs ont 
-        ‚t‚ corrig‚s:
+        et j'avais dÃ©truit ou mis hors service certaines parties du programme.
+        Dans la version 1.5 de nouveautÃ©s ont Ã©tÃ© rajoutÃ©es et des bugs ont 
+        Ã©tÃ© corrigÃ©s:
 
-16.     AprŠs les erreurs de configs non trouv‚es, etc, des problŠmes 
-        apparaissaient avec le chargement des configurations, ils ont ‚t‚ 
-        corrig‚es. 
+16.     AprÃ¨s les erreurs de configs non trouvÃ©es, etc, des problÃ¨mes 
+        apparaissaient avec le chargement des configurations, ils ont Ã©tÃ© 
+        corrigÃ©es. 
         
-        (appuyer deux fois sur une touche qui d‚signe la configuration, 
+        (appuyer deux fois sur une touche qui dÃ©signe la configuration, 
         erreurs de configuration inexistante sans motifs valables, etc...)
 
-17.     L'affichage de la lettre qui d‚signe une configuration lorsque 
-        celle-ci est la configuration par d‚faut … ‚t‚ rajout‚e 
-        (configuration "A" ou celle d‚finie avec /Dx).
+17.     L'affichage de la lettre qui dÃ©signe une configuration lorsque 
+        celle-ci est la configuration par dÃ©faut Ã  Ã©tÃ© rajoutÃ©e 
+        (configuration "A" ou celle dÃ©finie avec /Dx).
 
-18.     Affichage de la lettre qui d‚signe une configuration (tap‚e par 
-        l'utilisateur ou la configuration par d‚faut) … ‚t‚ enlev‚ lorsque 
+18.     Affichage de la lettre qui dÃ©signe une configuration (tapÃ©e par 
+        l'utilisateur ou la configuration par dÃ©faut) Ã  Ã©tÃ© enlevÃ© lorsque 
         vous utilisez AUTOCONF ave l'option /P.
 
 19.     Les noms des configurations apparaissent lorsque vous utilisez 
-        l'option /P et /J simultan‚ment ou que vous appuyez sur la barre 
-        d'espacement au d‚marrage.
+        l'option /P et /J simultanÃ©ment ou que vous appuyez sur la barre 
+        d'espacement au dÃ©marrage.
 
-20.     Le clavier fran‡ais et le clavier suisse-romand marchent 
+20.     Le clavier franÃ§ais et le clavier suisse-romand marchent 
         impeccablement (options /Q et /F).
         
-21.     Si vous utilisez /Q et /F simultan‚ment, une erreur est signal‚e et
-        le clavier US est utilis‚.
+21.     Si vous utilisez /Q et /F simultanÃ©ment, une erreur est signalÃ©e et
+        le clavier US est utilisÃ©.
 
-22.     Une possibilit‚ (qui marche cette fois-ci) de choisir la 
-        configuration que l'on veux aprŠs une erreur de mauvaises options 
+22.     Une possibilitÃ© (qui marche cette fois-ci) de choisir la 
+        configuration que l'on veux aprÃ¨s une erreur de mauvaises options 
         dans le CONFIG.SYS.
 
 Version 1.51
-ÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•
 
-23.     nouvelle option /B : ne pas cr‚er AUTOCONF.DAT et l'‚craser si il 
+23.     nouvelle option /B : ne pas crÃ©er AUTOCONF.DAT et l'Ã©craser si il 
         existe
 
 Version 1.52:
-ÍÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-24.     dans les version pr‚c‚dentes, si une configuration a ‚t‚ choisie 
-        … l'aide du clavier, le caractŠre qui la d‚signe ‚tait affich‚, 
-        une fois l'ordinateur charg‚. Une simple effacement du buffer 
-        clavier au bon endroit a corrig‚ ce problŠme.
+24.     dans les version prÃ©cÃ©dentes, si une configuration a Ã©tÃ© choisie 
+        Ã  l'aide du clavier, le caractÃ¨re qui la dÃ©signe Ã©tait affichÃ©, 
+        une fois l'ordinateur chargÃ©. Une simple effacement du buffer 
+        clavier au bon endroit a corrigÃ© ce problÃ¨me.
 
 Version 1.53:
-ÍÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-25.     Des messages sont diff‚rents d‚pendant de l'heure (entre 5-8,9-17,
+25.     Des messages sont diffÃ©rents dÃ©pendant de l'heure (entre 5-8,9-17,
         18-22,23-4).
 
-26.     READCNF.BAT et READCONF.COM version 2.0 ont ‚t‚ rajout‚s
-        READCNF permet de plus facilement g‚rer le AUTOEXEC.BAT pour les
+26.     READCNF.BAT et READCONF.COM version 2.0 ont Ã©tÃ© rajoutÃ©s
+        READCNF permet de plus facilement gÃ©rer le AUTOEXEC.BAT pour les
         configurations multiples. Consultez le manuel d'AUTOCONF.
 
         Note: vous pouvez toujours utiliser la version 1.0 de READCONF si 
-        vous n'avez pas la 2.0 mais je ne r‚ponds pas des plantages!
+        vous n'avez pas la 2.0 mais je ne rÃ©ponds pas des plantages!
 
-        Note: READCONF.COM et READCNF.BAT DOIVENT ˆtre dans le r‚pertoire 
-        racine du disque de d‚marrage!
+        Note: READCONF.COM et READCNF.BAT DOIVENT Ãªtre dans le rÃ©pertoire 
+        racine du disque de dÃ©marrage!
 
-Version 1.54 (bˆta) -> la version finale n'a pas ‚t‚ distribu‚e.
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+Version 1.54 (bÃªta) -> la version finale n'a pas Ã©tÃ© distribuÃ©e.
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-27.     Un bug a ‚t‚ r‚par‚ au niveau de l'erreur de OPTIONS INVALIDES dans 
+27.     Un bug a Ã©tÃ© rÃ©parÃ© au niveau de l'erreur de OPTIONS INVALIDES dans 
         le fichier CONFIG.SYS.
 
-28.     Il ne faut plus mettre de "$" aprŠs le nom de la configuration, 
+28.     Il ne faut plus mettre de "$" aprÃ¨s le nom de la configuration, 
         ceci dit, vous pouvez ne pas mettre de nom du tout, sans vous 
         soucier de ce "$". 
         
-        Note: si vous mettez le "$" tout de mˆme, il sera affich‚ comme un 
-        caractŠre ASCII. 
+        Note: si vous mettez le "$" tout de mÃªme, il sera affichÃ© comme un 
+        caractÃ¨re ASCII. 
 
 Version 2.0 de AUTOCONF.SYS & version 3.0 de READCONF.EXE
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-29.     Il est d‚sormais possible d'avoir le nom de la configuration en 
+29.     Il est dÃ©sormais possible d'avoir le nom de la configuration en 
         majuscules et/ou en minuscules. Le DOS convertis le contenu du 
-        CONFIG.SYS en majuscules, dans les versions pr‚c‚dentes, les noms 
-        des configurations ‚taient toujours en majuscules. D‚sormais vous 
+        CONFIG.SYS en majuscules, dans les versions prÃ©cÃ©dentes, les noms 
+        des configurations Ã©taient toujours en majuscules. DÃ©sormais vous 
         pouvez choisir lesquelles des lettres il faut mettre en majuscules 
         et lesquelles en minuscules. 
     
@@ -213,38 +213,38 @@ Remarque: le fait de mettre le nom de la configuration dans le CONFIG.SYS
           
           N|oM| D|E| L|A |C|onFiGurAtION = Nom De La Configuration
 
-Remarque: le s‚parateur est toujours "|" et il ne compte pas pour une place.
+Remarque: le sÃ©parateur est toujours "|" et il ne compte pas pour une place.
           ainsi N|om| D|e|L|a|C|onfiguration donne Nom DeLaConfiguration
                      ^   ^   ^                        ^  ^ ^
-30.     Deux versions en anglais et en fran‡ais sont faites.
+30.     Deux versions en anglais et en franÃ§ais sont faites.
 
-31.     AprŠs une erreur de DEVICE=$ des problŠmes ont apparut avec certains
-        ordinateurs lors de la r‚initialisation du CONFIG.SYS -> d‚sormais
+31.     AprÃ¨s une erreur de DEVICE=$ des problÃ¨mes ont apparut avec certains
+        ordinateurs lors de la rÃ©initialisation du CONFIG.SYS -> dÃ©sormais
         l'ordinateur fait un RESET complet.
 
 32.     READCONF.EXE, version 3.0
     
-        READCONF.EXE est utilis‚ … la place du READCONF.COM (version 1.0 et 
+        READCONF.EXE est utilisÃ© Ã  la place du READCONF.COM (version 1.0 et 
         2.0) pour les configurations multiples du AUTOEXEC.BAT.
 
-        Il lit dans un fichier AUTOCONF.DAT que AUTOCONF.SYS a cr‚‚ au 
-        d‚marrage et qui contient la configuration choisie. Puis il d‚finit 
+        Il lit dans un fichier AUTOCONF.DAT que AUTOCONF.SYS a crÃ©Ã© au 
+        dÃ©marrage et qui contient la configuration choisie. Puis il dÃ©finit 
         une variable dans l'environnement permanent du DOS : CONF=<config 
         choisie>
         
         ex: CONF=C
 
-        Note: l'option /B du AUTOCONF.SYS a ‚t‚ enlev‚e.
+        Note: l'option /B du AUTOCONF.SYS a Ã©tÃ© enlevÃ©e.
 
-        Si un d‚bordement d'environnement se produit, un message est affich‚.
+        Si un dÃ©bordement d'environnement se produit, un message est affichÃ©.
         Si READCONF ne trouve pas AUTOCONF.DAT une erreur se produit.
     
         Note: syntaxe pour READCONF: "READCONF X"
-        o— X est le lecteur du d‚marrage de votre ordinateur.
+        oÃ¹ X est le lecteur du dÃ©marrage de votre ordinateur.
         Ceci est utile pour ceux qui font du SWAP des lecteurs (avec STACKER, 
         etc)
 
-        Vous n'avez plus qu'… reprendre la variable CONF plus loin dans 
+        Vous n'avez plus qu'Ã  reprendre la variable CONF plus loin dans 
         l'AUTOEXEC:
         
         if %conf%=="A" goto ConfigA   ; voir manuel du DOS
@@ -253,55 +253,55 @@ Remarque: le s‚parateur est toujours "|" et il ne compte pas pour une place.
         Note: ce n'est plus 1 pour la configuration A, mais A --> vous pouvez
         faire des configuration pour codes ASCII <65 et >128 aussi.
 
-33.     La fonction de l'affichage … ‚t‚ am‚lior‚e et sa vitesse multipli‚e 
+33.     La fonction de l'affichage Ã  Ã©tÃ© amÃ©liorÃ©e et sa vitesse multipliÃ©e 
         par quatre.
 
-34.     La liste des configurations n'est jamais affich‚e … la suite 
+34.     La liste des configurations n'est jamais affichÃ©e Ã  la suite 
         plusieurs fois.
 
-35.     Ajout‚ une routine pour quitter AUTOCONF … n'importe quel endroit en 
+35.     AjoutÃ© une routine pour quitter AUTOCONF Ã  n'importe quel endroit en 
         appuyant sur ESCAPE:
-        - aprŠs une erreur
-        - … la place d'une configuration
+        - aprÃ¨s une erreur
+        - Ã  la place d'une configuration
 
-36.     Corrig‚ bug au niveau de l'erreur de claviers suisse-romand et 
-        fran‡ais.
+36.     CorrigÃ© bug au niveau de l'erreur de claviers suisse-romand et 
+        franÃ§ais.
 
-37.     R‚par‚ bug avec l'option /S.
+37.     RÃ©parÃ© bug avec l'option /S.
 
 38.     Lors de l'erreur de configuration inexistante, AUTOCONF vous dit 
-        toujours quelle configuration n'a pas ‚t‚ trouv‚e.
+        toujours quelle configuration n'a pas Ã©tÃ© trouvÃ©e.
 
-39.     AUTOCONF d‚tecte toutes les option incorrectes du CONFIG.SYS (et non
-        plus qu'une seule), toutes les options correctes sont d‚sormais prises
-        en consid‚ration lors de cette erreur. AUTOCONF affiche l'option (les
+39.     AUTOCONF dÃ©tecte toutes les option incorrectes du CONFIG.SYS (et non
+        plus qu'une seule), toutes les options correctes sont dÃ©sormais prises
+        en considÃ©ration lors de cette erreur. AUTOCONF affiche l'option (les
         options) incorrectes.
 
-40.     Vous pouvez commencer un paramŠtre dans le CONFIG.SYS par "/" et par 
+40.     Vous pouvez commencer un paramÃ¨tre dans le CONFIG.SYS par "/" et par 
         "-".
 
 Version 2.1 de AUTOCONF.SYS
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 41.     Si vous appuyez sur ESCAPE au lieu de choisir une configuration, 
         avant le chargement d'AUTOCONF, ce dernier ne fera que sa propre 
-        initialisation de driver DOS (non-r‚sident (=ne prend pas de 
-        m‚moire)) (inoffensive) puis terminera imm‚diatement AUTOCONF et ne 
+        initialisation de driver DOS (non-rÃ©sident (=ne prend pas de 
+        mÃ©moire)) (inoffensive) puis terminera immÃ©diatement AUTOCONF et ne 
         fera pas les test de DEVICE=$, etc
 
-42.     Il est d‚sormais possible (grƒce … l'id‚e de Salvator Nastasi (GE), 
-        qui me suggŠre de le faire depuis la version 1.5 d'AUTOCONF) de 
+42.     Il est dÃ©sormais possible (grÃ¢ce Ã  l'idÃ©e de Salvator Nastasi (GE), 
+        qui me suggÃ¨re de le faire depuis la version 1.5 d'AUTOCONF) de 
         changer les messages d'initialisation (pas tous bien sur), mais ceux 
-        de Bonjour..., Bonsoir...,Matinal...blabla, Arrˆter...blabla avec 
+        de Bonjour..., Bonsoir...,Matinal...blabla, ArrÃªter...blabla avec 
         l'option /Mx:
                 
                 /M1B|la|B|la#le message du |m|atin
-                /M2B|la|B|la#le message de la |j|ourn‚e
+                /M2B|la|B|la#le message de la |j|ournÃ©e
                 /M3B|la|B|la#le message du |s|oir
                 /M4B|la|B|la#le message de la |n|uit
 
-        Le s‚parateur "#" renvoie sur la ligne suivante. Les messages
-        de plus de 77 lettres sont continu‚s sur la ligne suivante.
+        Le sÃ©parateur "#" renvoie sur la ligne suivante. Les messages
+        de plus de 77 lettres sont continuÃ©s sur la ligne suivante.
 
         ex:                 /M2b|onjour,#|c|omment va votre |chat| ?
         donnera:            
@@ -311,121 +311,121 @@ Version 2.1 de AUTOCONF.SYS
 44.     Dans l'aide de AUTOCONF appuyez sur:
                 PageUp - une page plus haut
                 PageDn - une page plus bas
-                Home   - premiŠre page
-                End    - derniŠre page
+                Home   - premiÃ¨re page
+                End    - derniÃ¨re page
                      - une ligne plus haut
                      - une ligne plus bas
                 ESC    - quitter l'aide
         Si vous appuyez sur n'importe quelle autre touche, rien ne se passe.
 
 
-45.     Dans la liste des configurations, le curseur met en ‚vidence la 
-        lettre qui d‚signe la configuration sur laquelle il se trouve. Vous 
-        pouvez circuler avec les flŠches (haut, bas, droite (=bas) et gauche 
-        (=haut)) ainsi que avec PgUp (ou Home) pour revenir … la premiŠre 
-        configuration et PgDn (ou End) pour aller … la derniŠre configuration 
-        de celles qui sont affich‚es (au cas ou il y a plusieurs pages). La 
-        liste est donc "scroll‚e".
+45.     Dans la liste des configurations, le curseur met en Ã©vidence la 
+        lettre qui dÃ©signe la configuration sur laquelle il se trouve. Vous 
+        pouvez circuler avec les flÃ¨ches (haut, bas, droite (=bas) et gauche 
+        (=haut)) ainsi que avec PgUp (ou Home) pour revenir Ã  la premiÃ¨re 
+        configuration et PgDn (ou End) pour aller Ã  la derniÃ¨re configuration 
+        de celles qui sont affichÃ©es (au cas ou il y a plusieurs pages). La 
+        liste est donc "scrollÃ©e".
 
 46.     Dans la liste des configurations, choisissez votre configuration 
         avec la BARRE d'ESPACEMENT ou ENTREE. (Vous pouvez toujours le faire
-        … l'aide de la touche qui d‚signe la configuration voulue.)
+        Ã  l'aide de la touche qui dÃ©signe la configuration voulue.)
 
 47.     Vous pouvez modifier l'apparence du curseur clignotant avec une 
-        nouvelle option: /C, suivie d'une lettre ascii (de 1 … 254, except‚
-        ALT 127 qui est la couleur par d‚faut)
-        ex: /Cˆ vous donnera un curseur gris clignotant sur un fond noir.
+        nouvelle option: /C, suivie d'une lettre ascii (de 1 Ã  254, exceptÃ©
+        ALT 127 qui est la couleur par dÃ©faut)
+        ex: /CÃª vous donnera un curseur gris clignotant sur un fond noir.
         ou: /C~ (code ascii: 126) donnera un curseur jaune sur un fond gris.
-        (note: pour obtenir dans l'‚dit du DOS les caractŠres en dessous de 32
+        (note: pour obtenir dans l'Ã©dit du DOS les caractÃ¨res en dessous de 32
                il faut faire Ctrl P, puis ALT <code>)
 
-        Note:   Alt 127 de donnera pas de caractŠre dans le EDIT du DOS, 
-                c'est pour cela que cette couleur est celle par d‚faut.
+        Note:   Alt 127 de donnera pas de caractÃ¨re dans le EDIT du DOS, 
+                c'est pour cela que cette couleur est celle par dÃ©faut.
         
-48.     Le liste des configuration est d‚sormais affich‚e par ordre 
-        alphab‚tique. (Si une configuration se r‚pŠte: ex: deux configurations
-        "G", alors elles seront affich‚es les deux dans la liste, celle qui
-        apparaŒt en premier dans le CONFIG.SYS sera aussi affich‚e en premier.
+48.     Le liste des configuration est dÃ©sormais affichÃ©e par ordre 
+        alphabÃ©tique. (Si une configuration se rÃ©pÃ¨te: ex: deux configurations
+        "G", alors elles seront affichÃ©es les deux dans la liste, celle qui
+        apparaÃ®t en premier dans le CONFIG.SYS sera aussi affichÃ©e en premier.
 
 Remarque: 
         
-        Si deux configurations portent la mˆme d‚signation (lettre), alors
-        LES DEUX sont charg‚es!
+        Si deux configurations portent la mÃªme dÃ©signation (lettre), alors
+        LES DEUX sont chargÃ©es!
 
-47.     R‚par‚ Bug lorsqu'une configuration ne portait pas de nom: la lettre
-        qui la d‚signe est d‚sormais correctement affich‚e.
+47.     RÃ©parÃ© Bug lorsqu'une configuration ne portait pas de nom: la lettre
+        qui la dÃ©signe est dÃ©sormais correctement affichÃ©e.
 
-Version 2.1 de AUTOCONF.SYS - DerniŠre R‚vision 
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
-note: aucun bug majeur n'a ‚t‚ trouv‚, ces corrections sont toutes mineures
-      et insignifiantes pour l'ex‚cution de AUTOCONF.
+Version 2.1 de AUTOCONF.SYS - DerniÃ¨re RÃ©vision 
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+note: aucun bug majeur n'a Ã©tÃ© trouvÃ©, ces corrections sont toutes mineures
+      et insignifiantes pour l'exÃ©cution de AUTOCONF.
 
-48.     Corrig‚ un bug: dans de diff‚rents cas dans la liste des configs
-        le texte aprŠs avoir choisit une configuration devenait noir sur
-        blanc (ou la couleur choisie avec /Cx). Ce bug a ‚t‚ corrig‚.
+48.     CorrigÃ© un bug: dans de diffÃ©rents cas dans la liste des configs
+        le texte aprÃ¨s avoir choisit une configuration devenait noir sur
+        blanc (ou la couleur choisie avec /Cx). Ce bug a Ã©tÃ© corrigÃ©.
 
-49.     Corrig‚ un bug: dans l'aide les pages sont scroll‚es correctement
-        et il n'y a pas cette impression (qui n'en ‚tait pas une) que          
-        le texte (lorsque vous faite PgUp ou la flŠche vers le haut que)
-        fait un saut en haut, puis revient … sa place.
+49.     CorrigÃ© un bug: dans l'aide les pages sont scrollÃ©es correctement
+        et il n'y a pas cette impression (qui n'en Ã©tait pas une) que          
+        le texte (lorsque vous faite PgUp ou la flÃ¨che vers le haut que)
+        fait un saut en haut, puis revient Ã  sa place.
 
-50.     Corrig‚ un bug: lorsque vous demandez la liste des configurations
-        au d‚marrage, la configuration mise en ‚vidence ‚tait curieusement
-        la deuxiŠme. D‚sormais c'est bien la premiŠre configuration qui
-        est mise en ‚vidence.
+50.     CorrigÃ© un bug: lorsque vous demandez la liste des configurations
+        au dÃ©marrage, la configuration mise en Ã©vidence Ã©tait curieusement
+        la deuxiÃ¨me. DÃ©sormais c'est bien la premiÃ¨re configuration qui
+        est mise en Ã©vidence.
 
-51.     Agrandi la limite du nombre de lettres qui peuvent ˆtre utilis‚es
+51.     Agrandi la limite du nombre de lettres qui peuvent Ãªtre utilisÃ©es
         pour les messages optionnels avec /M1, /M2, /M3 et /M4. Vous pouvez
-        utiliser maintenant environs 1000 caractŠres (n'en abusez tout de
-        mˆme pas).
+        utiliser maintenant environs 1000 caractÃ¨res (n'en abusez tout de
+        mÃªme pas).
 
-52.     Le fichier AUTOCONF.DAT est maintenant cach‚, car ‡a embˆte ceux
+52.     Le fichier AUTOCONF.DAT est maintenant cachÃ©, car Ã§a embÃªte ceux
         qui adorent une belle organisation du disque est un minimum de
-        fichiers visibles dans le r‚pertoire racine.
+        fichiers visibles dans le rÃ©pertoire racine.
 
 Version 2.2 de AUTOCONF.SYS 
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
                                      
-53.     Ouf...ce bug n'‚tait pas facile … corriger...
-        Corrig‚ le bug avec le DOSDATA de QEMM. Autoconf est toujours
-        charg‚ deux fois, mais c'est totalement transparent. (Ainsi 
+53.     Ouf...ce bug n'Ã©tait pas facile Ã  corriger...
+        CorrigÃ© le bug avec le DOSDATA de QEMM. Autoconf est toujours
+        chargÃ© deux fois, mais c'est totalement transparent. (Ainsi 
         vous pouvez maintenant charger le DOSDATA avec une autre config
-        que la premiŠre et ex‚cuter cette config normalement.)
+        que la premiÃ¨re et exÃ©cuter cette config normalement.)
 
 54.     Une extension de l'option /Mx:
-        /M[xxxx] o— x est le num‚ro du message. Ainsi vous pouvez attribuer
-        le mˆme message … plusieurs moments de la journ‚e.
-        ex: /M[12]L|e |M|essage du#matin et de l'aprŠs-midi... donnera
+        /M[xxxx] oÃ¹ x est le numÃ©ro du message. Ainsi vous pouvez attribuer
+        le mÃªme message Ã  plusieurs moments de la journÃ©e.
+        ex: /M[12]L|e |M|essage du#matin et de l'aprÃ¨s-midi... donnera
 
         Le Message du
-        matin et de l'aprŠs-midi...
+        matin et de l'aprÃ¨s-midi...
 
-        pour le message du matin et de l'aprŠs-midi.
+        pour le message du matin et de l'aprÃ¨s-midi.
 
-55.     Si vous d‚sirez utiliser les caractŠres de contr“le comme des          
-        lettres normales, alors ‚crivez les deux fois de suite:
+55.     Si vous dÃ©sirez utiliser les caractÃ¨res de contrÃ´le comme des          
+        lettres normales, alors Ã©crivez les deux fois de suite:
           
-        /M3Message avec l'option //M sans des entr‚es avec ##.
+        /M3Message avec l'option //M sans des entrÃ©es avec ##.
 
 Version 2.3 de AUTOCONF.SYS et Version 3.12 de READCONF
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 56.     Configurations avec les touches de fonction: F1, F2 ... F10
         Mettez 'DEVICE=*F1 Nom' pour avoir une config F1
         Dans l'autoexec.bat, utilisez READCONF 3.1 qui met une variable
         d'environnement CONF=A,B,C...Z ou CONF=F1,F2...F0 (F0 pour F10).
-        Les configurations ‚tendues peuvent aussi ˆtre celles par d‚faut,
-        en mettant l'option /Dx o— x est F1..F0
+        Les configurations Ã©tendues peuvent aussi Ãªtre celles par dÃ©faut,
+        en mettant l'option /Dx oÃ¹ x est F1..F0
 
-57.     Corrig‚ bug dans les listes de configurations avec les pages
-        multiples et des renvois automatiques du DOS qui entraŒnait un
+57.     CorrigÃ© bug dans les listes de configurations avec les pages
+        multiples et des renvois automatiques du DOS qui entraÃ®nait un
         plantage lors du scrolling.
 
-58.     Corrig‚ bug dans les listes de configurations, lorsqu'une option
+58.     CorrigÃ© bug dans les listes de configurations, lorsqu'une option
         suivait l'option /M[], l'ordinateur l'ignorait ou plantait.
 
-59.     Les lignes lors des s‚lections sont entiŠrement mises en ‚vidence et
-        non plus un seul caractŠre. 
+59.     Les lignes lors des sÃ©lections sont entiÃ¨rement mises en Ã©vidence et
+        non plus un seul caractÃ¨re. 
 
 60.     Nouvelles options dans READCONF:
 
@@ -434,25 +434,25 @@ Version 2.3 de AUTOCONF.SYS et Version 3.12 de READCONF
 
 
 Version 2.31 de AUTOCONF.SYS
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-61.     Corrig‚ un bug: /S fonctionne correctement avec les configurations
-        F1...F10... (vraiment d‚sol‚ pour ce bug dans la version 2.3...)
+61.     CorrigÃ© un bug: /S fonctionne correctement avec les configurations
+        F1...F10... (vraiment dÃ©solÃ© pour ce bug dans la version 2.3...)
 
 Version 2.32 de AUTOCONF.SYS
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-62.     Am‚lioration de la vitesse d'affichage de l'aide par des routines
-        d'‚criture directe en m‚moire vid‚o. (Les stupides routines, qouique
-        document‚es partout, sont l'oeuvre d'Hitcher [CH])
+62.     AmÃ©lioration de la vitesse d'affichage de l'aide par des routines
+        d'Ã©criture directe en mÃ©moire vidÃ©o. (Les stupides routines, qouique
+        documentÃ©es partout, sont l'oeuvre d'Hitcher [CH])
 
-63.     Un beep moins ‚nervant a ‚t‚ rajout‚ en cas d'erreurs...        
+63.     Un beep moins Ã©nervant a Ã©tÃ© rajoutÃ© en cas d'erreurs...        
 
-64.     Bug corrig‚: en cas d'erreur avec DEVICE=$, AUTOCONF ne l'affiche 
-        plus deux fois si le DOSDATA est charg‚ aprŠs.
+64.     Bug corrigÃ©: en cas d'erreur avec DEVICE=$, AUTOCONF ne l'affiche 
+        plus deux fois si le DOSDATA est chargÃ© aprÃ¨s.
 
-Version 2.4 de AUTOCONF.SYS - v. 2.41 derniŠre modif, Jeudi 16 Juin 1994
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+Version 2.4 de AUTOCONF.SYS - v. 2.41 derniÃ¨re modif, Jeudi 16 Juin 1994
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 65.     En appuyant sur TAB dans la liste des configurations, vous obtenez
         la CONFIGURATION MEME!
@@ -461,204 +461,204 @@ Version 2.4 de AUTOCONF.SYS - v. 2.41 derniŠre modif, Jeudi 16 Juin 1994
                           reconnait pas...)
         
 66.     Une erreur en cas de configurations inexistantes dans le CONFIG.SYS
-        (pas de configurations du tout) est affich‚e.
+        (pas de configurations du tout) est affichÃ©e.
 
-67.     AUTOCONF ignore au maximum des possibilit‚s les options de
+67.     AUTOCONF ignore au maximum des possibilitÃ©s les options de
         configurations multiples du DOS 6.x. Malheureusement, ce dernier
-        travaille derriŠre … chaque caractŠre lu, donc en perturbant 
-        l'ex‚cution d'AUTOCONF au maximum, en faisant des renvois ind‚pendants
-        de ma volont‚.
+        travaille derriÃ¨re Ã  chaque caractÃ¨re lu, donc en perturbant 
+        l'exÃ©cution d'AUTOCONF au maximum, en faisant des renvois indÃ©pendants
+        de ma volontÃ©.
 
-68.     Corrig‚ des bugs mineurs avec des configurations ayants des noms plus
-        longs qu'une seule ligne pour l'affichage de la configuration mˆme.
+68.     CorrigÃ© des bugs mineurs avec des configurations ayants des noms plus
+        longs qu'une seule ligne pour l'affichage de la configuration mÃªme.
 
-68.     Dans l'affichage de la configuration mˆme, utilisez les touches
-                     - configuration pr‚c‚dente
+68.     Dans l'affichage de la configuration mÃªme, utilisez les touches
+                     - configuration prÃ©cÃ©dente
                      - configuration suivante
-        ESPACE, ENTREE - charger la configuration affich‚e
-                TAB    - retourner … la liste des configurations
+        ESPACE, ENTREE - charger la configuration affichÃ©e
+                TAB    - retourner Ã  la liste des configurations
 
 Version 2.42 de AUTOCONF.SYS
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-69.     Rajout‚ la possibilit‚ de fermer AUTOCONF sous l'affichage de la 
-        configuration mˆme, en appuyant comme partout sur ESC.
+69.     RajoutÃ© la possibilitÃ© de fermer AUTOCONF sous l'affichage de la 
+        configuration mÃªme, en appuyant comme partout sur ESC.
 
-70.     Corrig‚ un bug: lorsque le CONFIG.SYS contien une commande inconnue,
+70.     CorrigÃ© un bug: lorsque le CONFIG.SYS contien une commande inconnue,
         sous TAB, AUTOCONF affiche <Bzzzz...>, cette fois ci, correctement.
 
 71.     L'aide d'AUTOCONF, celle au boot et celle du MANUEL.EXE, est
         parfaitement fluide au scrolling. Tout clignottement, principalement
-        … la fin de l'aide a ‚t‚ corrig‚.
+        Ã  la fin de l'aide a Ã©tÃ© corrigÃ©.
 
-72.     BOOTIT 1.0 reinitialise le PC avec la configuration demand‚e.
+72.     BOOTIT 1.0 reinitialise le PC avec la configuration demandÃ©e.
         Lancez BOOTIT [ENTREE] pour l'explication des options.
 
-73.     Le message avant la liste des configuration peut ne pas ˆtre affich‚.
-        Utilisez pour cel… une nouvelle option: /G.
+73.     Le message avant la liste des configuration peut ne pas Ãªtre affichÃ©.
+        Utilisez pour celÃ  une nouvelle option: /G.
 
-74.     Les touches du PgDn ou PgUp, ainsi que les flŠches pour le choix des
-        configurations ont ‚t‚s interdites. Donc plus d'erreur de CONFIG FH
-        introuvable! (ces touches seront ignor‚es)
+74.     Les touches du PgDn ou PgUp, ainsi que les flÃ¨ches pour le choix des
+        configurations ont Ã©tÃ©s interdites. Donc plus d'erreur de CONFIG FH
+        introuvable! (ces touches seront ignorÃ©es)
 
 Version 2.5 de AUTOCONF.SYS
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 Cette version corrige comme toujours les bugs mineurs. C'st en faite, la 
-version r‚vis‚e 2.42 avec quelque nouvelles fonctions.
+version rÃ©visÃ©e 2.42 avec quelque nouvelles fonctions.
 
 75.     AUTOCONF supporte les deux modes de 25 et 50 lignes. Vous pouvez  
-        changer de mode sous l'aide d'AUTOCONF seulement! La seule fa‡on 
+        changer de mode sous l'aide d'AUTOCONF seulement! La seule faÃ§on 
         d'avoir le mode 50 lignes en regardant une configuration ou en lisant
         la liste est de le forcer avec /5 (76.)
         
 76.     Une nouvelle option pour le CONFIG.SYS: /5 forcera le mode 50 lignes.
-        AUTOCONF maintiendra ce mode tout le long de son ex‚cution et en 
+        AUTOCONF maintiendra ce mode tout le long de son exÃ©cution et en 
         quittant. Le passage en mode 25 lignes n'est disponible que sous
         l'aide d'AUTOCONF!             
 
-77.     Si vous avez cr‚‚ plus d'une configuration avec la mˆme designation,
-        la mˆme lettre, AUTOCONF les montrera toutes sous TAB.
+77.     Si vous avez crÃ©Ã© plus d'une configuration avec la mÃªme designation,
+        la mÃªme lettre, AUTOCONF les montrera toutes sous TAB.
         
-78.     AUTOCONF supporte entiŠremnt les cartes CGA, il ne doit pas y avoir
-        de neige. Les routines de mise en ‚vidence de la ligne dans la liste
-        ont ‚t‚s l‚gŠrement acc‚l‚r‚es, ainsi que certaines autres routines
+78.     AUTOCONF supporte entiÃ¨remnt les cartes CGA, il ne doit pas y avoir
+        de neige. Les routines de mise en Ã©vidence de la ligne dans la liste
+        ont Ã©tÃ©s lÃ©gÃ¨rement accÃ©lÃ©rÃ©es, ainsi que certaines autres routines
         d'affichage.
 
-79.     Si une erreur en ‚crivant ou en lisant le fichier AUTOCONF.DAT
-        apparait, une erreur non fatale est signal‚e.
+79.     Si une erreur en Ã©crivant ou en lisant le fichier AUTOCONF.DAT
+        apparait, une erreur non fatale est signalÃ©e.
 
-80.     Les options /Q et /F sont remplac‚es par un support complet des
-        claviers choisissables avec KEYB.COM. Une nouvelle option a ‚t‚
-        rajout‚e … cet effet: /Kxx. O— xx correspond au clavier que vous
+80.     Les options /Q et /F sont remplacÃ©es par un support complet des
+        claviers choisissables avec KEYB.COM. Une nouvelle option a Ã©tÃ©
+        rajoutÃ©e Ã  cet effet: /Kxx. OÃ¹ xx correspond au clavier que vous
         utilisez:
 
-        Belgique                     BE  ³ Br‚sil                       BR        
-        Canada fr.                   CF  ³ Tch‚coslovaquie (tch‚que)    CZ        
-        Tch‚coslovaquie (slovaque)   SL  ³ Danemark                     DK        
-        Finlande                     SU  ³ France                       FR        
-        Allemagne                    GR  ³ Hongrie                      HU        
-        Italie                       IT  ³ Am‚rique latine              LA        
-        Pays-Bas                     NL  ³ NorvŠge                      NO        
-        Pologne                      PL  ³ Portugal                     PO        
-        Espagne                      SP  ³ SuŠde                        SV        
-        Suisse (romande)             SF  ³ Suisse (al‚manique)          SG        
-        Royaume-Uni                  UK  ³ Croatie/Serbie/Slov‚nie      YU        
+        Belgique                     BE  â”‚ BrÃ©sil                       BR        
+        Canada fr.                   CF  â”‚ TchÃ©coslovaquie (tchÃ©que)    CZ        
+        TchÃ©coslovaquie (slovaque)   SL  â”‚ Danemark                     DK        
+        Finlande                     SU  â”‚ France                       FR        
+        Allemagne                    GR  â”‚ Hongrie                      HU        
+        Italie                       IT  â”‚ AmÃ©rique latine              LA        
+        Pays-Bas                     NL  â”‚ NorvÃ¨ge                      NO        
+        Pologne                      PL  â”‚ Portugal                     PO        
+        Espagne                      SP  â”‚ SuÃ¨de                        SV        
+        Suisse (romande)             SF  â”‚ Suisse (alÃ©manique)          SG        
+        Royaume-Uni                  UK  â”‚ Croatie/Serbie/SlovÃ©nie      YU        
 
-        Le clavier US est celui par d‚faut.
+        Le clavier US est celui par dÃ©faut.
         
         ex: /KSF pour le clavier suisse-romand.
 
-81.     Les flŠches indiquant si la liste des configurations peut ˆtre 
-        scroll‚e vers le bas ou vers le haut apparaissent lorsque vous
+81.     Les flÃ¨ches indiquant si la liste des configurations peut Ãªtre 
+        scrollÃ©e vers le bas ou vers le haut apparaissent lorsque vous
         avez plus d'une page de configurations.
 
 Version 2.51 de AUTOCONF.SYS
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-82.     Corrig‚ bug de la version 2.50: lorsque le paramŠtre de /Cx contenait
+82.     CorrigÃ© bug de la version 2.50: lorsque le paramÃ¨tre de /Cx contenait
         une valeur en dessous de 32, AUTOCONF ignorait toutes les options par
         la suite.
 
-83.     Une pulsation est affich‚e lorsqu'un temps d'attente a ‚t‚ sp‚cifi‚
+83.     Une pulsation est affichÃ©e lorsqu'un temps d'attente a Ã©tÃ© spÃ©cifiÃ©
         avec /Tx.
         
-        Pour ne pas afficher la pulsation, une option compl‚mentaire a ‚t‚
-        rajout‚e … /Tx: /Tx[u]. Si vous sp‚cifiez par exemple: /T5u, lorsque
-        AUTOCONF attend pendant 5 secondes, la pulsation n'est pas affich‚e.
+        Pour ne pas afficher la pulsation, une option complÃ©mentaire a Ã©tÃ©
+        rajoutÃ©e Ã  /Tx: /Tx[u]. Si vous spÃ©cifiez par exemple: /T5u, lorsque
+        AUTOCONF attend pendant 5 secondes, la pulsation n'est pas affichÃ©e.
 
 Version 2.60 de AUTOCONF.SYS
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-Í WINDOWS 4.0, nom de code CHICAGO! ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+â• WINDOWS 4.0, nom de code CHICAGO! â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 84.     Un support de Windows 4.0, nom de code Chicago, tournant sous DOS 7.0
-        a ‚t‚ fait. Consultez l'aide pour des informations d‚taill‚es sur ce
+        a Ã©tÃ© fait. Consultez l'aide pour des informations dÃ©taillÃ©es sur ce
         point. Si vous n'utilisez pas Chicago, ce point ne vous concerne
-        nullement car l'ex‚cution d'AUTOCONF ne sera chang‚e.
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+        nullement car l'exÃ©cution d'AUTOCONF ne sera changÃ©e.
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-85.     Bug majeur corrig‚ au niveau des configurations multiples.
-        La derniŠre ligne dans la configuration, ainsi que la ligne qui
-        suivait DEVICE=$ n'‚taient pas prises en compte ou erron‚es.
-        Note: ce bug est apparr–t dans la version 2.4x.
+85.     Bug majeur corrigÃ© au niveau des configurations multiples.
+        La derniÃ¨re ligne dans la configuration, ainsi que la ligne qui
+        suivait DEVICE=$ n'Ã©taient pas prises en compte ou erronÃ©es.
+        Note: ce bug est apparrÃ»t dans la version 2.4x.
     
 Version 2.6x et 2.70 de AUTOCONF.SYS
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 86.     Concerne: Chicago, DOS et QEMM 7.X DOSDATA
         Au boot:
 
         -> Chicago: Windows 4.0 n'a simplement pas besoin de QEMM, donc il
-                    est complŠtement absurde de l'utiliser avec.
+                    est complÃ¨tement absurde de l'utiliser avec.
         -> DOS    : Vous avez deux types de configurations, avec et sans le
-                    DOSDATA. Lorsque vous d‚marrez votre ordinateur, vous
+                    DOSDATA. Lorsque vous dÃ©marrez votre ordinateur, vous
                     appuyez sur F4 afin de booter MS-DOS. Puis vous
                     choisissez une configuration de AUTOCONF qui contient
-                    DOSDATA. Le message D‚marrage de Windows reapparait,
-                    puisque DOSDATA relance le CONFIG.SYS. Vous ˆtes forc‚s
+                    DOSDATA. Le message DÃ©marrage de Windows reapparait,
+                    puisque DOSDATA relance le CONFIG.SYS. Vous Ãªtes forcÃ©s
                     de rappuyer sur F4.
 
                     Avec l'option /O:
 
-                    La derniŠre ‚tape est supprim‚e avec cette version
-                    d'AUTOCONF. Le dernier appui sur F4 est effectu‚ par
-                    AUTOCONF mˆme. Votre boot avec DOSDATA se r‚sume
-                    d‚sormais …: F4 + Configuration
+                    La derniÃ¨re Ã©tape est supprimÃ©e avec cette version
+                    d'AUTOCONF. Le dernier appui sur F4 est effectuÃ© par
+                    AUTOCONF mÃªme. Votre boot avec DOSDATA se rÃ©sume
+                    dÃ©sormais Ã : F4 + Configuration
 
         Note: certains anciens bios ne peuvent supporter cette fonction.
 
-        Note: la touche F4 est simul‚e dans tous les cas, sauf celui d'un 
-              d‚marrage avec CHICAGO. Si DOSDATA n'est pas pr‚sent, un beep
-              sera ‚mis … la fin du d‚marrage, car l'ordinateur gardera la
-              touche jusqu'… la ligne de commandes.
+        Note: la touche F4 est simulÃ©e dans tous les cas, sauf celui d'un 
+              dÃ©marrage avec CHICAGO. Si DOSDATA n'est pas prÃ©sent, un beep
+              sera Ã©mis Ã  la fin du dÃ©marrage, car l'ordinateur gardera la
+              touche jusqu'Ã  la ligne de commandes.
 
 87.     BOOTIT 1.1
 
-        Bootit a ‚t‚ consid‚rablement am‚lior‚. Le cache est normalement vid‚
-        sans problŠmes, sauf avec STACKER, qui ‚tant sur le lecteur boot
-        continue … refaire UPDATING ALLOCATION MAP. Le reboot a ‚t‚ ac‚l‚r‚
+        Bootit a Ã©tÃ© considÃ©rablement amÃ©liorÃ©. Le cache est normalement vidÃ©
+        sans problÃ¨mes, sauf avec STACKER, qui Ã©tant sur le lecteur boot
+        continue Ã  refaire UPDATING ALLOCATION MAP. Le reboot a Ã©tÃ© acÃ©lÃ©rÃ©
         de deux fois environs.
 
-88.     Une nouvelle fonction a ‚t‚ rajout‚e … AUTOCONF. Dans tous les cas,
-        o— la touche ESC fonctionnait, il est d‚sormais possible d'utiliser
+88.     Une nouvelle fonction a Ã©tÃ© rajoutÃ©e Ã  AUTOCONF. Dans tous les cas,
+        oÃ¹ la touche ESC fonctionnait, il est dÃ©sormais possible d'utiliser
         '.' (point) afin de passer les configurations multiples et ne charger
         que la partie commune du CONFIG.SYS.
 
 89.    Les configurations sont scrollables sous TAB, consultez s.v.p l'aide
-       pour les touches modifi‚es.
+       pour les touches modifiÃ©es.
 
-90.    /J n'est plus d‚sormais valide:
+90.    /J n'est plus dÃ©sormais valide:
         /J[D][C] le remplace:
         [D]     attendre sous DOS uniquement
         [C]     attendre sous CHICAGO uniquement
         ex: /JDC ou /JC
-       note: /JXX sera ignor‚ si l'ordinateur a ‚t‚ relanc‚ avec BOOTIT
+       note: /JXX sera ignorÃ© si l'ordinateur a Ã©tÃ© relancÃ© avec BOOTIT
 
 Version 2.80 de AUTOCONF.SYS, Bootit 1.2 et READCONF 4.0:
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-91.     Vous pouvez cr‚er des sous-groupes dans vos configurations,
-        qui ne peuvent ˆtre charg‚es qu'… partir la liste des configurations.
+91.     Vous pouvez crÃ©er des sous-groupes dans vos configurations,
+        qui ne peuvent Ãªtre chargÃ©es qu'Ã  partir la liste des configurations.
         Vous pouvez avoir des configurations identiques dans des sous groupes
-        diff‚rents, AUTOCONF fera la diff‚rence.
+        diffÃ©rents, AUTOCONF fera la diffÃ©rence.
 
-        Pour cr‚er un sous-groupe, ajouter simplement une deuxiŠme ‚toile
-        … DEVICE=* dans le CONFIG.SYS.
+        Pour crÃ©er un sous-groupe, ajouter simplement une deuxiÃ¨me Ã©toile
+        Ã  DEVICE=* dans le CONFIG.SYS.
 
         Aisi, DEVICE=*A Config A
               DEVICE=**B Config B
 
         signifie que dans le groupe principal, vous aurez la config A, dans
-        la liste une petite fleche sera imprim‚e … c“t‚ de cette config pour
+        la liste une petite fleche sera imprimÃ©e Ã  cÃ´tÃ© de cette config pour
         dire que c'est aussi un groupe (car vous pouvez toujours charger la
         configuration A normalement!), et en appuiyant sur la fleche droite
-        la liste sera r‚affich‚e, catte fois ci pour tous les sous-groupes de
+        la liste sera rÃ©affichÃ©e, catte fois ci pour tous les sous-groupes de
         la configuration A (ici seulement B)!
 
         Choisissez la configuration comme d'habitude!
 
-   Note: le paramŠtre /D ou /H n'accepte pas (encore) les sous configurations.
-   Note: le paramŠtre /S fonctionnera parfaitement.
+   Note: le paramÃ¨tre /D ou /H n'accepte pas (encore) les sous configurations.
+   Note: le paramÃ¨tre /S fonctionnera parfaitement.
 
 92.     READCONF fera une nouvelle variable CONF pour les sous configurations.
 
@@ -681,243 +681,243 @@ Version 2.80 de AUTOCONF.SYS, Bootit 1.2 et READCONF 4.0:
         C                       C
         ---------------------------------------
 
-  Note: la structure du AUTOCONF.DAT a chang‚ radicalement! Le fichier fait
+  Note: la structure du AUTOCONF.DAT a changÃ© radicalement! Le fichier fait
   normalement 43 bytes.
 
 
-r‚vision (a) 2.80.01
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+rÃ©vision (a) 2.80.01
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-93. corrig‚ bug:        erreur de configuration inexistante correctement
-                        signal‚es aprŠs un appui d'une touche qui ne d‚signe
+93. corrigÃ© bug:        erreur de configuration inexistante correctement
+                        signalÃ©es aprÃ¨s un appui d'une touche qui ne dÃ©signe
                         aucune configuration.
 
-94. corrig‚ bug:        le choix de la configuration actuellement dans le
-                        viewer est d‚sormais … nouveau possible et devrait
+94. corrigÃ© bug:        le choix de la configuration actuellement dans le
+                        viewer est dÃ©sormais Ã  nouveau possible et devrait
                         marcher normalement, dans quel que soit le sous-
                         niveau des configurations.
 
-r‚vision (b) 2.80.02
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+rÃ©vision (b) 2.80.02
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-94. corrig‚ bug:        le choix de la configuration est r‚ellement correcte
+94. corrigÃ© bug:        le choix de la configuration est rÃ©ellement correcte
                         cette fois dans tous les cas.
 
-95. corrig‚ bug:        un ‚ventuel d‚bris dans le viewer de la configuration
-                        appar–t dans un cas trŠs sp‚cial n'existe plus.   
+95. corrigÃ© bug:        un Ã©ventuel dÃ©bris dans le viewer de la configuration
+                        apparÃ»t dans un cas trÃ¨s spÃ©cial n'existe plus.   
 
-96. corrig‚ bug:        l'option /M[] marche parfaitement avec les renvois
+96. corrigÃ© bug:        l'option /M[] marche parfaitement avec les renvois
                         sur la ligne, etc...
 
-97. document‚:          j'ai document‚ dans l'aide les couleurs dans les
-                        messages d'initialisation (/M[]) et rajout‚ un
-                        support pour les caractŠres de contr“le.
+97. documentÃ©:          j'ai documentÃ© dans l'aide les couleurs dans les
+                        messages d'initialisation (/M[]) et rajoutÃ© un
+                        support pour les caractÃ¨res de contrÃ´le.
 
-98. cache & Bootit:     les problŠmes de cache, de la reallocation de STACKER,
-                        etc... ont ‚t‚s aparemment resolues avec une nouvelle
+98. cache & Bootit:     les problÃ¨mes de cache, de la reallocation de STACKER,
+                        etc... ont Ã©tÃ©s aparemment resolues avec une nouvelle
                         routine de reinitialisation.
 
-r‚vision (b) 2.80.03
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+rÃ©vision (b) 2.80.03
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-99. corrig‚ bug:        avec l'option de mode silentieux, le nom de la
-                        configuration n'est plus affich‚, lorsqu'il est choisi
+99. corrigÃ© bug:        avec l'option de mode silentieux, le nom de la
+                        configuration n'est plus affichÃ©, lorsqu'il est choisi
                         dans la liste.
 
-100. nouveau:           lorsque AUTOCONF attent une touche, suite … une erreur
+100. nouveau:           lorsque AUTOCONF attent une touche, suite Ã  une erreur
                         un nouveau message d'attente changeant de couleur est
-                        affich‚.
+                        affichÃ©.
 
-101. ajout‚:            l'option /J, employ‚e d'une maniŠre obsolŠte, affiche
-                        d‚sormais une erreur.
+101. ajoutÃ©:            l'option /J, employÃ©e d'une maniÃ¨re obsolÃ¨te, affiche
+                        dÃ©sormais une erreur.
 
 Version 2.81 de AUTOCONF.SYS
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 102. nouveau:           En combinant les options /Jxx et /T, vous obtenez au
-                        d‚marrage la liste des configurations qui disparaitra
-                        aprŠs le temps d‚fini par /Tx pour charger la config
-                        par d‚faut. Si vous appuyez sur une touche pendant le
-                        temps d'attente, la liste des configuration r‚agira
-                        normalement et annulera le d‚compte.
+                        dÃ©marrage la liste des configurations qui disparaitra
+                        aprÃ¨s le temps dÃ©fini par /Tx pour charger la config
+                        par dÃ©faut. Si vous appuyez sur une touche pendant le
+                        temps d'attente, la liste des configuration rÃ©agira
+                        normalement et annulera le dÃ©compte.
 
-Note: l'ancienne syntaxe de /T a ‚t‚ preserv‚e, malgrŠs des chagements dans
+Note: l'ancienne syntaxe de /T a Ã©tÃ© preservÃ©e, malgrÃ¨s des chagements dans
       cette option:
 
-      il est d‚sormais possible de s‚parer le temps d'attente entre le
-      DOS et Windows 95. /T[[Dx][u]][[Cx][u]] en est la sytaxe complŠte.
+      il est dÃ©sormais possible de sÃ©parer le temps d'attente entre le
+      DOS et Windows 95. /T[[Dx][u]][[Cx][u]] en est la sytaxe complÃ¨te.
       ([]=optionnel).
 
-103. corrig‚ bug:       L'erreur du paramŠtre incorrecte avec /Tx est affiche‚
+103. corrigÃ© bug:       L'erreur du paramÃ¨tre incorrecte avec /Tx est afficheÃ©
                         et ne fait plus planter AUTOCONF.
 
-104. nouveau:           Les deux timers sont d‚sormais affich‚s (celui avec
-                        /T seulement et celui combin‚ avec /J) sous forme
-                        d'un compte … rebours (en sec).
+104. nouveau:           Les deux timers sont dÃ©sormais affichÃ©s (celui avec
+                        /T seulement et celui combinÃ© avec /J) sous forme
+                        d'un compte Ã  rebours (en sec).
 
 Version 2.82 de AUTOCONF.SYS
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-105. nouveau:           Ajout‚ une possibilit‚ de faire des noms de configs
+105. nouveau:           AjoutÃ© une possibilitÃ© de faire des noms de configs
                         en couleur. Pareil qu'avec les messages d'initialisa-
                         tion.
 
-106. nouveau:           A cause du problŠme avec les bios AWARD qui n'effacent
-                        pas la touche ESC du buffer clavier au d‚marrage de 
+106. nouveau:           A cause du problÃ¨me avec les bios AWARD qui n'effacent
+                        pas la touche ESC du buffer clavier au dÃ©marrage de 
                         l'ordinateur, la fonction qui termine AUTOCONF est  
-                        effectu‚e d‚sormais avec la touche ‚toile (*).
+                        effectuÃ©e dÃ©sormais avec la touche Ã©toile (*).
 
 Version 2.9 de AUTOCONF.SYS et 2.0 de BOOTIT
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 107. nouveau:           PLUS DE READCONF!
-                        Ajoutez simplement quelques caractŠres … DEVICE=$,
-                        afin de reserver un espace o— AUTOCONF peut rajouter
+                        Ajoutez simplement quelques caractÃ¨res Ã  DEVICE=$,
+                        afin de reserver un espace oÃ¹ AUTOCONF peut rajouter
                         une ligne: SET CONF=...
 
-                        Le module integr‚ s'appelle iREAD. Un message est
-                        d‚sormais affich‚ si AUTOCONF n'a pas assez de place
+                        Le module integrÃ© s'appelle iREAD. Un message est
+                        dÃ©sormais affichÃ© si AUTOCONF n'a pas assez de place
                         pour la ligne de la variable d'environnement.
 
-108: corrig‚ big:       Bug mineur corrig‚, la designation est affich‚e
+108: corrigÃ© big:       Bug mineur corrigÃ©, la designation est affichÃ©e
                         pour les configurations F10.
 
-109: incroyable mais    Ceci n'a jamais ‚t‚ fait … ma connaissance.
-     vrai:              Vous pouvez d‚sormais activer ou desactiver une
+109: incroyable mais    Ceci n'a jamais Ã©tÃ© fait Ã  ma connaissance.
+     vrai:              Vous pouvez dÃ©sormais activer ou desactiver une
                         ligne dans une configuraiton!
                         Sous le viewer de configurations (TAB) appuyez sur
                         la touche 'E', puis utilisez la barre d'espacements
                         pour activer / desactiver une ligne! Vous pouvez
                         utiliser les fleches pour vous deplacer dans la
-                        configuration, si celle-ci excŠde une page.
+                        configuration, si celle-ci excÃ¨de une page.
 
                         Note: en case d'un REM permanant, une touche vous
-                              sera demand‚e pour la nouvelle designation de
+                              sera demandÃ©e pour la nouvelle designation de
                               la ligne. (Ceci ne marchera pas en cas d'un REM
-                              plac‚ depuis le CONFIG.SYS, car le REM est  
-                              rajout‚ … la ligne et ne remplace pas la 
+                              placÃ© depuis le CONFIG.SYS, car le REM est  
+                              rajoutÃ© Ã  la ligne et ne remplace pas la 
                               designation.
                               (ex: DEVICE=... devient REM DEVICE=... et non 
                                pas REM=... comme le fait AUTOCONF.)
 
-                        Note: tout changement intervient pour le d‚marrage
+                        Note: tout changement intervient pour le dÃ©marrage
                               en cours, il n'est donc pas permanant.
 
-110: nouveau:           L'option /I d‚sactive l'‚diteur.
+110: nouveau:           L'option /I dÃ©sactive l'Ã©diteur.
 
-111: nouveau:           Le jour de la semaine, la date, le mois, l'ann‚e et
-                        l'heure sont affich‚s lors du d‚marrage d'AUTOCONF.
+111: nouveau:           Le jour de la semaine, la date, le mois, l'annÃ©e et
+                        l'heure sont affichÃ©s lors du dÃ©marrage d'AUTOCONF.
 
 
 112: nouveau:           L'option /L permet d'afficher le nom de la config
-                        en cours de chargement mˆme avec l'option /P.
+                        en cours de chargement mÃªme avec l'option /P.
                         Le titre de la liste des configurations n'est plus
-                        affich‚ avec /P.
+                        affichÃ© avec /P.
 
-113: corrig‚ bug:       Avec un timer, la premiŠre configuration de la liste
-                        de configurations appel‚e pendant le d‚compte est
-                        correctement affich‚e.
+113: corrigÃ© bug:       Avec un timer, la premiÃ¨re configuration de la liste
+                        de configurations appelÃ©e pendant le dÃ©compte est
+                        correctement affichÃ©e.
 
-114: r‚vision:          Le paramŠtre /B est reactiv‚. Ainsi AUTOCONF.DAT
-                        n'est plus cr‚‚ et BOOTIT sera donc ignor‚. 
+114: rÃ©vision:          Le paramÃ¨tre /B est reactivÃ©. Ainsi AUTOCONF.DAT
+                        n'est plus crÃ©Ã© et BOOTIT sera donc ignorÃ©. 
 
 
 Version 2.91 de AUTOCONF.SYS, iLINE 1.1
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-115: r‚vision:          Le paramŠtre /B a ‚t‚ ‚tendu … ses fonctions de la
-                        version 1.51. Le READCONF.DAT sera effac‚ dans le
-                        cas o— il est trouv‚ sur le lecteur de d‚marrage.
-                        Une erreur non critique sera affich‚ si l'option
-                        /S (derniŠre configuration) est trouv‚e.
+115: rÃ©vision:          Le paramÃ¨tre /B a Ã©tÃ© Ã©tendu Ã  ses fonctions de la
+                        version 1.51. Le READCONF.DAT sera effacÃ© dans le
+                        cas oÃ¹ il est trouvÃ© sur le lecteur de dÃ©marrage.
+                        Une erreur non critique sera affichÃ© si l'option
+                        /S (derniÃ¨re configuration) est trouvÃ©e.
 
 116: DOS2ACF & ACF2DOS: Une routine permettant de quitter DOS2ACF et ACF2DOS
-                        … n'importe quel moment a ‚t‚ rajout‚, suite … des
-                        plantages impr‚vus.
+                        Ã  n'importe quel moment a Ã©tÃ© rajoutÃ©, suite Ã  des
+                        plantages imprÃ©vus.
                         Les erreurs connues, notamment dans la traduction
                         des renvois entre le CONFIG.SYS et l'AUTOEXEC.BAT
-                        ont ‚t‚ corrig‚es.
+                        ont Ã©tÃ© corrigÃ©es.
 
-117: nouveau:           Les changements dans le iLINE aprŠs l'activation ou
-                        la d‚sactivation d'une ligne sont imm‚diatement
+117: nouveau:           Les changements dans le iLINE aprÃ¨s l'activation ou
+                        la dÃ©sactivation d'une ligne sont immÃ©diatement
                         visibles.
 
 118: iLINE 1.1          En appuiyant sur '?' (notez que tous les claviers
-                        sont correctement support‚s par AUTOCONF avec /Kxx)
+                        sont correctement supportÃ©s par AUTOCONF avec /Kxx)
                         vous pouvez mettre un point d'interrogation sur
                         la ligne en question et ainsi obtenir une demande
-                        de charger la ligne ou pas pendant le d‚marrage.
+                        de charger la ligne ou pas pendant le dÃ©marrage.
 
-119: corrig‚ bug:       Corrig‚ l'affichage des configurations en mode 50
+119: corrigÃ© bug:       CorrigÃ© l'affichage des configurations en mode 50
                         lignes avec certaines cartes VGA renvoyant une
                         identification non standard et ainsi ne permettant
                         pas un affichage correcte de la configuration.
                         L'option /5 et l'affichage de la configuration
                         ne marcherons plus que si la carte graphique
-                        ne supporte pas plus d'une page ‚cran.
+                        ne supporte pas plus d'une page Ã©cran.
 
-120: corrig‚ bug:       Le r‚affichage de la configuration n'est plus
-                        refait lorsque celle-ci est au bornes de d‚placement.
-                        Un simple beep est ‚mis.
+120: corrigÃ© bug:       Le rÃ©affichage de la configuration n'est plus
+                        refait lorsque celle-ci est au bornes de dÃ©placement.
+                        Un simple beep est Ã©mis.
 
-130: corrig‚ bug:       Le scrolling de la configration est correct aprŠs
+130: corrigÃ© bug:       Le scrolling de la configration est correct aprÃ¨s
                         une commande inconnue.
                         
 Version 2.92 de AUTOCONF.SYS, BOOTIT.EXE 1.5
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-131: r‚vision:          /B effacera le fichier AUTOCONF.DAT, mais BOOTIT ne
-                        sera plus ignor‚.
+131: rÃ©vision:          /B effacera le fichier AUTOCONF.DAT, mais BOOTIT ne
+                        sera plus ignorÃ©.
 
-132: nouveau:           BOOTIT relance d‚sormais les sous-configurations.
+132: nouveau:           BOOTIT relance dÃ©sormais les sous-configurations.
                         La syntaxe ne change pas, pour relancer la config
                         P sous F1 par exemple, lancer simplement BOOTIT F1_P.
 
-133: corrig‚ bug:       La configuration par d‚faut sous Windows 95 n'entraine
-                        plus d'erreurs avec les configurations ‚tendues.
+133: corrigÃ© bug:       La configuration par dÃ©faut sous Windows 95 n'entraine
+                        plus d'erreurs avec les configurations Ã©tendues.
 
 134: nouveau:           nouvelle option, /Z permet de passer le mode texte
                         en mode eLiTe! (ne pas abuser!).
-                        /ZZ inverse le mode ‚lite.
+                        /ZZ inverse le mode Ã©lite.
 
 135: nouveau:           BOOTIT reinitialise pour la liste des configurations:
                                 BOOTIT LIST(E).
 
-136: nouveau:           L'aide de AUTOCONF (ainsi que MANUEL.EXE) ont d‚sor-
+136: nouveau:           L'aide de AUTOCONF (ainsi que MANUEL.EXE) ont dÃ©sor-
                         mais une routine de recherche de texte. Appuyez sur
-                        INSERT pour rechercher une chaŒne. AUTOCONF met en
-                        ‚vidence les chaŒnes trouv‚es sur la page actuelle.
-                        AUTOCONF d‚placera l'aide jusqu'… la prochaine
-                        occurence dŠs que plus aucune ne se trouve sur la
-                        page actuelle. Le d‚placement se fera dans le sens
-                        de la derniŠre action jusqu'… la fin (le d‚but) du
+                        INSERT pour rechercher une chaÃ®ne. AUTOCONF met en
+                        Ã©vidence les chaÃ®nes trouvÃ©es sur la page actuelle.
+                        AUTOCONF dÃ©placera l'aide jusqu'Ã  la prochaine
+                        occurence dÃ¨s que plus aucune ne se trouve sur la
+                        page actuelle. Le dÃ©placement se fera dans le sens
+                        de la derniÃ¨re action jusqu'Ã  la fin (le dÃ©but) du
                         fichier d'aide. 
                         DELETE annulle le mode de recherche.
-                        Le mode recherche est annul‚ une fois le d‚but ou
-                        la fin atteints par le d‚placement automatique.
+                        Le mode recherche est annulÃ© une fois le dÃ©but ou
+                        la fin atteints par le dÃ©placement automatique.
 
-137: corrig‚ bug:       Le MANUEL.EXE d'AUTOCONF maintient le mode 25/50
+137: corrigÃ© bug:       Le MANUEL.EXE d'AUTOCONF maintient le mode 25/50
                         lignes en fonction du mode dans lequel le DOS se
                         se trouve.
 
-138: r‚vision:          DOS 5.0 n'accepte pas la ligne SET CONF dans le
-                        CONFIG.SYS. Une nouvelle option /V d‚sactive iREAD.
+138: rÃ©vision:          DOS 5.0 n'accepte pas la ligne SET CONF dans le
+                        CONFIG.SYS. Une nouvelle option /V dÃ©sactive iREAD.
                         Veuillez ainsi utiliser READCONF.EXE!
 
 Version 2.93 de AUTOCONF.SYS
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-139: modifications:     Vous pouvez ‚crire indiferamment vos designations
+139: modifications:     Vous pouvez Ã©crire indiferamment vos designations
                         de configurations du point de vue espacements:
                                 device        =       *   *    F4
                         par exemple, marchera tout aussi bien que DEVICE=**F4.
                         Il ne faut pas espacer F et 4, sinon la config n'aura
                         comme designation que F!
 
-D‚sol‚...encore en anglais...
+DÃ©solÃ©...encore en anglais...
 
 Version 3.00 de AUTOCONF.SYS - beta 2
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 140: corrected bug:     iLINE did not perform correctly at the edges of the
                         lists. The bug has been eliminated after ...well
@@ -979,57 +979,57 @@ MANUE(A)L.ASM: 358  lines
 ILOOM 1.0    : 573  lines
 DOS2ACF, ACF2DOS are written in C++, about 800 condensed C lines each.
 
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 NOTES IMPORTANTES:
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
-Il est conseill‚ d'enlever tous les ‚l‚ments de configurations multiples du
-DOS du CONFIG.SYS pour ‚viter des comportements bizarres d'AUTOCONF.
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+Il est conseillÃ© d'enlever tous les Ã©lÃ©ments de configurations multiples du
+DOS du CONFIG.SYS pour Ã©viter des comportements bizarres d'AUTOCONF.
 
 La partie [COMMON] ne devrait faire aucun effet, sauf avec STACKER,
 ainsi qu'une partie des options de configurations multiples. Toutefois,
-si vous d‚finissez des configurations avec [NOM], ceci va perturber le
+si vous dÃ©finissez des configurations avec [NOM], ceci va perturber le
 fonctionnement d'AUTOCONF, tant que ces options se trouvent entre la ligne
 d'appel d'AUTOCONF et la fin de configurations multiples: DEVICE=$.
 
-Il est en principe mˆme possible de faire des configurations multiples avec
+Il est en principe mÃªme possible de faire des configurations multiples avec
 le DOS, puis avoir une configuration, ayant des configurations multiples 
-AUTOCONF … l'int‚rieur. C'est … essayer … vos risques et p‚rils.
+AUTOCONF Ã  l'intÃ©rieur. C'est Ã  essayer Ã  vos risques et pÃ©rils.
 
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 PROBABLEMENT DANS LES VERSIONS FUTURES:
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
-        - Les fautes d'orthographe et de fran‡ais corrig‚es...
-        - Un install avec un ‚diteur de configurations sans passer par ce 
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+        - Les fautes d'orthographe et de franÃ§ais corrigÃ©es...
+        - Un install avec un Ã©diteur de configurations sans passer par ce 
           EDIT du DOS.
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 REMERCIEMENTS VONT A:
         
-        - le programmeur fran‡ais, qui a ‚crit le engine d'AUTOCONF
-          (la sourse du engine est disponible gratuitement … la demande...)
-        - Salvatore Nastasi    (GenŠve) - bˆta testeur de TOUTES les versions
-        - tous les autre bˆta testeurs, moins r‚guliers...
-        - mon board favorit: INFOMANIA BBS, GenŠve Suisse
+        - le programmeur franÃ§ais, qui a Ã©crit le engine d'AUTOCONF
+          (la sourse du engine est disponible gratuitement Ã  la demande...)
+        - Salvatore Nastasi    (GenÃ¨ve) - bÃªta testeur de TOUTES les versions
+        - tous les autre bÃªta testeurs, moins rÃ©guliers...
+        - mon board favorit: INFOMANIA BBS, GenÃ¨ve Suisse
         - les auteurs des dizaines de boucains sur l'ASM
-        - Trofimov Alexandre    (UNI GenŠve) - aide en programmation
-        - Balashov Dimitri      (UNI GenŠve) - aide en programmation
+        - Trofimov Alexandre    (UNI GenÃ¨ve) - aide en programmation
+        - Balashov Dimitri      (UNI GenÃ¨ve) - aide en programmation
         - Hitcher               (Infomania) - direct video 
-        - LOOM                  (Infomania/Imphobia) - l'oubli‚
-                                Merci … LOOM pour l'id‚e de activer/d‚sactiver
-                                une ligne pendant le boot, mˆme que c'‚tait
-                                terriblement fatiguant … programmer.
+        - LOOM                  (Infomania/Imphobia) - l'oubliÃ©
+                                Merci Ã  LOOM pour l'idÃ©e de activer/dÃ©sactiver
+                                une ligne pendant le boot, mÃªme que c'Ã©tait
+                                terriblement fatiguant Ã  programmer.
         - DADA'S                (Infomania) - typematic rate
         - Murphy                (Infomania) - bug & support moral
-        - James                 (Infomania) - celui qui n'a jamais dout‚
-        - Fred Ravioli          (GenŠve) - nouvelles id‚es
-        - Quadrateck            (pour les tonnes de problŠmes avec QEMM)
-        - L'‚diteur du DOS      (c'est … chier, mais oh que j'aime cette 
+        - James                 (Infomania) - celui qui n'a jamais doutÃ©
+        - Fred Ravioli          (GenÃ¨ve) - nouvelles idÃ©es
+        - Quadrateck            (pour les tonnes de problÃ¨mes avec QEMM)
+        - L'Ã©diteur du DOS      (c'est Ã  chier, mais oh que j'aime cette 
                                 couleur bleue...)
         - Pink Floyd            (pour m'avoir fourni des heures de
                                  concentration et d'inspiration)
 
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
                    
                    Daniel Doubrovkine, septembre 1995
 
@@ -1037,28 +1037,28 @@ REMERCIEMENTS VONT A:
                        
                      Tout commentaire bienvenu!
                         dblock@infomaniak.ch
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 PS:
 
 Je pense qu'il y en a encore une tonne de modifications, mais je ne peut pas 
 m'en rappeler (Comprenez-moi, le travail de nuit sur chaque nouvelle version 
-d'AUTOCONF est trŠs fatiguant pour mon cerveau fragile. En tout cas, j'essayes
-de v‚rifier au maximum toutes les nouvelles options d'AUTOCONF. Apparemment 
+d'AUTOCONF est trÃ¨s fatiguant pour mon cerveau fragile. En tout cas, j'essayes
+de vÃ©rifier au maximum toutes les nouvelles options d'AUTOCONF. Apparemment 
 il n'y a PLUS d'erreurs. Si toutefois vous en trouvez une, CONTACTEZ MOI 
 IMMEDIATEMENT et je la corrigerais tout de suite. (Ce qui en est des fautes 
-de frappe dans l'aide d'AUTOCONF et dans ce fichier, d‚sol‚, mais je n'ai 
+de frappe dans l'aide d'AUTOCONF et dans ce fichier, dÃ©solÃ©, mais je n'ai 
 pas suffisamment de courage pour les aborder.) 
 
-Si vous d‚sirez avoir une version anglaise allemande ou russe (OUI, OUI,
-c'est bien ‚crit RUSSE. Par contre je ne fais pas encore de version chinoise
-ou japonaise, mais ‡a peut venir.) d'AUTOCONF, alors contactez moi pour que 
+Si vous dÃ©sirez avoir une version anglaise allemande ou russe (OUI, OUI,
+c'est bien Ã©crit RUSSE. Par contre je ne fais pas encore de version chinoise
+ou japonaise, mais Ã§a peut venir.) d'AUTOCONF, alors contactez moi pour que 
 je la fasse.
 
-Si vous avez des propositions pour am‚liorer AUTOCONF, mais vous ne savez 
-pas comment les r‚aliser, n'h‚sitez pas … me contacter.
+Si vous avez des propositions pour amÃ©liorer AUTOCONF, mais vous ne savez 
+pas comment les rÃ©aliser, n'hÃ©sitez pas Ã  me contacter.
 
-J'ai eu des bon ‚cho … propos de ce programme de la part de TOUS ceux
-qui l'utilisent. Je suis s–r que vous serez contents d'AUTOCONF, car c'est
+J'ai eu des bon Ã©cho Ã  propos de ce programme de la part de TOUS ceux
+qui l'utilisent. Je suis sÃ»r que vous serez contents d'AUTOCONF, car c'est
 VRAIMENT LE MEILLEUR LOGICIEL DE CONFIGURATIONS MULTIPLES QUI EXISTE POUR
 LE MOMENT.

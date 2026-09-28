@@ -101,7 +101,7 @@ if (config[strlen(config)-1]>='0')
 	if (config[strlen(config)-2]=='F')
 		{
 		config_to_write[1]=config[strlen(config)-1];
-		config_to_write[0]='œ';
+		config_to_write[0]='Â£';
 		last=strlen(config)-4;
 		goto okay;
 		}

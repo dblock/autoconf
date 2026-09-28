@@ -72,17 +72,17 @@ read_key proc
 read_key endp
 
 type_matic proc
-;INTERRUPT 16h, Fonction 03h : D‚finir le taux de r‚p‚tition...
+;INTERRUPT 16h, Fonction 03h : DÃ©finir le taux de rÃ©pÃ©tition...
 ;           AH= 03h
 ;           AL= 05h
-;           BH= Ralentissement jusqu'… la mise en place de la r‚p‚tition
-;           BL= Taux de r‚p‚tition
-;        BH peut etre ‚gal … :
+;           BH= Ralentissement jusqu'Ã  la mise en place de la rÃ©pÃ©tition
+;           BL= Taux de rÃ©pÃ©tition
+;        BH peut etre Ã©gal Ã  :
 ;         00b : 3/4 de sec
 ;         01b : 1/2 sec
 ;         10b : 3/4 de sec
 ;         11b: 1 sec
-;        BL: de 01h … 1Fh
+;        BL: de 01h Ã  1Fh
 	pushx   ax,bx
 	mov     ah,3h
 	mov     al,5h
@@ -201,9 +201,9 @@ beep    proc
         push    ax
 	or      al,3
 	out     dx,al                  ; turn speaker on
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+;â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’
 ; Wait for desired duration by monitoring time-of-day 18 Hz clock
-;±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±        
+;â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’        
 	mov     bx,cs:[timer_low]
 	mov     cx,-1
 beeplp: mov     ax,cs:[timer_low]
@@ -269,7 +269,7 @@ page_one_address proc
         mov     ah,2
         int     10h
         mov     ah,2
-        mov     dl,'ÿ'
+        mov     dl,'Â '
         int     21h
         mov     dl,'W'
         int     21h
@@ -288,7 +288,7 @@ page_one_address proc
    poa_notyet:
         add     di,2
         mov     al,es:[di]
-        cmp     al,'ÿ'
+        cmp     al,'Â '
         jne     poa_notyet
 
         push    di

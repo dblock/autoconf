@@ -5,97 +5,97 @@
 
                                     Notes.
 
-J'ai enfin termin‚ les deux convertisseurs, AUTOCONF vers DOS Multiconf
-et vice-versa. Ce n'‚tait pas facile, car les algorithmes de conversion
-entre la construction circulaire du DOS multiconf et la structure lin‚aire
-de AUTOCONF ‚taient relativement compliqu‚s. De tout maniŠre, c'est fait,
+J'ai enfin terminÃ© les deux convertisseurs, AUTOCONF vers DOS Multiconf
+et vice-versa. Ce n'Ã©tait pas facile, car les algorithmes de conversion
+entre la construction circulaire du DOS multiconf et la structure linÃ©aire
+de AUTOCONF Ã©taient relativement compliquÃ©s. De tout maniÃ¨re, c'est fait,
 alors profitez en simplement.
 
 Ces convertisseurs travaillent avec les fichiers CONFIG.SYS. L'AUTOEXEC.BAT
-devra encore ˆtre midifi‚ … la main, car un convertisseur n'est pas encore  
-prˆt. La diff‚rence majeure entre les deux systŠmes dans l'AUTOEXEC.BAT est
+devra encore Ãªtre midifiÃ© Ã  la main, car un convertisseur n'est pas encore  
+prÃªt. La diffÃ©rence majeure entre les deux systÃ¨mes dans l'AUTOEXEC.BAT est
 dans la conception de la variable CONF (CONFIG pour DOS).
 
-Si vous avez besoin de d‚tails ou de l'aide sur les structures de configura-
+Si vous avez besoin de dÃ©tails ou de l'aide sur les structures de configura-
 tions multiples, contactez moi:
-                ÜÜÜÜÜÜÜÜÜÜÜ  
-                ÛÛÛÛ   ÛÛÛÛ  Doubrovkine Daniel
-                ÛÛ       ÛÛ  49, rte de Frontenex
-                ÛÛÛÛ   ÛÛÛÛ  1207 GenŠve, Suisse
-                ßßßßßßßßßßß
+                â–„â–„â–„â–„â–„â–„â–„â–„â–„â–„â–„  
+                â–ˆâ–ˆâ–ˆâ–ˆ   â–ˆâ–ˆâ–ˆâ–ˆ  Doubrovkine Daniel
+                â–ˆâ–ˆ       â–ˆâ–ˆ  49, rte de Frontenex
+                â–ˆâ–ˆâ–ˆâ–ˆ   â–ˆâ–ˆâ–ˆâ–ˆ  1207 GenÃ¨ve, Suisse
+                â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€
                 email bienvenu: dblock@infomaniak.ch
                 
           [Linear & Circular MultiConf Construction Method]
-         [(c) Daniel Doubrovkine, 1995, Tous Droits Reserv‚s]
+         [(c) Daniel Doubrovkine, 1995, Tous Droits ReservÃ©s]
 
 Historique:
 
 Version 1.0, 1.1a, 1.1b
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-        PremiŠre version de ACF2DOS et DOS2ACF, puis les r‚visions (a) et (b).
+        PremiÃ¨re version de ACF2DOS et DOS2ACF, puis les rÃ©visions (a) et (b).
 
 Version 1.10
-ÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•
 
-        Modifications suite … des problŠmes de DOS2ACF dans la logique de
+        Modifications suite Ã  des problÃ¨mes de DOS2ACF dans la logique de
         construction des configurations multiples.
 
         Modifications au niveau des changements minuscules/majuscules sur
-        certaines lignes ‚crites dans le nouveau CONFIG.SYS.
+        certaines lignes Ã©crites dans le nouveau CONFIG.SYS.
 
-        Les lignes SET xxx du CONFIG.SYS sont ‚crites correctement.
-        Les lignes ;xxx du CONFIG.SYS sont ‚crites correctement.
-        Les lignes REM du CONFIG.SYS sont ‚crites correctement (suppression
-        d'espacements erronn‚e ‚tant corrig‚e).   
+        Les lignes SET xxx du CONFIG.SYS sont Ã©crites correctement.
+        Les lignes ;xxx du CONFIG.SYS sont Ã©crites correctement.
+        Les lignes REM du CONFIG.SYS sont Ã©crites correctement (suppression
+        d'espacements erronnÃ©e Ã©tant corrigÃ©e).   
 
 Version 1.11
-ÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•
 
-        Les couleurs dans les noms de configurations sont nettoy‚s par
+        Les couleurs dans les noms de configurations sont nettoyÃ©s par
         ACF2DOS.
 
 Version 1.20
-ÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•
 
-        Les bugs majeurs corrig‚s.
-        La configuration par d‚faut est v‚rifi‚e.
-        Une mauvaise structure d'un CONFIG.SYS signal‚e.
+        Les bugs majeurs corrigÃ©s.
+        La configuration par dÃ©faut est vÃ©rifiÃ©e.
+        Une mauvaise structure d'un CONFIG.SYS signalÃ©e.
 
 Version 1.30
-ÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•
 
-        Bugs importants dans la construction des structures corrig‚ dans
+        Bugs importants dans la construction des structures corrigÃ© dans
         DOS2ACF et ACF2DOS.
 
-        En g‚n‚ral: support AUTOEXEC.BAT rajout‚...ce qui implique:
+        En gÃ©nÃ©ral: support AUTOEXEC.BAT rajoutÃ©...ce qui implique:
 
         ACF2DOS construit des configurations compatibles AUTOCONF pour
         l'AUTOEXEC.BAT.
         ACF2DOS modifie les sauts %CONF en %CONFIG rendant l'AUTOEXEC.BAT
-        100% compatible DOS. Les designations sont modifi‚es dans le
+        100% compatible DOS. Les designations sont modifiÃ©es dans le
         CONFIG.SYS vers un vecteur complet de designations, puisque les
-        structures AUTOCONF pr‚voient des configrations d‚signi‚s d'une
-        maniŠre unique dans l'AUTOEXEC.BAT:
+        structures AUTOCONF prÃ©voient des configrations dÃ©signiÃ©s d'une
+        maniÃ¨re unique dans l'AUTOEXEC.BAT:
                 F1
                 F1_A (etc...)
 
         DOS2ACF construit des configurations compatibles AUTOCONF.
         DOS2ACF modifie les sauts %CONFIG en %CONF rendant l'AUTOEXEC.BAT
         100% compatible AUTOCONF. Les designations modifies pour passer
-        … la structure AUTOCONF dans le CONFIG.SYS le sont aussi dans
+        Ã  la structure AUTOCONF dans le CONFIG.SYS le sont aussi dans
         l'AUTOEXEC.BAT.
 
 UNRF 1.0
-ÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•
 
-        UNRF change les r‚f‚rences cr‚‚s par QEMM pour les configurations
-        multiples du DOS en leurs valeurs r‚elles.
+        UNRF change les rÃ©fÃ©rences crÃ©Ã©s par QEMM pour les configurations
+        multiples du DOS en leurs valeurs rÃ©elles.
 
-        Explication: l'optimize de QEMM ex‚cut‚ sur un CONFIG.SYS avec
+        Explication: l'optimize de QEMM exÃ©cutÃ© sur un CONFIG.SYS avec
         les configs multiples du DOS un fichier LOADHI.RF contenant toutes
-        les valeurs de r‚f‚rences pour l'adressage m‚moire.
-        Ceci ‚tant fait pour ne pas encombrer le CONFIG.SYS.
+        les valeurs de rÃ©fÃ©rences pour l'adressage mÃ©moire.
+        Ceci Ã©tant fait pour ne pas encombrer le CONFIG.SYS.
         Auparavant QEMM les mettait directement dans le CONFIG.SYS, c'est
         exactement la tache du UNRF.
       
@@ -103,19 +103,19 @@ UNRF 1.0
         et utiliser pleinement QEMM.
 
 UNRF 1.01
-ÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•
 
-        V‚rifie que le fichier CONFIG.SYS est r‚ellement une structure DOS.
+        VÃ©rifie que le fichier CONFIG.SYS est rÃ©ellement une structure DOS.
 
 
 Version 1.31
-ÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•
 
-        details de compatibilit‚ avec AUTOCONF 2.90
+        details de compatibilitÃ© avec AUTOCONF 2.90
 
 Version 1.32, 1.40
-ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-        correction des bugs en cons‚quence
+        correction des bugs en consÃ©quence
 
 

@@ -18,11 +18,11 @@ being ready.
 
 If you need details for these converters or any help for multiconf structures,
 contact me at:
-                ÜÜÜÜÜÜÜÜÜÜÜ  
-                ÛÛÛÛ   ÛÛÛÛ  Doubrovkine Daniel
-                ÛÛ       ÛÛ  49, rte de Frontenex
-                ÛÛÛÛ   ÛÛÛÛ  1207 Geneva, Switzerland
-                ฿฿฿฿฿฿฿฿฿฿฿
+                โ–โ–โ–โ–โ–โ–โ–โ–โ–โ–โ–  
+                โ–โ–โ–โ–   โ–โ–โ–โ–  Doubrovkine Daniel
+                โ–โ–       โ–โ–  49, rte de Frontenex
+                โ–โ–โ–โ–   โ–โ–โ–โ–  1207 Geneva, Switzerland
+                โ–€โ–€โ–€โ–€โ–€โ–€โ–€โ–€โ–€โ–€โ–€
                 email welcome: dblock@infomaniak.ch
 
           [Linear & Circular MultiConf Construction Method]
@@ -31,12 +31,12 @@ contact me at:
 History:
 
 Version 1.0, 1.1a, 1.1b
-ออออออออออออออออออออออออ
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
         First release of ACF2DOS & DOS2ACF, revisions (a) and (b).
 
 Version 1.10
-ออออออออออออ
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
         Modifications after consequent problems in the DOS2ACF logic.
         
@@ -47,19 +47,19 @@ Version 1.10
         REM lines correctly treated (false suppression of spaces removed).
 
 Version 1.11
-ออออออออออออ
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
         Colors in the configuration names are cleaned with ACF2DOS.
 
 Version 1.20
-ออออออออออออ
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
         Major bugs corrected.
         Default configuration is checked.
         Bad CONFIG.SYS structure is shown.
 
 Version 1.30
-ออออออออออออ
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
         Important bugs corrected in the structural construction in both
         DOS2ACF and ACF2DOS.
@@ -80,7 +80,7 @@ Version 1.30
         AUTOEXEC.BAT and CONFIG.SYS.
 
 UNRF 1.0
-ออออออออ
+โ•โ•โ•โ•โ•โ•โ•โ•
 
         UNRF changes the references created by QEMM into their real values.
         Works on DOS multiconf configurations only!
@@ -95,17 +95,17 @@ UNRF 1.0
         the full power of QEMM.
 
 UNRF 1.01
-อออออออออ
+โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
         Checks that the CONFIG.SYS is really a DOS multiconf structure.
 
 Version 1.31
-ออออออออออออ
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
         modifications for consequent compatibility with AUTOCONF 2.90
 
 Version 1.32, 1.40
-ออออออออออออออออออ
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
         consequent bug corrections 
 

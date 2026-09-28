@@ -121,10 +121,10 @@ for ( ; (*LocalPtr++ = *EnvironmentPtr++););}
 
     if ((Length + 1) > EnvironmentSize)
     {
-	printf("\nReadConf 4.0: dÇsolÇ, pas assez d'environnement.\n\n");
-	printf("Il est conseillÇ de lancer ReadConf au tout dÇbut du AUTOEXEC.BAT\n");
-	printf("ce qui Çvitera ce probläme. Note: le goto %conf% peut àtre placÇ\n");
-	printf("n'importe oó apräs la ligne qui appelle ReadConf.\n");
+	printf("\nReadConf 4.0: d√©sol√©, pas assez d'environnement.\n\n");
+	printf("Il est conseill√© de lancer ReadConf au tout d√©but du AUTOEXEC.BAT\n");
+	printf("ce qui √©vitera ce probl√®me. Note: le goto %conf% peut √™tre plac√©\n");
+	printf("n'importe o√π apr√®s la ligne qui appelle ReadConf.\n");
 	fprintf(stderr,"Il y a actuellement %d bytes dans l'environnement,\n", EnvironmentSize);
 	fprintf(stderr,"il faudrait encore %d bytes.\n\n", (Length + 1) - EnvironmentSize);
 	printf("\nAppuyez sur une touche...\n");
@@ -173,9 +173,9 @@ strcpy(inenv, "CONF=");
 	   printf("	READCONF [lecteur][-c][-s]\n\n");
 	   printf("-c : ne pas afficher de couleurs pour le message d'initialisation;\n");
 	   printf("-s : ne pas afficher le message d'initialisation;\n");
-	   printf("Note: l'ordre des options, ainsi que les caractäres en majuscules ou\n");
+	   printf("Note: l'ordre des options, ainsi que les caract√®res en majuscules ou\n");
 	   printf("      en minuscules n'ont aucune influence.\n");
-	   printf("Note: Utilisez ReadConf 4.0 uniquement avec AutoConf Ö partir de v.2.8");
+	   printf("Note: Utilisez ReadConf 4.0 uniquement avec AutoConf √† partir de v.2.8");
 	   printf("\nAppuyez sur une touche...\n");
 	   getch();
 	   exit(1);

@@ -1,522 +1,522 @@
- hlp_msg db 'ýษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป',10
-	db 'บ Dear users! Thanks for choosing ýAUTOCONF.ý You will not regret this choice!   บ',10
-	db 'บ                                                                       D.D.   บ',10
-	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
-	db 'บ    ýWHAT ýAUTOCONFý IS... ý                                                      บ',10
-	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
-	db 'บ ýAUTOCONFý is a program, that allows you to choose a different configuration   บ',10
-	db 'บ of memory drivers, resident programs or other software you need in your      บ',10
-	db 'บ work or play.                                                                บ',10
-	db 'บ                                                                              บ',10
-	db 'บ ýAUTOCONFý is a very flexible program, adaptable to any individual need. It    บ',10    
-	db 'บ is definetely better than most of the simular existing programs.             บ',10
-	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
-	db 'บ    ýWHY DOES ANYBODY NEED MULTIPLE CONFIGURATIONS?       ý                     บ',10
-	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
-	db 'บ Have you aver had ''Insuffisent memory'' message? Your mouse driver is eating  บ',10
-	db 'บ 20k of precious memory and you need your mouse only once in a while.         บ',10
-	db 'บ                                                                              บ',10
-	db 'บ How many times per day do you edit your CONFIG.SYS file to add REMs in it?   บ',10
-	db 'บ Or worse, how many CONFIG.SYSs did you make, which you copy into the used oneบ',10
-	db 'บ to load the wanted configuration? How many boot disks lay scattered all over บ',10
-	db 'บ your table? Do you have so much time to loose? Enough!                       บ',10
-	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
-	db 'บ ýAUTOCONFý is what you need!                       ý                            บ',10
-	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
-	db 'บ You have now the PERFECT PROGRAM for multiple configurations in one and only บ',10
-	db 'บ CONFIG.SYS file and one and only AUTOEXEC.BAT! Il you are already using a    บ',10
-	db 'บ simular program, here is a little explanation of what ýAUTOCONFý does and the  บ',10
-	db 'บ most well known programs like Multiple configurations DOS 6.x, MBOOT 2.x or  บ',10
-	db 'บ LACE 1.x do not!                                                             บ',10
-	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
-	db 'บ ýAUTOCONFý allows to create more than 200 different configuration, accessible  บ',10
-	db 'บ by a single key press: from A to Z, extended keys (ALT + key) or function    บ',10
-	db 'บ keys (F1...F10).                                                             บ',10 
-	db 'บ                                                                              บ',10
-	db 'บ This is the least important, since the greatest advantage is that ýAUTOCONFý   บ',10
-	db 'บ doesn''t need to stop your computer''s startup to allow you to choose a totallyบ',10
-	db 'บ different configuration: you just press a key BEFORE ýAUTOCONFý loads, right   บ',10
-	db 'บ after the little beep of your computer or the Starting MS DOS message, that  บ',10
-	db 'บ designates the wanted configuration!                                         บ',10
-	db 'บ                                                                              บ',10
-	db 'บ What you find in simular software is a poor uncolored menu, which forces you บ',10
-	db 'บ to choose a configuration. In a better case, a default configuration is      บ',10
-	db 'บ loaded in case you don''t press a key. Choosing a configuration with ýAUTOCONFý บ',10
-	db 'บ is as simple as pressing one single key! No more time to loose at all!       บ',10
-	db 'บ                                                                              บ',10
-        db 'บ You can create sub groups of configurations, acessible from the list of      บ',10
-        db 'บ configurations. The main configuration that contains the group can also be   บ',10
-        db 'บ loaded! You can move into any group and (even) come back from it (not like   บ',10
-        db 'บ with some simular multiple configurations software that I will not mention). บ',10
-        db 'บ An arrow in the list of configurations indicates that a sub group exists     บ',10
-        db 'บ under a configuration!                                                       บ',10
-        db 'บ                                                                              บ',10
-        db 'บ ýAUTOCONFý has an on-line help, supports an indefinite number of scrollable    บ',10
-	db 'บ pages for the list of configurations, support 25 and 50 lines modes, loads   บ',10
-	db 'บ only common part and ends at any moment if demanded.                         บ',10
-	db 'บ                                                                              บ',10
-	db 'บ ýAUTOCONFý has a UNIQUE feature, which you can experience from the list of     บ',10
-	db 'บ configuration: press TAB to see the configuration itself, including it''s     บ',10
-	db 'บ name of course. Use arrows to move in your configurations (the one before or บ',10
-	db 'บ after in the list, alphabetically sorted!), etc...                           บ',10
-	db 'บ                                                                              บ',10
-        db 'บ More exciting! You can even disable or enable a line in a configuration!     บ',10
-        db 'บ                                                                              บ',10
-	db 'บ ýAUTOCONFý is extremely fast. You will not see any hold up. You startup will   บ',10
-	db 'บ not seem to be slower! The source code of ýAUTOCONFý, written in assembler was บ',10
-	db 'บ diligently worked in order to have as little useless things as possible!     บ',10
-	db 'บ                                                                              บ',10
-	db 'บ 15 options of ýAUTOCONFý allow you to personalize ýAUTOCONFý to your real needs. บ',10
-	db 'บ ýAUTOCONFý is 100% compatible QEMM 7.x, since it''s DOSDATA created lots of     บ',10
-        db 'บ unbeleivable problems with multiple configuration programs. You can not run  บ',10
-	db 'บ OPTIMIZE, since it will ignore ýAUTOCONFý, which does not take ANY memory, and บ',10
-	db 'บ run all the configurations one after another.                                บ',10
-	db 'บ                                                                              บ',10
-        db 'บ ýAUTOCONFý is fully compatible Windows 95!                                     บ',10
-	db 'บ                                                                              บ',10
-	db 'บ A silent mode is available! You can make the startup of you computer void    บ',10
-	db 'บ from any messages from ýAUTOCONFý (except error ones). ýAUTOCONFý supports all   บ',10
-	db 'บ the keyboards supported by KEYB.COM, 25 lines as well as 50 lines video      บ',10
-	db 'บ modes are supported, monochrome and CGA supported with no switch options.    บ',10
-	db 'บ                                                                              บ',10
-	db 'บ ýAUTOCONFý does not use any memory!                                            บ',10
-	db 'บ                                                                              บ',10
-	db 'บ The usage is so simple, you will read this manual only once!                 บ',10
-	db 'บ                                                                              บ',10
-	db 'บ I could tell you lots of other interesting thing, but I prefer to stop here. บ',10
-	db 'บ                                   Ouf...                                     บ',10
-	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
-	db 'บ ýAUTOCONFý is totally ýFREEý for personnal usage only. If you think I do merit   บ',10
-	db 'บ something, don''t hesitate to thank me financially. A company should be able  บ',10
-	db 'บ to pay the little I ask, and receive regular upgrades.                       บ',10
-	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
-	db 'บ If you want to receive regular upgrades of ýAUTOCONFý, please send $10 for     บ',10
-	db 'บ Switzerland, $20 for Europe and $30 for USA, etc... per year.                บ',10
-	db 'บ You can call me by modem or send me your favorite BBS number so I can upload บ',10
-        db 'บ ýAUTOCONFý there!                                                              บ',10
-	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
-	db 'บ ýSINCE ýAUTOCONFý IS FREE, ANY SALE OF ANY VERSION OR ANY PART OF IT IS STRICTLYýบ',10
-	db 'บ ýPROHIBITED. IF YOU WANT TO PERSONALIZE YOUR COPY, JUST ASK FOR REGULAR       ýบ',10
-	db 'บ ýUPGRADES. ANY INDIVUDUAL OR COMPANY WHICH TRIES TO GET ANY BENEFIT FROM THIS ýบ',10
-	db 'บ ýSOFTWARE WITHOUT THE ACCORD OF THE AUTHOR, WILL BE PROSECUTED TO THE MAXIMUMý บ',10
-	db 'บ ýEXTENT POSSIBLE UNDER THE SWISS CRIMINAL LAW!                               ý บ',10
-	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
-	db 'บ Consult WHATSNEW.ENG to see what''s new in this latest version of AUTOCONF!   บ',10
-	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
-        db 'บ ý                       THE COMPLETE MANUAL OF ýAUTOCONF:ý                      บ',10
-	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
-        db 'บ ýPARAMETERS FOR CONFIG.SYSý                                                    บ',10
-	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
-        db 'บ (you can start an option with / or -)                                        บ',10
-        db 'บ                                                                              บ',10
-        db 'บ ý/Dxý : the default configuration. This options changes the default config,    บ',10
-        db 'บ       which is loaded if no key is pressed. If you don''t use this option,    บ',10
-        db 'บ       the default value is configuration A.                                  บ',10
-        db 'บ Note: for function keys configurations (F1...F10) write  /DF1.../DF0.        บ',10
-	db 'บ                                                                              บ',10
-        db 'บ ý/Hxý : the default configuration for Windows 95.                              บ',10
-        db 'บ       ýAUTOCONFý detects the presence of DOS 7.00, under which Win 95  runs,   บ',10
-        db 'บ       and enables this switch in that case. See the ''Compatibility with      บ',10
-        db 'บ       Windows 95'' below.                                                     บ',10
-        db 'บ                                                                              บ',10
-        db 'บ ý/Tý[ýDxý[ýuý]][ýCxý[ýuý]]ý : the delay for ýAUTOCONFý to wait until a key is pressed.    บ',10
-        db 'บ       You have definetely enough time to choose your configuration before    บ',10
-        db 'บ       ýAUTOCONFý runs, but you may still find this option usefull. The default บ',10
-        db 'บ       is 0 for both DOS and Windows 95.                                      บ',10
-        db 'บ                                                                              บ',10
-        db 'บ [ýDý]: specifies the time to wait under DOS below 7.00.                        บ',10
-        db 'บ [ýCý]: specifies the time to wait under DOS 7.00 and above (Windows 95)        บ',10
-        db 'บ [ýuý]: do not show the pulse while waiting for a key, ex: ý/T5uý                 บ',10
-	db 'บ                                                                              บ',10
-        db 'บ Example: /TD2uC3u forces ýAUTOCONFý to wait 2 seconds under DOS and 3 under    บ',10
-        db 'บ          Windows 95; /T5 forces ýAUTOCONFý to always wait for 5 seconds.       บ',10
-        db 'บ                                                                              บ',10
-        db 'บ Note: the options'' order is not important, ex: /TC2D4u = /TD4uC2             บ',10
-        db 'บ                                                                              บ',10
-        db 'บ ý/Pý :  silent mode: if you do not like the colorfull messages of ýAUTOCONFý,    บ',10
-        db 'บ       use this option to make them totally dissapear.                        บ',10
-        db 'บ Note: the list of configurations as well as the manual and all error         บ',10
-        db 'บ       messages will still be shown.                                          บ',10
-	db 'บ                                                                              บ',10
-        db 'บ ý/Ný :  never erase the screen while running ýAUTOCONF.ý                         บ',10
-	db 'บ                                                                              บ',10
-        db 'บ ý/Eý :  messages in black and white. If the colorfull messages bother you,     บ',10
-	db 'บ        use this option to disable color, while ýAUTOCONFý runs. This is very   บ',10
-	db 'บ        usefull for LCD screens with a little ammount of gray levels.         บ',10
-	db 'บ        Note: the color toggle in the manual of ýAUTOCONFý can still be used.   บ',10
-	db 'บ        Note: ýAUTOCONFý automatically supports monochrome and CGA.             บ',10
-	db 'บ                                                                              บ',10
-        db 'บ ý/Kxxý :  used keyboard, where xx:                                             บ',10
-	db 'บ                                                                              บ',10
-	db 'บ    Belgium                      ýBEý  ณ Bresil                       ýBRý        บ',10
-	db 'บ    Canada (french)              ýCFý  ณ Tcheckoslovakia (tcheck)     ýCZý        บ',10
-	db 'บ    Tcheckoslovakia (slovak)     ýSLý  ณ Danemark                     ýDKý        บ',10
-	db 'บ    Finland                      ýSUý  ณ France                       ýFRý        บ',10
-	db 'บ    Germany                      ýGRý  ณ Hungary                      ýHUý        บ',10
-	db 'บ    Italy                        ýITý  ณ Latin America                ýLAý        บ',10
-	db 'บ    Holland                      ýNLý  ณ Norvege                      ýNOý        บ',10
-	db 'บ    Poland                       ýPLý  ณ Portugal                     ýPOý        บ',10
-	db 'บ    Spain                        ýSPý  ณ Sweeden                      ýSVý        บ',10
-	db 'บ    Switzerland (french)         ýSFý  ณ Switzerland (german)         ýSGý        บ',10
-	db 'บ    Great Britain                ýUKý  ณ Croatia/Serbia/Slovenia      ýYUý        บ',10
-	db 'บ                                                                              บ',10
-        db 'บ The ýUSý keyboard is the one by default.                                       บ',10
-	db 'บ                                                                              บ',10
-        db 'บ ý/Jý[ýDý][ýCý] : always show the list of configuraitons and prompt for a choice.   บ',10
-        db 'บ [ýDý]: always show the list while booting DOS below 7.00                       บ',10
-        db 'บ [ýCý]: always show the list while booting DOS 7.xx (Windows 95) or above.      บ',10
-        db 'บ      Note: ý/Jý alone will set both options.                                   บ',10
-        db 'บ      Note: the order of options is not important, ex: /JCD, /JDC, /JD or /JC.บ',10
-	db 'บ                                                                              บ',10
-        db 'บ By combining the options ý/Jxxý and ý/Txý, you will get the list of the configs  บ',10
-        db 'บ during the bootup, that will dissapear to load the default configuration     บ',10
-        db 'บ after the time, specified by Tx has expired. If you press any key during the บ',10
-        db 'บ waiting time, the list of configurations will react as usual and void the    บ',10
-        db 'บ countdown.                                                                   บ',10
-        db 'บ                                                                              บ',10
-        db 'บ ý/Sý : During its execution, ýAUTOCONFý creates ýAUTOCONF.DATý,                    บ',10
-        db 'บ      which contains a code that designates the configuration chosen. If      บ',10
-        db 'บ      you use this option, the default configration will be the one, chosen   บ',10
-        db 'บ      during the last bootup, which was written in ýAUTOCONF.DATý. That means,  บ',10
-        db 'บ      that it will act as with the ý/Dý option: loading if no key is pressed.   บ',10
-	db 'บ                                                                              บ',10
-        db 'บ Note: ýAUTOCONF.DATý is always created and modified every time you run         บ',10
-        db 'บ      ýAUTOCONF.ý This file is created by iREAD (integrated READCONF) and is    บ',10
-        db 'บ      used by BOOTIT for predefined reboot.                                   บ',10
-	db 'บ                                                                              บ',10
-        db 'บ Note: This option has no sens if used with ý/Jý.                               บ',10
-	db 'บ                                                                              บ',10
-        db 'บ ý/Mxý : During the bootup, ýAUTOCONFý shows a welcome message, which depends of  บ',10
-        db 'บ      the time of the day you are running ýAUTOCONF.ý This option allows to     บ',10
-        db 'บ      change these (awesome) messages:                                        บ',10
-	db 'บ                                                                              บ',10
-        db 'บ            ý/M1ý - morning message                                             บ',10
-        db 'บ            ý/M2ý - day message                                                 บ',10        
-        db 'บ            ý/M3ý - evening message                                             บ',10
-        db 'บ            ý/M4ý - night message                                               บ',10
-	db 'บ                                                                              บ',10
-        db 'บ The same message can be assigned to different hours of the day:              บ',10
-	db 'บ                                                                              บ',10
-        db 'บ ý/M[xxxx]ý : where x is the number of the message.                             บ',10        
-	db 'บ                                                                              บ',10
-        db 'บ So if you add an option like:                                                บ',10
-	db 'บ                                                                              บ',10
-        db 'บ         ý  /M[13]T|he sun is shining#the birds are singing.ý                   บ',10
-	db 'บ                                                                              บ',10
-        db 'บ ýAUTOCONFý will show this message avery morning or evening:                    บ',10
-	db 'บ                                                                              บ',10
-	db 'บ ýThe sun is shiningý                                                           บ',10
-	db 'บ ýthe birds are singing.  ý                                                     บ',10
-	db 'บ                                                                              บ',10
-        db 'บ Note: each message can have a infinite ammount of caracters which have to    บ',10        
-        db 'บ       be on the same line with DEVICE=AUTOCONF.SYS. The caracter ý|ý  is used  บ',10
-        db 'บ       to toggle caps. The caracter ý#ý is used to jump a line.                 บ',10
-        db 'บ Note: if the number of caracters exceeds 77, ýAUTOCONFý will automatically     บ',10
-        db 'บ       jump to the next line.                                                 บ',10
-        db 'บ                                                                              บ',10
-        db 'บ For example: ýdevice=AUTOCONF.SYS /M3h|ello dear #|u|ser of |AUTOCONF!     ý   บ',10
-        db 'บ will show this message on the screen:                                        บ',10
-	db 'บ                                                                              บ',10
-	db 'บ ýHello dearý                                                                   บ',10
-	db 'บ ýUser of AUTOCONF!     ý                                                       บ',10        
-	db 'บ                                                                              บ',10        
-        db 'บ Note: if you wish to show the control caracters, such as ý| / - or #,ý just    บ',10        
-        db 'บ       write them twice in your message: ý|| // -- ou ##ý.                      บ',10                
-        db 'บ                                                                              บ',10        
-        db 'บ ý/Cxý : If you ask for a list of configurations, it has a highlighted line     บ',10        
-        db 'บ       that moves while you press special keys (Home, End, PgUp, PgDn, etc).  บ',10
-        db 'บ       This option allows to change the color of this highlighted line.       บ',10
-        db 'บ       Default is 127.                                                        บ',10
-        db 'บ ex:ý /C}ý (Alt 125) will give blue caracters on a gray background.             บ',10
-	db 'บ                                                                              บ',10
-        db 'บ ý/Fxý : Defines the color of the designations in the configurations list.      บ',10
-        db 'บ       (same syntax as for the ý/Cxý option)                                    บ',10
-        db 'บ                                                                              บ',10
-        db 'บ ý/Gý  : This is an option for those who like to control every little thing.    บ',10
-        db 'บ       Before a list of configuration, a message is showed, telling you what  บ',10
-        db 'บ       keys you can press. This option allows you not to print this message!  บ',10
-	db 'บ                                                                              บ',10
-        db 'บ ý/5ý  : Force a 50 line mode on the screen. That means, ýAUTOCONFý will keep     บ',10        
-        db 'บ       this mode for every screen output and will not remove it after it has  บ',10
-        db 'บ       finished running.                                                      บ',10
-	db 'บ                                                                              บ',10
-        db 'บ ý/Oý  : Compatibility mode with Windows 95, and MS-DOS below version 7.00,     บ',10
-        db 'บ       using QEMM''s DOSDATA. For more detailed information, please consult    บ',10
-        db 'บ       the chapter ''Compatibility with Windows 95'', point 3.                  บ',10
-        db 'บ                                                                              บ',10
-        db 'บ ý/Iý  : Disable the edit mode under the configuration viewer.                  บ',10
-        db 'บ                                                                              บ',10
-        db 'บ ý/Lý  : Always show the configuration name during the bootup.                  บ',10
-        db 'บ                                                                              บ',10
-        db 'บ ý/Bý  : Do not create the hidden AUTOCONF.DAT file, erase if found. /S has no  บ',10
-        db 'บ       sense with this option, but BOOTIT will not be ignored.                บ',10
-        db 'บ                                                                              บ',10
-        db 'บ ý/Zý  : eLiTe mode! (not for lamers!) ý/ZZý invert the elite mode.               บ',10
-        db 'บ                                                                              บ',10
-        db 'บ ý/Vý  : use READCONF instead of iREAD (add READCONF in the AUTOEXEC.BAT file!) บ',10
-	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
-        db 'บ ýSTRUCTURE OF CONFIG.SYS       ý                                               บ',10
-	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
-        db 'บýdevice=[drive][dir]<AUTOCONF.SYS> /[PARAM1] /[PARAM2] ý; call AUTOCONF.        บ',10
-	db 'บ                                                                              บ',10
-        db 'บýdevice=ý*ý<DESIGNATION> <NAME OF THE CONFIG OF ýTHE MAIN GROUPý>ý                  บ',10
-	db 'บ                                                                              บ',10
-        db 'บ        <DESIGNATION> : ýAý for the configuration A, ýF1ý for the config F1, etc. บ',10
-        db 'บ        <NAME OF THE CONF> : the name of the configuration, with the char ý|ý   บ',10
-        db 'บ                             for caps toggle.                                 บ',10
-	db 'บ                                                                              บ',10
-        db 'บ ýdevice=ý**ý<DESIGNATION> <NAME OF THE ýSUBý CONFIG> ý                             บ',10
-	db 'บ ý... configuration ...ý                                                        บ',10
-        db 'บ ýdevice=ý**ý<DESIGNATION> <NAME OF THE ýSUBý CONFIG> ý                             บ',10
-	db 'บ ý... configuration ...ý                                                        บ',10
-        db 'บ ýdevice=ý***ý<DESIGNATION> <NAME OF THE ýSUB SUBý CONFIG> ý                        บ',10
-	db 'บ ý... configuration ...ý                                                        บ',10
-        db 'บ ýdevice=ý*ý<DESIGNATION> <NAME OF THE CONFIG OF ýTHE MAIN GROUPý>ý                 บ',10
-        db 'บ ý... and so on...        ý                                                     บ',10
-	db 'บ                                                                              บ',10
-        db 'บ Note: You can create up to 20 configurations'' sub-levels.                    บ',10
-        db 'บ                                                                              บ',10
-        db 'บ Note: creation of colored configuration names is identical to the procedure  บ',10
-        db 'บ       described for personalized initialisation messages.                    บ',10
-	db 'บ                                                                              บ',10
-        db 'บ Note: Only the configurations from the main group can be loaded by only      บ',10
-        db 'บ       pressing a key at the bootup, after the Starting DOS message. The sub  บ',10
-        db 'บ       group configurations shall be loaded only from the list of configura-  บ',10
-        db 'บ       tion, obtained with the SPACE BAR at boot.                             บ',10
-	db 'บ                                                                              บ',10
-        db 'บ Note: The configurations can be put in any order; the list of configurations บ',10
-        db 'บ       will automatically be sorted alphabetically. The extended configs      บ',10
-        db 'บ       (F1 ... F10) will first be shown.                                      บ',10
-	db 'บ                                                                              บ',10
-        db 'บ Note: If you have not created a default configuration, A, or the one used    บ',10
-        db 'บ       with the /D parameter, an error message will occur.                    บ',10
-	db 'บ                                                                              บ',10
-        db 'บ Note: If you have created two configurations with the same letter, ex: two   บ',10
-        db 'บ       configurations G, then if you choose a G configuration, both will be   บ',10
-        db 'บ       loaded. This does not apply to sub configurations at all.              บ',10
-        db 'บ                                                                              บ',10
-        db 'บ ýdevice=ý$ý <------------------------>    ý ; please add any text to this line,  บ',10
-        db 'บ                                         ; in order to let ýAUTOCONFý enough    บ',10
-        db 'บ                                         ; space to add a SET CONF=... line   บ',10
-        db 'บ                                         ; during your computer''s bootup.     บ',10
-        db 'บ Note: this replaces the READCONF.EXE of the previous versions.               บ',10
-        db 'บ                                                                              บ',10
-        db 'บ AUTOCONF creates a variable in the master DOS environment, that contains:    บ',10
-        db 'บ GROUP_CONFIG or simply CONFIG, depending on the choice you have made during  บ',10
-        db 'บ the bootup. For the config F6, the variable ýCONFý will be set to F6, it will  บ',10
-        db 'บ become F3_F0_J_L for the configuration L in the sub group J, of the sub      บ',10
-        db 'บ group F10 of the main group F3.                                              บ',10
-        db 'บ                                                                              บ',10
-        db 'บ ýImportant!ý This line must be in the CONFIG.SYS, since it defines the end of  บ',10
-        db 'บ the multiple configurations. All following lines will become the common part,บ',10
-        db 'บ loaded with every configuration.                                             บ',10
-	db 'บ                                                                              บ',10
-        db 'บ ýfiles=30                              ý ;loaded with every configuration.     บ',10
-	db 'บ ýbuffers=30                            ý                                       บ',10
-	db 'บ ýlastdrive=E                           ý                                       บ',10
-	db 'บ ýstacks=9,128                          ý                                       บ',10
-        db 'บ ý... and so on ...                     ý                                       บ',10
-        db 'บ                                                                              บ',10        
-        db 'บ (full example)                                                               บ',10
-        db 'บ                                                                              บ',10        
-        db 'บ SWITCHES=/F                                                                  บ',10        
-        db 'บ                                                                              บ',10        
-        db 'บ DEVICE=C:\UTILS\AUTOCONF.SYS /KSF /DF1 /F /5                                บ',10        
-        db 'บ                                                                              บ',10        
-        db 'บ device=**F2 P|rogramming                                                     บ',10        
-        db 'บ  device=c:\dos\himem.sys /testmem:off                                        บ',10        
-        db 'บ  devicehigh=c:\dos\setver.exe                                                บ',10        
-        db 'บ  devicehigh=c:\dos\ansi.sys                                                  บ',10        
-        db 'บ                                                                              บ',10        
-        db 'บ device=*F1 DOS                                                               บ',10        
-        db 'บ  device=c:\dos\himem.sys /testmem:off                                        บ',10        
-        db 'บ  device=c:\dos\emm386.exe ram                                                บ',10        
-        db 'บ  devicehigh=c:\utils\mtm\mtmcdai.sys /d:MTMIDE01                             บ',10        
-        db 'บ  devicehigh=c:\dos\ansi.sys                                                  บ',10        
-        db 'บ  shell=c:\dos\command.com /p                                                 บ',10        
-        db 'บ                                                                              บ',10        
-        db 'บ    device=**F0 DOS                                                           บ',10        
-        db 'บ         device=c:\dos\himem.sys /testmem:off                                 บ',10        
-        db 'บ         device=c:\dos\emm386.exe RAM                                         บ',10        
-        db 'บ         devicehigh=c:\dos\ansi.sys                                           บ',10 
-        db 'บ                                                                              บ',10        
-        db 'บ    device=**F1 HIMEM/EMM386 (NOEMS)                                          บ',10        
-        db 'บ         device=c:\dos\himem.sys /testmem:off                                 บ',10        
-        db 'บ         device=c:\dos\emm386.exe NOEMS                                       บ',10        
-        db 'บ         devicehigh=c:\dos\ansi.sys                                           บ',10        
-        db 'บ         shell=c:\4dos\4dos.com /p                                            บ',10        
-        db 'บ                                                                              บ',10        
-        db 'บ device=*W W|indows| (N|o| NETWORK)                                           บ',10        
-        db 'บ         device=c:\dos\himem.sys /TESTMEM:OFF                                 บ',10        
-        db 'บ         devicehigh=c:\utils\mtm\MTMCDAI.SYS /D:MTMIDE01                      บ',10        
-        db 'บ         device=c:\dos\ansi.sys                                               บ',10        
-        db 'บ         SHELL=C:\4DOS\4DOS.COM /P                                            บ',10        
-        db 'บ                                                                              บ',10        
-        db 'บ device=$ <--------------------------->                                       บ',10        
-        db 'บ                                                                              บ',10        
-        db 'บ buffers=40                                                                   บ',10        
-        db 'บ files=40                                                                     บ',10        
-        db 'บ dos=high,umb                                                                 บ',10        
-        db 'บ devicehigh=c:\dos\setver.exe                                                 บ',10        
-        db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
-        db 'บ ýSTRUCTURE OF THE AUTOEXEC.BATý (multiple configurations)                      บ',10
-	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
-        db 'บ ýgoto %conf%              ý  ;jump to the chosen configuration                 บ',10
-        db 'บ ýgoto def_conf            ý  ;in case the name of the config is invalid, go to บ',10        
-        db 'บ                                ;the default configuration                    บ',10
-	db 'บ                                                                              บ',10
-        db 'บ ý:def_conf      ý            ;configuration A, the default one (my choice)     บ',10
-	db 'บ ý:A             ý            ;configuration A                                  บ',10
-	db 'บ ý...configuration...ý                                                          บ',10
-        db 'บ ýgoto end      ý             ;jump to the end of AUTOEXEC.BAT                  บ',10
-	db 'บ                                                                              บ',10
-        db 'บ ý:<DESIGNATION>[[_<SUB CONF>]_<SUB CONF>]  ý                                   บ',10
-        db 'บ                                                                              บ',10
-        db 'บ                            ;is the general syntax; for the sub-configuration บ',10
-        db 'บ                            ;F8 under the configuration F1, for instance,     บ',10
-        db 'บ                            ;simply specify F1_F8. For more inforamtion on    บ',10
-        db 'บ                            ;this option, please consult the point concerning บ',10
-        db 'บ                            ;the CONF variable one page higher.               บ',10
-        db 'บ ýgoto end      ý             ;jump to the end of AUTOEXEC.BAT                  บ',10
-	db 'บ                                                                              บ',10
-        db 'บ ý:end          ý             ;COMMON part                                      บ',10
-	db 'บ ý...           ý             ;PROMPT=..., PATH=..., etc...                     บ',10
-	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
-        db 'บ ýKEYS                        ý                                                 บ',10
-	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
-	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
-	db 'บ ýON-LINE HELP, obtained with BACKSPACE everywhere except under TAB:  ý         บ',10
-	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
-	db 'บ ýARROWS UP AND LEFT   ýone line up                                             บ',10
-	db 'บ ý       RIGHT, DOWN   ýone line down                                           บ',10
-	db 'บ ýPAGE DOWN            ýnext page                                               บ',10
-	db 'บ ýPAGE UP              ýone page up                                             บ',10
-	db 'บ ýESCAPE               ýquit the help file                                      บ',10
-	db 'บ ýSPACE                ýtoggle color - b/w modes                                บ',10
-	db 'บ ýTAB                  ýtoggle 25/50 lines modes                                บ',10
-        db 'บ ýINSERT               ýsearch for a string                                     บ',10
-        db 'บ ýDELETE               ýcancel search mode                                      บ',10
-	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
-	db 'บ ýTHE LIST OF CONFIGS, obtained with SPACE instead of choosing a configuration:ýบ',10
-	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
-	db 'บ ýBACKSPACE            ýshow the on-line help                                   บ',10
-        db 'บ ýSPACE of ENTER       ýload the highlighted configuration                      บ',10
-        db 'บ ýARROWS UP            ýscroll up in the list                                   บ',10
-        db 'บ ý       DOWN          ýscroll to the next configuration in the list            บ',10
-        db 'บ ý       LEFT          ýshow the subgroup of the configuration if exists        บ',10
-        db 'บ ý       RIGHT         ýshow the upper level of the group                       บ',10
-        db 'บ (If you are in the main group or there''s no sub level, the last two keys are บ',10
-        db 'บ  simply ignored and a short beep is emitted)                                 บ',10
-	db 'บ ýHOME & PAGE UP       ýthe first configuration on the screen                   บ',10
-	db 'บ ýEND & PAGE DOWN      ýlast configuration on screen                            บ',10
-        db 'บ ýTAB                  ýshow the highlighted configuration                      บ',10
-        db 'บ ýSTAR                 ýend ýAUTOCONFý                                            บ',10
-	db 'บ ýPOINT                ýload only the common part                               บ',10
-        db 'บ Any other key designating a configuration, loads it, if it exists.           บ',10
-	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
-	db 'บ ýTHE CONFIGURATION ITSELF SHOWED with TAB from the list of configurations:    ýบ',10
-	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
-        db 'บ ýARROWS:              ý                                                        บ',10
-        db 'บ ýUP                   ýscroll the configuration up (if longer than 25 lines)   บ',10
-        db 'บ ýDOWN                 ýscroll the configuration down (if longer than 25 lines) บ',10
-        db 'บ ýRIGHT                ýscroll the configuration to the right                   บ',10
-        db 'บ ýLEFT                 ýscroll the configuration to the left                    บ',10
-        db 'บ ýHOME                 ýjump to the beginning of the line                       บ',10
-        db 'บ                      if any of the shown lines exceeds 80 characters         บ',10
-	db 'บ ýPAGE DOWN            ýnext configuration                                      บ',10
-	db 'บ ýPAGE UP              ýprevious configuration in list                          บ',10
-	db 'บ ýTAB, ESC             ýreturn to the list of configurations                    บ',10
-	db 'บ ýSPACE                ýtoggle color - b/w modes                                บ',10
-	db 'บ ýENTER                ýchoose the shown configuration                          บ',10
-        db 'บ ýPOINT (.)            ýload only the common part, after device=$               บ',10
-        db 'บ ýBACKSPACE            ýshow the on-line help                                   บ',10
-        db 'บ ýE (E key)            ýenable/disable line editing mode                        บ',10
-        db 'บ ý  SPACE in ''E'' mode  ýenable/disable a line                                   บ',10
-        db 'บ ý      ? in ''E'' mode  ýenable/disable execute the line prompt                  บ',10
-	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
-	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
-        db 'บ ýCOMPATIBILITY WITH WINDOWS 95!                     ý                          บ',10
-	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
-        db 'บ Version 2.6+ fully supports Windows 95.                                      บ',10
-	db 'บ                                                                              บ',10
-	db 'บ That means:                                                                  บ',10
-	db 'บ                                                                              บ',10
-	db 'บ 1. General Idea:                                                             บ',10
-        db 'บ While booting Win 95, you get two choices, use Windows 95 OS or your old     บ',10
-	db 'บ DOS. F4 will load DOS and anything else, Windows 4.0... The SHELL= parameter บ',10
-	db 'บ allows to choose a different OS commander, like COMMAND.COM of DOS below 7.0 บ',10
-	db 'บ or 4DOS.                                                                     บ',10
-	db 'บ                                                                              บ',10
-	db 'บ Old 16 bit and DOS programs still need more memory, and of course multiple   บ',10
-        db 'บ configurations. ýAUTOCONFý will check for Win 95, so when you run Windows 95,  บ',10
-	db 'บ the option /Dx will be ignored, but the /Hx, encounted (if both, of course,  บ',10
-        db 'บ are present). That allows you to create a special configuration for Win 95   บ',10
-	db 'บ and another one for DOS below 7.0, without having to choose another config   บ',10
-	db 'บ every time!                                                                  บ',10
-	db 'บ                                                                              บ',10
-        db 'บ 2. ýAUTOCONFý will force the screen to switch from the Win 95 initialisation   บ',10
-	db 'บ screen to normal DOS loading sheme. That will help you see what''s happening  บ',10
-	db 'บ behind that nice drawing and fully use ýAUTOCONFý!                             บ',10
-	db 'บ                                                                              บ',10
-        db 'บ 3. Windows 95, DOS and QEMM 7.x DOSDATA:                                     บ',10
-	db 'บ                                                                              บ',10
-	db 'บ If you are using configurations with QEMM''s DOSDATA you are normally forced  บ',10
-	db 'บ to do the following:                                                         บ',10
-	db 'บ                                                                              บ',10
-	db 'บ      # press F4 to run MS-DOS                                                บ',10
-        db 'บ      # choose a configuration with ýAUTOCONFý containing DOSDATA               บ',10
-	db 'บ      # press F4 again, since the CONFIG.SYS is reinitialized by DOSDATA      บ',10
-	db 'บ                                                                              บ',10
-	db 'บ With option ý/Oý:                                                              บ',10
-	db 'บ                                                                              บ',10
-        db 'บ The last step is supressed by ýAUTOCONFý 2.61+. You just press F4 to load DOS, บ',10
-	db 'บ then you choose the configuration with AUTOCONF.                             บ',10
-	db 'บ                                                                              บ',10
-	db 'บ Note: some older BIOSs will not support this function.                       บ',10
-	db 'บ                                                                              บ',10
-	db 'บ Note: the F4 key is simulated in any case, except when you want to run       บ',10
-        db 'บ       Windows 95. If DOSDATA is not present, a beep will occur at the end of บ',10  
-	db 'บ       the bootup, since the computer keeps the "pressed" key until the DOS   บ',10
-	db 'บ       prompt. A small utility has been added: CLRBUF.SYS and CLRBUF.COM,     บ',10
-	db 'บ       which erase the keyboard buffer and supress this beep. CLRBUF does not บ',10
-	db 'บ       take memory and does not print anything on the screen. Use CLRBUF.SYS  บ',10
-	db 'บ       in the common part of the CONFIG.SYS file, or CLRBUF.COM in the common บ',10
-	db 'บ       part of the AUTOEXEC.BAT.                                              บ',10
-	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
-        db 'บ ýIMPORTANT NOTE FOR WINDOWS 95 SUPPORT: ý                                      บ',10
-	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
-        db 'บ ýAUTOCONFý 2.90 has been tested with Windows 95, final version of 24th august. บ',10
-	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
-	db 'บ ýIMPORTANT NOTES:  ý                                                           บ',10
-	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
-        db 'บ The line: DOS=[high],[UMB] is read only once in the CONFIG.SYS file. The     บ',10
-	db 'บ last occurence will only be taken in consideration by DOS. ýAUTOCONFý can not  บ',10        
-        db 'บ do anything for the choice of where to load DOS, high or low.                บ',10
-	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
-        db 'บ ýAUTOCONFý, version 1.1 to this latter, all versions of ýREADCONFý, ýiýRýEýAýDý and    บ',10
-        db 'บ ýBOOTITý are the property of (me):                                             บ',10
-        db 'บ ýÜÜÜÜÜÜÜÜÜÜÜ ýDoubrovkine Daniel      ý                                         บ',10
-        db 'บ ýÛÛÛÛüÛÛÛýÛÛÛÛ ý11, ch. de la Clairire ý                                         บ',10
-	db 'บ ýÛÛüÛÛÛÛÛÛÛýÛÛ ý1207 Genve,            ý                                         บ',10
-	db 'บ ýÛÛÛÛüÛÛÛýÛÛÛÛ ýSuisse                  ý                                         บ',10
-        db 'บ ý฿฿฿฿฿฿฿฿฿฿฿ ýtel & fax: 41 22 - 735 69 47       ý                              บ',10
-        db 'บ ýemail: dblock@infomaniak.ch                      ý                            บ',10
-	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
-	db 'บ ýAUTOCONFý was originally programmed by a french coder which is unknown to me. บ',10
-	db 'บ A version, that I used as the engine of ýAUTOCONFý was published in a SVM,     บ',10
-	db 'บ several years ago. 90% of the original program, have been modified. The name บ',10
-        db 'บ has not been changed.                                                        บ',10
-	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
-	db 'บ I thank all the beta testers and all those who took any part in the develop- บ',10
-	db 'บ pement of this software.                                                     บ',10
-	db 'ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน',10
-	db 'บ ýAll the names of companies, as well as their products are the trademarks of  ýบ',10
-	db 'บ ýtheir respectif oweners.                           ý                          บ',10
-	db 'ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ',10
-	db 'ý[                              end of help                                     '
+ hlp_msg db 'ยฒโ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—',10
+	db 'โ•‘ Dear users! Thanks for choosing ยฒAUTOCONF.ยฒ You will not regret this choice!   โ•‘',10
+	db 'โ•‘                                                                       D.D.   โ•‘',10
+	db 'โ• โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•ฃ',10
+	db 'โ•‘    ยฒWHAT ยฒAUTOCONFยฒ IS... ยฒ                                                      โ•‘',10
+	db 'โ• โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•ฃ',10
+	db 'โ•‘ ยฒAUTOCONFยฒ is a program, that allows you to choose a different configuration   โ•‘',10
+	db 'โ•‘ of memory drivers, resident programs or other software you need in your      โ•‘',10
+	db 'โ•‘ work or play.                                                                โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+	db 'โ•‘ ยฒAUTOCONFยฒ is a very flexible program, adaptable to any individual need. It    โ•‘',10    
+	db 'โ•‘ is definetely better than most of the simular existing programs.             โ•‘',10
+	db 'โ• โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•ฃ',10
+	db 'โ•‘    ยฒWHY DOES ANYBODY NEED MULTIPLE CONFIGURATIONS?       ยฒ                     โ•‘',10
+	db 'โ• โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•ฃ',10
+	db 'โ•‘ Have you aver had ''Insuffisent memory'' message? Your mouse driver is eating  โ•‘',10
+	db 'โ•‘ 20k of precious memory and you need your mouse only once in a while.         โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+	db 'โ•‘ How many times per day do you edit your CONFIG.SYS file to add REMs in it?   โ•‘',10
+	db 'โ•‘ Or worse, how many CONFIG.SYSs did you make, which you copy into the used oneโ•‘',10
+	db 'โ•‘ to load the wanted configuration? How many boot disks lay scattered all over โ•‘',10
+	db 'โ•‘ your table? Do you have so much time to loose? Enough!                       โ•‘',10
+	db 'โ• โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•ฃ',10
+	db 'โ•‘ ยฒAUTOCONFยฒ is what you need!                       ยฒ                            โ•‘',10
+	db 'โ• โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•ฃ',10
+	db 'โ•‘ You have now the PERFECT PROGRAM for multiple configurations in one and only โ•‘',10
+	db 'โ•‘ CONFIG.SYS file and one and only AUTOEXEC.BAT! Il you are already using a    โ•‘',10
+	db 'โ•‘ simular program, here is a little explanation of what ยฒAUTOCONFยฒ does and the  โ•‘',10
+	db 'โ•‘ most well known programs like Multiple configurations DOS 6.x, MBOOT 2.x or  โ•‘',10
+	db 'โ•‘ LACE 1.x do not!                                                             โ•‘',10
+	db 'โ• โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•ฃ',10
+	db 'โ•‘ ยฒAUTOCONFยฒ allows to create more than 200 different configuration, accessible  โ•‘',10
+	db 'โ•‘ by a single key press: from A to Z, extended keys (ALT + key) or function    โ•‘',10
+	db 'โ•‘ keys (F1...F10).                                                             โ•‘',10 
+	db 'โ•‘                                                                              โ•‘',10
+	db 'โ•‘ This is the least important, since the greatest advantage is that ยฒAUTOCONFยฒ   โ•‘',10
+	db 'โ•‘ doesn''t need to stop your computer''s startup to allow you to choose a totallyโ•‘',10
+	db 'โ•‘ different configuration: you just press a key BEFORE ยฒAUTOCONFยฒ loads, right   โ•‘',10
+	db 'โ•‘ after the little beep of your computer or the Starting MS DOS message, that  โ•‘',10
+	db 'โ•‘ designates the wanted configuration!                                         โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+	db 'โ•‘ What you find in simular software is a poor uncolored menu, which forces you โ•‘',10
+	db 'โ•‘ to choose a configuration. In a better case, a default configuration is      โ•‘',10
+	db 'โ•‘ loaded in case you don''t press a key. Choosing a configuration with ยฒAUTOCONFยฒ โ•‘',10
+	db 'โ•‘ is as simple as pressing one single key! No more time to loose at all!       โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ You can create sub groups of configurations, acessible from the list of      โ•‘',10
+        db 'โ•‘ configurations. The main configuration that contains the group can also be   โ•‘',10
+        db 'โ•‘ loaded! You can move into any group and (even) come back from it (not like   โ•‘',10
+        db 'โ•‘ with some simular multiple configurations software that I will not mention). โ•‘',10
+        db 'โ•‘ An arrow in the list of configurations indicates that a sub group exists     โ•‘',10
+        db 'โ•‘ under a configuration!                                                       โ•‘',10
+        db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ ยฒAUTOCONFยฒ has an on-line help, supports an indefinite number of scrollable    โ•‘',10
+	db 'โ•‘ pages for the list of configurations, support 25 and 50 lines modes, loads   โ•‘',10
+	db 'โ•‘ only common part and ends at any moment if demanded.                         โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+	db 'โ•‘ ยฒAUTOCONFยฒ has a UNIQUE feature, which you can experience from the list of     โ•‘',10
+	db 'โ•‘ configuration: press TAB to see the configuration itself, including it''s     โ•‘',10
+	db 'โ•‘ name of course. Use arrows to move in your configurations (the one before or โ•‘',10
+	db 'โ•‘ after in the list, alphabetically sorted!), etc...                           โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ More exciting! You can even disable or enable a line in a configuration!     โ•‘',10
+        db 'โ•‘                                                                              โ•‘',10
+	db 'โ•‘ ยฒAUTOCONFยฒ is extremely fast. You will not see any hold up. You startup will   โ•‘',10
+	db 'โ•‘ not seem to be slower! The source code of ยฒAUTOCONFยฒ, written in assembler was โ•‘',10
+	db 'โ•‘ diligently worked in order to have as little useless things as possible!     โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+	db 'โ•‘ 15 options of ยฒAUTOCONFยฒ allow you to personalize ยฒAUTOCONFยฒ to your real needs. โ•‘',10
+	db 'โ•‘ ยฒAUTOCONFยฒ is 100% compatible QEMM 7.x, since it''s DOSDATA created lots of     โ•‘',10
+        db 'โ•‘ unbeleivable problems with multiple configuration programs. You can not run  โ•‘',10
+	db 'โ•‘ OPTIMIZE, since it will ignore ยฒAUTOCONFยฒ, which does not take ANY memory, and โ•‘',10
+	db 'โ•‘ run all the configurations one after another.                                โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ ยฒAUTOCONFยฒ is fully compatible Windows 95!                                     โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+	db 'โ•‘ A silent mode is available! You can make the startup of you computer void    โ•‘',10
+	db 'โ•‘ from any messages from ยฒAUTOCONFยฒ (except error ones). ยฒAUTOCONFยฒ supports all   โ•‘',10
+	db 'โ•‘ the keyboards supported by KEYB.COM, 25 lines as well as 50 lines video      โ•‘',10
+	db 'โ•‘ modes are supported, monochrome and CGA supported with no switch options.    โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+	db 'โ•‘ ยฒAUTOCONFยฒ does not use any memory!                                            โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+	db 'โ•‘ The usage is so simple, you will read this manual only once!                 โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+	db 'โ•‘ I could tell you lots of other interesting thing, but I prefer to stop here. โ•‘',10
+	db 'โ•‘                                   Ouf...                                     โ•‘',10
+	db 'โ• โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•ฃ',10
+	db 'โ•‘ ยฒAUTOCONFยฒ is totally ยฒรฎFREEยฒ for personnal usage only. If you think I do merit   โ•‘',10
+	db 'โ•‘ something, don''t hesitate to thank me financially. A company should be able  โ•‘',10
+	db 'โ•‘ to pay the little I ask, and receive regular upgrades.                       โ•‘',10
+	db 'โ• โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•ฃ',10
+	db 'โ•‘ If you want to receive regular upgrades of ยฒAUTOCONFยฒ, please send $10 for     โ•‘',10
+	db 'โ•‘ Switzerland, $20 for Europe and $30 for USA, etc... per year.                โ•‘',10
+	db 'โ•‘ You can call me by modem or send me your favorite BBS number so I can upload โ•‘',10
+        db 'โ•‘ ยฒAUTOCONFยฒ there!                                                              โ•‘',10
+	db 'โ• โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•ฃ',10
+	db 'โ•‘ ยฒSINCE ยฒAUTOCONFยฒ IS FREE, ANY SALE OF ANY VERSION OR ANY PART OF IT IS STRICTLYยฒโ•‘',10
+	db 'โ•‘ ยฒPROHIBITED. IF YOU WANT TO PERSONALIZE YOUR COPY, JUST ASK FOR REGULAR       ยฒโ•‘',10
+	db 'โ•‘ ยฒUPGRADES. ANY INDIVUDUAL OR COMPANY WHICH TRIES TO GET ANY BENEFIT FROM THIS ยฒโ•‘',10
+	db 'โ•‘ ยฒSOFTWARE WITHOUT THE ACCORD OF THE AUTHOR, WILL BE PROSECUTED TO THE MAXIMUMยฒ โ•‘',10
+	db 'โ•‘ ยฒEXTENT POSSIBLE UNDER THE SWISS CRIMINAL LAW!                               ยฒ โ•‘',10
+	db 'โ• โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•ฃ',10
+	db 'โ•‘ Consult WHATSNEW.ENG to see what''s new in this latest version of AUTOCONF!   โ•‘',10
+	db 'โ• โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•ฃ',10
+        db 'โ•‘ ยฒ                       THE COMPLETE MANUAL OF ยฒAUTOCONF:ยฒ                      โ•‘',10
+	db 'โ• โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•ฃ',10
+        db 'โ•‘ ยฒPARAMETERS FOR CONFIG.SYSยฒ                                                    โ•‘',10
+	db 'โ• โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•ฃ',10
+        db 'โ•‘ (you can start an option with / or -)                                        โ•‘',10
+        db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ ยฒ/Dxยฒ : the default configuration. This options changes the default config,    โ•‘',10
+        db 'โ•‘       which is loaded if no key is pressed. If you don''t use this option,    โ•‘',10
+        db 'โ•‘       the default value is configuration A.                                  โ•‘',10
+        db 'โ•‘ Note: for function keys configurations (F1...F10) write  /DF1.../DF0.        โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ ยฒ/Hxยฒ : the default configuration for Windows 95.                              โ•‘',10
+        db 'โ•‘       ยฒAUTOCONFยฒ detects the presence of DOS 7.00, under which Win 95  runs,   โ•‘',10
+        db 'โ•‘       and enables this switch in that case. See the ''Compatibility with      โ•‘',10
+        db 'โ•‘       Windows 95'' below.                                                     โ•‘',10
+        db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ ยฒ/Tยฒ[ยฒDxยฒ[ยฒuยฒ]][ยฒCxยฒ[ยฒuยฒ]]ยฒ : the delay for ยฒAUTOCONFยฒ to wait until a key is pressed.    โ•‘',10
+        db 'โ•‘       You have definetely enough time to choose your configuration before    โ•‘',10
+        db 'โ•‘       ยฒAUTOCONFยฒ runs, but you may still find this option usefull. The default โ•‘',10
+        db 'โ•‘       is 0 for both DOS and Windows 95.                                      โ•‘',10
+        db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ [ยฒDยฒ]: specifies the time to wait under DOS below 7.00.                        โ•‘',10
+        db 'โ•‘ [ยฒCยฒ]: specifies the time to wait under DOS 7.00 and above (Windows 95)        โ•‘',10
+        db 'โ•‘ [ยฒuยฒ]: do not show the pulse while waiting for a key, ex: ยฒ/T5uยฒ                 โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ Example: /TD2uC3u forces ยฒAUTOCONFยฒ to wait 2 seconds under DOS and 3 under    โ•‘',10
+        db 'โ•‘          Windows 95; /T5 forces ยฒAUTOCONFยฒ to always wait for 5 seconds.       โ•‘',10
+        db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ Note: the options'' order is not important, ex: /TC2D4u = /TD4uC2             โ•‘',10
+        db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ ยฒ/Pยฒ :  silent mode: if you do not like the colorfull messages of ยฒAUTOCONFยฒ,    โ•‘',10
+        db 'โ•‘       use this option to make them totally dissapear.                        โ•‘',10
+        db 'โ•‘ Note: the list of configurations as well as the manual and all error         โ•‘',10
+        db 'โ•‘       messages will still be shown.                                          โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ ยฒ/Nยฒ :  never erase the screen while running ยฒAUTOCONF.ยฒ                         โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ ยฒ/Eยฒ :  messages in black and white. If the colorfull messages bother you,     โ•‘',10
+	db 'โ•‘        use this option to disable color, while ยฒAUTOCONFยฒ runs. This is very   โ•‘',10
+	db 'โ•‘        usefull for LCD screens with a little ammount of gray levels.         โ•‘',10
+	db 'โ•‘        Note: the color toggle in the manual of ยฒAUTOCONFยฒ can still be used.   โ•‘',10
+	db 'โ•‘        Note: ยฒAUTOCONFยฒ automatically supports monochrome and CGA.             โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ ยฒ/Kxxยฒ :  used keyboard, where xx:                                             โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+	db 'โ•‘    Belgium                      ยฒBEยฒ  โ” Bresil                       ยฒBRยฒ        โ•‘',10
+	db 'โ•‘    Canada (french)              ยฒCFยฒ  โ” Tcheckoslovakia (tcheck)     ยฒCZยฒ        โ•‘',10
+	db 'โ•‘    Tcheckoslovakia (slovak)     ยฒSLยฒ  โ” Danemark                     ยฒDKยฒ        โ•‘',10
+	db 'โ•‘    Finland                      ยฒSUยฒ  โ” France                       ยฒFRยฒ        โ•‘',10
+	db 'โ•‘    Germany                      ยฒGRยฒ  โ” Hungary                      ยฒHUยฒ        โ•‘',10
+	db 'โ•‘    Italy                        ยฒITยฒ  โ” Latin America                ยฒLAยฒ        โ•‘',10
+	db 'โ•‘    Holland                      ยฒNLยฒ  โ” Norvege                      ยฒNOยฒ        โ•‘',10
+	db 'โ•‘    Poland                       ยฒPLยฒ  โ” Portugal                     ยฒPOยฒ        โ•‘',10
+	db 'โ•‘    Spain                        ยฒSPยฒ  โ” Sweeden                      ยฒSVยฒ        โ•‘',10
+	db 'โ•‘    Switzerland (french)         ยฒSFยฒ  โ” Switzerland (german)         ยฒSGยฒ        โ•‘',10
+	db 'โ•‘    Great Britain                ยฒUKยฒ  โ” Croatia/Serbia/Slovenia      ยฒYUยฒ        โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ The ยฒUSยฒ keyboard is the one by default.                                       โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ ยฒ/Jยฒ[ยฒDยฒ][ยฒCยฒ] : always show the list of configuraitons and prompt for a choice.   โ•‘',10
+        db 'โ•‘ [ยฒDยฒ]: always show the list while booting DOS below 7.00                       โ•‘',10
+        db 'โ•‘ [ยฒCยฒ]: always show the list while booting DOS 7.xx (Windows 95) or above.      โ•‘',10
+        db 'โ•‘      Note: ยฒ/Jยฒ alone will set both options.                                   โ•‘',10
+        db 'โ•‘      Note: the order of options is not important, ex: /JCD, /JDC, /JD or /JC.โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ By combining the options ยฒ/Jxxยฒ and ยฒ/Txยฒ, you will get the list of the configs  โ•‘',10
+        db 'โ•‘ during the bootup, that will dissapear to load the default configuration     โ•‘',10
+        db 'โ•‘ after the time, specified by Tx has expired. If you press any key during the โ•‘',10
+        db 'โ•‘ waiting time, the list of configurations will react as usual and void the    โ•‘',10
+        db 'โ•‘ countdown.                                                                   โ•‘',10
+        db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ ยฒ/Sยฒ : During its execution, ยฒAUTOCONFยฒ creates ยฒAUTOCONF.DATยฒ,                    โ•‘',10
+        db 'โ•‘      which contains a code that designates the configuration chosen. If      โ•‘',10
+        db 'โ•‘      you use this option, the default configration will be the one, chosen   โ•‘',10
+        db 'โ•‘      during the last bootup, which was written in ยฒAUTOCONF.DATยฒ. That means,  โ•‘',10
+        db 'โ•‘      that it will act as with the ยฒ/Dยฒ option: loading if no key is pressed.   โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ Note: ยฒAUTOCONF.DATยฒ is always created and modified every time you run         โ•‘',10
+        db 'โ•‘      ยฒAUTOCONF.ยฒ This file is created by iREAD (integrated READCONF) and is    โ•‘',10
+        db 'โ•‘      used by BOOTIT for predefined reboot.                                   โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ Note: This option has no sens if used with ยฒ/Jยฒ.                               โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ ยฒ/Mxยฒ : During the bootup, ยฒAUTOCONFยฒ shows a welcome message, which depends of  โ•‘',10
+        db 'โ•‘      the time of the day you are running ยฒAUTOCONF.ยฒ This option allows to     โ•‘',10
+        db 'โ•‘      change these (awesome) messages:                                        โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘            ยฒ/M1ยฒ - morning message                                             โ•‘',10
+        db 'โ•‘            ยฒ/M2ยฒ - day message                                                 โ•‘',10        
+        db 'โ•‘            ยฒ/M3ยฒ - evening message                                             โ•‘',10
+        db 'โ•‘            ยฒ/M4ยฒ - night message                                               โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ The same message can be assigned to different hours of the day:              โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ ยฒ/M[xxxx]ยฒ : where x is the number of the message.                             โ•‘',10        
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ So if you add an option like:                                                โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘         ยฒ  /M[13]T|he sun is shining#the birds are singing.ยฒ                   โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ ยฒAUTOCONFยฒ will show this message avery morning or evening:                    โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+	db 'โ•‘ ยฒThe sun is shiningยฒ                                                           โ•‘',10
+	db 'โ•‘ ยฒthe birds are singing.  ยฒ                                                     โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ Note: each message can have a infinite ammount of caracters which have to    โ•‘',10        
+        db 'โ•‘       be on the same line with DEVICE=AUTOCONF.SYS. The caracter ยฒ|ยฒ  is used  โ•‘',10
+        db 'โ•‘       to toggle caps. The caracter ยฒ#ยฒ is used to jump a line.                 โ•‘',10
+        db 'โ•‘ Note: if the number of caracters exceeds 77, ยฒAUTOCONFยฒ will automatically     โ•‘',10
+        db 'โ•‘       jump to the next line.                                                 โ•‘',10
+        db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ For example: ยฒdevice=AUTOCONF.SYS /M3h|ello dear #|u|ser of |AUTOCONF!     ยฒ   โ•‘',10
+        db 'โ•‘ will show this message on the screen:                                        โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+	db 'โ•‘ ยฒHello dearยฒ                                                                   โ•‘',10
+	db 'โ•‘ ยฒUser of AUTOCONF!     ยฒ                                                       โ•‘',10        
+	db 'โ•‘                                                                              โ•‘',10        
+        db 'โ•‘ Note: if you wish to show the control caracters, such as ยฒ| / - or #,ยฒ just    โ•‘',10        
+        db 'โ•‘       write them twice in your message: ยฒ|| // -- ou ##ยฒ.                      โ•‘',10                
+        db 'โ•‘                                                                              โ•‘',10        
+        db 'โ•‘ ยฒ/Cxยฒ : If you ask for a list of configurations, it has a highlighted line     โ•‘',10        
+        db 'โ•‘       that moves while you press special keys (Home, End, PgUp, PgDn, etc).  โ•‘',10
+        db 'โ•‘       This option allows to change the color of this highlighted line.       โ•‘',10
+        db 'โ•‘       Default is 127.                                                        โ•‘',10
+        db 'โ•‘ ex:ยฒ /C}ยฒ (Alt 125) will give blue caracters on a gray background.             โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ ยฒ/Fxยฒ : Defines the color of the designations in the configurations list.      โ•‘',10
+        db 'โ•‘       (same syntax as for the ยฒ/Cxยฒ option)                                    โ•‘',10
+        db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ ยฒ/Gยฒ  : This is an option for those who like to control every little thing.    โ•‘',10
+        db 'โ•‘       Before a list of configuration, a message is showed, telling you what  โ•‘',10
+        db 'โ•‘       keys you can press. This option allows you not to print this message!  โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ ยฒ/5ยฒ  : Force a 50 line mode on the screen. That means, ยฒAUTOCONFยฒ will keep     โ•‘',10        
+        db 'โ•‘       this mode for every screen output and will not remove it after it has  โ•‘',10
+        db 'โ•‘       finished running.                                                      โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ ยฒ/Oยฒ  : Compatibility mode with Windows 95, and MS-DOS below version 7.00,     โ•‘',10
+        db 'โ•‘       using QEMM''s DOSDATA. For more detailed information, please consult    โ•‘',10
+        db 'โ•‘       the chapter ''Compatibility with Windows 95'', point 3.                  โ•‘',10
+        db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ ยฒ/Iยฒ  : Disable the edit mode under the configuration viewer.                  โ•‘',10
+        db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ ยฒ/Lยฒ  : Always show the configuration name during the bootup.                  โ•‘',10
+        db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ ยฒ/Bยฒ  : Do not create the hidden AUTOCONF.DAT file, erase if found. /S has no  โ•‘',10
+        db 'โ•‘       sense with this option, but BOOTIT will not be ignored.                โ•‘',10
+        db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ ยฒ/Zยฒ  : eLiTe mode! (not for lamers!) ยฒ/ZZยฒ invert the elite mode.               โ•‘',10
+        db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ ยฒ/Vยฒ  : use READCONF instead of iREAD (add READCONF in the AUTOEXEC.BAT file!) โ•‘',10
+	db 'โ• โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•ฃ',10
+        db 'โ•‘ ยฒSTRUCTURE OF CONFIG.SYS       ยฒ                                               โ•‘',10
+	db 'โ• โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•ฃ',10
+        db 'โ•‘ยฒdevice=[drive][dir]<AUTOCONF.SYS> /[PARAM1] /[PARAM2] ยฒ; call AUTOCONF.        โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ยฒdevice=ยฒ*ยฒ<DESIGNATION> <NAME OF THE CONFIG OF ยฒTHE MAIN GROUPยฒ>ยฒ                  โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘        <DESIGNATION> : ยฒAยฒ for the configuration A, ยฒF1ยฒ for the config F1, etc. โ•‘',10
+        db 'โ•‘        <NAME OF THE CONF> : the name of the configuration, with the char ยฒ|ยฒ   โ•‘',10
+        db 'โ•‘                             for caps toggle.                                 โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ ยฒdevice=ยฒ**ยฒ<DESIGNATION> <NAME OF THE ยฒSUBยฒ CONFIG> ยฒ                             โ•‘',10
+	db 'โ•‘ ยฒ... configuration ...ยฒ                                                        โ•‘',10
+        db 'โ•‘ ยฒdevice=ยฒ**ยฒ<DESIGNATION> <NAME OF THE ยฒSUBยฒ CONFIG> ยฒ                             โ•‘',10
+	db 'โ•‘ ยฒ... configuration ...ยฒ                                                        โ•‘',10
+        db 'โ•‘ ยฒdevice=ยฒ***ยฒ<DESIGNATION> <NAME OF THE ยฒSUB SUBยฒ CONFIG> ยฒ                        โ•‘',10
+	db 'โ•‘ ยฒ... configuration ...ยฒ                                                        โ•‘',10
+        db 'โ•‘ ยฒdevice=ยฒ*ยฒ<DESIGNATION> <NAME OF THE CONFIG OF ยฒTHE MAIN GROUPยฒ>ยฒ                 โ•‘',10
+        db 'โ•‘ ยฒ... and so on...        ยฒ                                                     โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ Note: You can create up to 20 configurations'' sub-levels.                    โ•‘',10
+        db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ Note: creation of colored configuration names is identical to the procedure  โ•‘',10
+        db 'โ•‘       described for personalized initialisation messages.                    โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ Note: Only the configurations from the main group can be loaded by only      โ•‘',10
+        db 'โ•‘       pressing a key at the bootup, after the Starting DOS message. The sub  โ•‘',10
+        db 'โ•‘       group configurations shall be loaded only from the list of configura-  โ•‘',10
+        db 'โ•‘       tion, obtained with the SPACE BAR at boot.                             โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ Note: The configurations can be put in any order; the list of configurations โ•‘',10
+        db 'โ•‘       will automatically be sorted alphabetically. The extended configs      โ•‘',10
+        db 'โ•‘       (F1 ... F10) will first be shown.                                      โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ Note: If you have not created a default configuration, A, or the one used    โ•‘',10
+        db 'โ•‘       with the /D parameter, an error message will occur.                    โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ Note: If you have created two configurations with the same letter, ex: two   โ•‘',10
+        db 'โ•‘       configurations G, then if you choose a G configuration, both will be   โ•‘',10
+        db 'โ•‘       loaded. This does not apply to sub configurations at all.              โ•‘',10
+        db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ ยฒdevice=ยฒ$ยฒ <------------------------>    ยฒ ; please add any text to this line,  โ•‘',10
+        db 'โ•‘                                         ; in order to let ยฒAUTOCONFยฒ enough    โ•‘',10
+        db 'โ•‘                                         ; space to add a SET CONF=... line   โ•‘',10
+        db 'โ•‘                                         ; during your computer''s bootup.     โ•‘',10
+        db 'โ•‘ Note: this replaces the READCONF.EXE of the previous versions.               โ•‘',10
+        db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ AUTOCONF creates a variable in the master DOS environment, that contains:    โ•‘',10
+        db 'โ•‘ GROUP_CONFIG or simply CONFIG, depending on the choice you have made during  โ•‘',10
+        db 'โ•‘ the bootup. For the config F6, the variable ยฒCONFยฒ will be set to F6, it will  โ•‘',10
+        db 'โ•‘ become F3_F0_J_L for the configuration L in the sub group J, of the sub      โ•‘',10
+        db 'โ•‘ group F10 of the main group F3.                                              โ•‘',10
+        db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ ยฒรฎImportant!ยฒ This line must be in the CONFIG.SYS, since it defines the end of  โ•‘',10
+        db 'โ•‘ the multiple configurations. All following lines will become the common part,โ•‘',10
+        db 'โ•‘ loaded with every configuration.                                             โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ ยฒfiles=30                              ยฒ ;loaded with every configuration.     โ•‘',10
+	db 'โ•‘ ยฒbuffers=30                            ยฒ                                       โ•‘',10
+	db 'โ•‘ ยฒlastdrive=E                           ยฒ                                       โ•‘',10
+	db 'โ•‘ ยฒstacks=9,128                          ยฒ                                       โ•‘',10
+        db 'โ•‘ ยฒ... and so on ...                     ยฒ                                       โ•‘',10
+        db 'โ•‘                                                                              โ•‘',10        
+        db 'โ•‘ (full example)                                                               โ•‘',10
+        db 'โ•‘                                                                              โ•‘',10        
+        db 'โ•‘ SWITCHES=/F                                                                  โ•‘',10        
+        db 'โ•‘                                                                              โ•‘',10        
+        db 'โ•‘ DEVICE=C:\UTILS\AUTOCONF.SYS /KSF /DF1 /F /5                                โ•‘',10        
+        db 'โ•‘                                                                              โ•‘',10        
+        db 'โ•‘ device=**F2 P|rogramming                                                     โ•‘',10        
+        db 'โ•‘  device=c:\dos\himem.sys /testmem:off                                        โ•‘',10        
+        db 'โ•‘  devicehigh=c:\dos\setver.exe                                                โ•‘',10        
+        db 'โ•‘  devicehigh=c:\dos\ansi.sys                                                  โ•‘',10        
+        db 'โ•‘                                                                              โ•‘',10        
+        db 'โ•‘ device=*F1 DOS                                                               โ•‘',10        
+        db 'โ•‘  device=c:\dos\himem.sys /testmem:off                                        โ•‘',10        
+        db 'โ•‘  device=c:\dos\emm386.exe ram                                                โ•‘',10        
+        db 'โ•‘  devicehigh=c:\utils\mtm\mtmcdai.sys /d:MTMIDE01                             โ•‘',10        
+        db 'โ•‘  devicehigh=c:\dos\ansi.sys                                                  โ•‘',10        
+        db 'โ•‘  shell=c:\dos\command.com /p                                                 โ•‘',10        
+        db 'โ•‘                                                                              โ•‘',10        
+        db 'โ•‘    device=**F0 DOS                                                           โ•‘',10        
+        db 'โ•‘         device=c:\dos\himem.sys /testmem:off                                 โ•‘',10        
+        db 'โ•‘         device=c:\dos\emm386.exe RAM                                         โ•‘',10        
+        db 'โ•‘         devicehigh=c:\dos\ansi.sys                                           โ•‘',10 
+        db 'โ•‘                                                                              โ•‘',10        
+        db 'โ•‘    device=**F1 HIMEM/EMM386 (NOEMS)                                          โ•‘',10        
+        db 'โ•‘         device=c:\dos\himem.sys /testmem:off                                 โ•‘',10        
+        db 'โ•‘         device=c:\dos\emm386.exe NOEMS                                       โ•‘',10        
+        db 'โ•‘         devicehigh=c:\dos\ansi.sys                                           โ•‘',10        
+        db 'โ•‘         shell=c:\4dos\4dos.com /p                                            โ•‘',10        
+        db 'โ•‘                                                                              โ•‘',10        
+        db 'โ•‘ device=*W W|indows| (N|o| NETWORK)                                           โ•‘',10        
+        db 'โ•‘         device=c:\dos\himem.sys /TESTMEM:OFF                                 โ•‘',10        
+        db 'โ•‘         devicehigh=c:\utils\mtm\MTMCDAI.SYS /D:MTMIDE01                      โ•‘',10        
+        db 'โ•‘         device=c:\dos\ansi.sys                                               โ•‘',10        
+        db 'โ•‘         SHELL=C:\4DOS\4DOS.COM /P                                            โ•‘',10        
+        db 'โ•‘                                                                              โ•‘',10        
+        db 'โ•‘ device=$ <--------------------------->                                       โ•‘',10        
+        db 'โ•‘                                                                              โ•‘',10        
+        db 'โ•‘ buffers=40                                                                   โ•‘',10        
+        db 'โ•‘ files=40                                                                     โ•‘',10        
+        db 'โ•‘ dos=high,umb                                                                 โ•‘',10        
+        db 'โ•‘ devicehigh=c:\dos\setver.exe                                                 โ•‘',10        
+        db 'โ• โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•ฃ',10
+        db 'โ•‘ ยฒSTRUCTURE OF THE AUTOEXEC.BATยฒ (multiple configurations)                      โ•‘',10
+	db 'โ• โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•ฃ',10
+        db 'โ•‘ ยฒgoto %conf%              ยฒ  ;jump to the chosen configuration                 โ•‘',10
+        db 'โ•‘ ยฒgoto def_conf            ยฒ  ;in case the name of the config is invalid, go to โ•‘',10        
+        db 'โ•‘                                ;the default configuration                    โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ ยฒ:def_conf      ยฒ            ;configuration A, the default one (my choice)     โ•‘',10
+	db 'โ•‘ ยฒ:A             ยฒ            ;configuration A                                  โ•‘',10
+	db 'โ•‘ ยฒ...configuration...ยฒ                                                          โ•‘',10
+        db 'โ•‘ ยฒgoto end      ยฒ             ;jump to the end of AUTOEXEC.BAT                  โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ ยฒ:<DESIGNATION>[[_<SUB CONF>]_<SUB CONF>]  ยฒ                                   โ•‘',10
+        db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘                            ;is the general syntax; for the sub-configuration โ•‘',10
+        db 'โ•‘                            ;F8 under the configuration F1, for instance,     โ•‘',10
+        db 'โ•‘                            ;simply specify F1_F8. For more inforamtion on    โ•‘',10
+        db 'โ•‘                            ;this option, please consult the point concerning โ•‘',10
+        db 'โ•‘                            ;the CONF variable one page higher.               โ•‘',10
+        db 'โ•‘ ยฒgoto end      ยฒ             ;jump to the end of AUTOEXEC.BAT                  โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ ยฒ:end          ยฒ             ;COMMON part                                      โ•‘',10
+	db 'โ•‘ ยฒ...           ยฒ             ;PROMPT=..., PATH=..., etc...                     โ•‘',10
+	db 'โ• โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•ฃ',10
+        db 'โ•‘ ยฒKEYS                        ยฒ                                                 โ•‘',10
+	db 'โ• โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•ฃ',10
+	db 'โ• โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•ฃ',10
+	db 'โ•‘ ยฒON-LINE HELP, obtained with BACKSPACE everywhere except under TAB:  ยฒ         โ•‘',10
+	db 'โ• โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•ฃ',10
+	db 'โ•‘ ยฒARROWS UP AND LEFT   ยฒone line up                                             โ•‘',10
+	db 'โ•‘ ยฒ       RIGHT, DOWN   ยฒone line down                                           โ•‘',10
+	db 'โ•‘ ยฒPAGE DOWN            ยฒnext page                                               โ•‘',10
+	db 'โ•‘ ยฒPAGE UP              ยฒone page up                                             โ•‘',10
+	db 'โ•‘ ยฒESCAPE               ยฒquit the help file                                      โ•‘',10
+	db 'โ•‘ ยฒSPACE                ยฒtoggle color - b/w modes                                โ•‘',10
+	db 'โ•‘ ยฒTAB                  ยฒtoggle 25/50 lines modes                                โ•‘',10
+        db 'โ•‘ ยฒINSERT               ยฒsearch for a string                                     โ•‘',10
+        db 'โ•‘ ยฒDELETE               ยฒcancel search mode                                      โ•‘',10
+	db 'โ• โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•ฃ',10
+	db 'โ•‘ ยฒTHE LIST OF CONFIGS, obtained with SPACE instead of choosing a configuration:ยฒโ•‘',10
+	db 'โ• โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•ฃ',10
+	db 'โ•‘ ยฒBACKSPACE            ยฒshow the on-line help                                   โ•‘',10
+        db 'โ•‘ ยฒSPACE of ENTER       ยฒload the highlighted configuration                      โ•‘',10
+        db 'โ•‘ ยฒARROWS UP            ยฒscroll up in the list                                   โ•‘',10
+        db 'โ•‘ ยฒ       DOWN          ยฒscroll to the next configuration in the list            โ•‘',10
+        db 'โ•‘ ยฒ       LEFT          ยฒshow the subgroup of the configuration if exists        โ•‘',10
+        db 'โ•‘ ยฒ       RIGHT         ยฒshow the upper level of the group                       โ•‘',10
+        db 'โ•‘ (If you are in the main group or there''s no sub level, the last two keys are โ•‘',10
+        db 'โ•‘  simply ignored and a short beep is emitted)                                 โ•‘',10
+	db 'โ•‘ ยฒHOME & PAGE UP       ยฒthe first configuration on the screen                   โ•‘',10
+	db 'โ•‘ ยฒEND & PAGE DOWN      ยฒlast configuration on screen                            โ•‘',10
+        db 'โ•‘ ยฒTAB                  ยฒshow the highlighted configuration                      โ•‘',10
+        db 'โ•‘ ยฒSTAR                 ยฒend ยฒAUTOCONFยฒ                                            โ•‘',10
+	db 'โ•‘ ยฒPOINT                ยฒload only the common part                               โ•‘',10
+        db 'โ•‘ Any other key designating a configuration, loads it, if it exists.           โ•‘',10
+	db 'โ• โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•ฃ',10
+	db 'โ•‘ ยฒTHE CONFIGURATION ITSELF SHOWED with TAB from the list of configurations:    ยฒโ•‘',10
+	db 'โ• โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•ฃ',10
+        db 'โ•‘ ยฒARROWS:              ยฒ                                                        โ•‘',10
+        db 'โ•‘ ยฒUP                   ยฒscroll the configuration up (if longer than 25 lines)   โ•‘',10
+        db 'โ•‘ ยฒDOWN                 ยฒscroll the configuration down (if longer than 25 lines) โ•‘',10
+        db 'โ•‘ ยฒRIGHT                ยฒscroll the configuration to the right                   โ•‘',10
+        db 'โ•‘ ยฒLEFT                 ยฒscroll the configuration to the left                    โ•‘',10
+        db 'โ•‘ ยฒHOME                 ยฒjump to the beginning of the line                       โ•‘',10
+        db 'โ•‘                      if any of the shown lines exceeds 80 characters         โ•‘',10
+	db 'โ•‘ ยฒPAGE DOWN            ยฒnext configuration                                      โ•‘',10
+	db 'โ•‘ ยฒPAGE UP              ยฒprevious configuration in list                          โ•‘',10
+	db 'โ•‘ ยฒTAB, ESC             ยฒreturn to the list of configurations                    โ•‘',10
+	db 'โ•‘ ยฒSPACE                ยฒtoggle color - b/w modes                                โ•‘',10
+	db 'โ•‘ ยฒENTER                ยฒchoose the shown configuration                          โ•‘',10
+        db 'โ•‘ ยฒPOINT (.)            ยฒload only the common part, after device=$               โ•‘',10
+        db 'โ•‘ ยฒBACKSPACE            ยฒshow the on-line help                                   โ•‘',10
+        db 'โ•‘ ยฒE (E key)            ยฒenable/disable line editing mode                        โ•‘',10
+        db 'โ•‘ ยฒ  SPACE in ''E'' mode  ยฒenable/disable a line                                   โ•‘',10
+        db 'โ•‘ ยฒ      ? in ''E'' mode  ยฒenable/disable execute the line prompt                  โ•‘',10
+	db 'โ• โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•ฃ',10
+	db 'โ• โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•ฃ',10
+        db 'โ•‘ ยฒCOMPATIBILITY WITH WINDOWS 95!                     ยฒ                          โ•‘',10
+	db 'โ• โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•ฃ',10
+        db 'โ•‘ Version 2.6+ fully supports Windows 95.                                      โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+	db 'โ•‘ That means:                                                                  โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+	db 'โ•‘ 1. General Idea:                                                             โ•‘',10
+        db 'โ•‘ While booting Win 95, you get two choices, use Windows 95 OS or your old     โ•‘',10
+	db 'โ•‘ DOS. F4 will load DOS and anything else, Windows 4.0... The SHELL= parameter โ•‘',10
+	db 'โ•‘ allows to choose a different OS commander, like COMMAND.COM of DOS below 7.0 โ•‘',10
+	db 'โ•‘ or 4DOS.                                                                     โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+	db 'โ•‘ Old 16 bit and DOS programs still need more memory, and of course multiple   โ•‘',10
+        db 'โ•‘ configurations. ยฒAUTOCONFยฒ will check for Win 95, so when you run Windows 95,  โ•‘',10
+	db 'โ•‘ the option /Dx will be ignored, but the /Hx, encounted (if both, of course,  โ•‘',10
+        db 'โ•‘ are present). That allows you to create a special configuration for Win 95   โ•‘',10
+	db 'โ•‘ and another one for DOS below 7.0, without having to choose another config   โ•‘',10
+	db 'โ•‘ every time!                                                                  โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ 2. ยฒAUTOCONFยฒ will force the screen to switch from the Win 95 initialisation   โ•‘',10
+	db 'โ•‘ screen to normal DOS loading sheme. That will help you see what''s happening  โ•‘',10
+	db 'โ•‘ behind that nice drawing and fully use ยฒAUTOCONFยฒ!                             โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ 3. Windows 95, DOS and QEMM 7.x DOSDATA:                                     โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+	db 'โ•‘ If you are using configurations with QEMM''s DOSDATA you are normally forced  โ•‘',10
+	db 'โ•‘ to do the following:                                                         โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+	db 'โ•‘      # press F4 to run MS-DOS                                                โ•‘',10
+        db 'โ•‘      # choose a configuration with ยฒAUTOCONFยฒ containing DOSDATA               โ•‘',10
+	db 'โ•‘      # press F4 again, since the CONFIG.SYS is reinitialized by DOSDATA      โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+	db 'โ•‘ With option ยฒ/Oยฒ:                                                              โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+        db 'โ•‘ The last step is supressed by ยฒAUTOCONFยฒ 2.61+. You just press F4 to load DOS, โ•‘',10
+	db 'โ•‘ then you choose the configuration with AUTOCONF.                             โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+	db 'โ•‘ Note: some older BIOSs will not support this function.                       โ•‘',10
+	db 'โ•‘                                                                              โ•‘',10
+	db 'โ•‘ Note: the F4 key is simulated in any case, except when you want to run       โ•‘',10
+        db 'โ•‘       Windows 95. If DOSDATA is not present, a beep will occur at the end of โ•‘',10  
+	db 'โ•‘       the bootup, since the computer keeps the "pressed" key until the DOS   โ•‘',10
+	db 'โ•‘       prompt. A small utility has been added: CLRBUF.SYS and CLRBUF.COM,     โ•‘',10
+	db 'โ•‘       which erase the keyboard buffer and supress this beep. CLRBUF does not โ•‘',10
+	db 'โ•‘       take memory and does not print anything on the screen. Use CLRBUF.SYS  โ•‘',10
+	db 'โ•‘       in the common part of the CONFIG.SYS file, or CLRBUF.COM in the common โ•‘',10
+	db 'โ•‘       part of the AUTOEXEC.BAT.                                              โ•‘',10
+	db 'โ• โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•ฃ',10
+        db 'โ•‘ ยฒIMPORTANT NOTE FOR WINDOWS 95 SUPPORT: ยฒ                                      โ•‘',10
+	db 'โ• โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•ฃ',10
+        db 'โ•‘ ยฒAUTOCONFยฒ 2.90 has been tested with Windows 95, final version of 24th august. โ•‘',10
+	db 'โ• โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•ฃ',10
+	db 'โ•‘ ยฒIMPORTANT NOTES:  ยฒ                                                           โ•‘',10
+	db 'โ• โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•ฃ',10
+        db 'โ•‘ The line: DOS=[high],[UMB] is read only once in the CONFIG.SYS file. The     โ•‘',10
+	db 'โ•‘ last occurence will only be taken in consideration by DOS. ยฒAUTOCONFยฒ can not  โ•‘',10        
+        db 'โ•‘ do anything for the choice of where to load DOS, high or low.                โ•‘',10
+	db 'โ• โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•ฃ',10
+        db 'โ•‘ ยฒAUTOCONFยฒ, version 1.1 to this latter, all versions of ยฒREADCONFยฒ, ยฒiยฒRยฒEยฒAยฒDยฒ and    โ•‘',10
+        db 'โ•‘ ยฒBOOTITยฒ are the property of (me):                                             โ•‘',10
+        db 'โ•‘ ยฒโ–โ–โ–โ–โ–โ–โ–โ–โ–โ–โ– ยฒDoubrovkine Daniel      ยฒ                                         โ•‘',10
+        db 'โ•‘ ยฒโ–โ–โ–โ–ยณโ–โ–โ–ยฒโ–โ–โ–โ– ยฒ11, ch. de la Clairiรจre ยฒ                                         โ•‘',10
+	db 'โ•‘ ยฒโ–โ–ยณโ–โ–โ–โ–โ–โ–โ–ยฒโ–โ– ยฒ1207 Genรจve,            ยฒ                                         โ•‘',10
+	db 'โ•‘ ยฒโ–โ–โ–โ–ยณโ–โ–โ–ยฒโ–โ–โ–โ– ยฒSuisse                  ยฒ                                         โ•‘',10
+        db 'โ•‘ ยฒโ–€โ–€โ–€โ–€โ–€โ–€โ–€โ–€โ–€โ–€โ–€ ยฒtel & fax: 41 22 - 735 69 47       ยฒ                              โ•‘',10
+        db 'โ•‘ ยฒemail: dblock@infomaniak.ch                      ยฒ                            โ•‘',10
+	db 'โ• โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•ฃ',10
+	db 'โ•‘ ยฒAUTOCONFยฒ was originally programmed by a french coder which is unknown to me. โ•‘',10
+	db 'โ•‘ A version, that I used as the engine of ยฒAUTOCONFยฒ was published in a SVM,     โ•‘',10
+	db 'โ•‘ several years ago. 90% of the original program, have been modified. The name โ•‘',10
+        db 'โ•‘ has not been changed.                                                        โ•‘',10
+	db 'โ• โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•ฃ',10
+	db 'โ•‘ I thank all the beta testers and all those who took any part in the develop- โ•‘',10
+	db 'โ•‘ pement of this software.                                                     โ•‘',10
+	db 'โ• โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•ฃ',10
+	db 'โ•‘ ยฒAll the names of companies, as well as their products are the trademarks of  ยฒโ•‘',10
+	db 'โ•‘ ยฒtheir respectif oweners.                           ยฒ                          โ•‘',10
+	db 'โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•',10
+	db 'ยฒ[                              end of help                                     '
 			     
-press_a_extended_key db 'ý?[ý  ý?lineý HOME ý?beginningý END ý? ý PgUp PgDn ý?pageý ESPACE ý?color/b&wý TAB ý?50/25ý ESC ý?]'
-search_stupid_msg    db 'ý  Search:  [ý'
+press_a_extended_key db 'ยฒ?[ยฒ  ยฒ?lineยฒ HOME ยฒ?beginningยฒ END ยฒ? ยฒ PgUp PgDn ยฒ?pageยฒ ESPACE ยฒ?color/b&wยฒ TAB ยฒ?50/25ยฒ ESC ยฒ?]'
+search_stupid_msg    db 'ยฒ  Search:  [ยฒ'
                      db 67 dup (' ')
-                     db 'ý]'
-press_search         db 'ý[ อ=อ= Searching...อ=อ=อ==อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ=อ= ]' 
+                     db 'ยฒ]'
+press_search         db 'ยฒ[ โ•=โ•= Searching...โ•=โ•=โ•==โ•=โ•=โ•=โ•=โ•=โ•=โ•=โ•=โ•=โ•=โ•=โ•=โ•=โ•=โ•=โ•=โ•=โ•=โ•=โ•=โ•=โ•=โ•=โ•=โ•=โ•= ]' 

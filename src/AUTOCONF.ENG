@@ -1,311 +1,311 @@
-hlp_msg db 'ıÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»',10
-        db 'º ı/Dxı : the default configuration.                                             º',10
-        db 'º ı/Hxı : the default configuration for Windows 95.                              º',10
-        db 'º ı/Tı[ıDxı[ıuı]][ıCxı[ıuı]]ı : the delay for ıAUTOCONFı to wait until a key is pressed.    º',10
-        db 'º [ıDı]: specifies the time to wait under DOS below 7.00.                        º',10
-        db 'º [ıCı]: specifies the time to wait under DOS 7.00 and above (Windows 95)        º',10
-        db 'º [ıuı]: do not show the pulse while waiting for a key, ex: ı/T5uı                 º',10
-        db 'º ı/Pı :  silent mode.                                                           º',10
-        db 'º ı/Nı :  never erase the screen while running ıAUTOCONF.ı                         º',10
-        db 'º ı/Eı :  messages in black and white.                                           º',10
-        db 'º ı/Kxxı :  used keyboard, where xx:                                             º',10
-	db 'º    Belgium                      ıBEı  ³ Bresil                       ıBRı        º',10
-	db 'º    Canada (french)              ıCFı  ³ Tcheckoslovakia (tcheck)     ıCZı        º',10
-	db 'º    Tcheckoslovakia (slovak)     ıSLı  ³ Danemark                     ıDKı        º',10
-	db 'º    Finland                      ıSUı  ³ France                       ıFRı        º',10
-	db 'º    Germany                      ıGRı  ³ Hungary                      ıHUı        º',10
-	db 'º    Italy                        ıITı  ³ Latin America                ıLAı        º',10
-	db 'º    Holland                      ıNLı  ³ Norvege                      ıNOı        º',10
-	db 'º    Poland                       ıPLı  ³ Portugal                     ıPOı        º',10
-	db 'º    Spain                        ıSPı  ³ Sweeden                      ıSVı        º',10
-	db 'º    Switzerland (french)         ıSFı  ³ Switzerland (german)         ıSGı        º',10
-	db 'º    Great Britain                ıUKı  ³ Croatia/Serbia/Slovenia      ıYUı        º',10
-        db 'º ı/Jı[ıDı][ıCı] : always show the list of configuraitons and prompt for a choice.   º',10
-        db 'º [ıDı]: always show the list while booting DOS below 7.00                       º',10
-        db 'º [ıCı]: always show the list while booting DOS 7.xx (Windows 95) or above.      º',10
-        db 'º ı/Sı : enable the last configuration loading.                                  º',10
-        db 'º ı/Mxı : customize welcome messages.                                            º',10
-        db 'º            ı/M1ı - morning message                                             º',10
-        db 'º            ı/M2ı - day message                                                 º',10        
-        db 'º            ı/M3ı - evening message                                             º',10
-        db 'º            ı/M4ı - night message                                               º',10
-        db 'º ı/M[xxxx]ı : where x is the number of the message.                             º',10        
-        db 'º ı/Cxı : hightlight color.                                                      º',10        
-        db 'º ı/Fxı : defines the color of the designations in the configurations list.      º',10
-        db 'º ı/Gı  : suppress header message in the configuration list.                     º',10        
-        db 'º ı/5ı  : Force a 50 line mode.                                                  º',10        
-        db 'º ı/Oı  : Compatibility mode with Windows 95 & QEMM.                             º',10
-        db 'º ı/Iı  : Disable the edit mode under the configuration viewer.                  º',10
-        db 'º ı/Lı  : Always show the configuration name during the bootup. (even with /P)   º',10
-        db 'º ı/Bı  : Do not create the hidden AUTOCONF.DAT file, erase if found.            º',10
-        db 'º ı/Zı  : eLiTe mode! (not for lamers!) ı/ZZı invert the elite mode.               º',10
-        db 'º ı/Vı  : use READCONF instead of iREAD (add READCONF in the AUTOEXEC.BAT file!) º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-        db 'º ıKEYS                        ı                                                 º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-	db 'º ıON-LINE HELP, obtained with BACKSPACE everywhere except under TAB:  ı         º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-	db 'º ıARROWS UP AND LEFT   ıone line up                                             º',10
-	db 'º ı       RIGHT, DOWN   ıone line down                                           º',10
-	db 'º ıPAGE DOWN            ınext page                                               º',10
-	db 'º ıPAGE UP              ıone page up                                             º',10
-	db 'º ıESCAPE               ıquit the help file                                      º',10
-	db 'º ıSPACE                ıtoggle color - b/w modes                                º',10
-	db 'º ıTAB                  ıtoggle 25/50 lines modes                                º',10
-        db 'º ıINSERT               ısearch for a string                                     º',10
-        db 'º ıDELETE               ıcancel search mode                                      º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-	db 'º ıTHE LIST OF CONFIGS, obtained with SPACE instead of choosing a configuration:ıº',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-	db 'º ıBACKSPACE            ıshow the on-line help                                   º',10
-	db 'º ıSPACE of ENTER       ıload the highlighted configuration                      º',10
-        db 'º ıARROWS UP            ıscroll up in the list                                   º',10
-        db 'º ı       DOWN          ıscroll to the next configuration in the list            º',10
-        db 'º ı       LEFT          ıshow the subgroup of the configuration if exists        º',10
-        db 'º ı       RIGHT         ıshow the upper level of the group                       º',10
-        db 'º (If you are in the main group or there''s no sub level, the last two keys are º',10
-        db 'º  simply ignored and a short beep is emitted)                                 º',10
-	db 'º ıHOME & PAGE UP       ıthe first configuration on the screen                   º',10
-	db 'º ıEND & PAGE DOWN      ılast configuration on screen                            º',10
-	db 'º ıTAB                  ıshow the highlighted configuration                      º',10
-        db 'º ıSTAR                 ıend ıAUTOCONFı                                            º',10
-	db 'º ıPOINT                ıload only the common part                               º',10
-        db 'º Any other key designating a configuration, loads it, if it exists.           º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-	db 'º ıTHE CONFIGURATION ITSELF SHOWED with TAB from the list of configurations:    ıº',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-        db 'º ıARROWS:              ı                                                        º',10
-        db 'º ıUP                   ıscroll the configuration up (if longer than 25 lines)   º',10
-        db 'º ıDOWN                 ıscroll the configuration down (if longer than 25 lines) º',10
-        db 'º ıRIGHT                ıscroll the configuration to the right                   º',10
-        db 'º ıLEFT                 ıscroll the configuration to the left                    º',10
-        db 'º ıHOME                 ıjump to the beginning of the line                       º',10
-        db 'º                      if any of the shown lines exceeds 80 characters         º',10
-	db 'º ıPAGE DOWN            ınext configuration                                      º',10
-	db 'º ıPAGE UP              ıprevious configuration in list                          º',10
-	db 'º ıTAB, ESC             ıreturn to the list of configurations                    º',10
-	db 'º ıSPACE                ıtoggle color - b/w modes                                º',10
-	db 'º ıENTER                ıchoose the shown configuration                          º',10
-        db 'º ıPOINT (.)            ıload only the common part, after DEVICE=$               º',10
-        db 'º ıBACKSPACE            ıshow the on-line help                                   º',10
-        db 'º ıE (E key)            ıenable/disable line editing mode                        º',10
-        db 'º ı  SPACE in ''E'' mode  ıenable/disable a line                                   º',10
-        db 'º ı      ? in ''E'' mode  ıenable/disable execute the line prompt                  º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-        db 'º ıAUTOCONFı, version 1.1 to this latter, all versions of ıREADCONFı, ıiıRıEıAıDı and    º',10
-        db 'º ıBOOTITı are the property of (me):                                             º',10
-        db 'º ıÜÜÜÜÜÜÜÜÜÜÜ ıDoubrovkine Daniel       ı                                        º',10
-        db 'º ıÛÛÛÛüÛÛÛıÛÛÛÛ ı11, ch. de la ClairiŠre ı                                         º',10
-	db 'º ıÛÛüÛÛÛÛÛÛÛıÛÛ ı1207 GenŠve,            ı                                         º',10
-	db 'º ıÛÛÛÛüÛÛÛıÛÛÛÛ ıSuisse                  ı                                         º',10
-        db 'º ıßßßßßßßßßßß ıtel & fax: 41 22 - 735 69 47       ı                              º',10
-        db 'º ıemail: dblock@infomaniak.ch                      ı                            º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-	db 'º ıAUTOCONFı was originally programmed by a french coder which is unknown to me. º',10
-	db 'º A version, that I used as the engine of ıAUTOCONFı was published in a SVM,     º',10
-	db 'º several years ago. 90% of the original program, have been modified. The name º',10
-        db 'º has not been changed.                                                        º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-        db 'º I thank all the beta testers and all those who took any part in the develop- º',10
-	db 'º pement of this software.                                                     º',10
-	db 'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹',10
-	db 'º ıAll the names of companies, as well as their products are the trademarks of  ıº',10
-        db 'º ıtheir respectif owners.                            ı                          º',10
-	db 'ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼',10
-	db 'ı[                              end of help                                     '
+hlp_msg db 'Â²â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—',10
+        db 'â•‘ Â²/DxÂ² : the default configuration.                                             â•‘',10
+        db 'â•‘ Â²/HxÂ² : the default configuration for Windows 95.                              â•‘',10
+        db 'â•‘ Â²/TÂ²[Â²DxÂ²[Â²uÂ²]][Â²CxÂ²[Â²uÂ²]]Â² : the delay for Â²AUTOCONFÂ² to wait until a key is pressed.    â•‘',10
+        db 'â•‘ [Â²DÂ²]: specifies the time to wait under DOS below 7.00.                        â•‘',10
+        db 'â•‘ [Â²CÂ²]: specifies the time to wait under DOS 7.00 and above (Windows 95)        â•‘',10
+        db 'â•‘ [Â²uÂ²]: do not show the pulse while waiting for a key, ex: Â²/T5uÂ²                 â•‘',10
+        db 'â•‘ Â²/PÂ² :  silent mode.                                                           â•‘',10
+        db 'â•‘ Â²/NÂ² :  never erase the screen while running Â²AUTOCONF.Â²                         â•‘',10
+        db 'â•‘ Â²/EÂ² :  messages in black and white.                                           â•‘',10
+        db 'â•‘ Â²/KxxÂ² :  used keyboard, where xx:                                             â•‘',10
+	db 'â•‘    Belgium                      Â²BEÂ²  â”‚ Bresil                       Â²BRÂ²        â•‘',10
+	db 'â•‘    Canada (french)              Â²CFÂ²  â”‚ Tcheckoslovakia (tcheck)     Â²CZÂ²        â•‘',10
+	db 'â•‘    Tcheckoslovakia (slovak)     Â²SLÂ²  â”‚ Danemark                     Â²DKÂ²        â•‘',10
+	db 'â•‘    Finland                      Â²SUÂ²  â”‚ France                       Â²FRÂ²        â•‘',10
+	db 'â•‘    Germany                      Â²GRÂ²  â”‚ Hungary                      Â²HUÂ²        â•‘',10
+	db 'â•‘    Italy                        Â²ITÂ²  â”‚ Latin America                Â²LAÂ²        â•‘',10
+	db 'â•‘    Holland                      Â²NLÂ²  â”‚ Norvege                      Â²NOÂ²        â•‘',10
+	db 'â•‘    Poland                       Â²PLÂ²  â”‚ Portugal                     Â²POÂ²        â•‘',10
+	db 'â•‘    Spain                        Â²SPÂ²  â”‚ Sweeden                      Â²SVÂ²        â•‘',10
+	db 'â•‘    Switzerland (french)         Â²SFÂ²  â”‚ Switzerland (german)         Â²SGÂ²        â•‘',10
+	db 'â•‘    Great Britain                Â²UKÂ²  â”‚ Croatia/Serbia/Slovenia      Â²YUÂ²        â•‘',10
+        db 'â•‘ Â²/JÂ²[Â²DÂ²][Â²CÂ²] : always show the list of configuraitons and prompt for a choice.   â•‘',10
+        db 'â•‘ [Â²DÂ²]: always show the list while booting DOS below 7.00                       â•‘',10
+        db 'â•‘ [Â²CÂ²]: always show the list while booting DOS 7.xx (Windows 95) or above.      â•‘',10
+        db 'â•‘ Â²/SÂ² : enable the last configuration loading.                                  â•‘',10
+        db 'â•‘ Â²/MxÂ² : customize welcome messages.                                            â•‘',10
+        db 'â•‘            Â²/M1Â² - morning message                                             â•‘',10
+        db 'â•‘            Â²/M2Â² - day message                                                 â•‘',10        
+        db 'â•‘            Â²/M3Â² - evening message                                             â•‘',10
+        db 'â•‘            Â²/M4Â² - night message                                               â•‘',10
+        db 'â•‘ Â²/M[xxxx]Â² : where x is the number of the message.                             â•‘',10        
+        db 'â•‘ Â²/CxÂ² : hightlight color.                                                      â•‘',10        
+        db 'â•‘ Â²/FxÂ² : defines the color of the designations in the configurations list.      â•‘',10
+        db 'â•‘ Â²/GÂ²  : suppress header message in the configuration list.                     â•‘',10        
+        db 'â•‘ Â²/5Â²  : Force a 50 line mode.                                                  â•‘',10        
+        db 'â•‘ Â²/OÂ²  : Compatibility mode with Windows 95 & QEMM.                             â•‘',10
+        db 'â•‘ Â²/IÂ²  : Disable the edit mode under the configuration viewer.                  â•‘',10
+        db 'â•‘ Â²/LÂ²  : Always show the configuration name during the bootup. (even with /P)   â•‘',10
+        db 'â•‘ Â²/BÂ²  : Do not create the hidden AUTOCONF.DAT file, erase if found.            â•‘',10
+        db 'â•‘ Â²/ZÂ²  : eLiTe mode! (not for lamers!) Â²/ZZÂ² invert the elite mode.               â•‘',10
+        db 'â•‘ Â²/VÂ²  : use READCONF instead of iREAD (add READCONF in the AUTOEXEC.BAT file!) â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+        db 'â•‘ Â²KEYS                        Â²                                                 â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+	db 'â•‘ Â²ON-LINE HELP, obtained with BACKSPACE everywhere except under TAB:  Â²         â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+	db 'â•‘ Â²ARROWS UP AND LEFT   Â²one line up                                             â•‘',10
+	db 'â•‘ Â²       RIGHT, DOWN   Â²one line down                                           â•‘',10
+	db 'â•‘ Â²PAGE DOWN            Â²next page                                               â•‘',10
+	db 'â•‘ Â²PAGE UP              Â²one page up                                             â•‘',10
+	db 'â•‘ Â²ESCAPE               Â²quit the help file                                      â•‘',10
+	db 'â•‘ Â²SPACE                Â²toggle color - b/w modes                                â•‘',10
+	db 'â•‘ Â²TAB                  Â²toggle 25/50 lines modes                                â•‘',10
+        db 'â•‘ Â²INSERT               Â²search for a string                                     â•‘',10
+        db 'â•‘ Â²DELETE               Â²cancel search mode                                      â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+	db 'â•‘ Â²THE LIST OF CONFIGS, obtained with SPACE instead of choosing a configuration:Â²â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+	db 'â•‘ Â²BACKSPACE            Â²show the on-line help                                   â•‘',10
+	db 'â•‘ Â²SPACE of ENTER       Â²load the highlighted configuration                      â•‘',10
+        db 'â•‘ Â²ARROWS UP            Â²scroll up in the list                                   â•‘',10
+        db 'â•‘ Â²       DOWN          Â²scroll to the next configuration in the list            â•‘',10
+        db 'â•‘ Â²       LEFT          Â²show the subgroup of the configuration if exists        â•‘',10
+        db 'â•‘ Â²       RIGHT         Â²show the upper level of the group                       â•‘',10
+        db 'â•‘ (If you are in the main group or there''s no sub level, the last two keys are â•‘',10
+        db 'â•‘  simply ignored and a short beep is emitted)                                 â•‘',10
+	db 'â•‘ Â²HOME & PAGE UP       Â²the first configuration on the screen                   â•‘',10
+	db 'â•‘ Â²END & PAGE DOWN      Â²last configuration on screen                            â•‘',10
+	db 'â•‘ Â²TAB                  Â²show the highlighted configuration                      â•‘',10
+        db 'â•‘ Â²STAR                 Â²end Â²AUTOCONFÂ²                                            â•‘',10
+	db 'â•‘ Â²POINT                Â²load only the common part                               â•‘',10
+        db 'â•‘ Any other key designating a configuration, loads it, if it exists.           â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+	db 'â•‘ Â²THE CONFIGURATION ITSELF SHOWED with TAB from the list of configurations:    Â²â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+        db 'â•‘ Â²ARROWS:              Â²                                                        â•‘',10
+        db 'â•‘ Â²UP                   Â²scroll the configuration up (if longer than 25 lines)   â•‘',10
+        db 'â•‘ Â²DOWN                 Â²scroll the configuration down (if longer than 25 lines) â•‘',10
+        db 'â•‘ Â²RIGHT                Â²scroll the configuration to the right                   â•‘',10
+        db 'â•‘ Â²LEFT                 Â²scroll the configuration to the left                    â•‘',10
+        db 'â•‘ Â²HOME                 Â²jump to the beginning of the line                       â•‘',10
+        db 'â•‘                      if any of the shown lines exceeds 80 characters         â•‘',10
+	db 'â•‘ Â²PAGE DOWN            Â²next configuration                                      â•‘',10
+	db 'â•‘ Â²PAGE UP              Â²previous configuration in list                          â•‘',10
+	db 'â•‘ Â²TAB, ESC             Â²return to the list of configurations                    â•‘',10
+	db 'â•‘ Â²SPACE                Â²toggle color - b/w modes                                â•‘',10
+	db 'â•‘ Â²ENTER                Â²choose the shown configuration                          â•‘',10
+        db 'â•‘ Â²POINT (.)            Â²load only the common part, after DEVICE=$               â•‘',10
+        db 'â•‘ Â²BACKSPACE            Â²show the on-line help                                   â•‘',10
+        db 'â•‘ Â²E (E key)            Â²enable/disable line editing mode                        â•‘',10
+        db 'â•‘ Â²  SPACE in ''E'' mode  Â²enable/disable a line                                   â•‘',10
+        db 'â•‘ Â²      ? in ''E'' mode  Â²enable/disable execute the line prompt                  â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+        db 'â•‘ Â²AUTOCONFÂ², version 1.1 to this latter, all versions of Â²READCONFÂ², Â²iÂ²RÂ²EÂ²AÂ²DÂ² and    â•‘',10
+        db 'â•‘ Â²BOOTITÂ² are the property of (me):                                             â•‘',10
+        db 'â•‘ Â²â–„â–„â–„â–„â–„â–„â–„â–„â–„â–„â–„ Â²Doubrovkine Daniel       Â²                                        â•‘',10
+        db 'â•‘ Â²â–ˆâ–ˆâ–ˆâ–ˆÂ³â–ˆâ–ˆâ–ˆÂ²â–ˆâ–ˆâ–ˆâ–ˆ Â²11, ch. de la ClairiÃ¨re Â²                                         â•‘',10
+	db 'â•‘ Â²â–ˆâ–ˆÂ³â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆÂ²â–ˆâ–ˆ Â²1207 GenÃ¨ve,            Â²                                         â•‘',10
+	db 'â•‘ Â²â–ˆâ–ˆâ–ˆâ–ˆÂ³â–ˆâ–ˆâ–ˆÂ²â–ˆâ–ˆâ–ˆâ–ˆ Â²Suisse                  Â²                                         â•‘',10
+        db 'â•‘ Â²â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€ Â²tel & fax: 41 22 - 735 69 47       Â²                              â•‘',10
+        db 'â•‘ Â²email: dblock@infomaniak.ch                      Â²                            â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+	db 'â•‘ Â²AUTOCONFÂ² was originally programmed by a french coder which is unknown to me. â•‘',10
+	db 'â•‘ A version, that I used as the engine of Â²AUTOCONFÂ² was published in a SVM,     â•‘',10
+	db 'â•‘ several years ago. 90% of the original program, have been modified. The name â•‘',10
+        db 'â•‘ has not been changed.                                                        â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+        db 'â•‘ I thank all the beta testers and all those who took any part in the develop- â•‘',10
+	db 'â•‘ pement of this software.                                                     â•‘',10
+	db 'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£',10
+	db 'â•‘ Â²All the names of companies, as well as their products are the trademarks of  Â²â•‘',10
+        db 'â•‘ Â²their respectif owners.                            Â²                          â•‘',10
+	db 'â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•',10
+	db 'Â²[                              end of help                                     '
 			     
-ended                db 'ü± AUTOCONF 3.0 beta 2 ±±±±±±±±±±U±N±D±E±R±±±C±O±N±S±T±R±U±C±T±I±O±N±±±±±±±±',10,'ÿ'
-press_a_extended_key db 'ı?[ı  ı?lineı HOME ı?beginningı END ı? ı PgUp PgDn ı?pageı ESPACE ı?color/b&wı TAB ı?50/25ı ESC ı?]'
-search_stupid_msg    db 'ı  Search:  [ı'
+ended                db 'Â³â–’ AUTOCONF 3.0 beta 2 â–’â–’â–’â–’â–’â–’â–’â–’â–’â–’Uâ–’Nâ–’Dâ–’Eâ–’Râ–’â–’â–’Câ–’Oâ–’Nâ–’Sâ–’Tâ–’Râ–’Uâ–’Câ–’Tâ–’Iâ–’Oâ–’Nâ–’â–’â–’â–’â–’â–’â–’â–’',10,'Â '
+press_a_extended_key db 'Â²?[Â²  Â²?lineÂ² HOME Â²?beginningÂ² END Â²? Â² PgUp PgDn Â²?pageÂ² ESPACE Â²?color/b&wÂ² TAB Â²?50/25Â² ESC Â²?]'
+search_stupid_msg    db 'Â²  Search:  [Â²'
                      db 67 dup (' ')
-                     db 'ı]'
-press_search         db 'ı[ Í=Í= Searching...Í=Í=Í==Í=Í=Í=Í=Í=Í=Í=Í=Í=Í=Í=Í=Í=Í=Í=Í=Í=Í=Í=Í=Í=Í=Í=Í=Í=Í= ]' 
+                     db 'Â²]'
+press_search         db 'Â²[ â•=â•= Searching...â•=â•=â•==â•=â•=â•=â•=â•=â•=â•=â•=â•=â•=â•=â•=â•=â•=â•=â•=â•=â•=â•=â•=â•=â•=â•=â•=â•=â•= ]' 
 
-linemsg         db      'ı[ ı scroll left ıı up ıı down ıı right ıHOME ıleftmost position ı. ıonly common part ı]',10
-                db      'ı[ PageUpı previous config ıPageDnı next config ıTAB/ESCı return ıSPACE ıcolor - b/w  ı]',10,'ÿ'
+linemsg         db      'Â²[ Â² scroll left Â²Â² up Â²Â² down Â²Â² right Â²HOME Â²leftmost position Â². Â²only common part Â²]',10
+                db      'Â²[ PageUpÂ² previous config Â²PageDnÂ² next config Â²TAB/ESCÂ² return Â²SPACE Â²color - b/w  Â²]',10,'Â '
 
-linemsg2        db      'ı[ ıiıLıIıNıEı - enable/disable one line version 1.1   (c) Daniel Doubrovkine - 1995 ı]',10
-                db      'ı[ ıdownı  ıupı E ımodeı PgUp ınext cnf ı PgDn ıprevious cnfı SPACE ıen/disable line ı ? ]',10,'ÿ'
+linemsg2        db      'Â²[ Â²iÂ²LÂ²IÂ²NÂ²EÂ² - enable/disable one line version 1.1   (c) Daniel Doubrovkine - 1995 Â²]',10
+                db      'Â²[ Â²downÂ²  Â²upÂ² E Â²modeÂ² PgUp Â²next cnf Â² PgDn Â²previous cnfÂ² SPACE Â²en/disable line Â² ? ]',10,'Â '
 
-slam_key_msg    db      'ıSlam any key to continue... ıÿ'
-menucolormsg    db      'ıMENUCOLOR ı<DOS multiconf> ÿ'
-menudefaultmsg  db      'ıMENUDEFAULT ı<DOS multiconf> ÿ'
-menuitemmsg     db      'ıMENUITEM ı<DOS multiconf - crashed with DOSDATA 7.03!> ÿ'
-submenumsg      db      'ıSUBMENU ı<DOS multiconf> ÿ'
-illegalmsg      db      'ıBzzızz...unrecognized command... ÿ'
-questionmsg     db      'ı?ÿ'
-devicemsg       db      'ıDEVICE   ','   ','ÿ'
-buffersmsg      db      'ıBUFFERS  ','   ','ÿ'
-countrymsg      db      'ıCOUNTRY  ','   ','ÿ'
-devicehighmsg   db      'ıDEVICEHIGH  ','ÿ'
-dosmsg          db      'ıDOS  ','   ','    ','ÿ'
-driveparmmsg    db      'ıDRIVPARM ','   ','ÿ'
-fcbsmsg         db      'ıFCBS ','    ','   ','ÿ'
-filesmsg        db      'ıFILES   ','    ','ÿ'
-installmsg      db      'ıINSTALL  ','   ','ÿ'
-installhighmsg  db      'ıINSTALLHIGH ','ÿ'
-lastdrivemsg    db      'ıLASTDRIVE   ','ÿ'
-numlockmsg      db      'ıNUMLOCK  ','   ','ÿ'
-shellmsg        db      'ıSHELL ','  ','    ','ÿ'
-stacksmsg       db      'ıSTACKS   ','   ','ÿ'
-switchesmsg     db      'ıSWITCHES ','   ','ÿ'
-remmsg          db      'ıREM  ','   ','    ','ÿ'
-breakmsg        db      'ıBREAK  ','  ','   ','ÿ'
-setmsg          db      'ıSET ','  ','  ','    ','ÿ'
+slam_key_msg    db      'Â²Slam any key to continue... Â²Â '
+menucolormsg    db      'Â²MENUCOLOR Â²<DOS multiconf> Â '
+menudefaultmsg  db      'Â²MENUDEFAULT Â²<DOS multiconf> Â '
+menuitemmsg     db      'Â²MENUITEM Â²<DOS multiconf - crashed with DOSDATA 7.03!> Â '
+submenumsg      db      'Â²SUBMENU Â²<DOS multiconf> Â '
+illegalmsg      db      'Â²BzzÂ²zz...unrecognized command... Â '
+questionmsg     db      'Â²?Â '
+devicemsg       db      'Â²DEVICE   ','   ','Â '
+buffersmsg      db      'Â²BUFFERS  ','   ','Â '
+countrymsg      db      'Â²COUNTRY  ','   ','Â '
+devicehighmsg   db      'Â²DEVICEHIGH  ','Â '
+dosmsg          db      'Â²DOS  ','   ','    ','Â '
+driveparmmsg    db      'Â²DRIVPARM ','   ','Â '
+fcbsmsg         db      'Â²FCBS ','    ','   ','Â '
+filesmsg        db      'Â²FILES   ','    ','Â '
+installmsg      db      'Â²INSTALL  ','   ','Â '
+installhighmsg  db      'Â²INSTALLHIGH ','Â '
+lastdrivemsg    db      'Â²LASTDRIVE   ','Â '
+numlockmsg      db      'Â²NUMLOCK  ','   ','Â '
+shellmsg        db      'Â²SHELL ','  ','    ','Â '
+stacksmsg       db      'Â²STACKS   ','   ','Â '
+switchesmsg     db      'Â²SWITCHES ','   ','Â '
+remmsg          db      'Â²REM  ','   ','    ','Â '
+breakmsg        db      'Â²BREAK  ','  ','   ','Â '
+setmsg          db      'Â²SET ','  ','  ','    ','Â '
 
-lsd_msg            db   'The /B option found - last configuration /S option has been ignored.',10,'ÿ'
+lsd_msg            db   'The /B option found - last configuration /S option has been ignored.',10,'Â '
 mois_text          db   'January,  February, March, -  April, -  May,-  -  June,  -  July,  -  August, - September,October,- November, December, ',0
 semaine_text       db   'Sunday, - Monday,-  Tuesday,  Wednesday,Thursday, Friday, - Saturday, ',0
-stack_error_msg    db 7,'ıŒCritical Error!ı: ıAUTOCONFı was unable to find enough space to add',10
+stack_error_msg    db 7,'Â²Ã®Critical Error!Â²: Â²AUTOCONFÂ² was unable to find enough space to add',10
                    db   '                 a SET CONF=... line to the CONFIG.SYS now in memory.',10
-                   db   '                 (This is a new feature of ıAUTOCONFı.)',10
-                   db   '                 The actual space is of ÿ'
-stack_error_msg2   db   ' bytes; you need at least ÿ'
+                   db   '                 (This is a new feature of Â²AUTOCONFÂ².)',10
+                   db   '                 The actual space is of Â '
+stack_error_msg2   db   ' bytes; you need at least Â '
 stack_error_msg3   db   ' bytes.',10
                    db   'Correct this error by adding any text or spaces to the DEVICE=$ line in your',10
                    db   'CONFIG.SYS file. Ex: DEVICE=$ any text placed here!',10
                    db   '                            <----  23 bytes!------>',10
-                   db   'Note: errors may occur during this boot.',10,'ÿ'
+                   db   'Note: errors may occur during this boot.',10,'Â '
 
-timer_error_msg db      7,'ıŒErrorı: the parameter specified with the /T option is invalid: /Tÿ'
-custom_msg_error_a db 7,'ıŒErrorı: bad option in the CONFIG.SYS: /Mÿ'
+timer_error_msg db      7,'Â²Ã®ErrorÂ²: the parameter specified with the /T option is invalid: /TÂ '
+custom_msg_error_a db 7,'Â²Ã®ErrorÂ²: bad option in the CONFIG.SYS: /MÂ '
 
 custom_msg_error_b db 10,'You have specified an incorrect value with the /M[x] option, the only',10
 		   db 'allowed ones are:            1 : morning message',10
 		   db '                             2 : day message',10
 		   db '                             3 : evening message',10
 		   db '                             4 : night message',10
-		   db 'For more information, consult the manual of ıAUTOCONF.ı',10,'ÿ'
+		   db 'For more information, consult the manual of Â²AUTOCONF.Â²',10,'Â '
                                                                                                    
-msg_mon  db   'üıÉ ıiıRıEıAıDı 1.00 ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»',10 
-        db      'ºı 11, ch. de la ClairiŠre   ıÚÄÄĞÄÄÄ¿ı AUTOCONF.SYS:ı multiple configurations  ıÌÍ»',10 
-        db      'ºı 1207 Geneva Switzerland ıÚÄÁÄÄÄÄ¿ ³ı v. -=-=-=-=-=-=-=-= -=-=- =-=-= -=-=- =- ıº º',10 
-	db      'ºı (022) 735 69 47         ı³ıƒ D.D. ıÃ¿ÆÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹ º',10 
-	db      'ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍµ ÚÜÄÄ¿ÃÁÙı BACKSPACEı manual                      ı º º',10 
-        db      'ºı Doubrovkine Daniel (c)  ıÀÄÁßÄÒÁÙı   SPACEı list of configurations          ı º º',10  
-	db      'ÈÍËÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼ º',10
-        db      '  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÄÄıƒ S.T.I.ı ÄÄÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼',10,'ÿ'
+msg_mon  db   'Â³Â²â•” Â²iÂ²RÂ²EÂ²AÂ²DÂ² 1.00 â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•¦â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—',10 
+        db      'â•‘Â² 11, ch. de la ClairiÃ¨re   Â²â”Œâ”€â”€Ã°â”€â”€â”€â”Â² AUTOCONF.SYS:Â² multiple configurations  Â²â• â•â•—',10 
+        db      'â•‘Â² 1207 Geneva Switzerland Â²â”Œâ”€â”´â”€â”€â”€â”€â” â”‚Â² v. -=-=-=-=-=-=-=-= -=-=- =-=-= -=-=- =- Â²â•‘ â•‘',10 
+	db      'â•‘Â² (022) 735 69 47         Â²â”‚Â²Ã¢ D.D. Â²â”œâ”Ã£â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£ â•‘',10 
+	db      'â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•Ã â”Œâ–„â”€â”€â”â”œâ”´â”˜Â² BACKSPACEÂ² manual                      Â² â•‘ â•‘',10 
+        db      'â•‘Â² Doubrovkine Daniel (c)  Â²â””â”€â”´â–€â”€ÃŠâ”´â”˜Â²   SPACEÂ² list of configurations          Â² â•‘ â•‘',10  
+	db      'â•šâ•â•¦â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•©â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• â•‘',10
+        db      '  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â”€â”€Â²Ã¢ S.T.I.Â² â”€â”€â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•',10,'Â '
                                                                                                    
-reenable_msg1   db      'ıı   Device [ıDı] - Devicehigh [ıUı] - Install [ıIı] - InstallHigh [ıWı] - Shell [ıSı]   ıÿ'
-reenable_msg2   db      'ıı  Rem [ı0ı] - Set [ıVı] - Files [ıFı] - Lastdrive [ıLı] - Numlock [ıNı] - Country [ıQı]  ıÿ'
-reenable_msg3   db      'ıı        Buffers [ıBı] - Break [ıCı] - Drivparm [ıPı] - Stacks [ıKı] - Fcbs [ıXı]       ıÿ'
+reenable_msg1   db      'Â²Â²   Device [Â²DÂ²] - Devicehigh [Â²UÂ²] - Install [Â²IÂ²] - InstallHigh [Â²WÂ²] - Shell [Â²SÂ²]   Â²Â '
+reenable_msg2   db      'Â²Â²  Rem [Â²0Â²] - Set [Â²VÂ²] - Files [Â²FÂ²] - Lastdrive [Â²LÂ²] - Numlock [Â²NÂ²] - Country [Â²QÂ²]  Â²Â '
+reenable_msg3   db      'Â²Â²        Buffers [Â²BÂ²] - Break [Â²CÂ²] - Drivparm [Â²PÂ²] - Stacks [Â²KÂ²] - Fcbs [Â²XÂ²]       Â²Â '
 
-sw_err_switch   db      'ıŒErrorı: bad option in CONFIG.SYS: /ÿ'
-passage_msg     db      10,'ÿ'                
-spassage_msg    db      '   ÿ'                
+sw_err_switch   db      'Â²Ã®ErrorÂ²: bad option in CONFIG.SYS: /Â '
+passage_msg     db      10,'Â '                
+spassage_msg    db      '   Â '                
 sw_err_msg      db      7,10
-		db      'You have specified an invalid option (s) in the CONFIG.SYS file for ıAUTOCONF.ı',10
+		db      'You have specified an invalid option (s) in the CONFIG.SYS file for Â²AUTOCONF.Â²',10
                 db      'The only valid ones are: /Dx /E,/J[D][C],/N,/P,/S,/Cx,/G,/Kxx,/M[] and /Tx.',10
-		db      'For a more detailed information consult the manual of ıAUTOCONF.ı',10,'ÿ'
+		db      'For a more detailed information consult the manual of Â²AUTOCONF.Â²',10,'Â '
 
-err_msg_new     db      7,'ıŒErrorı: configuration ÿ' 
+err_msg_new     db      7,'Â²Ã®ErrorÂ²: configuration Â ' 
 
 err_msg_old     db      ' does not exist...',10
 		db      10
-		db      'ıAUTOCONFı was not able to find the configuration you have just chosen!',10
+		db      'Â²AUTOCONFÂ² was not able to find the configuration you have just chosen!',10
 		db      'Either you have pressed the wrong key, or the configuration does not exist.',10
 		db      'Choose another configuration. Check that you have a default configuration',10
                 db      'in the CONFIG.SYS file!                                        ',10
-                db      'ıŒAttention!ı Remove any part of multiple configurations of DOS 6.x!ı',10,'ÿ'
+                db      'Â²Ã®Attention!Â² Remove any part of multiple configurations of DOS 6.x!Â²',10,'Â '
 
-msg_err_dollar  db      7,'ıŒErrorı in the CONFIG.SYS!',10
+msg_err_dollar  db      7,'Â²Ã®ErrorÂ² in the CONFIG.SYS!',10
 		db      10
 		db      'You forgot the DEVICE=$ line after the last configuration in the CONFIG.SYS!',10
-		db      'Press BACKSPACE to consult the manual of ıAUTOCONFı or any key to continue.',10
+		db      'Press BACKSPACE to consult the manual of Â²AUTOCONFÂ² or any key to continue.',10
                 db      10
-                db      'ıŒAttention!ı If you are sure that the DEVICE=$ line is present in your CONFIG.SYS',10
+                db      'Â²Ã®Attention!Â² If you are sure that the DEVICE=$ line is present in your CONFIG.SYS',10
                 db      'file, do check for any element of multiple configurations of DOS 6.x, if found,',10
-                db      'remove them. The [common] line is the most frequent cause of this error.ı',10
-		db      10,'ÿ'
+                db      'remove them. The [common] line is the most frequent cause of this error.Â²',10
+		db      10,'Â '
 
 msg_reboot_6    db      'Press R to reboot your computer. Since you are using DOS 6.X version, use',10
-		db      'F5 and F8 keys to skip the loading of ıAUTOCONFı and correct the problem with',10
+		db      'F5 and F8 keys to skip the loading of Â²AUTOCONFÂ² and correct the problem with',10
 		db      'a text editor later.',10
                 db      'For more information on F5 and F8 keys function, consult the manual of',10   
 		db      'Miscrosoft MS DOS (R).',10
 		db      10
 		db      'Press any key to continue the bootup of your computer and end AUTOCONF.SYS',10
-		db      'here. Correct the problem with a text editor later.',10,'ÿ'
+		db      'here. Correct the problem with a text editor later.',10,'Â '
 		
 msg_reboot_not6 db      'Press any key to continue the execution of the CONFIG.SYS file and end',10
-		db      'ıAUTOCONFı here. Correct the problem with a text editor later.',10,10
+		db      'Â²AUTOCONFÂ² here. Correct the problem with a text editor later.',10,10
 		db      'Press R to reboot your computer. Use a boot disk to skip the execution of',10
-		db      'ıAUTOCONF.ı Then correct the problem with a text editor.',10,'ÿ'
+		db      'Â²AUTOCONF.Â² Then correct the problem with a text editor.',10,'Â '
 
 msg_choosec     db      'Choose a configuration you want to load just by pressing a key.',10
 		db      '    , PgUp, PgDn, Home ou End will move in the list...',10 
-                db      'STAR               end ıAUTOCONFı here;',10
+                db      'STAR               end Â²AUTOCONFÂ² here;',10
 		db      'ENTER or SPACE     loads the configuration on which the cursor is now;',10
 		db      'TAB                see the configuration itself;',10
-		db      'BACKSPACE          shows the manual of ıAUTOCONF.ı',10,10,'ÿ'
+		db      'BACKSPACE          shows the manual of Â²AUTOCONF.Â²',10,10,'Â '
 
 error_last_msg  db    7,'The configuration specified in the AUTOCONF.DAT file is not valid.',10
                 db      'You have probably specified an invalid configuration with BOOTIT.',10
-                db      'For more information on the AUTOCONF.DAT file, please consult the manual.',10,'ÿ'
+                db      'For more information on the AUTOCONF.DAT file, please consult the manual.',10,'Â '
 
-special_error_msg       db    7,10,'ıŒErrorı: CONFIG.SYS! you have no configurations specified!',10
-			db      '        Press any key to terminate AUTOCONF...',10,'ÿ'
+special_error_msg       db    7,10,'Â²Ã®ErrorÂ²: CONFIG.SYS! you have no configurations specified!',10
+			db      '        Press any key to terminate AUTOCONF...',10,'Â '
 
-error_creating          db      7,10,'ıŒErrorı: creating AUTOCONF.DAT file!',10,'ÿ'
-error_opening           db      7,10,'ıŒErrorı: opening AUTOCONF.DAT file! (non critical error)',10,'ÿ'
-error_closing           db      7,10,'ıŒErrorı: closing AUTOCONF.DAT file!',10,'ÿ'
-error_readwrite         db      7,10,'ıŒErrorı: reading or writing AUTOCONF.DAT file!',10,'ÿ'
-j_error_msg             db      7,10,'ıŒErrorı: the /J option does not have the same parameters as the previous',10
+error_creating          db      7,10,'Â²Ã®ErrorÂ²: creating AUTOCONF.DAT file!',10,'Â '
+error_opening           db      7,10,'Â²Ã®ErrorÂ²: opening AUTOCONF.DAT file! (non critical error)',10,'Â '
+error_closing           db      7,10,'Â²Ã®ErrorÂ²: closing AUTOCONF.DAT file!',10,'Â '
+error_readwrite         db      7,10,'Â²Ã®ErrorÂ²: reading or writing AUTOCONF.DAT file!',10,'Â '
+j_error_msg             db      7,10,'Â²Ã®ErrorÂ²: the /J option does not have the same parameters as the previous',10
                         db      'version of AUTOCONF, new syntax:',10
-                        db      'ı/Jı[ıDı][ıCı], where',10
-                        db      'ıDı: always show the list under DOS below 7.00',10
-                        db      'ıCı: always show the list under DOS 7.00 and above (Windows 95).',10,'ÿ'
-kbd_extraparam          db      7,10,'ıŒErrorı: more than one keyboard has been specified using /Kxx!',10
-			db      'The first parameter only will be used, the rest will be ignored.',10,'ÿ'
-kbd_invalidparam        db      7,10,'ıŒErrorı: invalid parameter with /Kxx!',10
+                        db      'Â²/JÂ²[Â²DÂ²][Â²CÂ²], where',10
+                        db      'Â²DÂ²: always show the list under DOS below 7.00',10
+                        db      'Â²CÂ²: always show the list under DOS 7.00 and above (Windows 95).',10,'Â '
+kbd_extraparam          db      7,10,'Â²Ã®ErrorÂ²: more than one keyboard has been specified using /Kxx!',10
+			db      'The first parameter only will be used, the rest will be ignored.',10,'Â '
+kbd_invalidparam        db      7,10,'Â²Ã®ErrorÂ²: invalid parameter with /Kxx!',10
 			db      'The only valid options are:',10
-			db      'ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿',10 
-			db      '³ Belgium                      ıBEı  ³ Bresil                       ıBRı  ³',10
-			db      '³ Canada (french)              ıCFı  ³ Tchecoslovakia  (tcheque)    ıCZı  ³',10
-			db      '³ Tchecoslovakia  (slovak)     ıSLı  ³ Danemark                     ıDKı  ³',10
-			db      '³ Finland                      ıSUı  ³ France                       ıFRı  ³',10
-			db      '³ Germany                      ıGRı  ³ Hungary                      ıHUı  ³',10
-			db      '³ Italy                        ıITı  ³ Latin america                ıLAı  ³',10
-			db      '³ Holland                      ıNLı  ³ Norvege                      ıNOı  ³',10
-			db      '³ Poland                       ıPLı  ³ Portugal                     ıPOı  ³',10
-			db      '³ Spain                        ıSPı  ³ Sweeden                      ıSVı  ³',10
-			db      '³ Switzerland (french)         ıSFı  ³ Switzerland (german)         ıSGı  ³',10
-			db      '³ Great Britain                ıUKı  ³ Croatia/Serbia/Slovenia      ıYUı  ³',10
-			db      'ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´',10 
-			db      '³                 The ıUSı keyboard is the default one.                 ³',10
-			db      'ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ',10,'ÿ'
-running_chicago_message db      'üÚ ıAUTOCONF for Windows 95!, final august 1995 ıÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿',10 
-			db      '³ ı DOS 7.00 or above has been detected...  ı                           ³',10
-                        db      '³  ıAUTOCONFı will use the default configuration of ıWin 95!ı (/Hxx)      ³',10
-			db      'ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ',10,'ÿ'
-warning_chicago         db      'Ú ıAUTOCONF for Windows 95!, final august 1995 ıÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿',10 
-                        db      '³ ı A version of DOS above 7.00 has been detected...          ı         ³',10
-			db      '³  This version of ıAUTOCONFı has not been tested with this version of  ³',10
-                        db      '³  DOS. That does not mean, that any problems WILL occur, since       ³',10
-                        db      '³  ıAUTOCONFı supports Win 95, but you should get the latest version!   ³',10
-			db      'ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ',10,'ÿ'
-skiping_message         db      'ıAUTOCONFı skips normal configurations in CONFIG.SYS...',10,'ÿ' 
-dos_five_set            db      'DOS 5.0 or below detected! Please add /V (disable iREAD) - use READCONF.EXE!',10,'ÿ'
-msg_matin_bonheur       db      'üWoke up early this morning?',10,'ÿ'
+			db      'â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”',10 
+			db      'â”‚ Belgium                      Â²BEÂ²  â”‚ Bresil                       Â²BRÂ²  â”‚',10
+			db      'â”‚ Canada (french)              Â²CFÂ²  â”‚ Tchecoslovakia  (tcheque)    Â²CZÂ²  â”‚',10
+			db      'â”‚ Tchecoslovakia  (slovak)     Â²SLÂ²  â”‚ Danemark                     Â²DKÂ²  â”‚',10
+			db      'â”‚ Finland                      Â²SUÂ²  â”‚ France                       Â²FRÂ²  â”‚',10
+			db      'â”‚ Germany                      Â²GRÂ²  â”‚ Hungary                      Â²HUÂ²  â”‚',10
+			db      'â”‚ Italy                        Â²ITÂ²  â”‚ Latin america                Â²LAÂ²  â”‚',10
+			db      'â”‚ Holland                      Â²NLÂ²  â”‚ Norvege                      Â²NOÂ²  â”‚',10
+			db      'â”‚ Poland                       Â²PLÂ²  â”‚ Portugal                     Â²POÂ²  â”‚',10
+			db      'â”‚ Spain                        Â²SPÂ²  â”‚ Sweeden                      Â²SVÂ²  â”‚',10
+			db      'â”‚ Switzerland (french)         Â²SFÂ²  â”‚ Switzerland (german)         Â²SGÂ²  â”‚',10
+			db      'â”‚ Great Britain                Â²UKÂ²  â”‚ Croatia/Serbia/Slovenia      Â²YUÂ²  â”‚',10
+			db      'â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤',10 
+			db      'â”‚                 The Â²USÂ² keyboard is the default one.                 â”‚',10
+			db      'â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜',10,'Â '
+running_chicago_message db      'Â³â”Œ Â²AUTOCONF for Windows 95!, final august 1995 Â²â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”',10 
+			db      'â”‚ Â² DOS 7.00 or above has been detected...  Â²                           â”‚',10
+                        db      'â”‚  Â²AUTOCONFÂ² will use the default configuration of Â²Win 95!Â² (/Hxx)      â”‚',10
+			db      'â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜',10,'Â '
+warning_chicago         db      'â”Œ Â²AUTOCONF for Windows 95!, final august 1995 Â²â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”',10 
+                        db      'â”‚ Â² A version of DOS above 7.00 has been detected...          Â²         â”‚',10
+			db      'â”‚  This version of Â²AUTOCONFÂ² has not been tested with this version of  â”‚',10
+                        db      'â”‚  DOS. That does not mean, that any problems WILL occur, since       â”‚',10
+                        db      'â”‚  Â²AUTOCONFÂ² supports Win 95, but you should get the latest version!   â”‚',10
+			db      'â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜',10,'Â '
+skiping_message         db      'Â²AUTOCONFÂ² skips normal configurations in CONFIG.SYS...',10,'Â ' 
+dos_five_set            db      'DOS 5.0 or below detected! Please add /V (disable iREAD) - use READCONF.EXE!',10,'Â '
+msg_matin_bonheur       db      'Â³Woke up early this morning?',10,'Â '
                         db      500 dup (?)
-msg_stop_working        db      'üStop terrorizing your computer at night!',10,'ÿ'
+msg_stop_working        db      'Â³Stop terrorizing your computer at night!',10,'Â '
                         db      500 dup (?)
-msg_soir                db      'üGood evening...',10,'ÿ' 
+msg_soir                db      'Â³Good evening...',10,'Â ' 
                         db      500 dup (?)
-msg_matin               db      'üHi dude...',10,'ÿ'
+msg_matin               db      'Â³Hi dude...',10,'Â '
                         db      500 dup (?)
-DOSError1       db      'AUTOCONF::iLOOM::SHARE not installed !',10,'ÿ'
-DOSError2       db      'AUTOCONF::iLOOM::File not found !',10,'ÿ'
-DOSError3       db      'AUTOCONF::iLOOM::Path not found or file doesn''t exist!',10,'ÿ'
-DOSError4       db      'AUTOCONF::iLOOM::No more free handles!',10,'ÿ'
-DOSError5       db      'AUTOCONF::iLOOM::Access denied!',10,'ÿ'
-DOSError6       db      'AUTOCONF::iLOOM::Invalid file handle or file not open !',10,'ÿ'
-DOSError7       db      'AUTOCONF::iLOOM::Memory block was destroyed !',10,'ÿ'
-DOSError8       db      'AUTOCONF::iLOOM::Insufficient memory left !',10,'ÿ'
-DOSError9       db      'AUTOCONF::iLOOM::Memory block was NOT allocated!',10,'ÿ'
-DOSError12      db      'AUTOCONF::iLOOM::Can''t use this access mode !',10,'ÿ'
-DOSError14      db      'AUTOCONF::iLOOM::Invalid seek distance!',10,'ÿ'
+DOSError1       db      'AUTOCONF::iLOOM::SHARE not installed !',10,'Â '
+DOSError2       db      'AUTOCONF::iLOOM::File not found !',10,'Â '
+DOSError3       db      'AUTOCONF::iLOOM::Path not found or file doesn''t exist!',10,'Â '
+DOSError4       db      'AUTOCONF::iLOOM::No more free handles!',10,'Â '
+DOSError5       db      'AUTOCONF::iLOOM::Access denied!',10,'Â '
+DOSError6       db      'AUTOCONF::iLOOM::Invalid file handle or file not open !',10,'Â '
+DOSError7       db      'AUTOCONF::iLOOM::Memory block was destroyed !',10,'Â '
+DOSError8       db      'AUTOCONF::iLOOM::Insufficient memory left !',10,'Â '
+DOSError9       db      'AUTOCONF::iLOOM::Memory block was NOT allocated!',10,'Â '
+DOSError12      db      'AUTOCONF::iLOOM::Can''t use this access mode !',10,'Â '
+DOSError14      db      'AUTOCONF::iLOOM::Invalid seek distance!',10,'Â '
 
-DataError       db      'AUTOCONF::iLOOM::Data in file is invalid !',10,'ÿ'
-DefaultError    db      'AUTOCONF::iLOOM::Undefined error error !',10,'ÿ'
+DataError       db      'AUTOCONF::iLOOM::Data in file is invalid !',10,'Â '
+DefaultError    db      'AUTOCONF::iLOOM::Undefined error error !',10,'Â '
 
