@@ -12,3 +12,5 @@ Daniel's later Autoconf versions and David Jilli's MegaBoot were developed while
 - Explore the [original article and recovered source](original/).
 - Run the [MS-DOS 5 boot demonstration](demo/).
 - See [MegaBoot](https://github.com/dblock/megaboot), David Jilli's 1996 spiritual successor to Autoconf.
+
+Autoconf is available under the [MIT License](LICENSE).
