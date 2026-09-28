@@ -28,6 +28,10 @@ The 14-line `READCONF.ASM` is an 11-byte `.COM` program that reads the selected 
 
 The recovered listings have been assembled successfully under DOS with JWasm in MASM 5 compatibility mode. They produce a 1,180-byte `AUTOCONF.SYS` and an 11-byte `READCONF.COM`.
 
+The [`original/demo/`](original/demo/) boot image recreates the A/B/C demonstration with the 1991 driver under MS-DOS 5. Pressing `B` as soon as DOSBox opens leaves the key in the BIOS keyboard queue until Autoconf loads. The original `READCONF.COM` then confirms that the DOOM configuration was selected.
+
+![Selecting the DOOM configuration with the original 1991 Autoconf](media/autoconf-original-doom-boot.gif)
+
 ## After 1991: A Hand-Typed Fork
 
 I ([Daniel Doubrovkine](https://code.dblock.org/about/)) copied the printed assembly source by hand as my first x86 assembly program and used it as the engine for my own versions. The precise date this work began is not recorded. The later built-in English and French help still described the origin accurately, although I had forgotten Julien Pommier's name: a French programmer had written the original engine, a version had appeared in SVM, and roughly 90 percent of the program had since been modified.

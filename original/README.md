@@ -44,3 +44,5 @@ SDL_VIDEODRIVER=dummy SDL_AUDIODRIVER=dummy \
 ```
 
 `-Zm` in `BUILD.BAT` enables MASM 5 compatibility, including the unscoped procedure labels used by the original source. A successful build creates `AUTOCONF.SYS` and `READCONF.COM`. The recovered listings currently assemble with JWasm 2.20 with zero warnings and zero errors.
+
+The reproduced binaries are preserved in [`bin/`](bin/). See [`demo/`](demo/) for a bootable MS-DOS 5 demonstration of the original driver.
