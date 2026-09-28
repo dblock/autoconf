@@ -10,7 +10,7 @@ The surviving material provides only a handful of exact dates. Releases without 
 
 The original Autoconf was written by [Julien Pommier](http://gruntthepeon.free.fr) and published as “La configuration idéale” in *Science & Vie Micro* no. 88, November 1991, pp. 227–233. The article won the magazine's monthly programming contest and received a 2,000-franc prize. It printed the complete source for `AUTOCONF.ASM` and the small companion program `READCONF.ASM`, together with installation instructions and sample `CONFIG.SYS` and `AUTOEXEC.BAT` files.
 
-[![Cover of Science & Vie Micro no. 88, November 1991](original/SVM-88-cover.png)](original/SVM-88-Autoconf-pages-227-233.pdf)
+[![Cover of Science & Vie Micro no. 88, November 1991](original/SVM-88-cover-small.png)](original/SVM-88-cover.png)
 
 The original source is preserved in [`original/`](original/). The scanned article is the canonical source; the assembly files are OCR-assisted transcriptions that were manually corrected against the printed listing.
 
@@ -45,9 +45,11 @@ The name Autoconf was retained while the small original program grew into a much
 The early releases have no surviving dates, but `WHATSNEW.ENG` and `WHATSNEW.FR` establish their order.
 
 - **1.0–1.24:** removed display garbage, added names and a list of configurations, rewrote the online guide, allowed navigation through the guide, and added recovery after invalid choices.
-- **1.3:** added color output and the `/P`, `/J`, `/F`, `/E`, and `/N` options.
+- **1.3:** added color output and five options: `/P` suppressed the boot messages, `/J` always displayed the configuration list and waited for a choice, `/F` selected a French keyboard, `/E` forced monochrome output, and `/N` prevented Autoconf from clearing the screen.
 - **1.4–1.42:** added DOS 6-aware recovery, removed the original 33-configuration limit, repaired French and Swiss keyboard support, added a selectable default configuration, and introduced time-dependent welcome messages.
 - **1.5–1.54 beta:** concentrated on error recovery and silent mode, restored or saved the previous configuration through `AUTOCONF.DAT`, varied messages by time of day, and introduced `READCONF.COM` 2.0. The French history says the final 1.54 was not distributed.
+
+Version 1.42 introduced `/D<configuration>` to replace A as the default choice. Version 1.51 added `/B`, which prevented creation of `AUTOCONF.DAT` and deleted an existing copy; it was temporarily removed and later restored. The inherited `/Q`, `/T`, and `/S` switches selected a QWERTY keyboard, set the selection timeout, and saved or restored the last configuration.
 
 ## March 1993: MS-DOS Adds Native Multiple Configurations
 
@@ -71,11 +73,21 @@ Version 2.1 replaced the simple list with a sorted, scrollable, highlighted menu
 
 The release history gives the first explicit release date: version 2.41 was last modified on **Thursday, June 16, 1994**. Version 2.4 introduced a configuration viewer opened with Tab, allowing users to inspect and navigate configurations before loading them.
 
+The configuration list and viewer formed a keyboard-driven interface during `CONFIG.SYS` processing. Space or Enter loaded the highlighted configuration, Tab opened its contents, and Page Up and Page Down moved through the list. The viewer could scroll vertically through long configurations and horizontally through lines wider than 80 columns. In nested groups, the left arrow entered a subgroup and the right arrow returned to its parent. A period loaded only the common section after `DEVICE=$`, while an asterisk ended Autoconf without loading a normal configuration.
+
 The source contains a cluster of dated video and keyboard routines from **July 3–8, 1994**, including EGA detection, cursor positioning, attribute filling, keyboard conversion, and scrolling helpers. A top-level display macro is marked **July 7, 1994**. These changes align with versions 2.42 through 2.5:
 
 - **2.42:** added `BOOTIT` 1.0 for rebooting directly into a selected configuration, smoother help and manual display, and safer handling of navigation keys.
 - **2.5:** added 25- and 50-line screen modes, CGA support, duplicate-designation viewing, and support for the keyboard layouts recognized by DOS `KEYB.COM`.
 - **2.51:** fixed option parsing and added a visible or suppressible countdown pulse.
+
+The interface expanded along with the menu. `/M` customized the four time-of-day welcome messages, `/C` selected the menu-highlight color, `/G` hid the heading above the configuration list, and `/5` kept the display in 50-line mode. `/K<country-code>` replaced the old `/Q` and `/F` keyboard switches with all layouts recognized by DOS `KEYB.COM`; `/F` was then reused to set the color of configuration names. Appending `u` to `/T`, as in `/T5u`, suppressed the countdown pulse.
+
+The standalone `MANUAL.EXE` used the same display system as the built-in help. Arrow keys and Page Up/Page Down navigated the text, Insert started a string search, Delete cancelled search mode, Space switched between color and monochrome, and Tab switched between 25- and 50-line modes.
+
+![Navigating the Autoconf manual](media/autoconf-manual-scroll.gif)
+
+Its assembly source records how the display worked. It adjusted the BIOS keyboard repeat rate, detected monochrome, CGA, and EGA adapters, synchronized writes on CGA hardware to avoid snow, detected whether the current display used 25 or 50 lines, and restored the prior video mode when the reader exited.
 
 The C source for `READCONF.EXE` displays a 1994 copyright date. The historical release scripts compile the C utilities with Borland C++, assemble the driver and manual with Borland TASM, link them with TLINK, convert the driver with EXE2BIN, and package separate English and French ZIP archives with PKZIP.
 
@@ -83,11 +95,17 @@ The C source for `READCONF.EXE` displays a 1994 copyright date. The historical r
 
 Version 2.60 added support for Windows 4.0 “Chicago” and DOS 7. The English and French message sources call this support “final august 1995,” providing an **August 1995** milestone. Versions 2.6x and 2.70 refined coexistence with Chicago, DOS, QEMM, and DOSDATA; updated `BOOTIT`; added common-only booting; and expanded configuration viewing.
 
+Windows 95 required separate boot behavior. `/H<configuration>` selected its default configuration, while `/O` enabled compatibility with Windows 95 and QEMM. `/J` gained `D` and `C` qualifiers to force the menu under DOS, Windows 95, or both, and `/T` gained matching `D` and `C` delays so the two environments could use different countdowns.
+
 Version 2.80, together with `BOOTIT` 1.2 and `READCONF` 4.0, added nested configuration groups of arbitrary depth. The selected path could be exported as a value such as `F2_F3_J_O`. Revisions 2.80.01 through 2.80.03 corrected navigation, display, message, cache, STACKER, and reboot problems.
+
+`BOOTIT` wrote the requested selection to `AUTOCONF.DAT` for the next reboot. Its final 1.5 syntax accepted a nested path such as `BOOTIT A_F2_L`; `BOOTIT LIST` requested the configuration list instead of a selection. It also accepted an alternate boot drive, ignored argument order and letter case, and supported function-key configurations from `F1` through `F0`, where `F0` represented F10.
 
 Versions 2.81 and 2.82 added separate DOS and Windows 95 countdown behavior, visible countdown timers, colored configuration names, and a workaround for Award BIOS keyboard-buffer behavior.
 
 Version 2.90 integrated the `AUTOEXEC.BAT` handoff into the driver as `iREAD`, eliminating the normal need for the separate `READCONF` utility. It also introduced `iLINE`, an editor that could temporarily enable, disable, or prompt for individual lines while viewing a configuration. The relevant assembly routines are explicitly dated **September 13, 1995**.
+
+In the configuration viewer, `E` entered `iLINE` mode. Space toggled whether the current line would execute, and `?` toggled a boot-time prompt asking whether to execute it. The edits applied to the in-memory configuration being processed rather than rewriting `CONFIG.SYS` on disk.
 
 Versions 2.91 through 2.93 refined `iLINE`, the configuration viewer, converters, `BOOTIT`, Windows 95 defaults, and search:
 
@@ -99,9 +117,36 @@ Versions 2.91 through 2.93 refined `iLINE`, the configuration viewer, converters
 
 The English and French histories are signed **September 1995**. The French file's banner says **version 3.00, November 1995**, suggesting that the beta documentation continued to be revised after the signed history text. The preserved release is consistently labeled **3.00 beta 2**.
 
-Version 3.00 beta 2 fixed edge cases in `iLINE`, empty-line handling, duplicate designations, viewer selection, and split-line conversion in `ACF2DOS` and `DOS2ACF`. The planned final 3.00 release was also intended to include `iLOOM`, a customizable menu system by Serge Huber with arbitrary layouts, ANSI backgrounds, animations, and a separate menu editor. The source and release notes say that `iLOOM` was still under construction in 1995, and the preserved beta keeps it disabled.
+Version 3.00 beta 2 fixed edge cases in `iLINE`, empty-line handling, duplicate designations, viewer selection, and split-line conversion in `ACF2DOS` and `DOS2ACF`. Its interface retained several informal messages from the period: `/Z` enabled “eLiTe mode! (not for lamers!),” `/ZZ` inverted it, and one continuation prompt read “Slam any key to continue.” The acknowledgements thanked Pink Floyd “for hours of concentration and inspiration” and the DOS editor because “it's rubbish, but I love that blue color!”
+
+The planned final 3.00 release was intended to include `iLOOM`, a customizable menu system by Serge Huber. The development notes describe arbitrary menu dimensions, configurable positions and selection regions, external text, ANSI foregrounds and backgrounds, animated movement and idle states, and a separate menu editor. A later generation was proposed with graphics mode, JPEG and GIF support, and possible idle 3D animations. The source and release notes say that `iLOOM` was still under construction in 1995, and the preserved beta keeps it disabled.
 
 The release history counted 7,065 lines in `AUTOCONF.ASM`, excluding text and manuals, plus 358 lines for the manual, 573 lines for `iLOOM`, and approximately 800 condensed C lines each for `DOS2ACF` and `ACF2DOS`. The preserved `AUTOCONF.ASM` is 7,109 lines, compared with 472 lines in the original article transcription.
+
+By 3.00 beta 2, the built-in help documented the complete command-line interface:
+
+| Option | Effect |
+| --- | --- |
+| `/D<configuration>` | Use the named configuration as the default under DOS before version 7. |
+| `/H<configuration>` | Use the named configuration as the default under DOS 7/Windows 95. |
+| `/T[D<seconds>[u]][C<seconds>[u]]` | Set separate DOS and Windows 95 selection delays; `u` hides the countdown pulse. The older `/T<seconds>` form remained valid. |
+| `/P` | Run silently, suppressing normal boot messages. |
+| `/N` | Do not clear the screen while Autoconf runs. |
+| `/E` | Display messages in monochrome. |
+| `/K<country-code>` | Translate keys using one of the DOS `KEYB.COM` keyboard layouts; US was the default. |
+| `/J[D][C]` | Always display the configuration list and wait for a choice under DOS, Windows 95, or both. |
+| `/S` | Load the last configuration recorded in `AUTOCONF.DAT`. |
+| `/M...` | Customize the morning, daytime, evening, and nighttime welcome messages or assign numbered messages to hours. |
+| `/C<character>` | Set the menu-highlight color using a DOS text attribute value. |
+| `/F<character>` | Set the color of configuration designations in the menu; this reused the switch that had selected a French keyboard in version 1.3. |
+| `/G` | Suppress the heading above the configuration list. |
+| `/5` | Force 50-line display mode while viewing menus and configurations. |
+| `/O` | Enable the Windows 95 and QEMM compatibility path. |
+| `/I` | Disable `iLINE` editing in the configuration viewer. |
+| `/L` | Always display the selected configuration name, even in `/P` silent mode. |
+| `/B` | Do not write `AUTOCONF.DAT` and delete an existing copy. |
+| `/Z` or `/ZZ` | Enable or invert the joking “eLiTe” text style used by messages. |
+| `/V` | Disable integrated `iREAD` environment setup and use `READCONF.EXE` from `AUTOEXEC.BAT`, as required by DOS 5 and earlier. |
 
 ## January 11, 1996: Preserved Beta Build
 
