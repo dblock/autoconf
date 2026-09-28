@@ -32,6 +32,8 @@ The recovered listings have been assembled successfully under DOS with JWasm in 
 
 Daniel Doubrovkine copied the printed assembly source by hand and used it as the engine for his own versions. The precise date this work began is not recorded. The later built-in English and French help still described the origin accurately, although Julien Pommier's name had been forgotten: a French programmer had written the original engine, a version had appeared in SVM, and roughly 90 percent of the program had since been modified.
 
+Daniel developed these later Autoconf versions while spending time with David Jilli in the basement of Infomaniak in Carouge, Switzerland.
+
 The name Autoconf was retained while the small original program grew into a much larger bilingual boot-configuration system. The surviving release history records 145 changes from versions 1.0 through 3.00 beta 2.
 
 ## Versions 1.0–1.54: Expanding the Original Interface
@@ -101,6 +103,12 @@ This dates the preserved 3.00 beta 2 driver build to **January 11, 1996 at 14:26
 
 The final DOS packaging script built both language editions, regenerated the compressed message includes with `CODE2.EXE`, compiled the C utilities, assembled the driver and manuals, created `ACNF3B1E.ZIP` and `ACNF3B1F.ZIP`, and tested both archives.
 
+## 1996: MegaBoot, a Spiritual Successor
+
+David Jilli (Titanik) of DSF Productions wrote [MegaBoot](https://github.com/dblock/megaboot) in 1996 as a spiritual successor to Autoconf. MegaBoot retained the idea of selecting among multiple configurations while DOS processed `CONFIG.SYS`, but presented the choices in a full-screen menu and rewrote the in-memory configuration so DOS continued with only the selected block.
+
+Like Daniel's later Autoconf work, MegaBoot was written while the two friends spent time in the basement of Infomaniak in Carouge, Switzerland.
+
 ## September 5, 2011: The Later Source Resurfaces
 
 Daniel found the later Autoconf source and release files and put them on GitHub. They included the evolved assembly source, English and French 3.00 beta 2 binaries, manuals, release histories, build tools, and companion utilities. The date records when the files resurfaced, not when they were developed; their contemporary strings and comments place them primarily in 1993–1996.
@@ -126,6 +134,7 @@ The original program was traced to Julien Pommier's article in SVM issue 88. Its
 | September 1995 | Version history signed; 3.00 beta 2 and planned `iLOOM` documented | `WHATSNEW.ENG` and `WHATSNEW.FR` |
 | November 1995 | French 3.00 release-history banner revised | `WHATSNEW.FR` |
 | January 11, 1996, 14:26 | Preserved English and French 3.00 beta 2 drivers assembled | Embedded source and binary build timestamp |
+| 1996 | [MegaBoot](https://github.com/dblock/megaboot), a spiritual successor to Autoconf, written by David Jilli | Recovered MegaBoot source and embedded copyright |
 | September 5, 2011 | Later source and binaries found and published on GitHub | GitHub publication date |
 | September 27, 2026 | Original article identified and its source listings recovered | Article scan, transcriptions, and DOS build |
 
