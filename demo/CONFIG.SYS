@@ -1,0 +1,15 @@
+DEVICE=A:\AUTOCONF.SYS /J /T9 /DA /KUS /V /B
+
+DEVICE=*A Minimal DOS
+FILES=20
+BUFFERS=10
+
+DEVICE=*B DOOM
+FILES=40
+BUFFERS=30
+
+DEVICE=*C Windows 95
+FILES=60
+BUFFERS=40
+
+DEVICE=$ <-------------------------------------------------------------->
