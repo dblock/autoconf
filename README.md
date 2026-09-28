@@ -10,6 +10,7 @@ The original program was written by Julien Pommier and published in *Science & V
 - Read my 2009 retrospective, [“Autoconf, World's Best Multiple Configurations Software”](https://code.dblock.org/2009/09/22/autoconf-worlds-best-multiple-configurations-software.html).
 - Explore the [original article and recovered source](original/).
 - Run the [MS-DOS 5 boot demonstration](demo/).
+- Compare the [native MS-DOS 6.22 multiple-configuration demo](msdos6.2/).
 - See [MegaBoot](https://github.com/dblock/megaboot), David Jilli's 1996 spiritual successor to Autoconf.
 
 Autoconf is available under the [MIT License](LICENSE).

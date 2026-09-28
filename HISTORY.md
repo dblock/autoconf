@@ -43,6 +43,14 @@ The early releases have no surviving dates, but `WHATSNEW.ENG` and `WHATSNEW.FR`
 - **1.4–1.42:** added DOS 6-aware recovery, removed the original 33-configuration limit, repaired French and Swiss keyboard support, added a selectable default configuration, and introduced time-dependent welcome messages.
 - **1.5–1.54 beta:** concentrated on error recovery and silent mode, restored or saved the previous configuration through `AUTOCONF.DAT`, varied messages by time of day, and introduced `READCONF.COM` 2.0. The French history says the final 1.54 was not distributed.
 
+## March 1993: MS-DOS Adds Native Multiple Configurations
+
+MS-DOS 6.0 introduced built-in multiple configurations in March 1993. Its `CONFIG.SYS` syntax used a `[MENU]` section with `MENUITEM` entries and named configuration blocks. DOS passed the selected block name to `AUTOEXEC.BAT` through the `%CONFIG%` environment variable.
+
+The [`msdos6.2/`](msdos6.2/) demo recreates the same Minimal DOS, DOOM, and Windows 95 choices used by the Autoconf demonstration with native MS-DOS 6.22 syntax. It includes reproducible instructions for extracting the bootable floppy image from a separately downloaded MS-DOS 6.22 ISO; the proprietary image itself is ignored by Git.
+
+![Selecting the DOOM configuration with native MS-DOS 6.22](media/msdos622-multiconfig.gif)
+
 ## By November 23, 1993: Version 2-era Development
 
 Two comments in the surviving `AUTOCONF.ASM` are dated Tuesday, November 23, 1993. They annotate the parsing that preserves upper- and lowercase characters in configuration names, a feature listed under version 2.0. This is the earliest exact development date embedded in the evolved assembly source.
@@ -126,6 +134,7 @@ The original program was traced to Julien Pommier's article in SVM issue 88. Its
 | November 1991 | Julien Pommier's original Autoconf published in SVM no. 88 | Article scan and recovered listing |
 | After November 1991 | Daniel manually copies the listing and begins extending it | Project provenance and later built-in help |
 | Undated | Versions 1.0–1.54 | Ordered English and French release histories |
+| March 1993 | MS-DOS 6.0 introduces native multiple configurations | DOS 6 documentation and the reproduced MS-DOS 6.22 demo |
 | November 23, 1993 | Version 2-era name-parsing work | Dated comments in `src/AUTOCONF.ASM` |
 | 1993 | `CODE2` text encoder | Copyright string in `src/CODE2.CPP` and `CODE2.EXE` |
 | June 16, 1994 | Version 2.41 last modified | English and French release histories |

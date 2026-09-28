@@ -8,8 +8,6 @@ Boot it with DOSBox-X:
 dosbox-x -fastlaunch -c "boot demo/autoconf-msdos5.img"
 ```
 
-Copy `bin/3b1e/AUTOCONF.SYS`, `demo/CONFIG.SYS`, and `demo/AUTOEXEC.BAT` onto a bootable MS-DOS 5 disk image. The local image name used by the command above is ignored by Git.
-
 The `/J` option forces Autoconf to display a menu with three sample configurations:
 
 - `A` - Minimal DOS
@@ -25,5 +23,21 @@ The configuration area uses `DEVICE=*A`, `DEVICE=*B`, and `DEVICE=*C` to begin c
 ## MS-DOS Image
 
 The tested image was made from the `Dos5.0.img` boot disk in <https://archive.org/download/dos-5.0-bootdisk/DOS5.0_bootdisk.zip>, downloaded separately by the user. MS-DOS 5 remains proprietary Microsoft software and has not been released under the MIT license used by Microsoft's public MS-DOS 1.25, 2.0, and 4.0 source repository.
+
+From the repository root on macOS, install `mtools`, download and extract the archive, then create the private demo image:
+
+```sh
+brew install mtools
+curl -fLO https://archive.org/download/dos-5.0-bootdisk/DOS5.0_bootdisk.zip
+unzip DOS5.0_bootdisk.zip
+cp DOS5.0_bootdisk/Dos5.0.img demo/autoconf-msdos5.img
+
+mcopy -o -i demo/autoconf-msdos5.img \
+  bin/3b1e/AUTOCONF.SYS ::AUTOCONF.SYS
+mcopy -o -i demo/autoconf-msdos5.img demo/CONFIG.SYS ::CONFIG.SYS
+mcopy -o -i demo/autoconf-msdos5.img demo/AUTOEXEC.BAT ::AUTOEXEC.BAT
+```
+
+The directory created by `unzip` may differ between archive versions. Locate `Dos5.0.img` and adjust the `cp` source path if necessary.
 
 The image is kept in the working tree only for private historical testing. Do not commit, publish, or redistribute `autoconf-msdos5.img` without permission from the applicable rights holder.
