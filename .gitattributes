@@ -1,3 +1,5 @@
+README text working-tree-encoding=CP850 eol=lf
+
 src/AUTOCON2.INC text working-tree-encoding=CP850 eol=crlf
 src/AUTOCONF.ASM -text working-tree-encoding=CP850 linguist-language=Assembly
 src/AUTOCONF.EN2 text working-tree-encoding=CP850 eol=crlf
